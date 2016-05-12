@@ -29,7 +29,5 @@
     "jQuery": true,
     "intervalID": true
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
