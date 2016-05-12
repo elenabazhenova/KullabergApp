@@ -1,3 +1,7 @@
+// !minifyOnSave
+// minifyOnSave: false
+// !minOnSave
+// minOnSave: false
 module.exports = {
   // "ecmaFeatures": {
   // 	"jsx": true,
