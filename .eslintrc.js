@@ -3,28 +3,23 @@
 // !minOnSave
 // minOnSave: false
 module.exports = {
-  // "ecmaFeatures": {
-  // 	"jsx": true,
-  // 	"modules": true,
-  // 	"arrowFunctions": true,
-  // 	"classes": true,
-  // 	"spread": true,
-  // },
+  "extends": "airbnb",
+  "installedESLint": true,
+  "plugins": ["react"],
+  "ecmaVersion": 5,
+  "ecmaFeatures": {
+    "jsx": false,
+    "modules": false,
+    "arrowFunctions": false,
+    "classes": true,
+    "spread": true,
+  },
   "env": {
     "browser": true,
-    // "es6": true
+    "jquery": true
   },
-  "extends": "airbnb",
-  // "rules": {
-  //   	"indent": [ "error", "tab" ],
-  //   "linebreak-style": ["error", "windows"],
-  //    	"quotes": [ "error", "single" ],
-  //    	"semi": [ "error", "always" ]
-  // },
   "globals": {
-    "$": true,
     "Materialize": true,
-    "jQuery": true,
     "intervalID": true
-  }
+  },
 };
