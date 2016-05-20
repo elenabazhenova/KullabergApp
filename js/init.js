@@ -27,6 +27,9 @@
     top: $('.tabs-wrapper').offset().top,
     offset: $('nav').height(),
   });
+  $('.collapsible').collapsible({
+    accordion: false,
+  });
   // end of document ready
 }(jQuery));
 // end of jQuery name space
