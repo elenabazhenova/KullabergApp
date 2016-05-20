@@ -3,6 +3,7 @@ CACHE MANIFEST
 # Time: Fri May 20 2016 10:24:30 GMT+0000 (UTC)
 
 CACHE:
+https://xtreemze.github.io/KullabergApp
 https://xtreemze.github.io/KullabergApp/
 https://xtreemze.github.io/KullabergApp/css/materialize.min.css
 https://xtreemze.github.io/KullabergApp/css/materialdesignicons.min.css
@@ -17,6 +18,11 @@ https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Medium.woff
 https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Light.woff
 https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Thin.woff
 https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Bold.woff
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Regular.woff2
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Medium.woff2
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Light.woff2
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Thin.woff2
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Bold.woff2
 https://xtreemze.github.io/KullabergApp/fonts/materialdesignicons-webfont.woff?v=1.5.54
 
 NETWORK:
