@@ -1,7 +1,7 @@
 {
   "name": "kullabergapp",
   "version": "1.0.0",
-  "description": "[View here](http://htmlpreview.github.io/?https://cdn.rawgit.com/xtreemze/KullabergApp/master/index.html)",
+  "description": "[View here](https://xtreemze.github.com/KullabergApp/)",
   "main": "index.html",
   "scripts": {
     "test": "none"
