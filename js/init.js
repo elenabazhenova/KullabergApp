@@ -25,7 +25,7 @@
   });
   $('.tabs-wrapper').pushpin({
     top: $('.tabs-wrapper').offset().top,
-    offset: $('nav').height(),
+    offset: $('.nav-wrapper').height(),
   });
   $('.collapsible').collapsible({
     accordion: false,
