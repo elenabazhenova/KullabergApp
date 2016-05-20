@@ -11,32 +11,274 @@
 		<link rel="stylesheet" href="css/master.min.css"> </head>
 
 	<body>
-		<main>
-			<!--
+		<!--
 ███    ██  █████  ██    ██
 ████   ██ ██   ██ ██    ██
 ██ ██  ██ ███████ ██    ██
 ██  ██ ██ ██   ██  ██  ██
 ██   ████ ██   ██   ████
 -->
-			<div class="navbar-fixed">
-				<nav class="yellow darken-2 white-text" role="navigation">
-					<div class="nav-wrapper"> <a class="brand-logo" id="logo-container" href="#top">KullabergApp</a>
-						<ul class="right hide-on-med-and-down ">
-							<li class="waves-effect waves-light"> <a href="#welcome">Välkomna</a> </li>
-							<li class="waves-effect waves-light"> <a href="#news">Aktuellt</a> </li>
-							<li class="waves-effect waves-light"> <a href="#contact">Kontakt</a> </li>
-							<li class="waves-effect waves-light"> <a href="english.html">English</a> </li>
+		<header class="navbar-fixed">
+			<nav class="yellow darken-2 white-text" role="navigation">
+				<div class="nav-wrapper"> <a class="brand-logo" id="logo-container" href="#top">KullabergApp</a>
+					<ul class="right hide-on-med-and-down ">
+						<li class="waves-effect waves-light"> <a href="#welcome">Välkomna</a> </li>
+						<li class="waves-effect waves-light"> <a href="#news">Aktuellt</a> </li>
+						<li class="waves-effect waves-light"> <a href="#contact">Kontakt</a> </li>
+						<li class="waves-effect waves-light"> <a href="english.html">English</a> </li>
+					</ul>
+					<ul id="nav-mobile" class="side-nav section">
+						<li><a href="#welcome">Välkomna</a> </li>
+						<li><a href="#news">Aktuellt</a> </li>
+						<li><a href="#contact">Kontakt</a> </li>
+						<li><a href="english.html">English</a> </li>
+					</ul> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi mdi-menu"></i></a> </div>
+			</nav>
+		</header>
+		<main>
+			<!--
+			 ██████  █████  ██████  ██████  ███████
+			██      ██   ██ ██   ██ ██   ██ ██
+			██      ███████ ██████  ██   ██ ███████
+			██      ██   ██ ██   ██ ██   ██      ██
+			 ██████ ██   ██ ██   ██ ██████  ███████
+			-->
+			<!-- section.scrollspy.grid.row>(article.grid-item.col.s12.m6.l4>div.card(div.card-image>(i.mdi.mdi-file-check.yellow)(span.card-title{Card $}))(div.card-content(div.card-title{This is card $})>p{Sample card content here for card $. }>Lorem50))*3
+		 -->
+			<section class="scrollspy grid row">
+				<article class="grid-item col s12 m6 l4">
+					<div class="card">
+						<div class="card-image"><i class="mdi mdi-file-check yellow"></i><span class="card-title">Card 1</span></div>
+						<div class="card-content">
+							<div class="card-title">This is card 1</div>
+							<p>Sample card content here for card 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda iure odit pariatur fugit, esse quod, dolorem iste dignissimos nemo, laborum exercitationem impedit voluptas. Recusandae repellat fugiat
+								maiores aut excepturi accusamus animi, quaerat nostrum accusantium nobis quod voluptate ducimus aperiam cumque cupiditate ipsam quibusdam. Laboriosam est, hic aspernatur nostrum nihil.</p>
+						</div>
+					</div>
+				</article>
+				<article class="grid-item col s12 m6 l4">
+					<div class="card">
+						<div class="card-image"><i class="mdi mdi-file-check yellow"></i><span class="card-title">Card 2</span></div>
+						<div class="card-content">
+							<div class="card-title">This is card 2</div>
+							<p>Sample card content here for card 2. Reprehenderit, dolore distinctio fugiat molestiae provident adipisci beatae ea veritatis ab placeat mollitia dicta incidunt odio accusamus ex laboriosam, consequatur cumque rerum! Quisquam aliquid, quam obcaecati
+								quas error! A placeat autem quo optio magni nulla. Officiis sunt veniam libero. Maxime tempora animi consequatur beatae dignissimos cupiditate at, distinctio tempore iste.</p>
+						</div>
+					</div>
+				</article>
+				<article class="grid-item col s12 m6 l4">
+					<div class="card">
+						<div class="card-image"><i class="mdi mdi-file-check yellow"></i><span class="card-title">Card 3</span></div>
+						<div class="card-content">
+							<div class="card-title">This is card 3</div>
+							<p>Sample card content here for card 3. Reprehenderit voluptates fugit rem vel fugiat laborum, neque a, consequuntur accusantium maiores excepturi libero velit nobis. Aut doloribus sed ipsam laborum quo rerum similique laboriosam quibusdam consequatur
+								perferendis dolorum velit voluptate, non dolores neque deserunt officiis quisquam exercitationem. Sequi dolorum qui autem quisquam quaerat et, dolores sed? Labore, architecto, dolorum.</p>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!--
+			████████  █████  ██████  ███████
+				 ██    ██   ██ ██   ██ ██
+				 ██    ███████ ██████  ███████
+				 ██    ██   ██ ██   ██      ██
+				 ██    ██   ██ ██████  ███████
+			-->
+			<!-- section.row>(div.col.s12>ul.tabs>(li.tab.col.s3(a[#trail$]{Trail $})*3))(div#trail$.col.s12{Trail $}*3)
+ -->
+			<div class="tabs-wrapper">
+				<section class="row">
+					<div class="col s12">
+						<ul class="tabs">
+							<li class="tab col s3"><a href="#trail1">Trail 1</a></li>
+							<li class="tab col s3"><a href="#trail2">Trail 2</a></li>
+							<li class="tab col s3"><a href="#trail3">Trail 3</a></li>
 						</ul>
-						<ul id="nav-mobile" class="side-nav section">
-							<li><a href="#welcome">Välkomna</a> </li>
-							<li><a href="#news">Aktuellt</a> </li>
-							<li><a href="#contact">Kontakt</a> </li>
-							<li><a href="english.html">English</a> </li>
-						</ul> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi mdi-menu"></i></a> </div>
-				</nav>
+					</div>
+				</section>
 			</div>
-			<!-- section.scrollspy.grid.row>article.grid-item.card.large.s6*8>(div.card-title{This is card $})(div.card-content{Sample card content here for card $. }>Lorem50) -->
+			<!--
+			 ██████  ██████  ██      ██      ███████  ██████ ████████ ██  ██████  ███    ██
+			██      ██    ██ ██      ██      ██      ██         ██    ██ ██    ██ ████   ██
+			██      ██    ██ ██      ██      █████   ██         ██    ██ ██    ██ ██ ██  ██
+			██      ██    ██ ██      ██      ██      ██         ██    ██ ██    ██ ██  ██ ██
+			 ██████  ██████  ███████ ███████ ███████  ██████    ██    ██  ██████  ██   ████
+			-->
+			<!--
+ 		 (section#trail$.col.s12>ul.collection.scrollspy>(li.collection-item.dismissable.avatar>(i.mdi.mdi-map-marker-radius.circle)(span.title{Point of Interest $})(p>lorem10))*16)*3
+		 -->
+			<section id="trail1" class="col s12">
+				<ul class="collection scrollspy">
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 1</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, voluptatibus!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 2</span>
+						<p>Facere necessitatibus fugit, harum doloremque accusantium reiciendis esse quas alias?</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 3</span>
+						<p>Laborum quam officia labore cupiditate suscipit, dolor, a itaque numquam!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 4</span>
+						<p>Ab consectetur veritatis beatae ullam! Architecto nobis cupiditate tenetur officia!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 5</span>
+						<p>Hic minus, suscipit tenetur eveniet eum placeat magni, laboriosam commodi.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 6</span>
+						<p>Neque repellendus necessitatibus veritatis ex odit, nihil doloribus provident non?</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 7</span>
+						<p>Nemo natus libero quae ipsa ex tempore alias, nihil est!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 8</span>
+						<p>Fugit quae velit harum cumque sint culpa voluptate dolore praesentium.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 9</span>
+						<p>Expedita voluptates, mollitia ipsam voluptas eligendi minus, labore eum reprehenderit.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 10</span>
+						<p>Tempore sequi delectus dignissimos illo perferendis similique quas facere architecto.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 11</span>
+						<p>Itaque fugit eos iure accusamus vero eius odio nulla nihil.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 12</span>
+						<p>Totam aliquam voluptatibus, tempora officia, perspiciatis incidunt facilis repudiandae tempore.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 13</span>
+						<p>At maiores nostrum quisquam modi distinctio delectus perferendis, quis ut.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 14</span>
+						<p>Quos in ratione soluta esse, error sapiente dicta rerum qui.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 15</span>
+						<p>Iusto suscipit debitis itaque vel pariatur labore perferendis voluptates neque.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 16</span>
+						<p>Aspernatur ea incidunt itaque delectus quo facere, ad, odio praesentium.</p>
+					</li>
+				</ul>
+			</section>
+			<section id="trail2" class="col s12">
+				<ul class="collection scrollspy">
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 1</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, maxime!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 2</span>
+						<p>Obcaecati omnis cupiditate numquam nemo, maiores similique ratione explicabo sed!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 3</span>
+						<p>Ratione, asperiores sequi amet ab repellendus qui quidem cum. Mollitia.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 4</span>
+						<p>Laudantium nostrum enim, ipsam libero quos in accusantium debitis velit.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 5</span>
+						<p>Est tempore fugiat, odit possimus repellat tempora cum eum. Porro!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 6</span>
+						<p>Maiores officia corrupti eius beatae, ducimus velit voluptatibus provident accusantium.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 7</span>
+						<p>Sit ipsa reprehenderit laboriosam at deserunt. Possimus quas blanditiis et.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 8</span>
+						<p>Accusantium, vel. Iste consectetur autem, provident quod libero maxime dolore.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 9</span>
+						<p>Consequuntur mollitia repellendus, harum veniam explicabo atque fugit iure iste.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 10</span>
+						<p>Ut ducimus minus quo, asperiores cumque inventore vero suscipit accusamus.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 11</span>
+						<p>Quo qui ratione adipisci accusamus iste, porro, voluptate voluptatum consectetur?</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 12</span>
+						<p>Ratione laboriosam nostrum sit, aut, aliquid ipsum nihil illum recusandae.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 13</span>
+						<p>Ex, corporis soluta cupiditate laboriosam excepturi voluptates ipsa quo hic!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 14</span>
+						<p>Blanditiis ab ex qui asperiores quis reiciendis in. Debitis, ex!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 15</span>
+						<p>Ipsa fuga at unde magni labore officia est atque dolorum.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 16</span>
+						<p>Id esse commodi, vel aspernatur adipisci eos numquam porro iste.</p>
+					</li>
+				</ul>
+			</section>
+			<section id="trail3" class="col s12">
+				<ul class="collection scrollspy">
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 1</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, tempore.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 2</span>
+						<p>Quis, natus. Non nulla expedita unde quibusdam odit esse. Commodi.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 3</span>
+						<p>Quae fugit, provident totam sint, officia itaque expedita. Explicabo, officia?</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 4</span>
+						<p>Exercitationem illum, laboriosam? Aliquam hic ducimus reprehenderit quidem quisquam sit.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 5</span>
+						<p>Voluptatem labore repudiandae aperiam dolorum, dignissimos, ab libero nihil nesciunt.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 6</span>
+						<p>Alias a et commodi magnam voluptates eaque eum optio reprehenderit.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 7</span>
+						<p>Voluptates magni cum nulla nobis dolorem, cupiditate nostrum aliquam ratione!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 8</span>
+						<p>Esse, eum, ratione. Mollitia tempora recusandae consequatur inventore, voluptatibus suscipit.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 9</span>
+						<p>Exercitationem magni, fugiat dolorem, laborum explicabo aliquam. Ea, blanditiis, voluptatem!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 10</span>
+						<p>Distinctio aut nesciunt dolores nisi nobis cupiditate voluptatem suscipit quos.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 11</span>
+						<p>Necessitatibus perferendis nam fugiat saepe, eveniet enim repellendus inventore. Earum?</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 12</span>
+						<p>Facilis unde, provident laudantium quas fugit aut deleniti ab animi.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 13</span>
+						<p>In praesentium porro quo voluptate non vero nesciunt a harum.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 14</span>
+						<p>Ea animi odit ab tempore ipsa quaerat, eos fugiat repudiandae!</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 15</span>
+						<p>Quas ipsum ipsam blanditiis eaque laborum sed fuga, quos nobis.</p>
+					</li>
+					<li class="collection-item dismissable avatar"> <i class="mdi mdi-map-marker-radius circle"></i> <span class="title">Point of Interest 16</span>
+						<p>Dicta asperiores, nobis alias ullam aliquam sit, dolorem rerum eveniet.</p>
+					</li>
+				</ul>
+			</section>
+			<!--
+			███████  █████  ██████
+			██      ██   ██ ██   ██
+			█████   ███████ ██████
+			██      ██   ██ ██   ██
+			██      ██   ██ ██████
+			-->
+			<div class="fixed-action-btn horizontal click-to-toggle">
+				<a class="btn-floating btn-large red"> <i class="mdi mdi-menu"></i> </a>
+				<ul>
+					<li><a class="btn-floating red"><i class="mdi mdi-chart-bar"></i></a></li>
+					<li><a class="btn-floating yellow darken-1"><i class="mdi mdi-format-quote"></i></a></li>
+					<li><a class="btn-floating green"><i class="mdi mdi-content-save"></i></a></li>
+					<li><a class="btn-floating blue"><i class="mdi mdi-file-check"></i></a></li>
+				</ul>
+			</div>
 		</main>
 		<!--
 ███████  ██████   ██████  ████████ ███████ ██████
@@ -50,6 +292,19 @@
 				<div class="row"> <span class="col s12 m4">Designad av <a class="orange-text text-lighten-3 modal-trigger" href="#modal1">Carlos Velasco</a></span></div>
 			</div>
 		</footer>
+		<div id="modal1" class="modal bottom-sheet modal-fixed-footer">
+			<div class="modal-content row valign-wrapper">
+				<div class="col s8 l7 valign right-align">
+					<h2 class="orange-text">Carlos Velasco</h2>
+					<h4 class="flow-text">Interaktiv design och webbutveckling</h4> </div>
+				<div id="social" class="col s4 l5 valign orange-text"><a href="mailto:Carlos@2ActiveDesign.com?subject=Inquiry_from_MittHav.com" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email large"></i></a> <a href="tel:0737298257" class="tooltipped"
+									data-position="left" data-delay="50" data-tooltip="Tel: 073-729 82 57"><i class="mdi mdi-phone-classic large"></i></a>
+					<a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped" data-position="left" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin large"></i></a>
+					<br><a href="https://www.behance.net/2Active" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Behance Portfolio"><i class="mdi mdi-behance large"></i></a> <a href="https://github.com/xtreemze?tab=repositories" class="tooltipped"
+									data-position="left" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box large"></i></a> </div>
+			</div>
+			<div class="modal-footer blue"> <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat"><i class="mdi mdi-close"></i></a> </div>
+		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/materialize.min.js "></script>
 		<script src="js/masonry.pkgd.min.js"></script>

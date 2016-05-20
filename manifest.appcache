@@ -3,21 +3,26 @@ CACHE MANIFEST
 # Time: Fri May 20 2016 10:24:30 GMT+0000 (UTC)
 
 CACHE:
-http://2activedesign.com/KullabergApp/
-http://2activedesign.com/KullabergApp/css/materialize.min.css
-http://2activedesign.com/KullabergApp/css/materialdesignicons.min.css
-http://2activedesign.com/KullabergApp/css/master.min.css
-http://2activedesign.com/KullabergApp/js/jquery.min.js
-http://2activedesign.com/KullabergApp/js/materialize.min.js
-http://2activedesign.com/KullabergApp/js/masonry.pkgd.min.js
-http://2activedesign.com/KullabergApp/js/init.min.js
-http://2activedesign.com/KullabergApp/js/master.min.js
-http://2activedesign.com/KullabergApp/fonts/roboto/Roboto-Regular.woff
-http://2activedesign.com/KullabergApp/fonts/roboto/Roboto-Medium.woff
-http://2activedesign.com/KullabergApp/fonts/roboto/Roboto-Light.woff
-http://2activedesign.com/KullabergApp/fonts/roboto/Roboto-Thin.woff
-http://2activedesign.com/KullabergApp/fonts/roboto/Roboto-Bold.woff
-http://2activedesign.com/KullabergApp/fonts/materialdesignicons-webfont.woff?v=1.5.54
+https://xtreemze.github.io/KullabergApp/
+https://xtreemze.github.io/KullabergApp/css/materialize.min.css
+https://xtreemze.github.io/KullabergApp/css/materialdesignicons.min.css
+https://xtreemze.github.io/KullabergApp/css/master.min.css
+https://xtreemze.github.io/KullabergApp/js/jquery.min.js
+https://xtreemze.github.io/KullabergApp/js/materialize.min.js
+https://xtreemze.github.io/KullabergApp/js/masonry.pkgd.min.js
+https://xtreemze.github.io/KullabergApp/js/init.min.js
+https://xtreemze.github.io/KullabergApp/js/master.min.js
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Regular.woff
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Medium.woff
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Light.woff
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Thin.woff
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Bold.woff
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Regular.woff2
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Medium.woff2
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Light.woff2
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Thin.woff2
+https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Bold.woff2
+https://xtreemze.github.io/KullabergApp/fonts/materialdesignicons-webfont.woff?v=1.5.54
 
 NETWORK:
 *
