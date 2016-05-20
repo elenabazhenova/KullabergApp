@@ -23,6 +23,10 @@
     columnWidth: '.grid-item',
     percentPosition: true,
   });
+  $('.tabs-wrapper').pushpin({
+    top: $('.tabs-wrapper').offset().top,
+    offset: $('nav').height(),
+  });
   // end of document ready
 }(jQuery));
 // end of jQuery name space

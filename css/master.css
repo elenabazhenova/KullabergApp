@@ -1,0 +1,18 @@
+.fixed-action-btn .horizontal .click-to-toggle {
+	bottom: 45px;
+	right : 24px;
+}
+
+.pin-top {
+	position: relative;
+}
+
+.pin-bottom {
+	position: relative;
+}
+
+.pinned {
+	position: fixed !important;
+	z-index : 1;
+	width   : 100%;
+}
