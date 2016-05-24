@@ -21,3 +21,11 @@
 #trails {
 	margin-bottom: 0;
 }
+
+.trail1 {
+	color: #df622b;
+}
+
+.collapsible-body.section.row {
+	margin-bottom: 0 !important;
+}
