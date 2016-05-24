@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<title>Kullaberg</title>
-		<meta name="themecolor" content="#ffeb3b">
+		<meta name="theme-color" content="#ffeb3b">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="css/materialize.min.css">
 		<link rel="stylesheet" href="css/materialdesignicons.min.css">
@@ -43,38 +43,30 @@
 			██      ██   ██ ██   ██ ██   ██      ██
 			 ██████ ██   ██ ██   ██ ██████  ███████
 			-->
-			<!-- section.scrollspy.grid.row>(article.grid-item.col.s12.m6.l4>div.card(div.card-image>(i.mdi.mdi-file-check.yellow)(span.card-title{Card $}))(div.card-content(div.card-title{This is card $})>p{Sample card content here for card $. }>Lorem50))*3
+			<!--
+			section.scrollspy.grid.row>(article.grid-item.col.s12.m6.l4>div.card(div.card-image.materialboxed>(img[img/trail$.jpg][alt='Trail $'])(span.card-title{Card $}))(div.card-content(div.card-title{This is card $})>p{Sample card content here for card $. }>Lorem50))*3
 		 -->
 			<section class="scrollspy grid row">
 				<article class="grid-item col s12 m6 l4">
 					<div class="card">
-						<div class="card-image"><i class="mdi mdi-file-check yellow"></i><span class="card-title">Card 1</span></div>
-						<div class="card-content">
-							<div class="card-title">This is card 1</div>
-							<p>Sample card content here for card 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda iure odit pariatur fugit, esse quod, dolorem iste dignissimos nemo, laborum exercitationem impedit voluptas. Recusandae repellat fugiat
-								maiores aut excepturi accusamus animi, quaerat nostrum accusantium nobis quod voluptate ducimus aperiam cumque cupiditate ipsam quibusdam. Laboriosam est, hic aspernatur nostrum nihil.</p>
-						</div>
-					</div>
+						<div class="card-image materialboxed"><img src="img/trail1.jpg" alt="Kullaleden"><span class="card-title">Kullaleden</span></div>
+						<!-- <div class="card-content">
+							<p></p>
+						</div> --></div>
 				</article>
 				<article class="grid-item col s12 m6 l4">
 					<div class="card">
-						<div class="card-image"><i class="mdi mdi-file-check yellow"></i><span class="card-title">Card 2</span></div>
-						<div class="card-content">
-							<div class="card-title">This is card 2</div>
-							<p>Sample card content here for card 2. Reprehenderit, dolore distinctio fugiat molestiae provident adipisci beatae ea veritatis ab placeat mollitia dicta incidunt odio accusamus ex laboriosam, consequatur cumque rerum! Quisquam aliquid, quam obcaecati
-								quas error! A placeat autem quo optio magni nulla. Officiis sunt veniam libero. Maxime tempora animi consequatur beatae dignissimos cupiditate at, distinctio tempore iste.</p>
-						</div>
-					</div>
+						<div class="card-image materialboxed"><img src="img/trail2.jpg" alt="Western Kullaberg"><span class="card-title">Western Kullaberg</span></div>
+						<!-- <div class="card-content">
+							<p></p>
+						</div> --></div>
 				</article>
 				<article class="grid-item col s12 m6 l4">
 					<div class="card">
-						<div class="card-image"><i class="mdi mdi-file-check yellow"></i><span class="card-title">Card 3</span></div>
-						<div class="card-content">
-							<div class="card-title">This is card 3</div>
-							<p>Sample card content here for card 3. Reprehenderit voluptates fugit rem vel fugiat laborum, neque a, consequuntur accusantium maiores excepturi libero velit nobis. Aut doloribus sed ipsam laborum quo rerum similique laboriosam quibusdam consequatur
-								perferendis dolorum velit voluptate, non dolores neque deserunt officiis quisquam exercitationem. Sequi dolorum qui autem quisquam quaerat et, dolores sed? Labore, architecto, dolorum.</p>
-						</div>
-					</div>
+						<div class="card-image materialboxed"><img src="img/trail3.jpg" alt="Sights of Heritage"><span class="card-title">Sights of Heritage</span></div>
+						<!-- <div class="card-content">
+							<p></p>
+						</div> --></div>
 				</article>
 			</section>
 			<!--
@@ -90,9 +82,9 @@
 				<section class="row">
 					<div class="col s12">
 						<ul class="tabs">
-							<li class="tab col s3"><a href="#trail1">Trail 1</a></li>
-							<li class="tab col s3"><a href="#trail2">Trail 2</a></li>
-							<li class="tab col s3"><a href="#trail3">Trail 3</a></li>
+							<li class="tab col s3"><a href="#trail1">Kullaleden</a></li>
+							<li class="tab col s3"><a href="#trail2">Western Kullaberg</a></li>
+							<li class="tab col s3"><a href="#trail3">Sights of Heritage</a></li>
 						</ul>
 					</div>
 				</section>
@@ -388,7 +380,7 @@
 				<div class="row"> <span class="col s12 m4">Designad av <a class="orange-text text-lighten-3 modal-trigger" href="#modal1">Carlos Velasco</a></span></div>
 			</div>
 		</footer>
-		<div id="modal1" class="modal bottom-sheet modal-fixed-footer">
+		<div id="modal1" class="modal">
 			<div class="modal-content row valign-wrapper">
 				<div class="col s8 l7 valign right-align">
 					<h2 class="orange-text">Carlos Velasco</h2>

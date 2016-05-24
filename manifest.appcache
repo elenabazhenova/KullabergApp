@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Fri May 20 2016 10:24:30 GMT+0000 (UTC)
+# Time: Fri May 20 2016 23:16:30 GMT+0000 (UTC)
 
 CACHE:
 https://xtreemze.github.io/KullabergApp/
@@ -12,6 +12,9 @@ https://xtreemze.github.io/KullabergApp/js/materialize.min.js
 https://xtreemze.github.io/KullabergApp/js/masonry.pkgd.min.js
 https://xtreemze.github.io/KullabergApp/js/init.min.js
 https://xtreemze.github.io/KullabergApp/js/master.min.js
+https://xtreemze.github.io/KullabergApp/img/trail1.jpg
+https://xtreemze.github.io/KullabergApp/img/trail2.jpg
+https://xtreemze.github.io/KullabergApp/img/trail3.jpg
 https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Regular.woff
 https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Medium.woff
 https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Light.woff
