@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest.appcache">
+<!-- <html lang="en" manifest="manifest.appcache"> -->
+<html lang="en">
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<title>Kullaberg</title>
-		<meta name="theme-color" content="#ffeb3b">
+		<meta name="theme-color" content="#FBC02D">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="css/materialize.min.css">
 		<link rel="stylesheet" href="css/materialdesignicons.min.css">
@@ -18,57 +19,34 @@
 ██  ██ ██ ██   ██  ██  ██
 ██   ████ ██   ██   ████
 -->
-		<header class="navbar-fixed">
-			<nav class="yellow darken-2 white-text" role="navigation">
-				<div class="nav-wrapper"> <a class="brand-logo" id="logo-container" href="#top">KullabergApp</a>
-					<ul class="right hide-on-med-and-down ">
-						<li class="waves-effect waves-light"> <a href="#welcome">Välkomna</a> </li>
-						<li class="waves-effect waves-light"> <a href="#news">Aktuellt</a> </li>
-						<li class="waves-effect waves-light"> <a href="#contact">Kontakt</a> </li>
-						<li class="waves-effect waves-light"> <a href="english.html">English</a> </li>
+		<header class="navbar">
+			<nav class="blue darken-4" role="navigation">
+				<div class="nav-wrapper"> <a class="brand-logo" id="logo-container" href="#top">kullaberg</a>
+					<ul class="right hide-on-med-and-down">
+						<li> <a href="#POI">POIs</a> </li>
+						<li> <a href="#contact">Contact</a> </li>
+						<li> <a href="#english.html">Language</a> </li>
 					</ul>
-					<ul id="nav-mobile" class="side-nav section">
-						<li><a href="#welcome">Välkomna</a> </li>
-						<li><a href="#news">Aktuellt</a> </li>
-						<li><a href="#contact">Kontakt</a> </li>
-						<li><a href="english.html">English</a> </li>
-					</ul> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi mdi-menu"></i></a> </div>
+				</div>
 			</nav>
+			<!--
+			███████  █████  ██████
+			██      ██   ██ ██   ██
+			█████   ███████ ██████
+			██      ██   ██ ██   ██
+			██      ██   ██ ██████
+			-->
+			<div class="fixed-action-btn horizontal click-to-toggle">
+				<a class="btn-floating btn-large red"> <i class="mdi mdi-menu"></i> </a>
+				<ul>
+					<li><a class="btn-floating red"><i class="mdi mdi-routes"></i></a></li>
+					<li><a class="btn-floating yellow darken-1"><i class="mdi mdi-format-quote"></i></a></li>
+					<li><a class="btn-floating green"><i class="mdi mdi-content-save"></i></a></li>
+					<li><a class="btn-floating blue"><i class="mdi mdi-file-check"></i></a></li>
+				</ul>
+			</div>
 		</header>
 		<main>
-			<!--
-			 ██████  █████  ██████  ██████  ███████
-			██      ██   ██ ██   ██ ██   ██ ██
-			██      ███████ ██████  ██   ██ ███████
-			██      ██   ██ ██   ██ ██   ██      ██
-			 ██████ ██   ██ ██   ██ ██████  ███████
-			-->
-			<!--
-			section.scrollspy.grid.row>(article.grid-item.col.s12.m6.l4>div.card(div.card-image.materialboxed>(img[img/trail$.jpg][alt='Trail $'])(span.card-title{Card $}))(div.card-content(div.card-title{This is card $})>p{Sample card content here for card $. }>Lorem50))*3
-		 -->
-			<section class="scrollspy grid row">
-				<article class="grid-item col s12 m6 l4">
-					<div class="card">
-						<div class="card-image materialboxed"><img src="img/trail1.jpg" alt="Kullaleden"><span class="card-title">Kullaleden</span></div>
-						<!-- <div class="card-content">
-							<p></p>
-						</div> --></div>
-				</article>
-				<article class="grid-item col s12 m6 l4">
-					<div class="card">
-						<div class="card-image materialboxed"><img src="img/trail2.jpg" alt="Western Kullaberg"><span class="card-title">Western Kullaberg</span></div>
-						<!-- <div class="card-content">
-							<p></p>
-						</div> --></div>
-				</article>
-				<article class="grid-item col s12 m6 l4">
-					<div class="card">
-						<div class="card-image materialboxed"><img src="img/trail3.jpg" alt="Sights of Heritage"><span class="card-title">Sights of Heritage</span></div>
-						<!-- <div class="card-content">
-							<p></p>
-						</div> --></div>
-				</article>
-			</section>
 			<!--
 			████████  █████  ██████  ███████
 				 ██    ██   ██ ██   ██ ██
@@ -78,8 +56,8 @@
 			-->
 			<!-- section.row>(div.col.s12>ul.tabs>(li.tab.col.s3(a[#trail$]{Trail $})*3))(div#trail$.col.s12{Trail $}*3)
  -->
-			<div class="tabs-wrapper">
-				<section class="row">
+			<div class="tabSpacer">
+				<section class="tabs-wrapper">
 					<div class="col s12">
 						<ul class="tabs">
 							<li class="tab col s3"><a href="#trail1">Kullaleden</a></li>
@@ -99,273 +77,308 @@
 			<!--
 			(section#trail$.row>ul.col.s12.scrollspy.collapsible[data-collapsible=accordion]>(li>(span.title.collapsible-header(i.mdi.mdi-map-marker-radius)({Point of Interest $}))(p.collapsible-body>lorem80))*16)*3
 		 -->
-			<section id="trail1" class="row">
-				<ul class="col s12 scrollspy collapsible" data-collapsible="accordion">
-					<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
-						<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure alias dicta vero eos iusto, ad eveniet rem commodi inventore odio! Minima, nostrum aut architecto perferendis reprehenderit sint praesentium ullam optio odit, quos, ut eius. Voluptatem
-							vel facere quaerat ipsa delectus. Voluptate ipsa illo deserunt aliquam natus quis delectus doloremque corporis harum fuga, at, possimus maxime! Debitis, cumque enim temporibus quis consequuntur, incidunt. Adipisci distinctio facere iusto eius,
-							totam sed itaque, minus ipsa aliquam fuga doloribus, animi dolores repellat sequi necessitatibus.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 2</span>
-						<p class="collapsible-body">Et accusantium velit, possimus sed quae aspernatur vero, magnam sequi blanditiis! Reprehenderit sit voluptates eaque sequi labore maxime, nostrum, accusantium enim odit adipisci perferendis, nobis culpa officia amet unde sunt eligendi ratione! Repellat
-							tempora, expedita assumenda similique et itaque nemo beatae labore illum animi dignissimos consequuntur sequi cumque dolor ex officiis molestias fuga accusantium eius nihil accusamus. Voluptates neque aliquam blanditiis nisi vel nostrum quis porro
-							nobis qui commodi ipsam ullam sint cumque rem voluptatem dolorem, corporis delectus mollitia optio?</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 3</span>
-						<p class="collapsible-body">Repellat consequatur quod tempora et perspiciatis illum dolores explicabo quisquam necessitatibus culpa aut inventore voluptas perferendis sint, odit deleniti commodi ipsam magnam nostrum molestias impedit a eaque? Incidunt dolore eius voluptas
-							nesciunt impedit perspiciatis velit laborum amet debitis eligendi dicta quae officia iste eaque, magnam ut quas rerum beatae, dolores voluptatibus nemo accusantium quidem eos. Cumque placeat obcaecati dignissimos neque, odio voluptatum saepe ipsum,
-							error itaque esse debitis tempore nostrum perferendis perspiciatis possimus, autem atque praesentium architecto veritatis similique nobis.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 4</span>
-						<p class="collapsible-body">Asperiores aperiam impedit aspernatur natus debitis voluptas nesciunt non, ipsa culpa tempore consequuntur voluptate vero in quas qui necessitatibus beatae nostrum odio eum sequi. Optio nihil totam iure consequatur, delectus id eos magnam illo laboriosam
-							dolore nostrum tenetur quaerat assumenda autem possimus dolor non aliquam voluptatem quibusdam repudiandae adipisci minus ex unde commodi. Eum quam omnis perferendis harum quisquam, recusandae blanditiis tempore dolore eos laborum rem eligendi
-							repudiandae consequatur neque cupiditate atque aliquid quas esse fuga similique quod impedit amet!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 5</span>
-						<p class="collapsible-body">Aspernatur, debitis, officia? Sint sunt provident dicta, omnis non aliquid sapiente, eaque neque! Quas id ducimus quo dolores enim quidem voluptates sapiente ex qui ipsum reiciendis omnis minima maxime ab maiores deserunt libero autem porro numquam,
-							labore in, fuga temporibus impedit nulla. Accusamus nisi quos, atque dolorem soluta eveniet! Quisquam nihil quaerat eius sapiente fugiat, quam voluptas voluptatibus reiciendis facere consequatur quibusdam, minus dolorem iste obcaecati debitis dignissimos
-							doloribus necessitatibus incidunt mollitia, voluptatem quasi! Tempora fugit rerum aliquam eligendi eum.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 6</span>
-						<p class="collapsible-body">Porro facilis inventore exercitationem quaerat harum dolorum nobis, facere, minima enim quo eos quod pariatur ea nostrum dolores voluptatibus, cupiditate, laboriosam voluptatem ad eveniet blanditiis consectetur. Accusamus, neque fuga provident beatae
-							molestias, cupiditate officiis? Sapiente expedita, quo! Nam obcaecati libero, reiciendis veritatis assumenda nobis magni. Dolore sint suscipit, pariatur voluptatibus laudantium libero veniam nostrum iste obcaecati id cumque ab fugiat repellendus
-							est excepturi! Natus officiis, illum atque earum architecto consequatur incidunt itaque voluptates vero modi quaerat odio ab amet! Neque.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 7</span>
-						<p class="collapsible-body">Autem sint ut totam aut, nam, aliquam corporis quasi porro ex veritatis natus aliquid velit, qui nemo. Molestiae, modi sed laudantium, tempora atque ipsam. Vero necessitatibus velit eum a similique recusandae voluptas, eius ducimus eligendi fugit
-							ratione quia culpa explicabo est eveniet, esse? Numquam quaerat non doloribus sunt pariatur velit veniam in quidem labore eum minima, quisquam magnam voluptatum, ipsa temporibus. Officia, ipsa quaerat, porro magnam laboriosam modi quo pariatur
-							quas quibusdam quisquam eum, aperiam et odit ullam, voluptas omnis.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 8</span>
-						<p class="collapsible-body">Aspernatur delectus vero laboriosam inventore dolores, voluptatum aut esse consequuntur modi voluptatem ipsum ad quis. A distinctio amet maiores, nobis ipsum adipisci quis, consequuntur quaerat eius blanditiis voluptates odio enim excepturi similique
-							nisi omnis quibusdam minima. Cum, perferendis, consectetur. Voluptate quidem quasi commodi quo vitae consectetur suscipit recusandae nihil soluta quos quisquam blanditiis iure, illo ratione rem architecto corrupti totam repellat exercitationem,
-							eaque incidunt modi cumque itaque unde! Ea quo perspiciatis ut incidunt hic, maiores doloribus eum deserunt corrupti vitae!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 9</span>
-						<p class="collapsible-body">Quibusdam tempore aspernatur architecto quae, deleniti numquam, aperiam voluptates in esse! Repellat, voluptatum quasi dolore atque deserunt reprehenderit, voluptatibus ipsa totam hic sit fugit labore quidem odit sapiente voluptate tenetur suscipit
-							expedita nobis numquam. Voluptatum eligendi laudantium voluptate quo dolorum esse non deleniti voluptates sapiente doloribus, autem nihil, praesentium quas quibusdam fugiat laborum cum amet, ex saepe, consequatur reiciendis. Atque dicta eligendi,
-							vitae quo odio at ducimus repellendus nostrum beatae, repellat officiis tenetur cupiditate temporibus praesentium a quasi aspernatur harum!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 10</span>
-						<p class="collapsible-body">Libero fugit nobis dolores voluptatem numquam, accusantium quo alias, corporis, iusto iste consequuntur cumque, dolore a aut commodi sequi possimus unde beatae ex. Repellat repudiandae accusamus perferendis dolorum. Labore eius doloribus dolores
-							minus qui minima aspernatur quibusdam dignissimos perferendis repellat enim, deleniti vero voluptas, sit, ex velit. Consectetur, incidunt aliquid. Incidunt magni tempore quisquam provident commodi molestiae totam illum, dicta repudiandae iure,
-							quaerat accusamus rerum, nulla quo autem ipsam debitis soluta consequatur veritatis dignissimos sunt minima. Commodi consequatur adipisci, velit!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 11</span>
-						<p class="collapsible-body">At commodi ipsam mollitia officiis temporibus dolores delectus, iusto perferendis id rem eaque, beatae deserunt! Nisi quae veritatis rerum quis molestias reiciendis adipisci ab suscipit, ratione provident nemo quaerat quibusdam dolores, eaque illo
-							sapiente tenetur fugit, maxime commodi, culpa deserunt quasi natus! Obcaecati laudantium ipsam ullam accusantium aperiam, sed dignissimos. Nulla consectetur quaerat qui ab cumque eligendi harum dolorem doloremque quidem debitis consequuntur labore
-							vel, est quibusdam ducimus rem pariatur voluptatum architecto ullam in sequi, veniam, possimus! Nostrum, atque, quod?</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 12</span>
-						<p class="collapsible-body">Numquam vel eius commodi a! Velit nemo odit natus quaerat molestiae tempore omnis distinctio amet nulla cumque blanditiis, fugiat obcaecati laudantium quas suscipit vero ratione! Voluptatem quaerat veritatis esse quibusdam dolore perspiciatis, quisquam,
-							minima est cum eaque, distinctio blanditiis alias, non repellat impedit placeat ab quidem quam quas officiis eos? Voluptas perferendis iure debitis aliquam magnam est, distinctio, magni rem earum doloremque saepe. Consequatur iusto eius atque delectus?
-							Modi aperiam possimus eius, optio aspernatur qui asperiores nisi dolor repellat molestias.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 13</span>
-						<p class="collapsible-body">Ipsa, ullam, itaque! Quas sapiente eos exercitationem fugiat maxime incidunt officiis, molestiae ipsam! Sequi error eaque mollitia tempore perferendis nam veniam possimus fugit, rerum quia magni quis dolores, porro aliquid ipsa neque accusamus officia
-							ullam earum reprehenderit excepturi? Laboriosam dolores culpa atque numquam nobis, modi asperiores odit nemo illo iusto repellendus assumenda, a natus reiciendis, cum? Cupiditate illum magni maiores error numquam, officia, reprehenderit laudantium
-							aut est! Molestias, dolor, non dolores natus totam ex. Adipisci totam numquam doloribus impedit iusto.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 14</span>
-						<p class="collapsible-body">Nulla pariatur dicta quibusdam ipsum soluta deserunt quaerat, obcaecati delectus esse asperiores fugit mollitia corporis reiciendis dolor fugiat voluptatem minus expedita repellendus suscipit. Expedita hic repellat recusandae adipisci qui odit nulla
-							ex optio molestias? Nesciunt eligendi animi nobis dicta optio nihil debitis itaque accusamus placeat harum voluptates facilis tenetur in, repudiandae quod dolorem necessitatibus maiores unde officia magnam hic amet quaerat rem deleniti quisquam?
-							Accusantium corporis est perspiciatis ratione commodi, dignissimos error velit atque nisi molestias. Iusto aliquam obcaecati ipsa!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 15</span>
-						<p class="collapsible-body">Magni dolore voluptatum nobis facere quaerat debitis natus impedit? Beatae explicabo nisi repellendus delectus aliquam, ipsa nostrum perferendis dolore tempora aut distinctio sed maxime cumque enim, sunt. Nemo quidem numquam alias enim quae molestias
-							similique beatae iste magni deleniti et praesentium, eligendi cupiditate, modi saepe atque vero odit velit quam deserunt consequuntur! Ipsum harum, earum! Delectus commodi non optio doloremque pariatur ipsam adipisci molestias quaerat mollitia
-							distinctio placeat, nisi ratione deserunt culpa quas quo a perferendis velit inventore, possimus, nobis.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 16</span>
-						<p class="collapsible-body">Sint eum consectetur optio ratione, facere quod doloremque quia libero aliquam voluptates exercitationem non quidem, nobis quos cupiditate ducimus ipsum vitae perspiciatis nihil reprehenderit cum accusamus voluptatum, voluptatibus molestias dolores!
-							Delectus eligendi mollitia soluta veniam, doloribus dignissimos, a pariatur maxime illum dolore officia quia iusto laudantium ab voluptate laboriosam, accusantium ipsam fugiat ad enim? Tempore maiores error at accusantium in qui similique esse
-							pariatur perferendis deleniti non incidunt itaque repellendus quos ea aspernatur natus asperiores, vitae suscipit vel tempora atque!</p>
-					</li>
-				</ul>
-			</section>
-			<section id="trail2" class="row">
-				<ul class="col s12 scrollspy collapsible" data-collapsible="accordion">
-					<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
-						<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum vitae natus quibusdam dignissimos incidunt totam voluptate tempora a deserunt unde corrupti in tempore rerum cupiditate aliquid dolorum est, doloremque. Impedit corporis quasi veritatis,
-							soluta et minus architecto hic voluptate temporibus dolorem earum nobis dolores id ipsam obcaecati magnam, facere molestiae ullam repellendus consequuntur aspernatur! Itaque exercitationem blanditiis provident dicta quam sed. Iusto soluta veniam
-							rem enim ex, facilis corporis fugiat excepturi tempore, praesentium, aliquam eum consequuntur impedit, iure numquam?</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 2</span>
-						<p class="collapsible-body">Iure, quo, libero. Ipsam quasi eius ducimus molestias illum labore est eaque repellendus voluptatum dicta velit aperiam cumque culpa pariatur sint alias facilis, consequuntur at deserunt iste, magnam dolorum quisquam consequatur accusantium? Enim,
-							laudantium nulla cupiditate nisi, perspiciatis asperiores distinctio deserunt deleniti officia at, eligendi reiciendis praesentium, possimus cum alias mollitia. Ipsam maiores cupiditate debitis molestiae impedit blanditiis maxime modi id, molestias
-							deserunt nam doloribus mollitia perspiciatis. Eligendi enim earum, aliquid quibusdam minus, fuga magni, illo nulla tempora asperiores quaerat.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 3</span>
-						<p class="collapsible-body">Quasi ducimus sint deleniti. Fugit atque quod architecto labore tempora debitis obcaecati, officia, blanditiis reiciendis similique delectus asperiores esse. Eaque a natus possimus iure deserunt. Quis similique modi cupiditate accusamus ratione
-							aspernatur facilis reiciendis, recusandae facere ducimus eligendi, cumque natus quisquam fuga dolores laborum nam perspiciatis laboriosam possimus qui voluptatibus. Aspernatur iure quas dolore optio dolorum eius expedita, animi quasi a voluptatibus
-							magni cumque, rem praesentium quaerat error non maiores deserunt sunt porro saepe earum unde commodi. Officia, ad, molestias.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 4</span>
-						<p class="collapsible-body">Mollitia amet incidunt molestiae ratione, quis vel eaque assumenda odit alias. Nam et ducimus autem quas inventore eos rem asperiores numquam aliquam enim quae cum suscipit nisi dolorum voluptatum quis nihil amet, maiores vero debitis ipsa fugit.
-							Distinctio fugiat optio expedita pariatur sint repudiandae sed vel aut officia ad ducimus non, laboriosam quo iure veritatis qui. Temporibus soluta incidunt, amet vel repellendus! Nostrum delectus dolor, corrupti nulla nam, quo perferendis cupiditate
-							veritatis fugit eum explicabo alias rem earum eaque possimus.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 5</span>
-						<p class="collapsible-body">Libero omnis expedita harum quos delectus! Voluptate at in debitis nihil ea quaerat dolorem doloribus, temporibus laborum alias, nesciunt libero consequuntur atque perferendis ipsa necessitatibus quia molestiae! Ut minus veritatis repudiandae, reprehenderit,
-							voluptatum atque consequatur doloribus sapiente voluptatem rem nemo a eum excepturi velit consequuntur numquam impedit ipsam voluptates quasi eaque necessitatibus ab corporis vitae tempora et? Enim inventore maiores nobis, sequi, explicabo quod
-							amet expedita quidem, perferendis ipsa voluptas laudantium officia. Inventore asperiores in doloribus sunt, vitae eius aut.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 6</span>
-						<p class="collapsible-body">Consectetur facere sunt laborum enim, autem iste et architecto eaque aut id in pariatur assumenda incidunt vel illo deleniti aliquam veniam necessitatibus nesciunt quod. Recusandae, ea! Tempore porro earum laboriosam maiores quibusdam. Alias facere,
-							consequatur quas autem sit eum a, ratione! Et, blanditiis aliquid numquam suscipit earum voluptatum odio, est id quas culpa quia, vitae. Maiores, quam nobis, doloremque deserunt sint suscipit quas autem blanditiis obcaecati quibusdam fugiat, vitae
-							eaque ut saepe provident explicabo nemo, cum at eligendi beatae. Excepturi.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 7</span>
-						<p class="collapsible-body">Deserunt quis impedit sit laborum neque assumenda numquam obcaecati. Expedita beatae quisquam, accusamus hic molestias reiciendis libero ipsam, praesentium quam voluptas error perspiciatis, reprehenderit mollitia repudiandae iure! Natus, expedita!
-							Earum officiis quisquam ab quas ea dolorum iure natus molestias perspiciatis! Incidunt voluptates odio, culpa, amet, neque veniam expedita impedit quibusdam nam voluptate omnis dicta vero quidem nihil ipsam cum quia animi quam consequuntur corporis
-							aspernatur fugiat. Tempore vitae dolores temporibus veniam quis accusantium libero laborum soluta laudantium, voluptate, nulla recusandae!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 8</span>
-						<p class="collapsible-body">In, expedita sed quo autem fuga quaerat, tempora ut deserunt officia a, sint laudantium laboriosam quidem illum alias aperiam explicabo sit. Fugit nesciunt sequi blanditiis at mollitia aperiam dignissimos laudantium praesentium eveniet odit error
-							modi cum, maxime voluptate officia ex sapiente quos, quibusdam minima quam debitis ratione ipsum. Voluptatibus repellat natus cupiditate, esse ab alias molestiae perspiciatis et nesciunt atque, reprehenderit iusto dolorum dolorem. Placeat illum
-							quod aspernatur ut a repellat libero doloremque culpa iure molestiae, asperiores doloribus maiores ipsum.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 9</span>
-						<p class="collapsible-body">Totam doloribus quod iusto magnam libero expedita odio deserunt fugiat ipsa, nemo, illo ipsam dicta maxime excepturi a! Aperiam excepturi odit ratione exercitationem, minus provident quia earum esse, inventore asperiores quas in labore illo quasi
-							mollitia autem maxime est. Eaque sint recusandae minus distinctio optio modi non quis accusamus, suscipit odit, ullam inventore minima amet atque perferendis? Autem quisquam est, placeat cum, laudantium illo. Aliquid quos reiciendis nesciunt magnam
-							autem eligendi ducimus, sit fuga nostrum minus modi recusandae accusamus quis.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 10</span>
-						<p class="collapsible-body">Adipisci atque voluptate necessitatibus, ipsam architecto autem ex tempore neque dolores culpa dolor obcaecati saepe molestias nobis illo laudantium, quisquam reiciendis itaque blanditiis quam sed cumque magni odit. Non possimus autem expedita,
-							unde nam harum repudiandae corrupti nemo ex? Neque voluptates itaque minus. Ex eligendi commodi saepe temporibus, voluptatem optio sapiente corporis voluptate harum, id nesciunt. Ea placeat velit quaerat id! Soluta voluptates consectetur voluptas
-							tempora ea, nesciunt laboriosam aspernatur deserunt et voluptatibus consequatur officia. Veritatis, odio! Officiis, necessitatibus, doloribus.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 11</span>
-						<p class="collapsible-body">Aut omnis officiis amet sunt adipisci totam ipsum maiores minima earum magni expedita ratione pariatur in repellendus, reprehenderit nulla, praesentium et! Tempora obcaecati accusantium voluptatum laborum velit esse aut hic, repellat, minima, dolorum
-							non quae nemo sunt eum distinctio voluptate natus, nam necessitatibus. Consequatur eaque praesentium, sunt nostrum cum dolorem eos dolores eligendi nisi libero. Quidem ratione voluptas cupiditate, minus repellendus autem perferendis modi mollitia
-							hic soluta maiores obcaecati neque alias debitis saepe dicta, pariatur ea fuga. Esse, praesentium, iure?</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 12</span>
-						<p class="collapsible-body">Eum quisquam architecto eaque omnis numquam dolor nobis dignissimos optio dolore nisi recusandae delectus, a modi quo distinctio quam fugit sunt impedit. Culpa iusto vitae assumenda enim placeat praesentium, quidem sequi laborum consequuntur a sit
-							odio minima vel repellat minus magnam fugit ea, totam perspiciatis, dignissimos id neque accusamus. Consequatur repudiandae iusto tempore sunt in doloribus maiores debitis accusantium ut corporis error, dolore odio, dicta recusandae id eaque cumque.
-							Illum suscipit optio facilis commodi doloribus rerum dolorum quos, ducimus quo.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 13</span>
-						<p class="collapsible-body">Sed eum consequuntur officia nulla nihil, blanditiis in. Provident ipsam, facilis neque dolores, ea pariatur quo laboriosam autem, nostrum itaque quas sapiente. Neque ea autem voluptate! Assumenda vel obcaecati ipsum necessitatibus quos quas distinctio
-							sapiente ipsam odit nemo excepturi ullam deserunt, praesentium, delectus pariatur quisquam omnis quis architecto? Expedita sequi in voluptas explicabo molestias, quis? Eaque iusto ipsum consequatur temporibus nobis molestiae praesentium iure beatae
-							commodi nostrum similique eveniet aut exercitationem dolor sapiente corporis quaerat unde pariatur accusamus, maiores, et.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 14</span>
-						<p class="collapsible-body">Voluptatem illo minima ut nulla vero, nostrum itaque, fuga dignissimos assumenda iure veniam minus earum fugit eaque delectus id eos perspiciatis quisquam ipsa ea laudantium quidem. Ipsa doloribus possimus tempore harum delectus dolore, fugiat quod
-							quaerat cum, provident officia porro eaque quas. Deleniti sint neque ipsam provident alias, dolor perferendis facere quibusdam numquam beatae! Laudantium, omnis, neque! Quisquam at, ab consectetur pariatur corrupti ipsum, earum culpa distinctio
-							velit repudiandae architecto hic. Tempora quasi nisi laborum temporibus qui neque, illum ullam!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 15</span>
-						<p class="collapsible-body">Autem vel dolor, nemo odio eligendi deleniti animi aspernatur mollitia, quo aliquid officia. Accusantium architecto eos nisi non minima voluptatem iusto numquam labore modi, fugit provident vel, debitis distinctio delectus deleniti molestiae earum
-							unde suscipit ad neque praesentium illo! Distinctio ipsam quos dolorem quam, deserunt, est fugiat at veritatis accusantium dicta repudiandae molestias sit sint in blanditiis neque dolorum provident nulla accusamus architecto officia minima officiis
-							rerum? Quisquam atque, at aperiam quibusdam est, fuga, minima repellat optio, neque expedita iusto!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 16</span>
-						<p class="collapsible-body">Earum odit, explicabo ad, quaerat error eum accusamus quibusdam officia tempore, quidem numquam esse velit, amet voluptate impedit! Minus dolores repudiandae quaerat ipsam, hic harum possimus, perspiciatis cumque, quasi numquam nisi inventore, iste
-							quos pariatur. Sit dolorum, ex explicabo velit fugit soluta dolore ipsum illo cupiditate voluptate ratione rerum voluptatum nostrum beatae doloribus nesciunt repudiandae. Dicta inventore quidem facilis asperiores saepe ipsum quos, nihil distinctio
-							dolorum, unde culpa blanditiis corrupti reprehenderit, consequuntur, nam ad ea eaque minus? Quae vero, maxime?</p>
-					</li>
-				</ul>
-			</section>
-			<section id="trail3" class="row">
-				<ul class="col s12 scrollspy collapsible" data-collapsible="accordion">
-					<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
-						<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum illum suscipit eius odit mollitia iusto, consequuntur id, assumenda, obcaecati modi! Vel ipsa maxime, hic culpa similique, libero placeat eligendi quo facere repellat maiores
-							quis quia, laborum! Quas alias optio iusto, beatae fugit itaque possimus quibusdam voluptates temporibus ipsum ut, commodi consequatur eos quod ipsa, asperiores ullam nemo tempore quasi accusamus? Nesciunt recusandae tempora quaerat at natus, nam
-							quo inventore ut earum magni omnis, iusto iste consequuntur illum sit. Aperiam.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 2</span>
-						<p class="collapsible-body">Nihil debitis voluptate, rerum ipsam adipisci, ipsa maxime dolorum. Eligendi illo inventore laboriosam sint? Laboriosam omnis maiores et est quidem architecto deserunt natus dolores atque, tempora rem optio asperiores hic repudiandae laborum necessitatibus
-							quia aliquid, cum dolorum impedit, nisi sequi, molestias magni possimus! Ab consequuntur adipisci iste velit quaerat similique in libero eius minima sed vero quia placeat rerum eligendi labore et, sapiente! Placeat pariatur accusamus recusandae
-							ab debitis, sed eius facilis iure maiores id. Facere nemo eaque aperiam asperiores.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 3</span>
-						<p class="collapsible-body">Voluptatum quidem porro, repellat veniam modi labore autem officia, quae sunt aliquid nisi non optio ullam quaerat. Obcaecati sint eum libero quasi molestiae a reiciendis pariatur laboriosam amet, omnis cum doloremque earum repudiandae voluptas
-							accusantium sequi maxime aliquid iusto, iste autem sapiente. Quod quam nemo, vero? Nemo consequuntur quae, maiores totam quia iusto voluptatibus, deleniti a aut vel, perferendis repudiandae nam eligendi dolorem quis dicta saepe? Pariatur necessitatibus
-							aperiam odit inventore eius quis, earum placeat corporis non nobis. Porro, repellat?</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 4</span>
-						<p class="collapsible-body">Laborum illum quos commodi quod eveniet. Ipsam ducimus facere cum neque mollitia praesentium, voluptate ut alias incidunt vero voluptatum, aperiam tempore accusamus. Cum quos, voluptas. Mollitia dicta at, magni optio, minus ipsum assumenda. Neque,
-							fuga, consequuntur? Numquam repudiandae fugiat sapiente perferendis animi illo voluptate dolor totam maiores et maxime, nostrum labore quibusdam, deleniti tenetur harum distinctio. Consequatur, dolorum nesciunt labore voluptas, rerum dignissimos
-							deserunt veritatis officia maiores nulla provident vel ratione cumque harum excepturi et optio minus. Ullam, tempore, facere.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 5</span>
-						<p class="collapsible-body">Accusamus quod ducimus voluptatibus atque deleniti. Alias, quia! Laborum officia vero repudiandae ipsa dignissimos eius modi eos explicabo facilis, eligendi rem iure vel doloribus, eum vitae ipsum velit! Ea cumque qui nesciunt, voluptas, eos quis.
-							Impedit culpa fugit quaerat quia id alias error sint eaque doloremque consectetur, ullam vitae praesentium mollitia nesciunt temporibus excepturi quis molestias iste. Voluptates, incidunt aliquam saepe deserunt provident quam autem. Vel est, officia?
-							Harum itaque veritatis, sapiente illum amet nemo laudantium doloremque quasi numquam a!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 6</span>
-						<p class="collapsible-body">Aliquam magni perferendis maiores inventore, sequi eligendi aut possimus nobis omnis consequuntur, harum ut quae, molestiae labore exercitationem, quod consequatur cupiditate? Esse minima optio voluptatem nulla unde quas dolorum iure officiis laudantium
-							aperiam eaque exercitationem ad rem, consequatur, praesentium aliquam, laboriosam amet sunt molestiae rerum eos voluptates commodi nobis. Molestiae tenetur error vel porro voluptas ipsam tempore facilis minus inventore non. Mollitia, consequuntur
-							possimus odit error nemo perferendis voluptates ab qui, nulla aut id facere quis recusandae veritatis aspernatur! At!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 7</span>
-						<p class="collapsible-body">Porro autem unde nostrum quaerat culpa, atque rem temporibus doloremque, reprehenderit rerum exercitationem provident assumenda nemo cum pariatur labore itaque neque qui tempora, nisi praesentium! Eaque impedit ullam quas accusamus dolor, corporis
-							eius aliquid sed placeat ea aperiam facere libero maxime, officiis iure quo fugit molestias modi nobis laboriosam cupiditate nam. At repellat commodi blanditiis provident, itaque, consequatur nulla dolor molestias qui? Tempora iste, tenetur rerum
-							quod, obcaecati in commodi ducimus asperiores, unde, officiis laborum maxime eligendi fugiat culpa inventore.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 8</span>
-						<p class="collapsible-body">Voluptatibus quo odio ad, quod et reprehenderit, iure distinctio facilis alias libero iusto illo quia esse odit amet! Corrupti ea deleniti voluptatibus adipisci perspiciatis neque consectetur aperiam inventore, quis dicta ullam esse magni veniam
-							suscipit ipsa est accusamus facilis perferendis enim beatae hic nisi. Impedit voluptas consectetur cupiditate autem id suscipit modi qui, ab aut fuga tenetur doloremque illo eligendi fugit. Dolorem recusandae veniam ducimus eos earum modi sint,
-							nihil doloribus ad sequi nemo velit laboriosam voluptas corrupti, iusto similique?</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 9</span>
-						<p class="collapsible-body">Repellendus qui provident modi praesentium debitis error obcaecati vero perspiciatis quo voluptas, a velit nostrum rerum laudantium, ut sed neque dicta repellat sunt officiis iste! Aspernatur expedita tenetur esse inventore iusto quos id dolore
-							eveniet maxime, corrupti veritatis quidem incidunt provident deserunt aliquam porro reprehenderit, fuga unde iste tempora nam. Voluptatibus dignissimos, doloribus modi necessitatibus sapiente voluptate vel in doloremque, obcaecati mollitia voluptas
-							possimus rem, neque eius sit porro nobis architecto minus iure labore sequi, tenetur quisquam nam ea! Dignissimos.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 10</span>
-						<p class="collapsible-body">Architecto nisi nihil quaerat totam nostrum dolorem, voluptatem voluptas quos, nemo, minima quasi quis ex sequi in ea rerum aperiam fugiat error porro qui. Incidunt, similique, ad. Facere sed, consectetur quod laborum maxime doloribus optio dolor,
-							voluptatem fugiat minus ullam quae doloremque quasi eveniet id perspiciatis! Pariatur, nemo voluptate eaque excepturi atque recusandae iusto, nulla qui fuga repudiandae esse mollitia dolores minima, distinctio? Quasi architecto impedit, dignissimos
-							eaque, saepe earum. Veritatis quisquam alias placeat distinctio, reiciendis, dolor expedita est nemo.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 11</span>
-						<p class="collapsible-body">Tempore quaerat voluptatem magni magnam neque quidem velit quisquam maiores pariatur animi commodi temporibus iusto, officiis quod ea cumque quia, aliquid voluptas architecto mollitia eos exercitationem est natus! Delectus id exercitationem corporis
-							dolorum nobis omnis. Totam cum, optio quo id accusamus nobis, repellat! Perferendis veniam maxime obcaecati maiores iusto neque nemo suscipit optio eaque corporis, provident aperiam tenetur ipsa sint aliquam nostrum tempore deserunt aliquid beatae,
-							totam ex. Suscipit nam eveniet ratione. Voluptatibus, aspernatur placeat, voluptates delectus nobis beatae expedita?</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 12</span>
-						<p class="collapsible-body">Dolor iste, enim sunt vero tempora deserunt praesentium odit fugiat, recusandae alias illum illo saepe nemo, reiciendis distinctio veritatis. Repellendus, fuga! Voluptas debitis quibusdam quaerat commodi libero similique necessitatibus nesciunt
-							beatae earum! Earum delectus rerum quidem corporis vero voluptatum libero minima, ab assumenda maxime optio placeat non omnis, consequuntur vitae reprehenderit cumque nobis commodi laborum tenetur cum esse totam quia deserunt! Facere quaerat eius
-							nostrum sapiente perspiciatis repellat quae fugit maiores deleniti ratione eaque eligendi incidunt adipisci non, veniam magni.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 13</span>
-						<p class="collapsible-body">Mollitia eos aliquam beatae quam! Quod iure delectus accusantium, reprehenderit minus, quam similique, facere corrupti dolore voluptate omnis ullam aperiam. Cum libero, eligendi, nostrum harum deleniti unde quo consequuntur, facere impedit, rem
-							aliquam! Corporis odit sapiente, officiis asperiores provident, maxime pariatur error laudantium ullam a, ea saepe quo molestias accusamus dignissimos, non iusto mollitia? Ullam odio eaque id voluptate, voluptas assumenda at iste molestias blanditiis
-							inventore voluptates necessitatibus consequuntur recusandae, perferendis dolor delectus, placeat architecto distinctio maiores! Animi, quod illum.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 14</span>
-						<p class="collapsible-body">Error odit itaque delectus soluta corporis! Ab iste, aliquam quaerat. Deleniti inventore amet delectus facilis dolores at beatae qui, alias quos iusto ad nisi rem aliquam in. Consequuntur officia odio soluta, sequi molestias iusto ex natus ducimus
-							debitis, consectetur maxime minima neque, animi nisi cupiditate quis non fugiat repellendus voluptatum perferendis! Quas sunt reiciendis nobis voluptas optio temporibus! Doloremque doloribus assumenda animi sequi eligendi, at nemo non accusamus
-							suscipit? Deserunt delectus dolorum iure ea laborum incidunt nihil eaque, officiis nostrum.</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 15</span>
-						<p class="collapsible-body">Aliquam nisi, hic aperiam. Amet eveniet neque perferendis voluptate, pariatur nulla nesciunt sunt minus quas culpa eum adipisci nisi, labore sed perspiciatis corporis a illo. Dolor, doloribus asperiores sunt natus illo amet iste, dignissimos ipsa
-							animi voluptatibus nobis! Sequi asperiores dicta reiciendis molestiae nam hic quisquam fugit dolorum rem laborum perspiciatis velit, soluta numquam esse rerum beatae. Quod quasi possimus beatae, labore nesciunt laborum inventore delectus minima
-							commodi aliquid sequi asperiores architecto a ipsa illum reprehenderit veritatis iste porro aut!</p>
-					</li>
-					<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 16</span>
-						<p class="collapsible-body">Debitis aut nesciunt, ipsam iste ut eaque ipsum obcaecati sint, ratione laboriosam quae saepe iusto velit modi quam. Magnam officiis possimus a quisquam voluptas porro sapiente optio et minus commodi maxime necessitatibus neque doloremque non obcaecati
-							itaque adipisci beatae architecto iste, quas eos exercitationem mollitia. Ipsam fuga enim culpa accusamus atque, perspiciatis omnis magnam? Veniam cum, soluta molestias, inventore provident incidunt! Quos, quae id porro qui voluptas modi libero
-							explicabo aut quisquam aperiam dolor, veritatis doloribus earum, quas nesciunt accusantium.</p>
-					</li>
-				</ul>
-			</section>
-			<!--
-			███████  █████  ██████
-			██      ██   ██ ██   ██
-			█████   ███████ ██████
-			██      ██   ██ ██   ██
-			██      ██   ██ ██████
-			-->
-			<div class="fixed-action-btn horizontal click-to-toggle">
-				<a class="btn-floating btn-large red"> <i class="mdi mdi-menu"></i> </a>
-				<ul>
-					<li><a class="btn-floating red"><i class="mdi mdi-chart-bar"></i></a></li>
-					<li><a class="btn-floating yellow darken-1"><i class="mdi mdi-format-quote"></i></a></li>
-					<li><a class="btn-floating green"><i class="mdi mdi-content-save"></i></a></li>
-					<li><a class="btn-floating blue"><i class="mdi mdi-file-check"></i></a></li>
-				</ul>
+			<div id="POI" class="scrollspy">
+				<!--
+				████████ ██████   █████  ██ ██           ██
+				   ██    ██   ██ ██   ██ ██ ██          ███
+				   ██    ██████  ███████ ██ ██           ██
+				   ██    ██   ██ ██   ██ ██ ██           ██
+				   ██    ██   ██ ██   ██ ██ ███████      ██
+				-->
+				<section id="trail1" class="row">
+					<h4 class="center-align trail1">Kullaleden</h4>
+					<section class="grid row">
+						<article class="col s12 m6">
+							<div class="card">
+								<div class="card-image"><img class="materialboxed" src="img/trail1sign.jpg" alt="Kullaleden"></div>
+								<div class="card-content">
+									<p>Welcome to the Kullaleden Trail, marked with orange, taking you forward step by step.</p>
+								</div>
+							</div>
+						</article>
+						<article class="col s12 m6">
+							<div class="card">
+								<a href="img/t1/0.jpg">
+									<div class="card-image"><img class="" src="img/t1/0.jpg" alt="Kullaleden"></div>
+								</a>
+								<div class="card-content">
+									<p>Kullaleden offers a great variety of experiences along the way. Here you find everything including the medieval city centre of Helsingborg, beautiful views over the straits from the plateau heights, the well-known Sofiero Palace, Kulla-Gunnarstorp
+										and Krapperup Estates, beaches and picturesque seaside villages, and Kullaberg’s dramatic cliff formations.</p>
+								</div>
+							</div>
+						</article>
+						<article class="col s12 m6">
+							<div class="card">
+								<a href="img/trail1map.jpg">
+									<div class="card-image"><img src="img/trail1map.jpg" alt="Kullaleden"></div>
+								</a>
+								<div class="card-content">
+									<p>Kullaleden is 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
+								</div>
+							</div>
+						</article>
+					</section>
+					<!--
+					██████   ██████  ██
+					██   ██ ██    ██ ██
+					██████  ██    ██ ██
+					██      ██    ██ ██
+					██       ██████  ██
+					-->
+					<h4 class="center-align trail1">Points of Interest</h4>
+					<section class="col s12">
+						<ul class="collapsible" data-collapsible="accordion">
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Responsibility</span>
+								<div class="collapsible-body section row"> <img src="img/t1/1.jpg" class="col s4 m3 l2 materialboxed" alt="Responsibility" />
+									<p>Since prehistoric times, the sea has been a valuable resource. We have over-utilised the sea for a long time. Now we understand that we need to do more to keep the sea healthy. Trends are changing and we are now well on the way, each doing their
+										part. </p>
+									<p>The burden of nutrients entering the sea is decreasing; shipping is becoming cleaner; an increasing number of wetlands are being created and awareness is increasing among people in general.</p>
+								</div>
+							</li>
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>The Harbour Seal</span>
+								<div class="collapsible-body section row"> <img src="img/t1/2.jpg" class="col s4 m3 l2 materialboxed" alt="The Harbour Seal" />
+									<p>The Harbour seal is found on the Swedish west coast, as well as in two small colonies in the Baltic Sea, at Måkläppen and in the Kalmarsund Strait. The seals we see in Skälderviken belong to the colony on the skerries at Väderö in Halland. </p>
+									<p>The male grows to about 170 centimetres and weighs about 100 kg, while the female, which is slightly smaller, grows to 160 centimetres, weighing around 80 kg. The colour is speckled grey.</p>
+								</div>
+							</li>
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Sea Plants</span>
+								<div class="collapsible-body section row"> <img src="img/t1/3.jpg" class="col s4 m3 l2 materialboxed" alt="Sea Plants" />
+									<p>Plants are crucial to life in the sea. With the help of sunlight, plants transform carbon dioxide into energy-rich plant material, and they create oxygen. There are two different types of plant in the sea: flowering plants, which have roots and
+										grow in soft bottoms, and Kelp which grows on hard bottoms, attaching itself with the help of a holdfast.</p>
+								</div>
+							</li>
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Swimmer's Bay</span>
+								<div class="collapsible-body section row"> <img src="img/t1/4.jpg" class="col s4 m3 l2 materialboxed" alt="Swimmer's Bay" />
+									<p class="strong">The Swimmers’ Bay</p>
+									<p>The food store and nursery of the sea.</p>
+									<p>Shallow bays are highly productive. A lot of nutrition comes here from land and the spring sun quickly warms the shallow water. On a fine April day, while it is still 5-6 °C out at sea, it can be 10 to 15 °C near the shores. At a depth of 1m,
+										biological production can be 10 times greater than at 10 m deep.</p>
+								</div>
+							</li>
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>The Porpoise</span>
+								<div class="collapsible-body section row"> <img src="img/t1/5.jpg" class="col s4 m3 l2 materialboxed" alt="The Porpoise" />
+									<p class="strong">The common porpoise Phocoena phocoena.</p>
+									<p> The only whale to constantly inhabit Swedish waters, the porpoise is endangered and red-listed. However, in Skälderviken and the north of Öresund there is still a good chance of seeing a porpoise. </p>
+									<p class="strong">The Smallest Whale</p>
+									<p>The porpoise grows to approximately 170 cm. The primary way to recognise a porpoise is the low, triangular dorsal fin.</p>
+									<p>An elusive deep diver When necessary, porpoises can dive to a depth of 240 meters.</p>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<!--
+				████████ ██████   █████  ██ ██          ██████
+				   ██    ██   ██ ██   ██ ██ ██               ██
+				   ██    ██████  ███████ ██ ██           █████
+				   ██    ██   ██ ██   ██ ██ ██          ██
+				   ██    ██   ██ ██   ██ ██ ███████     ███████
+				-->
+				<section id="trail2" class="row">
+					<article class="col s12 l6">
+						<div class="card">
+							<div class="card-image"><img class="materialboxed" src="img/trail2map.jpg" alt="Western Kullaberg"></div>
+							<div class="card-content">
+								<p>Kullaleden is section 1-6 of Skåneleden trail no. SL 5 in total 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
+								<p> Kullaleden offers a great variety of experiences along the way. Here you find everything including the medieval city centre of Helsingborg, beautiful views over the straits from the plateau heights, the well-known Sofiero Palace, Kulla-Gunnarstorp
+									and Krapperup Estates, beaches and picturesque seaside villages, and Kullaberg’s dramatic cliff formations. </p>
+								<p> Kullaleden is certified according to the European Ramblers’ Association’s (ERA) criteria for being a Leading Quality Trail. This entails a quality assurance of the trail’s physical standard as well as the experiences and services along the trail.
+									The certification is renewed every three years. </p>
+								<p> There are signs in all the village harbours with information about the local sights as well as a detailed map.</p>
+								<p> Along the trail, there are simple overnight sites with wind shelter, water and toilets available. It is often possible to find other accommodation in connection to the trail. Skåneleden is marked with orange paint or orange signs.</p>
+								<p> Nature reserves exist along large portions of the trail. Within these reserves, specific codes of conduct exist in order to protect their natural and recreational values</p>
+							</div>
+						</div>
+					</article>
+					<ul class="col s12 scrollspy collapsible" data-collapsible="accordion">
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
+							<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum vitae natus quibusdam dignissimos incidunt totam voluptate tempora a deserunt unde corrupti in tempore rerum cupiditate aliquid dolorum est, doloremque. Impedit corporis quasi veritatis,
+								soluta et minus architecto hic voluptate temporibus dolorem earum nobis dolores id ipsam obcaecati magnam, facere molestiae ullam repellendus consequuntur aspernatur! Itaque exercitationem blanditiis provident dicta quam sed. Iusto soluta veniam
+								rem enim ex, facilis corporis fugiat excepturi tempore, praesentium, aliquam eum consequuntur impedit, iure numquam?</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 2</span>
+							<p class="collapsible-body">Iure, quo, libero. Ipsam quasi eius ducimus molestias illum labore est eaque repellendus voluptatum dicta velit aperiam cumque culpa pariatur sint alias facilis, consequuntur at deserunt iste, magnam dolorum quisquam consequatur accusantium? Enim,
+								laudantium nulla cupiditate nisi, perspiciatis asperiores distinctio deserunt deleniti officia at, eligendi reiciendis praesentium, possimus cum alias mollitia. Ipsam maiores cupiditate debitis molestiae impedit blanditiis maxime modi id, molestias
+								deserunt nam doloribus mollitia perspiciatis. Eligendi enim earum, aliquid quibusdam minus, fuga magni, illo nulla tempora asperiores quaerat.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 3</span>
+							<p class="collapsible-body">Quasi ducimus sint deleniti. Fugit atque quod architecto labore tempora debitis obcaecati, officia, blanditiis reiciendis similique delectus asperiores esse. Eaque a natus possimus iure deserunt. Quis similique modi cupiditate accusamus ratione
+								aspernatur facilis reiciendis, recusandae facere ducimus eligendi, cumque natus quisquam fuga dolores laborum nam perspiciatis laboriosam possimus qui voluptatibus. Aspernatur iure quas dolore optio dolorum eius expedita, animi quasi a voluptatibus
+								magni cumque, rem praesentium quaerat error non maiores deserunt sunt porro saepe earum unde commodi. Officia, ad, molestias.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 4</span>
+							<p class="collapsible-body">Mollitia amet incidunt molestiae ratione, quis vel eaque assumenda odit alias. Nam et ducimus autem quas inventore eos rem asperiores numquam aliquam enim quae cum suscipit nisi dolorum voluptatum quis nihil amet, maiores vero debitis ipsa fugit.
+								Distinctio fugiat optio expedita pariatur sint repudiandae sed vel aut officia ad ducimus non, laboriosam quo iure veritatis qui. Temporibus soluta incidunt, amet vel repellendus! Nostrum delectus dolor, corrupti nulla nam, quo perferendis cupiditate
+								veritatis fugit eum explicabo alias rem earum eaque possimus.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 5</span>
+							<p class="collapsible-body">Libero omnis expedita harum quos delectus! Voluptate at in debitis nihil ea quaerat dolorem doloribus, temporibus laborum alias, nesciunt libero consequuntur atque perferendis ipsa necessitatibus quia molestiae! Ut minus veritatis repudiandae,
+								reprehenderit, voluptatum atque consequatur doloribus sapiente voluptatem rem nemo a eum excepturi velit consequuntur numquam impedit ipsam voluptates quasi eaque necessitatibus ab corporis vitae tempora et? Enim inventore maiores nobis, sequi,
+								explicabo quod amet expedita quidem, perferendis ipsa voluptas laudantium officia. Inventore asperiores in doloribus sunt, vitae eius aut.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 6</span>
+							<p class="collapsible-body">Consectetur facere sunt laborum enim, autem iste et architecto eaque aut id in pariatur assumenda incidunt vel illo deleniti aliquam veniam necessitatibus nesciunt quod. Recusandae, ea! Tempore porro earum laboriosam maiores quibusdam. Alias facere,
+								consequatur quas autem sit eum a, ratione! Et, blanditiis aliquid numquam suscipit earum voluptatum odio, est id quas culpa quia, vitae. Maiores, quam nobis, doloremque deserunt sint suscipit quas autem blanditiis obcaecati quibusdam fugiat, vitae
+								eaque ut saepe provident explicabo nemo, cum at eligendi beatae. Excepturi.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 7</span>
+							<p class="collapsible-body">Deserunt quis impedit sit laborum neque assumenda numquam obcaecati. Expedita beatae quisquam, accusamus hic molestias reiciendis libero ipsam, praesentium quam voluptas error perspiciatis, reprehenderit mollitia repudiandae iure! Natus, expedita!
+								Earum officiis quisquam ab quas ea dolorum iure natus molestias perspiciatis! Incidunt voluptates odio, culpa, amet, neque veniam expedita impedit quibusdam nam voluptate omnis dicta vero quidem nihil ipsam cum quia animi quam consequuntur corporis
+								aspernatur fugiat. Tempore vitae dolores temporibus veniam quis accusantium libero laborum soluta laudantium, voluptate, nulla recusandae!</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 8</span>
+							<p class="collapsible-body">In, expedita sed quo autem fuga quaerat, tempora ut deserunt officia a, sint laudantium laboriosam quidem illum alias aperiam explicabo sit. Fugit nesciunt sequi blanditiis at mollitia aperiam dignissimos laudantium praesentium eveniet odit error
+								modi cum, maxime voluptate officia ex sapiente quos, quibusdam minima quam debitis ratione ipsum. Voluptatibus repellat natus cupiditate, esse ab alias molestiae perspiciatis et nesciunt atque, reprehenderit iusto dolorum dolorem. Placeat illum
+								quod aspernatur ut a repellat libero doloremque culpa iure molestiae, asperiores doloribus maiores ipsum.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 9</span>
+							<p class="collapsible-body">Totam doloribus quod iusto magnam libero expedita odio deserunt fugiat ipsa, nemo, illo ipsam dicta maxime excepturi a! Aperiam excepturi odit ratione exercitationem, minus provident quia earum esse, inventore asperiores quas in labore illo quasi
+								mollitia autem maxime est. Eaque sint recusandae minus distinctio optio modi non quis accusamus, suscipit odit, ullam inventore minima amet atque perferendis? Autem quisquam est, placeat cum, laudantium illo. Aliquid quos reiciendis nesciunt magnam
+								autem eligendi ducimus, sit fuga nostrum minus modi recusandae accusamus quis.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 10</span>
+							<p class="collapsible-body">Adipisci atque voluptate necessitatibus, ipsam architecto autem ex tempore neque dolores culpa dolor obcaecati saepe molestias nobis illo laudantium, quisquam reiciendis itaque blanditiis quam sed cumque magni odit. Non possimus autem expedita,
+								unde nam harum repudiandae corrupti nemo ex? Neque voluptates itaque minus. Ex eligendi commodi saepe temporibus, voluptatem optio sapiente corporis voluptate harum, id nesciunt. Ea placeat velit quaerat id! Soluta voluptates consectetur voluptas
+								tempora ea, nesciunt laboriosam aspernatur deserunt et voluptatibus consequatur officia. Veritatis, odio! Officiis, necessitatibus, doloribus.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 11</span>
+							<p class="collapsible-body">Aut omnis officiis amet sunt adipisci totam ipsum maiores minima earum magni expedita ratione pariatur in repellendus, reprehenderit nulla, praesentium et! Tempora obcaecati accusantium voluptatum laborum velit esse aut hic, repellat, minima, dolorum
+								non quae nemo sunt eum distinctio voluptate natus, nam necessitatibus. Consequatur eaque praesentium, sunt nostrum cum dolorem eos dolores eligendi nisi libero. Quidem ratione voluptas cupiditate, minus repellendus autem perferendis modi mollitia
+								hic soluta maiores obcaecati neque alias debitis saepe dicta, pariatur ea fuga. Esse, praesentium, iure?</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 12</span>
+							<p class="collapsible-body">Eum quisquam architecto eaque omnis numquam dolor nobis dignissimos optio dolore nisi recusandae delectus, a modi quo distinctio quam fugit sunt impedit. Culpa iusto vitae assumenda enim placeat praesentium, quidem sequi laborum consequuntur a
+								sit odio minima vel repellat minus magnam fugit ea, totam perspiciatis, dignissimos id neque accusamus. Consequatur repudiandae iusto tempore sunt in doloribus maiores debitis accusantium ut corporis error, dolore odio, dicta recusandae id eaque
+								cumque. Illum suscipit optio facilis commodi doloribus rerum dolorum quos, ducimus quo.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 13</span>
+							<p class="collapsible-body">Sed eum consequuntur officia nulla nihil, blanditiis in. Provident ipsam, facilis neque dolores, ea pariatur quo laboriosam autem, nostrum itaque quas sapiente. Neque ea autem voluptate! Assumenda vel obcaecati ipsum necessitatibus quos quas distinctio
+								sapiente ipsam odit nemo excepturi ullam deserunt, praesentium, delectus pariatur quisquam omnis quis architecto? Expedita sequi in voluptas explicabo molestias, quis? Eaque iusto ipsum consequatur temporibus nobis molestiae praesentium iure beatae
+								commodi nostrum similique eveniet aut exercitationem dolor sapiente corporis quaerat unde pariatur accusamus, maiores, et.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 14</span>
+							<p class="collapsible-body">Voluptatem illo minima ut nulla vero, nostrum itaque, fuga dignissimos assumenda iure veniam minus earum fugit eaque delectus id eos perspiciatis quisquam ipsa ea laudantium quidem. Ipsa doloribus possimus tempore harum delectus dolore, fugiat
+								quod quaerat cum, provident officia porro eaque quas. Deleniti sint neque ipsam provident alias, dolor perferendis facere quibusdam numquam beatae! Laudantium, omnis, neque! Quisquam at, ab consectetur pariatur corrupti ipsum, earum culpa distinctio
+								velit repudiandae architecto hic. Tempora quasi nisi laborum temporibus qui neque, illum ullam!</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 15</span>
+							<p class="collapsible-body">Autem vel dolor, nemo odio eligendi deleniti animi aspernatur mollitia, quo aliquid officia. Accusantium architecto eos nisi non minima voluptatem iusto numquam labore modi, fugit provident vel, debitis distinctio delectus deleniti molestiae earum
+								unde suscipit ad neque praesentium illo! Distinctio ipsam quos dolorem quam, deserunt, est fugiat at veritatis accusantium dicta repudiandae molestias sit sint in blanditiis neque dolorum provident nulla accusamus architecto officia minima officiis
+								rerum? Quisquam atque, at aperiam quibusdam est, fuga, minima repellat optio, neque expedita iusto!</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 16</span>
+							<p class="collapsible-body">Earum odit, explicabo ad, quaerat error eum accusamus quibusdam officia tempore, quidem numquam esse velit, amet voluptate impedit! Minus dolores repudiandae quaerat ipsam, hic harum possimus, perspiciatis cumque, quasi numquam nisi inventore,
+								iste quos pariatur. Sit dolorum, ex explicabo velit fugit soluta dolore ipsum illo cupiditate voluptate ratione rerum voluptatum nostrum beatae doloribus nesciunt repudiandae. Dicta inventore quidem facilis asperiores saepe ipsum quos, nihil distinctio
+								dolorum, unde culpa blanditiis corrupti reprehenderit, consequuntur, nam ad ea eaque minus? Quae vero, maxime?</p>
+						</li>
+					</ul>
+				</section>
+				<!--
+				████████ ██████   █████  ██ ██          ██████
+				   ██    ██   ██ ██   ██ ██ ██               ██
+				   ██    ██████  ███████ ██ ██           █████
+				   ██    ██   ██ ██   ██ ██ ██               ██
+				   ██    ██   ██ ██   ██ ██ ███████     ██████
+				-->
+				<section id="trail3" class="row">
+					<article class="col s12 l6">
+						<div class="card">
+							<div class="card-image"><img class="materialboxed" src="img/trail3map.jpg" alt="Sights of Heritage"></div>
+							<div class="card-content">
+								<p>Kullaleden is section 1-6 of Skåneleden trail no. SL 5 in total 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
+								<p> Kullaleden offers a great variety of experiences along the way. Here you find everything including the medieval city centre of Helsingborg, beautiful views over the straits from the plateau heights, the well-known Sofiero Palace, Kulla-Gunnarstorp
+									and Krapperup Estates, beaches and picturesque seaside villages, and Kullaberg’s dramatic cliff formations. </p>
+								<p> Kullaleden is certified according to the European Ramblers’ Association’s (ERA) criteria for being a Leading Quality Trail. This entails a quality assurance of the trail’s physical standard as well as the experiences and services along the trail.
+									The certification is renewed every three years. </p>
+								<p> There are signs in all the village harbours with information about the local sights as well as a detailed map.</p>
+								<p>Along the trail, there are simple overnight sites with wind shelter, water and toilets available. It is often possible to find other accommodation in connection to the trail. Skåneleden is marked with orange paint or orange signs.</p>
+								<p>Nature reserves exist along large portions of the trail. Within these reserves, specific codes of conduct exist in order to protect their natural and recreational values </p>
+							</div>
+						</div>
+					</article>
+					<ul class="col s12 scrollspy collapsible" data-collapsible="accordion">
+						<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
+							<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum illum suscipit eius odit mollitia iusto, consequuntur id, assumenda, obcaecati modi! Vel ipsa maxime, hic culpa similique, libero placeat eligendi quo facere repellat maiores
+								quis quia, laborum! Quas alias optio iusto, beatae fugit itaque possimus quibusdam voluptates temporibus ipsum ut, commodi consequatur eos quod ipsa, asperiores ullam nemo tempore quasi accusamus? Nesciunt recusandae tempora quaerat at natus,
+								nam quo inventore ut earum magni omnis, iusto iste consequuntur illum sit. Aperiam.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 2</span>
+							<p class="collapsible-body">Nihil debitis voluptate, rerum ipsam adipisci, ipsa maxime dolorum. Eligendi illo inventore laboriosam sint? Laboriosam omnis maiores et est quidem architecto deserunt natus dolores atque, tempora rem optio asperiores hic repudiandae laborum necessitatibus
+								quia aliquid, cum dolorum impedit, nisi sequi, molestias magni possimus! Ab consequuntur adipisci iste velit quaerat similique in libero eius minima sed vero quia placeat rerum eligendi labore et, sapiente! Placeat pariatur accusamus recusandae
+								ab debitis, sed eius facilis iure maiores id. Facere nemo eaque aperiam asperiores.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 3</span>
+							<p class="collapsible-body">Voluptatum quidem porro, repellat veniam modi labore autem officia, quae sunt aliquid nisi non optio ullam quaerat. Obcaecati sint eum libero quasi molestiae a reiciendis pariatur laboriosam amet, omnis cum doloremque earum repudiandae voluptas
+								accusantium sequi maxime aliquid iusto, iste autem sapiente. Quod quam nemo, vero? Nemo consequuntur quae, maiores totam quia iusto voluptatibus, deleniti a aut vel, perferendis repudiandae nam eligendi dolorem quis dicta saepe? Pariatur necessitatibus
+								aperiam odit inventore eius quis, earum placeat corporis non nobis. Porro, repellat?</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 4</span>
+							<p class="collapsible-body">Laborum illum quos commodi quod eveniet. Ipsam ducimus facere cum neque mollitia praesentium, voluptate ut alias incidunt vero voluptatum, aperiam tempore accusamus. Cum quos, voluptas. Mollitia dicta at, magni optio, minus ipsum assumenda. Neque,
+								fuga, consequuntur? Numquam repudiandae fugiat sapiente perferendis animi illo voluptate dolor totam maiores et maxime, nostrum labore quibusdam, deleniti tenetur harum distinctio. Consequatur, dolorum nesciunt labore voluptas, rerum dignissimos
+								deserunt veritatis officia maiores nulla provident vel ratione cumque harum excepturi et optio minus. Ullam, tempore, facere.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 5</span>
+							<p class="collapsible-body">Accusamus quod ducimus voluptatibus atque deleniti. Alias, quia! Laborum officia vero repudiandae ipsa dignissimos eius modi eos explicabo facilis, eligendi rem iure vel doloribus, eum vitae ipsum velit! Ea cumque qui nesciunt, voluptas, eos quis.
+								Impedit culpa fugit quaerat quia id alias error sint eaque doloremque consectetur, ullam vitae praesentium mollitia nesciunt temporibus excepturi quis molestias iste. Voluptates, incidunt aliquam saepe deserunt provident quam autem. Vel est, officia?
+								Harum itaque veritatis, sapiente illum amet nemo laudantium doloremque quasi numquam a!</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 6</span>
+							<p class="collapsible-body">Aliquam magni perferendis maiores inventore, sequi eligendi aut possimus nobis omnis consequuntur, harum ut quae, molestiae labore exercitationem, quod consequatur cupiditate? Esse minima optio voluptatem nulla unde quas dolorum iure officiis laudantium
+								aperiam eaque exercitationem ad rem, consequatur, praesentium aliquam, laboriosam amet sunt molestiae rerum eos voluptates commodi nobis. Molestiae tenetur error vel porro voluptas ipsam tempore facilis minus inventore non. Mollitia, consequuntur
+								possimus odit error nemo perferendis voluptates ab qui, nulla aut id facere quis recusandae veritatis aspernatur! At!</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 7</span>
+							<p class="collapsible-body">Porro autem unde nostrum quaerat culpa, atque rem temporibus doloremque, reprehenderit rerum exercitationem provident assumenda nemo cum pariatur labore itaque neque qui tempora, nisi praesentium! Eaque impedit ullam quas accusamus dolor, corporis
+								eius aliquid sed placeat ea aperiam facere libero maxime, officiis iure quo fugit molestias modi nobis laboriosam cupiditate nam. At repellat commodi blanditiis provident, itaque, consequatur nulla dolor molestias qui? Tempora iste, tenetur rerum
+								quod, obcaecati in commodi ducimus asperiores, unde, officiis laborum maxime eligendi fugiat culpa inventore.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 8</span>
+							<p class="collapsible-body">Voluptatibus quo odio ad, quod et reprehenderit, iure distinctio facilis alias libero iusto illo quia esse odit amet! Corrupti ea deleniti voluptatibus adipisci perspiciatis neque consectetur aperiam inventore, quis dicta ullam esse magni veniam
+								suscipit ipsa est accusamus facilis perferendis enim beatae hic nisi. Impedit voluptas consectetur cupiditate autem id suscipit modi qui, ab aut fuga tenetur doloremque illo eligendi fugit. Dolorem recusandae veniam ducimus eos earum modi sint,
+								nihil doloribus ad sequi nemo velit laboriosam voluptas corrupti, iusto similique?</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 9</span>
+							<p class="collapsible-body">Repellendus qui provident modi praesentium debitis error obcaecati vero perspiciatis quo voluptas, a velit nostrum rerum laudantium, ut sed neque dicta repellat sunt officiis iste! Aspernatur expedita tenetur esse inventore iusto quos id dolore
+								eveniet maxime, corrupti veritatis quidem incidunt provident deserunt aliquam porro reprehenderit, fuga unde iste tempora nam. Voluptatibus dignissimos, doloribus modi necessitatibus sapiente voluptate vel in doloremque, obcaecati mollitia voluptas
+								possimus rem, neque eius sit porro nobis architecto minus iure labore sequi, tenetur quisquam nam ea! Dignissimos.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 10</span>
+							<p class="collapsible-body">Architecto nisi nihil quaerat totam nostrum dolorem, voluptatem voluptas quos, nemo, minima quasi quis ex sequi in ea rerum aperiam fugiat error porro qui. Incidunt, similique, ad. Facere sed, consectetur quod laborum maxime doloribus optio dolor,
+								voluptatem fugiat minus ullam quae doloremque quasi eveniet id perspiciatis! Pariatur, nemo voluptate eaque excepturi atque recusandae iusto, nulla qui fuga repudiandae esse mollitia dolores minima, distinctio? Quasi architecto impedit, dignissimos
+								eaque, saepe earum. Veritatis quisquam alias placeat distinctio, reiciendis, dolor expedita est nemo.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 11</span>
+							<p class="collapsible-body">Tempore quaerat voluptatem magni magnam neque quidem velit quisquam maiores pariatur animi commodi temporibus iusto, officiis quod ea cumque quia, aliquid voluptas architecto mollitia eos exercitationem est natus! Delectus id exercitationem corporis
+								dolorum nobis omnis. Totam cum, optio quo id accusamus nobis, repellat! Perferendis veniam maxime obcaecati maiores iusto neque nemo suscipit optio eaque corporis, provident aperiam tenetur ipsa sint aliquam nostrum tempore deserunt aliquid beatae,
+								totam ex. Suscipit nam eveniet ratione. Voluptatibus, aspernatur placeat, voluptates delectus nobis beatae expedita?</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 12</span>
+							<p class="collapsible-body">Dolor iste, enim sunt vero tempora deserunt praesentium odit fugiat, recusandae alias illum illo saepe nemo, reiciendis distinctio veritatis. Repellendus, fuga! Voluptas debitis quibusdam quaerat commodi libero similique necessitatibus nesciunt
+								beatae earum! Earum delectus rerum quidem corporis vero voluptatum libero minima, ab assumenda maxime optio placeat non omnis, consequuntur vitae reprehenderit cumque nobis commodi laborum tenetur cum esse totam quia deserunt! Facere quaerat eius
+								nostrum sapiente perspiciatis repellat quae fugit maiores deleniti ratione eaque eligendi incidunt adipisci non, veniam magni.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 13</span>
+							<p class="collapsible-body">Mollitia eos aliquam beatae quam! Quod iure delectus accusantium, reprehenderit minus, quam similique, facere corrupti dolore voluptate omnis ullam aperiam. Cum libero, eligendi, nostrum harum deleniti unde quo consequuntur, facere impedit, rem
+								aliquam! Corporis odit sapiente, officiis asperiores provident, maxime pariatur error laudantium ullam a, ea saepe quo molestias accusamus dignissimos, non iusto mollitia? Ullam odio eaque id voluptate, voluptas assumenda at iste molestias blanditiis
+								inventore voluptates necessitatibus consequuntur recusandae, perferendis dolor delectus, placeat architecto distinctio maiores! Animi, quod illum.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 14</span>
+							<p class="collapsible-body">Error odit itaque delectus soluta corporis! Ab iste, aliquam quaerat. Deleniti inventore amet delectus facilis dolores at beatae qui, alias quos iusto ad nisi rem aliquam in. Consequuntur officia odio soluta, sequi molestias iusto ex natus ducimus
+								debitis, consectetur maxime minima neque, animi nisi cupiditate quis non fugiat repellendus voluptatum perferendis! Quas sunt reiciendis nobis voluptas optio temporibus! Doloremque doloribus assumenda animi sequi eligendi, at nemo non accusamus
+								suscipit? Deserunt delectus dolorum iure ea laborum incidunt nihil eaque, officiis nostrum.</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 15</span>
+							<p class="collapsible-body">Aliquam nisi, hic aperiam. Amet eveniet neque perferendis voluptate, pariatur nulla nesciunt sunt minus quas culpa eum adipisci nisi, labore sed perspiciatis corporis a illo. Dolor, doloribus asperiores sunt natus illo amet iste, dignissimos ipsa
+								animi voluptatibus nobis! Sequi asperiores dicta reiciendis molestiae nam hic quisquam fugit dolorum rem laborum perspiciatis velit, soluta numquam esse rerum beatae. Quod quasi possimus beatae, labore nesciunt laborum inventore delectus minima
+								commodi aliquid sequi asperiores architecto a ipsa illum reprehenderit veritatis iste porro aut!</p>
+						</li>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 16</span>
+							<p class="collapsible-body">Debitis aut nesciunt, ipsam iste ut eaque ipsum obcaecati sint, ratione laboriosam quae saepe iusto velit modi quam. Magnam officiis possimus a quisquam voluptas porro sapiente optio et minus commodi maxime necessitatibus neque doloremque non obcaecati
+								itaque adipisci beatae architecto iste, quas eos exercitationem mollitia. Ipsam fuga enim culpa accusamus atque, perspiciatis omnis magnam? Veniam cum, soluta molestias, inventore provident incidunt! Quos, quae id porro qui voluptas modi libero
+								explicabo aut quisquam aperiam dolor, veritatis doloribus earum, quas nesciunt accusantium.</p>
+						</li>
+					</ul>
+				</section>
 			</div>
 		</main>
 		<!--
@@ -375,16 +388,16 @@
 ██      ██    ██ ██    ██    ██    ██      ██   ██
 ██       ██████   ██████     ██    ███████ ██   ██
 -->
-		<footer class="page-footer yellow darken-2 white-text">Kullabergs Naturum
+		<footer class="page-footer blue darken-4 white-text">Kullabergs Naturum
 			<div class="footer-copyright">
-				<div class="row"> <span class="col s12 m4">Designad av <a class="orange-text text-lighten-3 modal-trigger" href="#modal1">Carlos Velasco</a></span></div>
+				<div class="row"> <span class="col s12 m4">Design <a class="orange-text text-lighten-3 modal-trigger" href="#modal1">Carlos Velasco</a></span></div>
 			</div>
 		</footer>
 		<div id="modal1" class="modal">
 			<div class="modal-content row valign-wrapper">
 				<div class="col s8 l7 valign right-align">
 					<h2 class="orange-text">Carlos Velasco</h2>
-					<h4 class="flow-text">Interaktiv design och webbutveckling</h4> </div>
+					<h4 class="flow-text">Interactive Design and Web Development</h4> </div>
 				<div id="social" class="col s4 l5 valign orange-text"><a href="mailto:Carlos@2ActiveDesign.com?subject=Inquiry_from_MittHav.com" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email large"></i></a> <a href="tel:0737298257" class="tooltipped"
 									data-position="left" data-delay="50" data-tooltip="Tel: 073-729 82 57"><i class="mdi mdi-phone-classic large"></i></a>
 					<a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped" data-position="left" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin large"></i></a>
