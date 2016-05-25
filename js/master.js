@@ -4,6 +4,9 @@ $(window).resize(function windowResize() {
     offset: $('.nav-wrapper').height(),
   });
 });
-$(window).scroll(function () {
+$(document).ready(function readyDoc() {
+  $('.grid').masonry({});
+});
+$(window).scroll(function scrollDoc() {
   $('.grid').masonry({});
 });
