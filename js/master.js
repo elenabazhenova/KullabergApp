@@ -1,6 +1,6 @@
 $(window).resize(function gridResize() {
   $('.grid').masonry({});
 });
-(function jQ($) {
+$(document).ready(function () {
   $('.grid').masonry({});
-}(jQuery));
+});
