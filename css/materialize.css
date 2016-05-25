@@ -3991,12 +3991,14 @@ nav .button-collapse i {
 }
 
 nav .brand-logo {
-	position   : absolute;
-	color      : #fff;
-	display    : inline-block;
-	font-size  : 2.1rem;
-	padding    : 0;
-	white-space: nowrap;
+	position    : absolute;
+	color       : #fff;
+	display     : inline-block;
+	font-size   : 2.1rem;
+	padding     : 0;
+	white-space : nowrap;
+	padding-left: 1rem;
+	font-weight : 300;
 }
 
 nav .brand-logo.center {
@@ -5207,7 +5209,7 @@ a.waves-effect .waves-ripple {
 
 .collapsible-body p {
 	margin : 0;
-	padding: 0 1rem;
+	padding: 0.5rem 1rem;
 }
 
 .side-nav .collapsible,
