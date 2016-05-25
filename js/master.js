@@ -1,7 +1,7 @@
 $(window).resize(function windowResize() {
   $('.tabs-wrapper').pushpin({
     top: $('.tabs-wrapper').offset().top,
-    offset: $('.nav-wrapper').height(),
+    // offset: $('.nav-wrapper').height(),
   });
 });
 $(document).ready(function readyDoc() {

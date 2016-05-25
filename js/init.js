@@ -20,7 +20,7 @@
   // $('.hidden').hide();
   $('.tabs-wrapper').pushpin({
     top: $('.tabs-wrapper').offset().top,
-    offset: $('.nav-wrapper').height(),
+    // offset: $('.nav-wrapper').height(),
   });
   $('.collapsible').collapsible({
     accordion: false,

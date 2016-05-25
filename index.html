@@ -19,7 +19,7 @@
 ██  ██ ██ ██   ██  ██  ██
 ██   ████ ██   ██   ████
 -->
-		<header class="navbar-fixed">
+		<header class="navbar">
 			<nav class="yellow darken-2 white-text" role="navigation">
 				<div class="nav-wrapper"> <a class="brand-logo" id="logo-container" href="#top">kullaberg</a>
 					<ul class="right hide-on-med-and-down ">
@@ -28,13 +28,24 @@
 						<li> <a href="#contact">Contact</a> </li>
 						<li> <a href="#english.html">Language</a> </li>
 					</ul>
-					<ul id="nav-mobile" class="side-nav section">
-						<li><a href="#trails">Trails</a> </li>
-						<li><a href="#POI">POIs</a> </li>
-						<li><a href="#contact">Contact</a> </li>
-						<li><a href="#english.html">Language</a> </li>
-					</ul> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi mdi-menu"></i></a> </div>
+				</div>
 			</nav>
+			<!--
+			███████  █████  ██████
+			██      ██   ██ ██   ██
+			█████   ███████ ██████
+			██      ██   ██ ██   ██
+			██      ██   ██ ██████
+			-->
+			<div class="fixed-action-btn horizontal click-to-toggle">
+				<a class="btn-floating btn-large red"> <i class="mdi mdi-menu"></i> </a>
+				<ul>
+					<li><a class="btn-floating red"><i class="mdi mdi-chart-bar"></i></a></li>
+					<li><a class="btn-floating yellow darken-1"><i class="mdi mdi-format-quote"></i></a></li>
+					<li><a class="btn-floating green"><i class="mdi mdi-content-save"></i></a></li>
+					<li><a class="btn-floating blue"><i class="mdi mdi-file-check"></i></a></li>
+				</ul>
+			</div>
 		</header>
 		<main>
 			<!--
@@ -79,15 +90,17 @@
 			-->
 			<!-- section.row>(div.col.s12>ul.tabs>(li.tab.col.s3(a[#trail$]{Trail $})*3))(div#trail$.col.s12{Trail $}*3)
  -->
-			<section class="tabs-wrapper">
-				<div class="col s12">
-					<ul class="tabs">
-						<li class="tab col s3"><a href="#trail1">Kullaleden</a></li>
-						<li class="tab col s3"><a href="#trail2">Western Kullaberg</a></li>
-						<li class="tab col s3"><a href="#trail3">Sights of Heritage</a></li>
-					</ul>
-				</div>
-			</section>
+			<div class="tabSpacer">
+				<section class="tabs-wrapper">
+					<div class="col s12">
+						<ul class="tabs">
+							<li class="tab col s3"><a href="#trail1">Kullaleden</a></li>
+							<li class="tab col s3"><a href="#trail2">Western Kullaberg</a></li>
+							<li class="tab col s3"><a href="#trail3">Sights of Heritage</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
 			<!--
 			 ██████  ██████  ██      ██      ███████  ██████ ████████ ██  ██████  ███    ██
 			██      ██    ██ ██      ██      ██      ██         ██    ██ ██    ██ ████   ██
@@ -135,35 +148,42 @@
 							</div>
 						</article>
 					</section>
+					<!--
+					██████   ██████  ██
+					██   ██ ██    ██ ██
+					██████  ██    ██ ██
+					██      ██    ██ ██
+					██       ██████  ██
+					-->
 					<h3 class="center-align section trail1">Points of Interest</h3>
 					<section class="col s12">
 						<ul class="collapsible" data-collapsible="accordion">
-							<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius trail1"></i>Responsibility</span>
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Responsibility</span>
 								<div class="collapsible-body section row"> <img src="img/t1/1.jpg" class="col s4 m3 l2 materialboxed" alt="Responsibility" />
 									<p>Since prehistoric times, the sea has been a valuable resource. We have over-utilised the sea for a long time. Now we understand that we need to do more to keep the sea healthy. Trends are changing and we are now well on the way, each doing their
 										part. </p>
 									<p>The burden of nutrients entering the sea is decreasing; shipping is becoming cleaner; an increasing number of wetlands are being created and awareness is increasing among people in general.</p>
 								</div>
 							</li>
-							<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius trail1"></i>The Harbour Seal</span>
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>The Harbour Seal</span>
 								<div class="collapsible-body section row"> <img src="img/t1/2.jpg" class="col s4 m3 l2 materialboxed" alt="The Harbour Seal" />
 									<p>The Harbour seal is found on the Swedish west coast, as well as in two small colonies in the Baltic Sea, at Måkläppen and in the Kalmarsund Strait. The seals we see in Skälderviken belong to the colony on the skerries at Väderö in Halland. </p>
 									<p>The male grows to about 170 centimetres and weighs about 100 kg, while the female, which is slightly smaller, grows to 160 centimetres, weighing around 80 kg. The colour is speckled grey.</p>
 								</div>
 							</li>
-							<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius trail1"></i>Sea Plants</span>
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Sea Plants</span>
 								<div class="collapsible-body section row"> <img src="img/t1/3.jpg" class="col s4 m3 l2 materialboxed" alt="Sea Plants" />
 									<p>Plants are crucial to life in the sea. With the help of sunlight, plants transform carbon dioxide into energy-rich plant material, and they create oxygen. There are two different types of plant in the sea: flowering plants, which have roots and
 										grow in soft bottoms, and Kelp which grows on hard bottoms, attaching itself with the help of a holdfast.</p>
 								</div>
 							</li>
-							<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius trail1"></i>Swimmer's Bay</span>
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Swimmer's Bay</span>
 								<div class="collapsible-body section row"> <img src="img/t1/4.jpg" class="col s4 m3 l2 materialboxed" alt="Swimmer's Bay" />
 									<p>The Swimmers’ Bay – the food store and nursery of the sea. Shallow bays are highly productive. A lot of nutrition comes here from land and the spring sun quickly warms the shallow water. On a fine April day, while it is still 5-6 °C out at sea,
 										it can be 10 to 15 °C near the shores. At a depth of 1 m, biological production can be 10 times greater than at 10 m deep.</p>
 								</div>
 							</li>
-							<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius trail1"></i>The Porpoise</span>
+							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>The Porpoise</span>
 								<div class="collapsible-body section row"> <img src="img/t1/5.jpg" class="col s4 m3 l2 materialboxed" alt="The Porpoise" />
 									<p>The common porpoise Phocoena phocoena. The only whale to constantly inhabit Swedish waters, the porpoise is endangered and red-listed. However, in Skälderviken and the north of Öresund there is still a good chance of seeing a porpoise. </p>
 									<h5>The Smallest Whale</h5>
@@ -198,7 +218,7 @@
 						</div>
 					</article>
 					<ul class="col s12 scrollspy collapsible" data-collapsible="accordion">
-						<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
 							<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum vitae natus quibusdam dignissimos incidunt totam voluptate tempora a deserunt unde corrupti in tempore rerum cupiditate aliquid dolorum est, doloremque. Impedit corporis quasi veritatis,
 								soluta et minus architecto hic voluptate temporibus dolorem earum nobis dolores id ipsam obcaecati magnam, facere molestiae ullam repellendus consequuntur aspernatur! Itaque exercitationem blanditiis provident dicta quam sed. Iusto soluta veniam
 								rem enim ex, facilis corporis fugiat excepturi tempore, praesentium, aliquam eum consequuntur impedit, iure numquam?</p>
@@ -386,22 +406,6 @@
 						</li>
 					</ul>
 				</section>
-			</div>
-			<!--
-			███████  █████  ██████
-			██      ██   ██ ██   ██
-			█████   ███████ ██████
-			██      ██   ██ ██   ██
-			██      ██   ██ ██████
-			-->
-			<div class="fixed-action-btn horizontal click-to-toggle">
-				<a class="btn-floating btn-large red"> <i class="mdi mdi-menu"></i> </a>
-				<ul>
-					<li><a class="btn-floating red"><i class="mdi mdi-chart-bar"></i></a></li>
-					<li><a class="btn-floating yellow darken-1"><i class="mdi mdi-format-quote"></i></a></li>
-					<li><a class="btn-floating green"><i class="mdi mdi-content-save"></i></a></li>
-					<li><a class="btn-floating blue"><i class="mdi mdi-file-check"></i></a></li>
-				</ul>
 			</div>
 		</main>
 		<!--
