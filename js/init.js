@@ -1,4 +1,5 @@
 (function jQ($) {
+  $('.grid').masonry({});
   $('.button-collapse').sideNav({
     menuWidth: 320,
     // Default is 240
@@ -24,7 +25,6 @@
   $('.collapsible').collapsible({
     accordion: false,
   });
-  $('.grid').masonry({});
   // end of document ready
 }(jQuery));
 // end of jQuery name space
