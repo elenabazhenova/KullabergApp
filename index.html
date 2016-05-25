@@ -6,7 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<title>Kullaberg</title>
 		<meta name="theme-color" content="#0d47a1">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="css/materialize.min.css">
 		<link rel="stylesheet" href="css/materialdesignicons.min.css">
 		<link rel="stylesheet" href="css/master.min.css"> </head>
@@ -21,7 +21,7 @@
 -->
 		<header class="navbar">
 			<nav class="blue darken-4" role="navigation">
-				<div class="nav-wrapper" id="top"> <a class="brand-logo" id="logo-container" href="#top">kullaberg</a>
+				<div class="nav-wrapper scrollspy" id="top"> <a class="brand-logo" id="logo-container" href="#top">kullaberg</a>
 					<ul class="right hide-on-med-and-down">
 						<li> <a href="#Events">Events</a> </li>
 						<li> <a href="#POI">POIs</a> </li>
@@ -41,7 +41,7 @@
 				<a class="btn-floating btn-large red"> <i class="mdi mdi-menu"></i> </a>
 				<ul>
 					<li><a class="btn-floating red" href="#top"><i class="mdi mdi-routes"></i></a></li>
-					<li><a class="btn-floating yellow darken-1 modal-trigger" href="#kullabergKarta"><i class="mdi mdi-map"></i></a></li>
+					<li><a class="btn-floating yellow darken-1" href="img/kullabergKarta.svg"><i class="mdi mdi-map"></i></a></li>
 					<li><a class="btn-floating green" href="#events"><i class="mdi mdi-newspaper"></i></a></li>
 					<li><a class="btn-floating blue modal-trigger" href="#contact"><i class="mdi mdi-phone"></i></a></li>
 				</ul>
@@ -78,7 +78,7 @@
 			<!--
 			(section#trail$.row>ul.col.s12.scrollspy.collapsible[data-collapsible=accordion]>(li>(span.title.collapsible-header(i.mdi.mdi-map-marker-radius)({Point of Interest $}))(p.collapsible-body>lorem80))*16)*3
 		 -->
-			<div id="POI">
+			<div id="POI" class="scrollspy">
 				<!--
 				████████ ██████   █████  ██ ██           ██
 				   ██    ██   ██ ██   ██ ██ ██          ███
@@ -99,7 +99,7 @@
 						</article>
 						<article class="col s12 m6">
 							<div class="card">
-								<a href="img/t1/0.jpg">
+								<a href="img/mapKullaleden.svg">
 									<div class="card-image"><img class="" src="img/t1/0.jpg" alt="Kullaleden"></div>
 								</a>
 								<div class="card-content">
@@ -417,11 +417,9 @@
 					<br><a href="https://www.behance.net/2Active" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Behance Portfolio"><i class="mdi mdi-behance large"></i></a> <a href="https://github.com/xtreemze?tab=repositories" class="tooltipped"
 									data-position="left" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box"></i></a> </div>
 			</div>
-			<div class="modal-footer blue darken-4"> <a href="#!" class=" modal-action modal-close btn-flat"><i class="mdi mdi-close"></i></a> </div>
 		</div>
 		<div id="kullabergKarta" class="modal">
 			<div class="modal-content"> <img src="img/kullabergKarta.svg" alt="Kullaberg Map"> </div>
-			<div class="modal-footer blue darken-4"> <a href="#!" class=" modal-action modal-close btn-flat"><i class="mdi mdi-close"></i></a> </div>
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/materialize.min.js "></script>
