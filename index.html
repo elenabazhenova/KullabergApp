@@ -21,10 +21,11 @@
 -->
 		<header class="navbar">
 			<nav class="blue darken-4" role="navigation">
-				<div class="nav-wrapper"> <a class="brand-logo" id="logo-container" href="#top">kullaberg</a>
+				<div class="nav-wrapper" id="top"> <a class="brand-logo" id="logo-container" href="#top">kullaberg</a>
 					<ul class="right hide-on-med-and-down">
+						<li> <a href="#Events">Events</a> </li>
 						<li> <a href="#POI">POIs</a> </li>
-						<li> <a href="#contact">Contact</a> </li>
+						<li> <a class="modal-trigger" href="#contact">Contact</a> </li>
 						<li> <a href="#english.html">Language</a> </li>
 					</ul>
 				</div>
@@ -39,10 +40,10 @@
 			<div class="fixed-action-btn horizontal click-to-toggle">
 				<a class="btn-floating btn-large red"> <i class="mdi mdi-menu"></i> </a>
 				<ul>
-					<li><a class="btn-floating red"><i class="mdi mdi-routes"></i></a></li>
-					<li><a class="btn-floating yellow darken-1" href="img/kullabergKarta.svg"><i class="mdi mdi-map"></i></a></li>
-					<li><a class="btn-floating green"><i class="mdi mdi-content-save"></i></a></li>
-					<li><a class="btn-floating blue"><i class="mdi mdi-file-check"></i></a></li>
+					<li><a class="btn-floating red" href="#top"><i class="mdi mdi-routes"></i></a></li>
+					<li><a class="btn-floating yellow darken-1 modal-trigger" href="#kullabergKarta"><i class="mdi mdi-map"></i></a></li>
+					<li><a class="btn-floating green" href="#events"><i class="mdi mdi-newspaper"></i></a></li>
+					<li><a class="btn-floating blue modal-trigger" href="#contact"><i class="mdi mdi-phone"></i></a></li>
 				</ul>
 			</div>
 		</header>
@@ -77,7 +78,7 @@
 			<!--
 			(section#trail$.row>ul.col.s12.scrollspy.collapsible[data-collapsible=accordion]>(li>(span.title.collapsible-header(i.mdi.mdi-map-marker-radius)({Point of Interest $}))(p.collapsible-body>lorem80))*16)*3
 		 -->
-			<div id="POI" class="scrollspy">
+			<div id="POI">
 				<!--
 				████████ ██████   █████  ██ ██           ██
 				   ██    ██   ██ ██   ██ ██ ██          ███
@@ -190,7 +191,7 @@
 							</div>
 						</div>
 					</article>
-					<ul class="col s12 scrollspy collapsible" data-collapsible="accordion">
+					<ul class="col s12 collapsible" data-collapsible="accordion">
 						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
 							<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum vitae natus quibusdam dignissimos incidunt totam voluptate tempora a deserunt unde corrupti in tempore rerum cupiditate aliquid dolorum est, doloremque. Impedit corporis quasi veritatis,
 								soluta et minus architecto hic voluptate temporibus dolorem earum nobis dolores id ipsam obcaecati magnam, facere molestiae ullam repellendus consequuntur aspernatur! Itaque exercitationem blanditiis provident dicta quam sed. Iusto soluta veniam
@@ -296,7 +297,7 @@
 							</div>
 						</div>
 					</article>
-					<ul class="col s12 scrollspy collapsible" data-collapsible="accordion">
+					<ul class="col s12 collapsible" data-collapsible="accordion">
 						<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
 							<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum illum suscipit eius odit mollitia iusto, consequuntur id, assumenda, obcaecati modi! Vel ipsa maxime, hic culpa similique, libero placeat eligendi quo facere repellat maiores
 								quis quia, laborum! Quas alias optio iusto, beatae fugit itaque possimus quibusdam voluptates temporibus ipsum ut, commodi consequatur eos quod ipsa, asperiores ullam nemo tempore quasi accusamus? Nesciunt recusandae tempora quaerat at natus,
@@ -404,7 +405,23 @@
 					<br><a href="https://www.behance.net/2Active" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Behance Portfolio"><i class="mdi mdi-behance large"></i></a> <a href="https://github.com/xtreemze?tab=repositories" class="tooltipped"
 									data-position="left" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box large"></i></a> </div>
 			</div>
-			<div class="modal-footer blue"> <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat"><i class="mdi mdi-close"></i></a> </div>
+			<div class="modal-footer blue darken-4"> <a href="#!" class=" modal-action modal-close btn-flat"><i class="mdi mdi-close"></i></a> </div>
+		</div>
+		<div id="contact" class="modal">
+			<div class="modal-content row valign-wrapper">
+				<div class="col s8 l7 valign right-align">
+					<h3 class="orange-text">Naturum Kullaberg</h3>
+					<h4 class="flow-text">The Gateway to Nature</h4> </div>
+				<div class="col s4 l5 valign orange-text"><a href="mailto:kullaberg@lansstyrelsen.se" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Email: Kullaberg@Lannstyrelsen.se"><i class="mdi mdi-email"></i></a> <a href="tel:0737298257" class="tooltipped" data-position="left"
+									data-delay="50" data-tooltip="Tel: 073-729 82 57"><i class="mdi mdi-phone-classic"></i></a> <a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped" data-position="left" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin"></i></a>
+					<br><a href="https://www.behance.net/2Active" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Behance Portfolio"><i class="mdi mdi-behance large"></i></a> <a href="https://github.com/xtreemze?tab=repositories" class="tooltipped"
+									data-position="left" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box"></i></a> </div>
+			</div>
+			<div class="modal-footer blue darken-4"> <a href="#!" class=" modal-action modal-close btn-flat"><i class="mdi mdi-close"></i></a> </div>
+		</div>
+		<div id="kullabergKarta" class="modal">
+			<div class="modal-content"> <img src="img/kullabergKarta.svg" alt="Kullaberg Map"> </div>
+			<div class="modal-footer blue darken-4"> <a href="#!" class=" modal-action modal-close btn-flat"><i class="mdi mdi-close"></i></a> </div>
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/materialize.min.js "></script>
