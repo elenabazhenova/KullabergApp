@@ -17,12 +17,6 @@
   // });
   $('.modal-trigger').leanModal();
   // $('.hidden').hide();
-  $('.grid').masonry({
-    // options
-    // itemSelector: '.grid-item',
-    // columnWidth: '.grid-item',
-    // percentPosition: true,
-  });
   $('.tabs-wrapper').pushpin({
     top: $('.tabs-wrapper').offset().top,
     offset: $('.nav-wrapper').height(),
@@ -30,6 +24,7 @@
   $('.collapsible').collapsible({
     accordion: false,
   });
+  $('.grid').masonry({});
   // end of document ready
 }(jQuery));
 // end of jQuery name space
