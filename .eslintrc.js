@@ -24,9 +24,9 @@ module.exports = {
     // "quotes": [ "error", "single" ],
     // "semi": [ "error", "always" ]
     // "newline-per-chained-call": ["off"],
-    // "no-var": ["off"],
+    "no-unused-vars": ["off"],
     "max-len": ["off", 100, 4],
-    // "radix": ["off"],
+    "no-useless-concat": ["off"],
     // "prefer-template": ["off"],
     // "prefer-arrow-callback": ["off"],
     // "func-names": ["off"],
