@@ -21,7 +21,8 @@
 -->
 		<header class="navbar">
 			<nav class="blue darken-4" role="navigation">
-				<div class="nav-wrapper scrollspy" id="top"> <a class="brand-logo" id="logo-container" href="#top">kullaberg</a>
+				<div class="nav-wrapper scrollspy" id="top">
+					<a class="brand-logo" id="logo-container" href="#top"> <span class="asterisk"><img src="img/asterisk.svg" alt="Kullaberg" class="responsive-img"/></span>kullaberg</a>
 					<ul class="right hide-on-med-and-down">
 						<li> <a href="#Events">Events</a> </li>
 						<li> <a href="#POI">POIs</a> </li>
@@ -37,7 +38,7 @@
 			██      ██   ██ ██   ██
 			██      ██   ██ ██████
 			-->
-			<div class="fixed-action-btn horizontal click-to-toggle">
+			<div class="fixed-action-btn horizontal click-to-toggle hide-on-large-only">
 				<a class="btn-floating btn-large red"> <i class="mdi mdi-menu"></i> </a>
 				<ul>
 					<li><a class="btn-floating red" href="#top"><i class="mdi mdi-routes"></i></a></li>
@@ -47,37 +48,30 @@
 				</ul>
 			</div>
 		</header>
-		<main>
-			<!--
+		<!--
 			████████  █████  ██████  ███████
 				 ██    ██   ██ ██   ██ ██
 				 ██    ███████ ██████  ███████
 				 ██    ██   ██ ██   ██      ██
 				 ██    ██   ██ ██████  ███████
 			-->
-			<!-- section.row>(div.col.s12>ul.tabs>(li.tab.col.s3(a[#trail$]{Trail $})*3))(div#trail$.col.s12{Trail $}*3)
+		<!-- section.row>(div.col.s12>ul.tabs>(li.tab.col.s3(a[#trail$]{Trail $})*3))(div#trail$.col.s12{Trail $}*3)
  -->
-			<div class="tabSpacer">
-				<section class="tabs-wrapper">
-					<div class="col s12">
-						<ul class="tabs">
-							<li class="tab col s3"><a href="#trail1">Kullaleden</a></li>
-							<li class="tab col s3"><a href="#trail2">Western Kullaberg</a></li>
-							<li class="tab col s3"><a href="#trail3">Sights of Heritage</a></li>
-						</ul>
-					</div>
-				</section>
-			</div>
-			<!--
-			 ██████  ██████  ██      ██      ███████  ██████ ████████ ██  ██████  ███    ██
-			██      ██    ██ ██      ██      ██      ██         ██    ██ ██    ██ ████   ██
-			██      ██    ██ ██      ██      █████   ██         ██    ██ ██    ██ ██ ██  ██
-			██      ██    ██ ██      ██      ██      ██         ██    ██ ██    ██ ██  ██ ██
-			 ██████  ██████  ███████ ███████ ███████  ██████    ██    ██  ██████  ██   ████
-			-->
-			<!--
+		<div class="tabSpacer">
+			<section class="tabs-wrapper">
+				<div class="col s12">
+					<ul class="tabs">
+						<li class="tab col s3"><a href="#trail1">Kullaleden</a></li>
+						<li class="tab col s3"><a href="#trail2">Western Kullaberg</a></li>
+						<li class="tab col s3"><a href="#trail3">Sights of Heritage</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<!--
 			(section#trail$.row>ul.col.s12.scrollspy.collapsible[data-collapsible=accordion]>(li>(span.title.collapsible-header(i.mdi.mdi-map-marker-radius)({Point of Interest $}))(p.collapsible-body>lorem80))*16)*3
 		 -->
+		<main>
 			<div id="POI" class="scrollspy">
 				<!--
 				████████ ██████   █████  ██ ██           ██
@@ -86,12 +80,12 @@
 				   ██    ██   ██ ██   ██ ██ ██           ██
 				   ██    ██   ██ ██   ██ ██ ███████      ██
 				-->
-				<section id="trail1" class="row">
+				<section id="trail1">
 					<h4 class="center-align trail1">Kullaleden</h4>
 					<section class="grid row">
 						<article class="col s12 m6">
 							<div class="card">
-								<div class="card-image"><img class="materialboxed" src="img/trail1sign.jpg" alt="Kullaleden"></div>
+								<div class="card-image"><img class="materialboxed" src="img/t1/trail1sign.jpg" alt="Kullaleden"></div>
 								<div class="card-content">
 									<p>Welcome to the Kullaleden Trail, marked with orange, taking you forward step by step.</p>
 								</div>
@@ -99,7 +93,7 @@
 						</article>
 						<article class="col s12 m6">
 							<div class="card">
-								<a href="img/mapKullaleden.svg">
+								<a href="img/t1/mapKullaleden.jpg">
 									<div class="card-image"><img class="" src="img/t1/0.jpg" alt="Kullaleden"></div>
 								</a>
 								<div class="card-content">
@@ -110,8 +104,8 @@
 						</article>
 						<article class="col s12 m6">
 							<div class="card">
-								<a href="img/trail1map.jpg">
-									<div class="card-image"><img src="img/trail1map.jpg" alt="Kullaleden"></div>
+								<a href="img/t1/trail1mapZoom.jpg">
+									<div class="card-image"><img src="img/t1/trail1map.jpg" alt="Kullaleden"></div>
 								</a>
 								<div class="card-content">
 									<p>Kullaleden is 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
@@ -127,45 +121,88 @@
 					██       ██████  ██
 					-->
 					<h4 class="center-align trail1">Points of Interest</h4>
-					<section class="col s12">
-						<ul class="collapsible" data-collapsible="accordion">
-							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Responsibility</span>
-								<div class="collapsible-body section row"> <img src="img/t1/1.jpg" class="col s4 m3 l2 materialboxed" alt="Responsibility" />
-									<p>Since prehistoric times, the sea has been a valuable resource. We have over-utilised the sea for a long time. Now we understand that we need to do more to keep the sea healthy. Trends are changing and we are now well on the way, each doing their
-										part. </p>
-									<p>The burden of nutrients entering the sea is decreasing; shipping is becoming cleaner; an increasing number of wetlands are being created and awareness is increasing among people in general.</p>
-								</div>
-							</li>
-							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>The Harbour Seal</span>
-								<div class="collapsible-body section row"> <img src="img/t1/2.jpg" class="col s4 m3 l2 materialboxed" alt="The Harbour Seal" />
-									<p>The Harbour seal is found on the Swedish west coast, as well as in two small colonies in the Baltic Sea, at Måkläppen and in the Kalmarsund Strait. The seals we see in Skälderviken belong to the colony on the skerries at Väderö in Halland. </p>
-									<p>The male grows to about 170 centimetres and weighs about 100 kg, while the female, which is slightly smaller, grows to 160 centimetres, weighing around 80 kg. The colour is speckled grey.</p>
-								</div>
-							</li>
-							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Sea Plants</span>
-								<div class="collapsible-body section row"> <img src="img/t1/3.jpg" class="col s4 m3 l2 materialboxed" alt="Sea Plants" />
-									<p>Plants are crucial to life in the sea. With the help of sunlight, plants transform carbon dioxide into energy-rich plant material, and they create oxygen. There are two different types of plant in the sea: flowering plants, which have roots and
-										grow in soft bottoms, and Kelp which grows on hard bottoms, attaching itself with the help of a holdfast.</p>
-								</div>
-							</li>
-							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Swimmer's Bay</span>
-								<div class="collapsible-body section row"> <img src="img/t1/4.jpg" class="col s4 m3 l2 materialboxed" alt="Swimmer's Bay" />
-									<p class="strong">The Swimmers’ Bay</p>
-									<p>The food store and nursery of the sea.</p>
-									<p>Shallow bays are highly productive. A lot of nutrition comes here from land and the spring sun quickly warms the shallow water. On a fine April day, while it is still 5-6 °C out at sea, it can be 10 to 15 °C near the shores. At a depth of 1m,
-										biological production can be 10 times greater than at 10 m deep.</p>
-								</div>
-							</li>
-							<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>The Porpoise</span>
-								<div class="collapsible-body section row"> <img src="img/t1/5.jpg" class="col s4 m3 l2 materialboxed" alt="The Porpoise" />
-									<p class="strong">The common porpoise Phocoena phocoena.</p>
-									<p> The only whale to constantly inhabit Swedish waters, the porpoise is endangered and red-listed. However, in Skälderviken and the north of Öresund there is still a good chance of seeing a porpoise. </p>
-									<p class="strong">The Smallest Whale</p>
-									<p>The porpoise grows to approximately 170 cm. The primary way to recognise a porpoise is the low, triangular dorsal fin.</p>
-									<p>An elusive deep diver When necessary, porpoises can dive to a depth of 240 meters.</p>
-								</div>
-							</li>
-						</ul>
+					<section class="row">
+						<div class="col s12">
+							<ul class="collapsible" data-collapsible="accordion">
+								<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Responsibility</span>
+									<div class="collapsible-body section row"> <img src="img/t1/1.jpg" class="col s4 m3 l2 materialboxed" alt="Responsibility" />
+										<p>Since prehistoric times, the sea has been a valuable resource. We have over-utilised the sea for a long time. Now we understand that we need to do more to keep the sea healthy. Trends are changing and we are now well on the way, each doing their
+											part. </p>
+										<p>The burden of nutrients entering the sea is decreasing; shipping is becoming cleaner; an increasing number of wetlands are being created and awareness is increasing among people in general.</p>
+									</div>
+								</li>
+								<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>The Harbour Seal</span>
+									<div class="collapsible-body section row"> <img src="img/t1/2.jpg" class="col s4 m3 l2 materialboxed" alt="The Harbour Seal" />
+										<p>The Harbour seal is found on the Swedish west coast, as well as in two small colonies in the Baltic Sea, at Måkläppen and in the Kalmarsund Strait. The seals we see in Skälderviken belong to the colony on the skerries at Väderö in Halland. </p>
+										<p>The male grows to about 170 centimetres and weighs about 100 kg, while the female, which is slightly smaller, grows to 160 centimetres, weighing around 80 kg. The colour is speckled grey.</p>
+									</div>
+								</li>
+								<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Sea Plants</span>
+									<div class="collapsible-body section row"> <img src="img/t1/12.jpg" class="col s4 m3 l2 materialboxed" alt="Sea Plants" />
+										<p>Plants are crucial to life in the sea. With the help of sunlight, plants transform carbon dioxide into energy-rich plant material, and they create oxygen. There are two different types of plant in the sea: flowering plants, which have roots
+											and grow in soft bottoms, and Kelp which grows on hard bottoms, attaching itself with the help of a holdfast.</p>
+										<p>Plants are crucial to life in the sea. With the help of sunlight, plants transform carbon dioxide into energy-rich plant material, and they create oxygen. There are two different types of plant in the sea: flowering plants, which have roots
+											and grow in soft bottoms, and Kelp which grows on hard bottoms, attaching itself with the help of a holdfast.</p>
+										<p>Large perennial algae such as Bladderwrack and Toothed wrack are important to the ecosystem.</p>
+									</div>
+								</li>
+								<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Swimmer's Bay</span>
+									<div class="collapsible-body section row"> <img src="img/t1/4.jpg" class="col s4 m3 l2 materialboxed" alt="Swimmer's Bay" />
+										<p class="strong">The Swimmers’ Bay</p>
+										<p>The food store and nursery of the sea.</p>
+										<p>Shallow bays are highly productive. A lot of nutrition comes here from land and the spring sun quickly warms the shallow water. On a fine April day, while it is still 5-6 °C out at sea, it can be 10 to 15 °C near the shores. At a depth of 1m,
+											biological production can be 10 times greater than at 10 m deep.</p>
+										<p><span class="strong">April</span> - Brown shrimp and Littoral crab come in from deeper water.</p>
+										<p><span class="strong">May</span> - Hundreds of small juvenile plaice drift in from the spawning grounds out in the Kattegatt.</p>
+										<p> <span class="strong">June</span> - There is a veritable invasion of Blunt gapers, cockles and sea mussels.</p>
+										<p> <span class="strong">July</span> - Newly hatched Brown shrimp and Littoral crab drift in to the bay on the current. </p>
+										<p><span class="strong">Autumn</span> - In the autumn when it becomes cooler in the water, the fish, crabs and shrimp disappear to deeper water.</p>
+										<p><span class="strong">Winter</span> - In winter there is calm in the swimmers’ bay.</p>
+									</div>
+								</li>
+								<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>The Porpoise</span>
+									<div class="collapsible-body section row"> <img src="img/t1/5.jpg" class="col s4 m3 l2 materialboxed" alt="The Porpoise" />
+										<p class="strong">The common porpoise Phocoena phocoena.</p>
+										<p> The only whale to constantly inhabit Swedish waters, the porpoise is endangered and red-listed. However, in Skälderviken and the north of Öresund there is still a good chance of seeing a porpoise. </p>
+										<p class="strong">The Smallest Whale</p>
+										<p>The porpoise grows to approximately 170 cm. The primary way to recognise a porpoise is the low, triangular dorsal fin.</p>
+										<p>An elusive deep diver When necessary, porpoises can dive to a depth of 240 meters.</p>
+									</div>
+								</li>
+								<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Coastal Waters</span>
+									<div class="collapsible-body section row"> <img src="img/t1/6.jpg" class="col s4 m3 l2 materialboxed" alt="Coastal Waters" />
+										<p>No two stretches of coastline are identical. We find cliffs, cobblefields, gravel, sand and clay. The properties of water range from somewhat brackish to the east to genuine seawater to the west. We therefore have a greater abundance of species
+											to the west, while the Baltic Sea has a unique mix of saltwater and freshwater species. </p>
+										<p>The form and shape of the landscape create different conditions for animals and plants, both above and below the sea surface. Rock bottoms have their populations and soft bottoms have theirs.</p>
+										<p>We know today that waters along the coasts are of considerable importance to all sea life. No two stretches of coastline are identical. We find cliffs, cobblefields, gravel, sand and clay. The properties of water range from somewhat brackish
+											to the east to genuine seawater to the west. We therefore have a greater abundance of species to the west, while the Baltic Sea has a unique mix of saltwater and freshwater species.</p>
+									</div>
+								</li>
+								<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Sea Meets Land</span>
+									<div class="collapsible-body section row"> <img src="img/t1/8.jpg" class="col s4 m3 l2 materialboxed" alt="Sea Meets Land" />
+										<p>The coastline is a unique area which is affected by what happens both on land and in the sea. Today this area is hotly discussed due to the rising sea levels.</p>
+										<p>The shores along Skälderviken are varied, from sandy to rocky. Farthest inside the bay there are white sandy beaches, while the opening to Kattegatt comprises rocky shores on both sides. Kullaberg rises in the south, a primary rock of horst
+											offering high, steep shores.</p>
+									</div>
+								</li>
+								<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Skälderviken</span>
+									<div class="collapsible-body section row"> <img src="img/t1/9.jpg" class="col s4 m3 l2 materialboxed" alt="Skälderviken" />
+										<p>Skälderviken is a bay on the Kattegatt. The area features genuine salt seawater and, via Öresund, the brackish water of the Baltic Sea. This fact means that the exchange of bottom and surface water is made more difficult, which can lead to a
+											shortage of oxygen (hypoxia) on the seabed. The risk of oxygen shortage increases further when too many nutrients from land flow into the bay.</p>
+										<p>The whole of Skälderviken is an important area for life in the sea. Some areas are protected as nature reserves or are Natura 2000 areas.</p>
+										<p>Skälderviken is a spawning area for herring and is an extremely important breeding area for flatfish such as European plaice and Common dab. Other commercial fish species such as Cod, Lumpsucker and Eel hunt their prey here.</p>
+										<p>In the same way, the Eider and other diving ducks find important nutrition here. The bay is home to both seals and porpoises.</p>
+									</div>
+								</li>
+								<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Rocky Bottoms</span>
+									<div class="collapsible-body section row"> <img src="img/t1/13.jpg" class="col s4 m3 l2 materialboxed" alt="Rocky Bottoms" />
+										<p>Many marine species require genuine salt water. In the coastal waters of Skåne we find these creatures only in the northern part of Öresund and in the Kattegatt, above all at Kullaberg. Below the pycnocline boundary out at the Kullaberg rocks,
+											it is dark and cold but abundant in fauna in beautiful colours.</p>
+										<p>Kullaberg is the southernmost outpost of the purely marine species – further south the water is too brackish. At Kullaberg we find coral species – corals are animals not plants.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
 					</section>
 				</section>
 				<!--
@@ -176,21 +213,6 @@
 				   ██    ██   ██ ██   ██ ██ ███████     ███████
 				-->
 				<section id="trail2" class="row">
-					<article class="col s12 l6">
-						<div class="card">
-							<div class="card-image"><img class="materialboxed" src="img/trail2map.jpg" alt="Western Kullaberg"></div>
-							<div class="card-content">
-								<p>Kullaleden is section 1-6 of Skåneleden trail no. SL 5 in total 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
-								<p> Kullaleden offers a great variety of experiences along the way. Here you find everything including the medieval city centre of Helsingborg, beautiful views over the straits from the plateau heights, the well-known Sofiero Palace, Kulla-Gunnarstorp
-									and Krapperup Estates, beaches and picturesque seaside villages, and Kullaberg’s dramatic cliff formations. </p>
-								<p> Kullaleden is certified according to the European Ramblers’ Association’s (ERA) criteria for being a Leading Quality Trail. This entails a quality assurance of the trail’s physical standard as well as the experiences and services along the trail.
-									The certification is renewed every three years. </p>
-								<p> There are signs in all the village harbours with information about the local sights as well as a detailed map.</p>
-								<p> Along the trail, there are simple overnight sites with wind shelter, water and toilets available. It is often possible to find other accommodation in connection to the trail. Skåneleden is marked with orange paint or orange signs.</p>
-								<p> Nature reserves exist along large portions of the trail. Within these reserves, specific codes of conduct exist in order to protect their natural and recreational values</p>
-							</div>
-						</div>
-					</article>
 					<ul class="col s12 collapsible" data-collapsible="accordion">
 						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
 							<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum vitae natus quibusdam dignissimos incidunt totam voluptate tempora a deserunt unde corrupti in tempore rerum cupiditate aliquid dolorum est, doloremque. Impedit corporis quasi veritatis,
@@ -257,21 +279,6 @@
 								sapiente ipsam odit nemo excepturi ullam deserunt, praesentium, delectus pariatur quisquam omnis quis architecto? Expedita sequi in voluptas explicabo molestias, quis? Eaque iusto ipsum consequatur temporibus nobis molestiae praesentium iure beatae
 								commodi nostrum similique eveniet aut exercitationem dolor sapiente corporis quaerat unde pariatur accusamus, maiores, et.</p>
 						</li>
-						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 14</span>
-							<p class="collapsible-body">Voluptatem illo minima ut nulla vero, nostrum itaque, fuga dignissimos assumenda iure veniam minus earum fugit eaque delectus id eos perspiciatis quisquam ipsa ea laudantium quidem. Ipsa doloribus possimus tempore harum delectus dolore, fugiat
-								quod quaerat cum, provident officia porro eaque quas. Deleniti sint neque ipsam provident alias, dolor perferendis facere quibusdam numquam beatae! Laudantium, omnis, neque! Quisquam at, ab consectetur pariatur corrupti ipsum, earum culpa distinctio
-								velit repudiandae architecto hic. Tempora quasi nisi laborum temporibus qui neque, illum ullam!</p>
-						</li>
-						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 15</span>
-							<p class="collapsible-body">Autem vel dolor, nemo odio eligendi deleniti animi aspernatur mollitia, quo aliquid officia. Accusantium architecto eos nisi non minima voluptatem iusto numquam labore modi, fugit provident vel, debitis distinctio delectus deleniti molestiae earum
-								unde suscipit ad neque praesentium illo! Distinctio ipsam quos dolorem quam, deserunt, est fugiat at veritatis accusantium dicta repudiandae molestias sit sint in blanditiis neque dolorum provident nulla accusamus architecto officia minima officiis
-								rerum? Quisquam atque, at aperiam quibusdam est, fuga, minima repellat optio, neque expedita iusto!</p>
-						</li>
-						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 16</span>
-							<p class="collapsible-body">Earum odit, explicabo ad, quaerat error eum accusamus quibusdam officia tempore, quidem numquam esse velit, amet voluptate impedit! Minus dolores repudiandae quaerat ipsam, hic harum possimus, perspiciatis cumque, quasi numquam nisi inventore,
-								iste quos pariatur. Sit dolorum, ex explicabo velit fugit soluta dolore ipsum illo cupiditate voluptate ratione rerum voluptatum nostrum beatae doloribus nesciunt repudiandae. Dicta inventore quidem facilis asperiores saepe ipsum quos, nihil distinctio
-								dolorum, unde culpa blanditiis corrupti reprehenderit, consequuntur, nam ad ea eaque minus? Quae vero, maxime?</p>
-						</li>
 					</ul>
 				</section>
 				<!--
@@ -282,21 +289,6 @@
 				   ██    ██   ██ ██   ██ ██ ███████     ██████
 				-->
 				<section id="trail3" class="row">
-					<article class="col s12 l6">
-						<div class="card">
-							<div class="card-image"><img class="materialboxed" src="img/trail3map.jpg" alt="Sights of Heritage"></div>
-							<div class="card-content">
-								<p>Kullaleden is section 1-6 of Skåneleden trail no. SL 5 in total 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
-								<p> Kullaleden offers a great variety of experiences along the way. Here you find everything including the medieval city centre of Helsingborg, beautiful views over the straits from the plateau heights, the well-known Sofiero Palace, Kulla-Gunnarstorp
-									and Krapperup Estates, beaches and picturesque seaside villages, and Kullaberg’s dramatic cliff formations. </p>
-								<p> Kullaleden is certified according to the European Ramblers’ Association’s (ERA) criteria for being a Leading Quality Trail. This entails a quality assurance of the trail’s physical standard as well as the experiences and services along the trail.
-									The certification is renewed every three years. </p>
-								<p> There are signs in all the village harbours with information about the local sights as well as a detailed map.</p>
-								<p>Along the trail, there are simple overnight sites with wind shelter, water and toilets available. It is often possible to find other accommodation in connection to the trail. Skåneleden is marked with orange paint or orange signs.</p>
-								<p>Nature reserves exist along large portions of the trail. Within these reserves, specific codes of conduct exist in order to protect their natural and recreational values </p>
-							</div>
-						</div>
-					</article>
 					<ul class="col s12 collapsible" data-collapsible="accordion">
 						<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius"></i>Point of Interest 1</span>
 							<p class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum illum suscipit eius odit mollitia iusto, consequuntur id, assumenda, obcaecati modi! Vel ipsa maxime, hic culpa similique, libero placeat eligendi quo facere repellat maiores
@@ -389,37 +381,34 @@
 ██      ██    ██ ██    ██    ██    ██      ██   ██
 ██       ██████   ██████     ██    ███████ ██   ██
 -->
-		<footer class="page-footer blue darken-4 white-text">Kullabergs Naturum
+		<footer class="page-footer blue darken-4 white-text">
+			<div class="row">
+				<div class="col s12">
+					<p>Kullabergs Naturum</p>
+				</div>
+			</div>
 			<div class="footer-copyright">
 				<div class="row"> <span class="col s12 m4">Design <a class="orange-text text-lighten-3 modal-trigger" href="#modal1">Carlos Velasco</a></span></div>
 			</div>
 		</footer>
 		<div id="modal1" class="modal">
-			<div class="modal-content row valign-wrapper">
-				<div class="col s8 l7 valign right-align">
-					<h2 class="orange-text">Carlos Velasco</h2>
+			<div class="modal-content row center-align">
+				<div class="col s12">
+					<h2 class="blue-text text-darken-4">Carlos Velasco</h2>
 					<h4 class="flow-text">Interactive Design and Web Development</h4> </div>
-				<div id="social" class="col s4 l5 valign orange-text"><a href="mailto:Carlos@2ActiveDesign.com?subject=Inquiry_from_MittHav.com" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email large"></i></a> <a href="tel:0737298257" class="tooltipped"
-									data-position="left" data-delay="50" data-tooltip="Tel: 073-729 82 57"><i class="mdi mdi-phone-classic large"></i></a>
-					<a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped" data-position="left" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin large"></i></a>
-					<br><a href="https://www.behance.net/2Active" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Behance Portfolio"><i class="mdi mdi-behance large"></i></a> <a href="https://github.com/xtreemze?tab=repositories" class="tooltipped"
-									data-position="left" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box large"></i></a> </div>
+				<div class="col s12"><a href="mailto:Carlos@2ActiveDesign.com?subject=Inquiry_from_MittHav.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a> <a href="tel:0737298257" class="tooltipped"
+									data-position="bottom" data-delay="50" data-tooltip="Tel: 073-729 82 57"><i class="mdi mdi-phone-classic medium"></i></a>
+					<a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin medium"></i></a> <a href="https://www.behance.net/2Active" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Behance Portfolio"><i class="mdi mdi-behance medium"></i></a> <a href="https://github.com/xtreemze?tab=repositories"
+									class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box medium"></i></a> </div>
 			</div>
-			<div class="modal-footer blue darken-4"> <a href="#!" class=" modal-action modal-close btn-flat"><i class="mdi mdi-close"></i></a> </div>
 		</div>
 		<div id="contact" class="modal">
-			<div class="modal-content row valign-wrapper">
-				<div class="col s8 l7 valign right-align">
-					<h3 class="orange-text">Naturum Kullaberg</h3>
+			<div class="modal-content row center-align">
+				<div class="col s12"> <img src="img/kullabergsNaturum.svg" alt="Naturum Kullaberg" class="responsive-img" />
 					<h4 class="flow-text">The Gateway to Nature</h4> </div>
-				<div class="col s4 l5 valign orange-text"><a href="mailto:kullaberg@lansstyrelsen.se" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Email: Kullaberg@Lannstyrelsen.se"><i class="mdi mdi-email"></i></a> <a href="tel:0737298257" class="tooltipped" data-position="left"
-									data-delay="50" data-tooltip="Tel: 073-729 82 57"><i class="mdi mdi-phone-classic"></i></a> <a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped" data-position="left" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin"></i></a>
-					<br><a href="https://www.behance.net/2Active" class="tooltipped" data-position="left" data-delay="50" data-tooltip="Behance Portfolio"><i class="mdi mdi-behance large"></i></a> <a href="https://github.com/xtreemze?tab=repositories" class="tooltipped"
-									data-position="left" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box"></i></a> </div>
+				<div class="col s12"><a href="mailto:kullaberg@lansstyrelsen.se" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Kullaberg@Lannstyrelsen.se"><i class="mdi mdi-email medium"></i></a> <a href="tel:0737298257" class="tooltipped" data-position="bottom"
+									data-delay="50" data-tooltip="Tel: 073-729 82 57"><i class="mdi mdi-phone-classic medium"></i></a> <a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin medium"></i></a>					<a href="https://www.facebook.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook"><i class="mdi mdi-facebook medium"></i></a> </div>
 			</div>
-		</div>
-		<div id="kullabergKarta" class="modal">
-			<div class="modal-content"> <img src="img/kullabergKarta.svg" alt="Kullaberg Map"> </div>
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/materialize.min.js "></script>
