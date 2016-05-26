@@ -13,7 +13,7 @@ function position() {
   const options = {
     enableHighAccuracy: true,
     timeout: 15000,
-    maximumAge: 600000,
+    maximumAge: 30000,
   };
 
   function success(pos) {
@@ -29,11 +29,50 @@ function position() {
 
 function detectLanguage() {
   const lang = window.navigator.language;
-  Materialize.toast('Your prefered language is ' + lang, 6000);
+  Materialize.toast('Your preferred language is ' + lang, 6000);
 }
 
 function mapMsg() {
-  Materialize.toast('Opening Map', 6000);
+  Materialize.toast('Opening Map...', 6000);
+}
+/*
+███    ██  ██████  ████████ ██ ███████ ██  ██████  █████  ████████ ██  ██████  ███    ██ ███████
+████   ██ ██    ██    ██    ██ ██      ██ ██      ██   ██    ██    ██ ██    ██ ████   ██ ██
+██ ██  ██ ██    ██    ██    ██ █████   ██ ██      ███████    ██    ██ ██    ██ ██ ██  ██ ███████
+██  ██ ██ ██    ██    ██    ██ ██      ██ ██      ██   ██    ██    ██ ██    ██ ██  ██ ██      ██
+██   ████  ██████     ██    ██ ██      ██  ██████ ██   ██    ██    ██  ██████  ██   ████ ███████
+*/
+function notifyMe() {
+  var notification;
+  // Let's check if the browser supports notifications
+  if (!('Notification' in window)) {
+    Materialize.toast('This browser does not support desktop notification', 6000);
+    // Let's check whether notification permissions have already been granted
+  } else if (Notification.permission === 'granted') {
+    // If it's okay let's create a notification
+    notification = new Notification('Hi there!');
+    // Otherwise, we need to ask the user for permission
+  } else if (Notification.permission !== 'denied') {
+    Notification.requestPermission(function askFor(permission) {
+      // If the user accepts, let's create a notification
+      if (permission === 'granted') {
+        notification = new Notification('Hi there!');
+      }
+    });
+  }
+  // At last, if the user has denied notifications, and you
+  // want to be respectful there is no need to bother them any more.
+}
+Notification.requestPermission().then(function giveThe(result) {
+  Materialize.toast('Notification request ' + result, 6000, 'rounded');
+});
+
+function spawnNotification(theBody, theIcon, theTitle) {
+  const options = {
+    body: theBody,
+    icon: theIcon,
+  };
+  const n = new Notification(theTitle, options);
 }
 /*
 ███    ██  ██████  ████████ ███████ ███████
