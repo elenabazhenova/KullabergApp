@@ -7,7 +7,8 @@ $(window).resize(function windowResize() {
 $(window).scroll(function scrollDoc() {
   $('.grid').masonry({});
 });
-const position = function location() {
+
+function position() {
   const options = {
     enableHighAccuracy: true,
     timeout: 5000,
@@ -23,13 +24,16 @@ const position = function location() {
     Materialize.toast('ERROR(' + err.code + '): ' + err.message, 6000, 'rounded');
   }
   navigator.geolocation.getCurrentPosition(success, error, options);
-};
-const detectLanguage = function speak() {
+}
+
+function detectLanguage() {
   const lang = window.navigator.language;
   Materialize.toast('Your prefered language is ' + lang, 6000);
-};
-detectLanguage();
-position();
+}
+
+function mapMsg() {
+  Materialize.toast('Opening Map', 6000);
+}
 /*
 ███    ██  ██████  ████████ ███████ ███████
 ████   ██ ██    ██    ██    ██      ██
