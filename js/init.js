@@ -16,7 +16,14 @@
   //   transition: 500,
   //   interval: 6000,
   // });
-  $('.modal-trigger').leanModal();
+  $('.modal-trigger').leanModal({
+    ready: function blankScreen() {
+      $('.trails').fadeOut();
+    }, // Callback for Modal open
+    complete: function showScreen() {
+      $('.trails').fadeIn();
+    }, // Callback for Modal close
+  });
   // $('.hidden').hide();
   $('.tabs-wrapper').pushpin({
     top: $('.tabs-wrapper').offset().top,
