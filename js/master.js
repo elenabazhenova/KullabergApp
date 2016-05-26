@@ -9,10 +9,11 @@ $(window).scroll(function scrollDoc() {
 });
 
 function position() {
+  Materialize.toast('Aquiring your location...', 6000);
   const options = {
     enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 300000,
+    timeout: 15000,
+    maximumAge: 600000,
   };
 
   function success(pos) {
