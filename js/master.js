@@ -16,10 +16,7 @@ const position = function location() {
 
   function success(pos) {
     const crd = pos.coords;
-    Materialize.toast('Your current position is:', 6000);
-    Materialize.toast('Latitude : ' + crd.latitude, 6000);
-    Materialize.toast('Longitude: ' + crd.longitude, 6000);
-    Materialize.toast('Accurate to: ' + crd.accuracy + ' meters.', 6000);
+    Materialize.toast('Your current position:' + '<br>Latitude : ' + crd.latitude + '<br>Longitude: ' + crd.longitude + '<br>Accurate to: ' + crd.accuracy + ' meters.', 6000);
   }
 
   function error(err) {
