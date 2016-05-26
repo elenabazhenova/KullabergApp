@@ -24,7 +24,7 @@
 				<div class="nav-wrapper scrollspy" id="top">
 					<a class="brand-logo" id="logo-container" href="#top"> <span class="asterisk"><img src="img/asterisk.svg" alt="Kullaberg" class="responsive-img"/></span>kullaberg</a>
 					<ul class="right hide-on-med-and-down">
-						<li><a href="img/kullabergKarta.svg" onclick="mapMsg();">Trail Map</a></li>
+						<li><a class="modal-trigger" href="#kullabergKarta" onclick="mapMsg();">Trail Map</a></li>
 						<li><a onclick="position();">Find Me</a></li>
 						<li> <a class="modal-trigger" href="#contact">Contact Us</a> </li>
 						<li> <a onclick="detectLanguage();">Language</a> </li>
@@ -38,14 +38,14 @@
 			██      ██   ██ ██   ██
 			██      ██   ██ ██████
 			-->
-			<div class="fixed-action-btn click-to-toggle hide-on-large-only">
-				<a class="btn-floating btn-large red darken-2"> <i class="mdi mdi-menu"></i> </a>
+			<div class="fixed-action-btn click-to-toggle hide-on-large-only ">
+				<a class="btn-floating btn-large red darken-2 waves-effect waves-light"> <i class="mdi mdi-menu"></i> </a>
 				<ul>
-					<li><a class="btn-floating purple darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Notifications" href="#!" onclick="notifyMe();"><i class="mdi mdi-vibrate"></i></a></li>
-					<li><a class="btn-floating blue darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Trail Map" href="img/kullabergKarta.svg" onclick="mapMsg();"><i class="mdi mdi-map"></i></a></li>
-					<li><a class="btn-floating red darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Find Me" onclick="position();"><i class="mdi mdi-crosshairs-gps"></i></a></li>
-					<li><a class="btn-floating yellow darken-2 modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="Contact Us" href="#contact"><i class="mdi mdi-phone"></i></a></li>
-					<li><a class="btn-floating green darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="Language" onclick="detectLanguage();"><i class="mdi mdi-translate"></i></a></li>
+					<li><a class="btn-floating purple darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Notifications" href="#!" onclick="notifyMe();"><i class="mdi mdi-vibrate"></i></a></li>
+					<li><a class="modal-trigger btn-floating blue darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Trail Map" href="#kullabergKarta" onclick="mapMsg();"><i class="mdi mdi-map"></i></a></li>
+					<li><a class="btn-floating red darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Find Me" onclick="position();"><i class="mdi mdi-crosshairs-gps"></i></a></li>
+					<li><a class="btn-floating yellow darken-2 modal-trigger tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Contact Us" href="#contact"><i class="mdi mdi-phone"></i></a></li>
+					<li><a class="btn-floating green darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Language" onclick="detectLanguage();"><i class="mdi mdi-translate"></i></a></li>
 				</ul>
 			</div>
 		</header>
@@ -58,7 +58,7 @@
 			-->
 		<!-- section.row>(div.col.s12>ul.tabs>(li.tab.col.s3(a[#trail$]{Trail $})*3))(div#trail$.col.s12{Trail $}*3)
  -->
-		<div class="tabSpacer">
+		<div class="tabSpacer trails">
 			<section class="tabs-wrapper">
 				<div class="col s12">
 					<ul class="tabs">
@@ -73,7 +73,7 @@
 			(section#trail$.row>ul.col.s12.scrollspy.collapsible[data-collapsible=accordion]>(li>(span.title.collapsible-header(i.mdi.mdi-map-marker-radius)({Point of Interest $}))(p.collapsible-body>lorem80))*16)*3
 		 -->
 		<main>
-			<div id="POI" class="scrollspy">
+			<div id="POI" class="scrollspy trails">
 				<!--
 				████████ ██████   █████  ██ ██           ██
 				   ██    ██   ██ ██   ██ ██ ██          ███
@@ -382,7 +382,7 @@
 ██      ██    ██ ██    ██    ██    ██      ██   ██
 ██       ██████   ██████     ██    ███████ ██   ██
 -->
-		<footer class="page-footer blue darken-4 white-text">
+		<footer class="page-footer blue darken-4 white-text trails">
 			<div class="row">
 				<div class="col s12">
 					<p>Kullabergs Naturum</p>
@@ -393,16 +393,30 @@
 				<div class="row"> <span class="col s12 m4">Design <a class="orange-text text-lighten-3 modal-trigger" href="#modal1">Carlos Velasco</a></span></div>
 			</div>
 		</footer>
+		<!--
+		███    ███  ██████  ██████   █████  ██      ███████
+		████  ████ ██    ██ ██   ██ ██   ██ ██      ██
+		██ ████ ██ ██    ██ ██   ██ ███████ ██      ███████
+		██  ██  ██ ██    ██ ██   ██ ██   ██ ██           ██
+		██      ██  ██████  ██████  ██   ██ ███████ ███████
+		-->
 		<div id="modal1" class="modal">
 			<div class="modal-content row center-align">
 				<div class="col s12">
 					<h2 class="blue-text text-darken-4">Carlos Velasco</h2>
 					<h4 class="flow-text">Interactive Design and Web Development</h4> </div>
-				<div class="col s12"><a href="mailto:Carlos@2ActiveDesign.com?subject=Inquiry_from_MittHav.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a> <a href="tel:460737298257"
+				<div class="col s12"> <a href="mailto:Carlos@2ActiveDesign.com?subject=Inquiry_from_MittHav.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a> <a href="tel:460737298257"
 									class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: 073-729 82 57"><i class="mdi mdi-phone-classic medium"></i></a> <a href="https://www.linkedin.com/in/carlosevelasco" class="tooltipped" data-position="bottom" data-delay="50"
 									data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin medium"></i></a> <a href="https://www.behance.net/2Active" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Behance Portfolio"><i class="mdi mdi-behance medium"></i></a>					<a href="https://github.com/xtreemze?tab=repositories" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box medium"></i></a> </div>
 			</div>
 		</div>
+		<!--
+		 ██████  ██████  ███    ██ ████████  █████   ██████ ████████
+		██      ██    ██ ████   ██    ██    ██   ██ ██         ██
+		██      ██    ██ ██ ██  ██    ██    ███████ ██         ██
+		██      ██    ██ ██  ██ ██    ██    ██   ██ ██         ██
+		 ██████  ██████  ██   ████    ██    ██   ██  ██████    ██
+		-->
 		<div id="contact" class="modal">
 			<div class="modal-content row center-align">
 				<div class="col s12"> <img src="img/kullabergsNaturum.svg" alt="Naturum Kullaberg" class="responsive-img" />
@@ -412,6 +426,16 @@
 									data-tooltip="Website"><i class="mdi mdi-web medium"></i></a> <a href="https://www.facebook.com/naturumkullaberg/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook naturum Kullaberg"><i class="mdi mdi-facebook medium"></i></a>					</div>
 			</div>
 		</div>
+		<div id="kullabergKarta" class="modal">
+			<div class="modal-content"> <img src="img/kullabergKarta.svg" alt="Kullaberg Trails" /> </div>
+		</div>
+		<!--
+		███████  ██████ ██████  ██ ██████  ████████ ███████
+		██      ██      ██   ██ ██ ██   ██    ██    ██
+		███████ ██      ██████  ██ ██████     ██    ███████
+		     ██ ██      ██   ██ ██ ██         ██         ██
+		███████  ██████ ██   ██ ██ ██         ██    ███████
+		-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/materialize.min.js "></script>
 		<script src="js/masonry.pkgd.min.js"></script>
