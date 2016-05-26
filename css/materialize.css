@@ -2401,7 +2401,7 @@ ul.browser-default {
 }
 
 a {
-	color                      : rgba(1, 82, 142, 0.64);
+	color                      : rgba(1,82,142,0.64);
 	text-decoration            : none;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -3992,14 +3992,15 @@ nav .button-collapse i {
 }
 
 nav .brand-logo {
-	position    : absolute;
-	color       : #fff;
-	display     : inline-block;
-	font-size   : 2.1rem;
-	padding     : 0;
-	white-space : nowrap;
-	padding-left: 1rem;
-	font-weight : 300;
+	position      : absolute;
+	color         : #fff;
+	display       : inline-block;
+	font-size     : 1.4rem;
+	padding       : 0;
+	white-space   : nowrap;
+	padding-left  : 1rem;
+	font-weight   : 500;
+	text-transform: uppercase;
 }
 
 nav .brand-logo.center {
@@ -4070,7 +4071,7 @@ nav ul a.btn-large {
 }
 
 nav ul a:hover {
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(244, 67, 54, 0.88);
 }
 
 nav ul.left {
@@ -4646,7 +4647,7 @@ footer.page-footer .footer-copyright {
 }
 
 .tabs .tab a {
-	color        : rgba(13, 71, 161, 0.81);
+	color        : rgba(13,71,161,0.81);
 	display      : block;
 	width        : 100%;
 	height       : 100%;
@@ -4656,7 +4657,7 @@ footer.page-footer .footer-copyright {
 }
 
 .tabs .tab a:hover {
-	color: rgba(13, 71, 161, 0.62);
+	color: rgba(13,71,161,0.62);
 }
 
 .tabs .tab.disabled a {
@@ -4668,7 +4669,7 @@ footer.page-footer .footer-copyright {
 	position        : absolute;
 	bottom          : 0;
 	height          : 2px;
-	background-color: rgba(13, 71, 161, 0.5);
+	background-color: rgba(13,71,161,0.5);
 	will-change     : left,right;
 }
 

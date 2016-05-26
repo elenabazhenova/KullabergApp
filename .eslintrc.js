@@ -24,13 +24,13 @@ module.exports = {
     // "quotes": [ "error", "single" ],
     // "semi": [ "error", "always" ]
     // "newline-per-chained-call": ["off"],
-    // "no-var": ["off"],
-    // "max-len": ["off", 100, 4],
-    // "radix": ["off"],
+    "no-unused-vars": ["off"],
+    "max-len": ["off", 100, 4],
+    "no-useless-concat": ["off"],
     // "prefer-template": ["off"],
     // "prefer-arrow-callback": ["off"],
     // "func-names": ["off"],
-    // "no-use-before-define": ["off"]
+    "prefer-template": ["off"],
     "prefer-arrow-callback": ["off"]
   },
   "globals": {
