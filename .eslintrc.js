@@ -30,7 +30,7 @@ module.exports = {
     // "prefer-template": ["off"],
     // "prefer-arrow-callback": ["off"],
     // "func-names": ["off"],
-    // "no-use-before-define": ["off"]
+    "prefer-template": ["off"],
     "prefer-arrow-callback": ["off"]
   },
   "globals": {
