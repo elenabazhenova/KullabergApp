@@ -27,7 +27,7 @@ module.exports = {
     "no-unused-vars": ["off"],
     "max-len": ["off", 100, 4],
     "no-useless-concat": ["off"],
-    // "prefer-template": ["off"],
+    "no-var": ["off"],
     // "prefer-arrow-callback": ["off"],
     // "func-names": ["off"],
     "prefer-template": ["off"],
