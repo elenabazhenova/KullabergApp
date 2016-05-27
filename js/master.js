@@ -112,9 +112,9 @@ function notifyMe(notifyMsg) {
 navigator.serviceWorker.register('js/vibrate.min.js');
 
 function showNotification() {
-  Notification.requestPermission(function (result) {
+  Notification.requestPermission(function sw1(result) {
     if (result === 'granted') {
-      navigator.serviceWorker.ready.then(function (registration) {
+      navigator.serviceWorker.ready.then(function sw2(registration) {
         registration.showNotification('Vibration Sample', {
           body: 'Buzz! Buzz!',
           icon: 'favicon/android-chrome-192x192.png',
