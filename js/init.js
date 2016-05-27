@@ -1,6 +1,6 @@
   (function jQ($) {
-    $('.trails').fadeOut(1).fadeIn(3000);
-    $('.grid').masonry({});
+    // $('.trails').fadeOut(1).fadeIn(3000);
+    // $('.grid').masonry({});
     // $('.button-collapse').sideNav({
     //   menuWidth: 320,
     //   // Default is 240
