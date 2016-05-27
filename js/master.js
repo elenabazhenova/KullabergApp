@@ -49,39 +49,65 @@ function mapMsg() {
 ██  ██ ██ ██    ██    ██    ██ ██      ██ ██      ██   ██    ██    ██ ██    ██ ██  ██ ██      ██
 ██   ████  ██████     ██    ██ ██      ██  ██████ ██   ██    ██    ██  ██████  ██   ████ ███████
 */
-function spawnNotification(theBody, theIcon, theTitle) {
-  const options = {
-    body: theBody,
-    icon: theIcon,
-    tag: 'Kulla',
-  };
-  const n = new Notification(theTitle, options);
-}
+// function spawnNotification(theBody, theIcon, theTitle) {
+//   const options = {
+//     body: theBody,
+//     icon: theIcon,
+//     tag: 'Kulla',
+//     vibrate: [200, 100, 200],
+//   };
+//   const n = new Notification(theTitle, options);
+// }
+//
+// function notifyMe(notifyMsg) {
+//   notifyAttempts++;
+//   // Let's check if the browser supports notifications
+//   if (!('Notification' in window)) {
+//     Materialize.toast('This browser does not support desktop notification', 1000);
+//     // Let's check whether notification permissions have already been granted
+//   } else if (Notification.permission === 'granted') {
+//     // If it's okay let's create a notification
+//     spawnNotification(notifyMsg, 'favicon/android-chrome-192x192.png', 'Kullaberg');
+//     // Otherwise, we need to ask the user for permission
+//   } else if (Notification.permission !== 'denied') {
+//     Notification.requestPermission(function askFor(permission) {
+//       // If the user accepts, let's create a notification
+//       if (permission === 'granted') {
+//         spawnNotification(notifyMsg, 'favicon/android-chrome-192x192.png', 'Kullaberg');
+//       } else {
+//         Notification.requestPermission().then(function giveThe(result) {
+//           Materialize.toast('Notification request ' + result, 1000);
+//         });
+//       }
+//     });
+//   }
+//   // At last, if the user has denied notifications, and you
+//   // want to be respectful there is no need to bother them any more.
+// }
+/*
+███    ██  ██████  ████████ ██ ███████ ██    ██     ███████ ██     ██
+████   ██ ██    ██    ██    ██ ██       ██  ██      ██      ██     ██
+██ ██  ██ ██    ██    ██    ██ █████     ████       ███████ ██  █  ██
+██  ██ ██ ██    ██    ██    ██ ██         ██             ██ ██ ███ ██
+██   ████  ██████     ██    ██ ██         ██        ███████  ███ ███
+*/
+navigator.serviceWorker.register('js/vibrate.min.js');
 
 function notifyMe(notifyMsg) {
-  notifyAttempts++;
-  // Let's check if the browser supports notifications
-  if (!('Notification' in window)) {
-    Materialize.toast('This browser does not support desktop notification', 1000);
-    // Let's check whether notification permissions have already been granted
-  } else if (Notification.permission === 'granted') {
-    // If it's okay let's create a notification
-    spawnNotification(notifyMsg, 'favicon/android-chrome-192x192.png', 'Kullaberg');
-    // Otherwise, we need to ask the user for permission
-  } else if (Notification.permission !== 'denied') {
-    Notification.requestPermission(function askFor(permission) {
-      // If the user accepts, let's create a notification
-      if (permission === 'granted') {
-        spawnNotification(notifyMsg, 'favicon/android-chrome-192x192.png', 'Kullaberg');
-      } else {
-        Notification.requestPermission().then(function giveThe(result) {
-          Materialize.toast('Notification request ' + result, 1000);
+  Notification.requestPermission(function askPermissionNotify(result) {
+    if (result === 'granted') {
+      navigator.serviceWorker.ready.then(function notifyRegister(registration) {
+        registration.notifyMe('Kullaberg', {
+          body: notifyMsg,
+          icon: 'favicon/android-chrome-192x192.png',
+          vibrate: [200, 100, 200, 100, 200, 100, 200],
+          tag: 'kulla',
         });
-      }
-    });
-  }
-  // At last, if the user has denied notifications, and you
-  // want to be respectful there is no need to bother them any more.
+      });
+    } else {
+      Materialize.toast('Notification request ' + result, 1000);
+    }
+  });
 }
 /*
 ███    ██  ██████  ████████ ███████ ███████

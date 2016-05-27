@@ -38,6 +38,8 @@
 			"density": 4
 		}
 	],
+	"theme-color": "#0d47a1",
+	"start_image": "favicon\/android-chrome-192x192.png?v=eEEwEaEvp5",
 	"display": "standalone",
 	"permissions": {
     "desktop-notification": {

@@ -16,7 +16,9 @@ module.exports = {
   },
   "env": {
     "browser": true,
-    "jquery": true
+    "jquery": true,
+		"worker": true,
+		"serviceworker": true,
   },
   "rules": {
     // "indent": [ "error", "tab" ],
