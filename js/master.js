@@ -7,13 +7,19 @@ $(window).resize(function windowResize() {
 $(window).scroll(function scrollDoc() {
   $('.grid').masonry({});
 });
-
+/*
+██       ██████   ██████  █████  ████████ ███████
+██      ██    ██ ██      ██   ██    ██    ██
+██      ██    ██ ██      ███████    ██    █████
+██      ██    ██ ██      ██   ██    ██    ██
+███████  ██████   ██████ ██   ██    ██    ███████
+*/
 function position() {
   Materialize.toast('Aquiring your location...', 6000);
   const options = {
     enableHighAccuracy: true,
-    timeout: 15000,
-    maximumAge: 30000,
+    timeout: 60000,
+    maximumAge: 15000,
   };
 
   function success(pos) {
