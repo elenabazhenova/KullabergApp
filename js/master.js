@@ -93,11 +93,11 @@ function mapMsg() {
 */
 navigator.serviceWorker.register('js/vibrate.min.js');
 
-function notifyMe(notifyMsg) {
+function showNotification(notifyMsg) {
   Notification.requestPermission(function askPermissionNotify(result) {
     if (result === 'granted') {
       navigator.serviceWorker.ready.then(function notifyRegister(registration) {
-        registration.notifyMe('Kullaberg', {
+        registration.showNotification('Kullaberg SW', {
           body: notifyMsg,
           icon: 'favicon/android-chrome-192x192.png',
           vibrate: [200, 100, 200, 100, 200, 100, 200],
