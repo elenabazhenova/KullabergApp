@@ -10,4 +10,3 @@ self.addEventListener('notificationclick', function swOnClickClose(event) {
   // Close the notification when it is clicked
   event.notification.close();
 });
-Materialize.toast('vibrate.js SW activated', 1000);
