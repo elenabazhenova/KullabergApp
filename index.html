@@ -6,7 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<title>Kullaberg</title>
 		<meta name="theme-color" content="#0d47a1">
-		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="css/materialize.min.css">
 		<link rel="stylesheet" href="css/materialdesignicons.min.css">
 		<link rel="stylesheet" href="css/master.min.css"> </head>
@@ -40,6 +40,16 @@
 
 	<body>
 		<!--
+		███████  ██████ ██████  ██ ██████  ████████
+		██      ██      ██   ██ ██ ██   ██    ██
+		███████ ██      ██████  ██ ██████     ██
+		     ██ ██      ██   ██ ██ ██         ██
+		███████  ██████ ██   ██ ██ ██         ██
+		-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/materialize.min.js "></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<!--
 ███    ██  █████  ██    ██
 ████   ██ ██   ██ ██    ██
 ██ ██  ██ ███████ ██    ██
@@ -51,7 +61,8 @@
 				<div class="nav-wrapper scrollspy" id="top">
 					<a class="brand-logo" id="logo-container" href="#top"> <span class="asterisk"><img src="img/asterisk.svg" alt="Kullaberg" class="responsive-img"/></span>kullaberg</a>
 					<ul class="right hide-on-med-and-down">
-						<li><a class="modal-trigger" href="#kullabergKarta" onclick="mapMsg();">Trail Map</a></li>
+						<li><a onclick="notifyMe();">Notify</a></li>
+						<li><a href="img/kullabergKarta.svg" onclick="mapMsg();">Trail Map</a></li>
 						<li><a onclick="position();">Find Me</a></li>
 						<li> <a class="modal-trigger" href="#contact">Contact Us</a> </li>
 						<li> <a onclick="detectLanguage();">Language</a> </li>
@@ -65,11 +76,11 @@
 			██      ██   ██ ██   ██
 			██      ██   ██ ██████
 			-->
-			<div class="fixed-action-btn click-to-toggle hide-on-large-only ">
+			<div class="fixed-action-btn click-to-toggle hide-on-large-only">
 				<a class="btn-floating btn-large red darken-2 waves-effect waves-light"> <i class="mdi mdi-menu"></i> </a>
 				<ul>
 					<li><a class="btn-floating purple darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Notifications" href="#!" onclick="notifyMe();"><i class="mdi mdi-vibrate"></i></a></li>
-					<li><a class="modal-trigger btn-floating blue darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Trail Map" href="#kullabergKarta" onclick="mapMsg();"><i class="mdi mdi-map"></i></a></li>
+					<li><a class="btn-floating blue darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Trail Map" href="img/kullabergKarta.svg" onclick="mapMsg();"><i class="mdi mdi-map"></i></a></li>
 					<li><a class="btn-floating red darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Find Me" onclick="position();"><i class="mdi mdi-crosshairs-gps"></i></a></li>
 					<li><a class="btn-floating yellow darken-2 modal-trigger tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Contact Us" href="#contact"><i class="mdi mdi-phone"></i></a></li>
 					<li><a class="btn-floating green darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Language" onclick="detectLanguage();"><i class="mdi mdi-translate"></i></a></li>
@@ -85,7 +96,7 @@
 			-->
 		<!-- section.row>(div.col.s12>ul.tabs>(li.tab.col.s3(a[#trail$]{Trail $})*3))(div#trail$.col.s12{Trail $}*3)
  -->
-		<div class="tabSpacer trails">
+		<div class="tabSpacer">
 			<section class="tabs-wrapper">
 				<div class="col s12">
 					<ul class="tabs">
@@ -100,7 +111,7 @@
 			(section#trail$.row>ul.col.s12.scrollspy.collapsible[data-collapsible=accordion]>(li>(span.title.collapsible-header(i.mdi.mdi-map-marker-radius)({Point of Interest $}))(p.collapsible-body>lorem80))*16)*3
 		 -->
 		<main>
-			<div id="POI" class="scrollspy trails">
+			<div id="POI" class="scrollspy">
 				<!--
 				████████ ██████   █████  ██ ██           ██
 				   ██    ██   ██ ██   ██ ██ ██          ███
@@ -463,9 +474,6 @@
 		     ██ ██      ██   ██ ██ ██         ██         ██
 		███████  ██████ ██   ██ ██ ██         ██    ███████
 		-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/materialize.min.js "></script>
-		<script src="js/masonry.pkgd.min.js"></script>
 		<script src="js/init.min.js"></script>
 		<script src="js/master.min.js"></script>
 	</body>
