@@ -1,13 +1,13 @@
 var notifyAttempts = 0;
-$(window).resize(function windowResize() {
-  $('.tabs-wrapper').pushpin({
-    top: $('.tabs-wrapper').offset().top,
-    // offset: $('.nav-wrapper').height(),
-  });
-});
-$(window).scroll(function scrollDoc() {
-  $('.grid').masonry({});
-});
+// $(window).resize(function windowResize() {
+//   $('.tabs-wrapper').pushpin({
+//     top: $('.tabs-wrapper').offset().top,
+//     // offset: $('.nav-wrapper').height(),
+//   });
+// });
+// $(window).scroll(function scrollDoc() {
+//   $('.grid').masonry({});
+// });
 /*
 ██       ██████   ██████  █████  ████████ ███████
 ██      ██    ██ ██      ██   ██    ██    ██
