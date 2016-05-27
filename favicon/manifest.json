@@ -38,5 +38,10 @@
 			"density": 4
 		}
 	],
-	"display": "standalone"
+	"display": "standalone",
+	"permissions": {
+    "desktop-notification": {
+      "description": "Needed for creating system notifications."
+    }
+  }
 }
