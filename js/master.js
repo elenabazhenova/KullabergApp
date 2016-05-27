@@ -56,13 +56,13 @@
       // Let's check whether notification permissions have already been granted
     } else if (Notification.permission === 'granted') {
       // If it's okay let's create a notification
-      notification = new Notification('Hi there!');
+      notification = new Notification('New updates!', 'favicon/android-chrome-192x192.png', 'Kullaberg');
       // Otherwise, we need to ask the user for permission
     } else if (Notification.permission !== 'denied') {
       Notification.requestPermission(function askFor(permission) {
         // If the user accepts, let's create a notification
         if (permission === 'granted') {
-          notification = new Notification('Hi there!');
+          notification = new Notification('New updates!', 'favicon/android-chrome-192x192.png', 'Kullaberg');
         }
       });
     }
@@ -70,7 +70,7 @@
     // want to be respectful there is no need to bother them any more.
   }
   Notification.requestPermission().then(function giveThe(result) {
-    Materialize.toast('Notification request ' + result, 6000, 'rounded');
+    Materialize.toast('Notification request ' + result, 1000);
   });
 
   function spawnNotification(theBody, theIcon, theTitle) {
