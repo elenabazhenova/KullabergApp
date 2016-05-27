@@ -1,4 +1,5 @@
   (function jQ($) {
+    $('.trails').fadeOut(1).fadeIn(3000);
     $('.grid').masonry({});
     // $('.button-collapse').sideNav({
     //   menuWidth: 320,
@@ -34,7 +35,6 @@
     $('.collapsible').collapsible({
       accordion: false,
     });
-    $('.trails').fadeOut(1).fadeIn(3000);
     // end of document ready
   }(jQuery));
   // end of jQuery name space
