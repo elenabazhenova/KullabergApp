@@ -53,6 +53,7 @@ function spawnNotification(theBody, theIcon, theTitle) {
   const options = {
     body: theBody,
     icon: theIcon,
+    tag: 'Kulla',
   };
   const n = new Notification(theTitle, options);
 }
