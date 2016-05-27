@@ -91,30 +91,13 @@ function notifyMe(notifyMsg) {
 ██  ██ ██ ██    ██    ██    ██ ██         ██             ██ ██ ███ ██
 ██   ████  ██████     ██    ██ ██         ██        ███████  ███ ███
 */
-// navigator.serviceWorker.register('js/vibrate.min.js');
-//
-// function showNotification(notifyMsg) {
-//   Notification.requestPermission(function askPermissionNotify(result) {
-//     if (result === 'granted') {
-//       navigator.serviceWorker.ready.then(function notifyRegister(registration) {
-//         registration.showNotification('Kullaberg SW', {
-//           body: notifyMsg,
-//           icon: 'favicon/android-chrome-192x192.png',
-//           vibrate: [200, 100, 200, 100, 200, 100, 200],
-//           tag: 'kulla',
-//         });
-//       });
-//     } else {
-//       Materialize.toast('Notification request ' + result, 1000);
-//     }
-//   });
-// }
-navigator.serviceWorker.register('js/vibrate.min.js');
+
+navigator.serviceWorker.register('js/sw.js');
 
 function showNotification() {
-  Notification.requestPermission(function sw1(result) {
+  Notification.requestPermission(function (result) {
     if (result === 'granted') {
-      navigator.serviceWorker.ready.then(function sw2(registration) {
+      navigator.serviceWorker.ready.then(function (registration) {
         registration.showNotification('Vibration Sample', {
           body: 'Buzz! Buzz!',
           icon: 'favicon/android-chrome-192x192.png',
