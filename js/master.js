@@ -48,21 +48,28 @@
   ██  ██ ██ ██    ██    ██    ██ ██      ██ ██      ██   ██    ██    ██ ██    ██ ██  ██ ██      ██
   ██   ████  ██████     ██    ██ ██      ██  ██████ ██   ██    ██    ██  ██████  ██   ████ ███████
   */
+  function spawnNotification(theBody, theIcon, theTitle) {
+    const options = {
+      body: theBody,
+      icon: theIcon,
+    };
+    const n = new Notification(theTitle, options);
+  }
+
   function notifyMe() {
-    var notification;
     // Let's check if the browser supports notifications
     if (!('Notification' in window)) {
       Materialize.toast('This browser does not support desktop notification', 6000);
       // Let's check whether notification permissions have already been granted
     } else if (Notification.permission === 'granted') {
       // If it's okay let's create a notification
-      notification = new Notification('New updates!', 'favicon/android-chrome-192x192.png', 'Kullaberg');
+      spawnNotification('New updates!', 'favicon/android-chrome-192x192.png', 'Kullaberg');
       // Otherwise, we need to ask the user for permission
     } else if (Notification.permission !== 'denied') {
       Notification.requestPermission(function askFor(permission) {
         // If the user accepts, let's create a notification
         if (permission === 'granted') {
-          notification = new Notification('New updates!', 'favicon/android-chrome-192x192.png', 'Kullaberg');
+          spawnNotification('New updates!', 'favicon/android-chrome-192x192.png', 'Kullaberg');
         }
       });
     }
@@ -72,14 +79,6 @@
   Notification.requestPermission().then(function giveThe(result) {
     Materialize.toast('Notification request ' + result, 1000);
   });
-
-  function spawnNotification(theBody, theIcon, theTitle) {
-    const options = {
-      body: theBody,
-      icon: theIcon,
-    };
-    const n = new Notification(theTitle, options);
-  }
   /*
   ███    ██  ██████  ████████ ███████ ███████
   ████   ██ ██    ██    ██    ██      ██
