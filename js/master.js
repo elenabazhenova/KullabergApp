@@ -1,4 +1,4 @@
-var notifyAttempts = 0;
+var notifyAttempts = 1;
 // $(window).resize(function windowResize() {
 //   $('.tabs-wrapper').pushpin({
 //     top: $('.tabs-wrapper').offset().top,
