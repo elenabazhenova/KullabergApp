@@ -84,7 +84,30 @@ function notifyMe(notifyMsg) {
   // At last, if the user has denied notifications, and you
   // want to be respectful there is no need to bother them any more.
 }
+/*
+███████ ██     ██     ███    ██  ██████  ████████ ██ ███████ ██    ██
+██      ██     ██     ████   ██ ██    ██    ██    ██ ██       ██  ██
+███████ ██  █  ██     ██ ██  ██ ██    ██    ██    ██ █████     ████
+     ██ ██ ███ ██     ██  ██ ██ ██    ██    ██    ██ ██         ██
+███████  ███ ███      ██   ████  ██████     ██    ██ ██         ██
+*/
+navigator.serviceWorker.register('sw.min.js');
 
+function showNotification(notifyMsg) {
+  Notification.requestPermission(function askPermission(result) {
+    if (result === 'granted') {
+      navigator.serviceWorker.ready.then(function whenReady(registration) {
+        registration.showNotification('Kullaberg', {
+          body: notifyMsg,
+          icon: 'favicon/android-chrome-192x192.png',
+          vibrate: [200, 100, 200, 100, 200, 100, 200],
+          tag: 'vibration-sample',
+        });
+      });
+      notifyAttempts++;
+    }
+  });
+}
 /*
 ███    ██  ██████  ████████ ███████ ███████
 ████   ██ ██    ██    ██    ██      ██
