@@ -1,7 +1,6 @@
 var notifyAttempts = 1;
-var notifyClick = 0;
-var clickTest = 'You asked to be notified ' + notifyAttempts + ' times. You clicked the notification ' + notifyClick + ' times.';
-if (notifyClick === 10) notifyClick = 0;
+var notifyMsg = 'You asked to be notified ' + notifyAttempts + ' times.';
+var tagNotify = 'vibrateTest';
 /*
 ██       ██████   ██████  █████  ████████ ███████
 ██      ██    ██ ██      ██   ██    ██    ██
@@ -45,7 +44,7 @@ function mapMsg() {
 */
 navigator.serviceWorker.register('sw.min.js');
 
-function showNotification(notifyMsg, tagNotify) {
+function showNotification() {
   Materialize.toast('Notification Requested...', 1000);
   Notification.requestPermission(function askPermission(result) {
     if (result === 'granted') {
@@ -55,10 +54,6 @@ function showNotification(notifyMsg, tagNotify) {
           icon: 'favicon/android-chrome-192x192.png',
           vibrate: [80, 100, 100, 80, 250, 250, 80],
           tag: tagNotify,
-          onclick: function clickNotification(event) {
-            window.open('https://xtreemze.github.io/KullabergApp', '_self');
-            notifyClick++;
-          },
         });
       });
       notifyAttempts++;
