@@ -1,5 +1,4 @@
 var notifyAttempts = 1;
-var notifyMsg = 'You asked to be notified ' + notifyAttempts + ' times.';
 var tagNotify = 'vibrateTest';
 /*
 ██       ██████   ██████  █████  ████████ ███████
@@ -45,12 +44,12 @@ function mapMsg() {
 navigator.serviceWorker.register('sw.min.js');
 
 function showNotification() {
-  Materialize.toast('Notification Requested...', 1000);
+  Materialize.toast('Notification requested ' + notifyAttempts + ' times.', 1000);
   Notification.requestPermission(function askPermission(result) {
     if (result === 'granted') {
       navigator.serviceWorker.ready.then(function whenReady(registration) {
         registration.showNotification('Kullaberg', {
-          body: notifyMsg,
+          body: 'You asked to be notified ' + notifyAttempts + ' times.',
           icon: 'favicon/android-chrome-192x192.png',
           vibrate: [80, 100, 100, 80, 250, 250, 80],
           tag: tagNotify,

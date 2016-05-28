@@ -1,4 +1,3 @@
-var notifyClick = 0;
 self.addEventListener('install', function initInstall() {
   self.skipWaiting();
 });
@@ -7,9 +6,5 @@ self.addEventListener('activate', function activeSW(event) {
 });
 self.addEventListener('notificationclick', function clickNotify(event) {
   // Close the notification when it is clicked
-  notifyClick++;
-  if (notifyClick === 10) {
-    event.notification.close();
-    notifyClick = 0;
-  }
+  event.notification.close();
 });
