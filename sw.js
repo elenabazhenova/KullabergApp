@@ -1,4 +1,3 @@
-var notifyClick = 1;
 self.addEventListener('install', function initInstall() {
   self.skipWaiting();
 });

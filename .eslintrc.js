@@ -31,7 +31,7 @@ module.exports = {
     "no-useless-concat": ["off"],
     "no-var": ["off"],
     // "prefer-arrow-callback": ["off"],
-    // "func-names": ["off"],
+    "no-undef": ["off"],
     "prefer-template": ["off"],
     "prefer-arrow-callback": ["off"]
   },
