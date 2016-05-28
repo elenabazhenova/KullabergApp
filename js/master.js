@@ -1,13 +1,5 @@
 var notifyAttempts = 1;
-// $(window).resize(function windowResize() {
-//   $('.tabs-wrapper').pushpin({
-//     top: $('.tabs-wrapper').offset().top,
-//     // offset: $('.nav-wrapper').height(),
-//   });
-// });
-// $(window).scroll(function scrollDoc() {
-//   $('.grid').masonry({});
-// });
+
 /*
 ██       ██████   ██████  █████  ████████ ███████
 ██      ██    ██ ██      ██   ██    ██    ██
@@ -42,7 +34,6 @@ function detectLanguage() {
 function mapMsg() {
   Materialize.toast('Opening Map...', 600);
 }
-
 /*
 ███████ ██     ██     ███    ██  ██████  ████████ ██ ███████ ██    ██
 ██      ██     ██     ████   ██ ██    ██    ██    ██ ██       ██  ██
@@ -53,13 +44,14 @@ function mapMsg() {
 navigator.serviceWorker.register('sw.min.js');
 
 function showNotification(notifyMsg) {
+  Materialize.toast('Notification Requested...', 1000);
   Notification.requestPermission(function askPermission(result) {
     if (result === 'granted') {
       navigator.serviceWorker.ready.then(function whenReady(registration) {
         registration.showNotification('Kullaberg', {
           body: notifyMsg,
           icon: 'favicon/android-chrome-192x192.png',
-          vibrate: [200, 100, 200, 100, 200, 100, 200],
+          vibrate: [300, 100, 100, 100, 100],
           tag: 'vibration-sample',
         });
       });
