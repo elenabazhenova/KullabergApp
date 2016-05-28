@@ -1,4 +1,3 @@
-var notifyClick = 1;
 var notifyAttempts = 1;
 var clickTest = 'You asked to be notified ' + notifyAttempts + ' times. You clicked the notification ' + notifyClick + ' times.';
 /*
