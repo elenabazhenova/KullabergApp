@@ -48,7 +48,6 @@
 		-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/materialize.min.js"></script>
-		<script src="js/masonry.pkgd.min.js"></script>
 		<!--
 ███    ██  █████  ██    ██
 ████   ██ ██   ██ ██    ██
@@ -84,7 +83,7 @@
 					<li><a class="btn-floating red darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Locate" onclick="position();"><i class="mdi mdi-crosshairs-gps"></i></a></li>
 					<li><a class="btn-floating yellow darken-2 modal-trigger tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Contact Us" href="#contact"><i class="mdi mdi-phone"></i></a></li>
 					<li><a class="btn-floating green darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Language" onclick="detectLanguage();"><i class="mdi mdi-translate"></i></a></li>
-					<li><a class="btn-floating orange darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="notify" onclick="showNotification();"><i class="mdi mdi-vibrate"></i></a></li>
+					<li><a class="btn-floating orange darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="notify" onclick="showNotification('You asked to be notified '+ notifyAttempts+' times.');"><i class="mdi mdi-vibrate"></i></a></li>
 				</ul>
 			</div>
 		</header>
@@ -161,7 +160,7 @@
 						<!-- <h4 class="center-align trail1">Points of Interest</h4> -->
 						<section class="row">
 							<div class="col s12">
-								<ul class="collapsible" data-collapsible="accordion">
+								<ul class="collapsible">
 									<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius trail1"></i>Our Responsibility</span>
 										<div class="collapsible-body section row"> <img src="img/t1/1.jpg" class="col s4 m3 l2 materialboxed" alt="Our Responsibility" />
 											<p>Since prehistoric times, the sea has been a valuable resource. We have over-utilised the sea for a long time. Now we understand that we need to do more to keep the sea healthy. Trends are changing and we are now well on the way, each doing
@@ -265,7 +264,7 @@
 					<section class="col s12 l4">
 						<section class="row">
 							<div class="col s12">
-								<ul class="collapsible" data-collapsible="accordion">
+								<ul class="collapsible">
 									<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Kärnan</span>
 										<div class="collapsible-body section row"> <img src="img/t3/1.jpg" class="col s4 m3 l2 materialboxed" alt="Kärnan" />
 											<p>Kullaleden and Öresundsleden merge at Kärnan, which is the last remnant of the Helsingborg castle. The 34 meter high tower from the 1300s is later replaced with a tower from the 1100s. This is where the Danish Queen Dorothea and Barbara Brahe
@@ -347,7 +346,7 @@
 						<h4 class="center-align trail1">Historic Sites</h4>
 						<section class="row">
 							<div class="col s12">
-								<ul class="collapsible" data-collapsible="accordion">
+								<ul class="collapsible">
 									<li> <span class="title collapsible-header active"><i class="mdi mdi-map-marker-radius trail1"></i>Kärnan Castle</span>
 										<div class="collapsible-body section row"> <img src="img/t3/1.jpg" class="col s4 m3 l2 materialboxed" alt="Kärnan Castle" />
 											<p>Kullaleden and Öresundsleden merge at Kärnan, which is the last remnant of the Helsingborg castle. The 34 meter high tower from the 1300s is later replaced with a tower from the 1100s. This is where the Danish Queen Dorothea and Barbara Brahe
@@ -452,9 +451,7 @@
 		-->
 		<script src="js/init.min.js"></script>
 		<script src="js/master.min.js"></script>
-		<script src="js/notify.js"></script>
+		<script src="js/notify.min.js"></script>
 	</body>
-
-</html>
 
 </html>

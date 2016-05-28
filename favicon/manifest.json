@@ -1,6 +1,11 @@
 {
 	"short_name": "Kullaberg",
 	"name": "Kullaberg",
+	"app": {
+	 "background": {
+		 "scripts": ["js/sw.min.js"]
+	 }
+ },
 	"icons": [
 		{
 			"src": "favicon\/android-chrome-36x36.png?v=eEEwEaEvp5",
@@ -46,6 +51,9 @@
 	"permissions": {
     "desktop-notification": {
       "description": "Needed for creating system notifications."
-    }
+    },
+		"notifications": {
+			"description": "Needed for creating system notifications."
+		}
   }
 }
