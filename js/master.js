@@ -43,7 +43,7 @@ function mapMsg() {
 */
 navigator.serviceWorker.register('sw.min.js');
 
-function showNotification(notifyMsg) {
+function showNotification(notifyMsg, tagNotify) {
   Materialize.toast('Notification Requested...', 1000);
   Notification.requestPermission(function askPermission(result) {
     if (result === 'granted') {
@@ -51,8 +51,8 @@ function showNotification(notifyMsg) {
         registration.showNotification('Kullaberg', {
           body: notifyMsg,
           icon: 'favicon/android-chrome-192x192.png',
-          vibrate: [300, 100, 100, 100, 100],
-          tag: 'vibration-sample',
+          vibrate: [80, 100, 100, 80, 250, 250, 80],
+          tag: tagNotify,
         });
       });
       notifyAttempts++;
