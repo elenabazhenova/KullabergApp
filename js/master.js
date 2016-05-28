@@ -1,4 +1,4 @@
-var notifyAttempts = 1;
+var notifyAttempts = 0;
 var tagNotify = 'vibrateTest';
 /*
 ██       ██████   ██████  █████  ████████ ███████
@@ -44,6 +44,7 @@ function mapMsg() {
 navigator.serviceWorker.register('sw.min.js');
 
 function showNotification() {
+  notifyAttempts++;
   Materialize.toast('Notification requested ' + notifyAttempts + ' times.', 1000);
   Notification.requestPermission(function askPermission(result) {
     if (result === 'granted') {
@@ -55,7 +56,6 @@ function showNotification() {
           tag: tagNotify,
         });
       });
-      notifyAttempts++;
     }
   });
 }
