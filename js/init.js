@@ -33,7 +33,6 @@
       // offset: $('.nav-wrapper').height(),
     });
     $('.collapsible').collapsible({
-      accordion: false,
     });
     // end of document ready
   }(jQuery));
