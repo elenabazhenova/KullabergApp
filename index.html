@@ -57,13 +57,13 @@
 -->
 	<header class="navbar trails">
 		<nav class="blue darken-4" role="navigation">
-			<div class="nav-wrapper scrollspy" id="top">
-				<a class="brand-logo blue-text text-accent-2" id="logo-container" href="#top"><img class="left logoImg" src="img/asterisk.svg" alt="Kullaberg" /></a>
+			<div class="nav-wrapper scrollspy">
+				<a class="brand-logo blue-text text-accent-2 modal-trigger" id="logo-container" href="#top"><img class="left logoImg" src="img/asterisk.svg" alt="Kullaberg" /></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a onclick="showNotification();">Notify</a></li>
 					<li><a href="img/kullabergKarta.svg" onclick="mapMsg();">Trail Map</a></li>
 					<li><a onclick="position();">Locate</a></li>
-					<li> <a class="modal-trigger" href="#contact">Contact Us</a> </li>
+					<li> <a class="" href="#contact">Contact Us</a> </li>
 					<li> <a onclick="detectLanguage();">Language</a> </li>
 				</ul>
 			</div>
@@ -76,13 +76,13 @@
 			██      ██   ██ ██████
 			-->
 		<div class="fixed-action-btn click-to-toggle hide-on-large-only trails">
-			<a class="btn-floating btn-large red darken-2 waves-effect waves-light"> <i class="mdi mdi-menu"></i> </a>
+			<a class="btn-floating btn-large red darken-2 waves-effect waves-light z-depth-3"> <i class="mdi mdi-menu"></i> </a>
 			<ul>
-				<li><a class="btn-floating purple darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Notify" href="#!" onclick="showNotification();"><i class="mdi mdi-vibrate"></i></a></li>
-				<li><a class="btn-floating blue darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Trail Map" href="img/kullabergKarta.svg" onclick="mapMsg();"><i class="mdi mdi-map"></i></a></li>
-				<li><a class="btn-floating red darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Locate" onclick="position();"><i class="mdi mdi-crosshairs-gps"></i></a></li>
-				<li><a class="btn-floating yellow darken-2 modal-trigger tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Contact Us" href="#contact"><i class="mdi mdi-phone"></i></a></li>
-				<li><a class="btn-floating green darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Language" onclick="detectLanguage();"><i class="mdi mdi-translate"></i></a></li>
+				<li><a class="btn-floating z-depth-3 purple darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Notify" href="#!" onclick="showNotification();"><i class="mdi mdi-vibrate"></i></a></li>
+				<li><a class="btn-floating z-depth-3 blue darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Trail Map" href="img/kullabergKarta.svg" onclick="mapMsg();"><i class="mdi mdi-map"></i></a></li>
+				<li><a class="btn-floating z-depth-3 red darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Locate" onclick="position();"><i class="mdi mdi-crosshairs-gps"></i></a></li>
+				<li><a class="btn-floating z-depth-3 yellow darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Contact Us" href="#contact"><i class="mdi mdi-phone"></i></a></li>
+				<li><a class="btn-floating z-depth-3 green darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Language" onclick="detectLanguage();"><i class="mdi mdi-translate"></i></a></li>
 			</ul>
 		</div>
 	</header>
@@ -94,7 +94,7 @@
 				 ██    ██   ██ ██████  ███████
 			-->
 	<div class="tabSpacer trails">
-		<section class="tabs-wrapper white">
+		<section class="tabs-wrapper white z-depth-2">
 			<div class="col s12">
 				<ul class="tabs">
 					<li class="tab col s3"><a href="#trail1">Kullaleden</a></li>
@@ -360,14 +360,20 @@
 ██       ██████   ██████     ██    ███████ ██   ██
 -->
 	<footer class="page-footer blue darken-4 white-text trails">
-		<div class="row">
-			<div class="col s12">
-				<p>Kullabergs Naturum</p>
-				<p>Italienska vägen 323, 263 77 Mölle</p>
+		<section id="contact" class="row">
+			<div class="col s12 m8 l8">
+				<div class="col s6 m6 l6 center-align"> <img src="img/kullabergsNaturum.svg" alt="Naturum Kullaberg" class="responsive-img white" /></div>
+				<div class="col s6 m6 l6 center-align"> <a href="mailto:naturum.kullaberg@lansstyrelsen.se" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: naturum.kullaberg@lansstyrelsen.se"><i class="mdi mdi-email medium grey-text text-lighten-4"></i></a>
+					<a href="tel:46042347056" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: +46 (0)42 347 056"> <i class="mdi mdi-phone-classic medium grey-text text-lighten-4"></i></a> <a href="http://www.kullabergsnatur.se/En/Pages/default.aspx" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Website"><i class="mdi mdi-web medium grey-text text-lighten-4"></i></a> <a href="https://www.facebook.com/naturumkullaberg/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook naturum Kullaberg"><i class="mdi mdi-facebook medium grey-text text-lighten-4"></i></a> </div>
 			</div>
-		</div>
+			<div class="col s12 m4 l4">
+				<p class="flow-text">The Gateway to Nature</p>
+				<p>Italienska vägen 323
+					<br>263 77 Mölle</p>
+			</div>
+		</section>
 		<div class="footer-copyright">
-			<div class="row"> <span class="col s12 m4">Design <a class="orange-text text-lighten-3 modal-trigger " href="#modal1">Carlos Velasco</a></span></div>
+			<div class="row"> <span class="col s12">Design <a class="orange-text text-lighten-3 modal-trigger " href="#modal1">Carlos Velasco</a></span></div>
 		</div>
 	</footer>
 	<!--
@@ -388,21 +394,17 @@
 		</div>
 	</div>
 	<!--
-		 ██████  ██████  ███    ██ ████████  █████   ██████ ████████
-		██      ██    ██ ████   ██    ██    ██   ██ ██         ██
-		██      ██    ██ ██ ██  ██    ██    ███████ ██         ██
-		██      ██    ██ ██  ██ ██    ██    ██   ██ ██         ██
-		 ██████  ██████  ██   ████    ██    ██   ██  ██████    ██
-		-->
-	<div id="contact" class="modal">
+	 █████  ██████   ██████  ██    ██ ████████      █████  ██████  ██████
+	██   ██ ██   ██ ██    ██ ██    ██    ██        ██   ██ ██   ██ ██   ██
+	███████ ██████  ██    ██ ██    ██    ██        ███████ ██████  ██████
+	██   ██ ██   ██ ██    ██ ██    ██    ██        ██   ██ ██      ██
+	██   ██ ██████   ██████   ██████     ██        ██   ██ ██      ██
+	-->
+	<div id="top" class="modal light-blue lighten-2 grey-text text-lighten-4">
 		<div class="modal-content row center-align">
-			<div class="col s12"> <img src="img/kullabergsNaturum.svg" alt="Naturum Kullaberg" class="responsive-img" />
+			<div class="col s12"> <img src="img/Kv4back.svg" alt="Kullaberg" class="responsive-img" />
 				<h4 class="flow-text">The Gateway to Nature</h4> </div>
-			<div class="col s12"><a href="mailto:naturum.kullaberg@lansstyrelsen.se" class="tooltipped " data-position="bottom" data-delay="50" data-tooltip="Email: naturum.kullaberg@lansstyrelsen.se"><i class="mdi mdi-email medium"></i></a> <a href="tel:46042347056" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: +46 (0)42 347 056"><i class="mdi mdi-phone-classic medium"></i></a> <a href="http://www.kullabergsnatur.se/En/Pages/default.aspx" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Website"><i class="mdi mdi-web medium"></i></a> <a href="https://www.facebook.com/naturumkullaberg/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook naturum Kullaberg"><i class="mdi mdi-facebook medium"></i></a> </div>
 		</div>
-	</div>
-	<div id="kullabergKarta" class="modal">
-		<div class="modal-content"> <img src="img/kullabergKarta.svg" alt="Kullaberg Trails" /> </div>
 	</div>
 	<!--
 		███████  ██████ ██████  ██ ██████  ████████ ███████
