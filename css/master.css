@@ -38,3 +38,15 @@
 .strong {
 	font-weight: 800;
 }
+
+.ullaberg {
+	font-size     : 36px;
+	margin-left   : -28px;
+	text-transform: none;
+	letter-spacing: -1px;
+	line-height   : 72px;
+}
+
+.logoImg {
+	height: 77px;
+}

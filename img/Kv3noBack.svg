@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 192 192" style="enable-background:new 0 0 192 192;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="192px"
+	 height="192px" viewBox="0 0 192 192" style="enable-background:new 0 0 192 192;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;fill:#90CAF9;}
-	.st2{display:inline;fill:#FFFFFF;fill-opacity:0.2;}
-	.st3{display:inline;fill:#263238;fill-opacity:0.2;}
-	.st4{display:inline;}
-	.st5{fill:#616161;}
-	.st6{fill:#0D47A1;}
-	.st7{fill:#78909C;}
-	.st8{fill:#FFFFFF;fill-opacity:0.2;}
-	.st9{fill:#64DD17;}
-	.st10{fill:#212121;fill-opacity:0.2;}
-	.st11{display:none;fill:url(#SVGID_2_);}
+	.st2{display:inline;fill:#0D47A1;}
+	.st3{display:inline;fill:#FFFFFF;fill-opacity:0.2;}
+	.st4{display:inline;fill:#263238;fill-opacity:0.2;}
+	.st5{display:inline;}
+	.st6{fill:#616161;}
+	.st7{fill:#448AFF;}
+	.st8{fill:#546E7A;}
+	.st9{fill:#FFFFFF;fill-opacity:0.2;}
+	.st10{fill:#76FF03;}
+	.st11{fill:#212121;fill-opacity:0.2;}
+	.st12{display:none;fill:url(#SVGID_2_);}
 </style>
 <symbol  id="material_x5F_product_x5F_icon_x5F_border" viewBox="0 -192 192 192">
 </symbol>
@@ -27,16 +28,17 @@
 <g id="back" class="st0">
 	<path class="st1" d="M160,172h-128c-6.599998,0-11.999998-5.399994-11.999998-12V32c0-6.6,5.4-12,11.999998-12h128
 		c6.600006,0,12,5.4,12,12v128C172,166.600006,166.600006,172,160,172z"/>
+	<rect x="-29.75" y="-13.25" class="st2" width="234.25" height="214.75"/>
 </g>
 <g id="back_x2C__edge" class="st0">
-	<path class="st2" d="M160,20H32c-6.599976,0-12,5.399963-12,12v1c0-6.600037,5.400024-12,12-12h128c6.599976,0,12,5.399963,12,12
+	<path class="st3" d="M160,20H32c-6.599976,0-12,5.399963-12,12v1c0-6.600037,5.400024-12,12-12h128c6.599976,0,12,5.399963,12,12
 		v-1C172,25.399963,166.599976,20,160,20z"/>
-	<path class="st3" d="M160,172H32c-6.599976,0-12-5.399963-12-12v-1c0,6.600037,5.400024,12,12,12h128c6.599976,0,12-5.399963,12-12
+	<path class="st4" d="M160,172H32c-6.599976,0-12-5.399963-12-12v-1c0,6.600037,5.400024,12,12,12h128c6.599976,0,12-5.399963,12-12
 		v1C172,166.600037,166.599976,172,160,172z"/>
 </g>
 <g id="front">
 	<g class="st0">
-		<g class="st4">
+		<g class="st5">
 			
 				<image style="overflow:visible;opacity:0.1;" width="484" height="484" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAegAAAHoCAYAAACCUHwMAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAvUhJREFUeNrsnVuS68axtRPoLeti
@@ -892,27 +894,27 @@ V6FQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVC
 oVAoFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCieHv8TYACZ+jbSXpc2QQAAAABJ
 RU5ErkJggg==" transform="matrix(0.24 0 0 0.24 38.000004 44)">
 			</image>
-			<circle class="st5" cx="96.000008" cy="96" r="40"/>
+			<circle class="st6" cx="96.000008" cy="96" r="40"/>
 		</g>
 	</g>
-	<path class="st6" d="M72.112854,108.510521l-13.687756,14.74057v36.500343h-26.3223V31.99991h26.3223v57.909264
+	<path class="st7" d="M72.112854,108.510521l-13.687756,14.74057v36.500343h-26.3223V31.99991h26.3223v57.909264
 		l11.581936-15.881203l32.552155-42.028061h32.376526L88.575317,88.768539l46.678391,70.982895h-30.325645L72.112854,108.510521z"/>
-	<polygon class="st7" points="31.999924,160.000015 96.000008,96 159.999939,160.000015 	"/>
-	<polygon class="st8" points="96.000023,160 159.999939,160.000015 96.000008,96 	"/>
-	<polygon class="st9" points="74.242386,160.000015 110.154907,124.087532 146.067337,160.000015 	"/>
+	<polygon class="st8" points="31.999924,160.000015 96.000008,96 159.999939,160.000015 	"/>
+	<polygon class="st9" points="96.000023,160 159.999939,160.000015 96.000008,96 	"/>
+	<polygon class="st10" points="74.242386,160.000015 110.154907,124.087532 146.067337,160.000015 	"/>
 </g>
 <g id="front_x2C__edge">
-	<polygon class="st10" points="32.102798,160 31.999899,148 58.425098,127.237381 58.425098,133.57486 	"/>
-	<polygon class="st10" points="75.509285,113.81411 87.999992,104 76.562462,115.458565 	"/>
-	<polygon class="st10" points="66.31694,159.61763 104.437523,129.665802 74.242386,160.000015 	"/>
-	<polygon class="st8" points="110.154869,160 146.067307,160.000015 110.154861,124.087532 	"/>
+	<polygon class="st11" points="32.102798,160 31.999899,148 58.425098,127.237381 58.425098,133.57486 	"/>
+	<polygon class="st11" points="75.509285,113.81411 87.999992,104 76.562462,115.458565 	"/>
+	<polygon class="st11" points="66.31694,159.61763 104.437523,129.665802 74.242386,160.000015 	"/>
+	<polygon class="st9" points="110.154869,160 146.067307,160.000015 110.154861,124.087532 	"/>
 </g>
 <g id="finish">
 	<radialGradient id="SVGID_2_" cx="23.767599" cy="23.933245" r="204.624908" gradientUnits="userSpaceOnUse">
 		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
 		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
 	</radialGradient>
-	<path class="st11" d="M160,172h-128c-6.599998,0-11.999998-5.399994-11.999998-12V32c0-6.6,5.4-12,11.999998-12h128
+	<path class="st12" d="M160,172h-128c-6.599998,0-11.999998-5.399994-11.999998-12V32c0-6.6,5.4-12,11.999998-12h128
 		c6.600006,0,12,5.4,12,12v128C172,166.600006,166.600006,172,160,172z"/>
 </g>
 <g id="border">
@@ -923,9 +925,9 @@ RU5ErkJggg==" transform="matrix(0.24 0 0 0.24 38.000004 44)">
 	
 		<use xlink:href="#material_x5F_product_x5F_icon_x5F_grid"  width="192.000015" height="192" id="XMLID_1_" x="-0.0001" y="-192" transform="matrix(1 0 0 -1 0 0)" style="display:inline;overflow:visible;opacity:0.15;"/>
 </g>
-<g id="keylines">
+<g id="keylines" class="st0">
 	
-		<use xlink:href="#material_x5F_product_x5F_icon_x5F_keylines"  width="192.000275" height="192.000305" x="-0.00016" y="-192.000107" transform="matrix(1 0 0 -1 0 0)" style="overflow:visible;"/>
+		<use xlink:href="#material_x5F_product_x5F_icon_x5F_keylines"  width="192.000275" height="192.000305" x="-0.00016" y="-192.000107" transform="matrix(1 0 0 -1 0 0)" style="display:inline;overflow:visible;"/>
 </g>
 <g id="trim_area" class="st0">
 	
