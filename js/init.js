@@ -32,7 +32,9 @@
       top: $('.tabs-wrapper').offset().top,
       // offset: $('.nav-wrapper').height(),
     });
-    $('.collapsible').collapsible({
+    $('.collapsible').collapsible({});
+    $('.btn-floating.btn-large').click(function hamburger() {
+      $('#nav-icon4').toggleClass('open');
     });
     // end of document ready
   }(jQuery));
