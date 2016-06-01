@@ -63,24 +63,22 @@ img.logoImg:hover {
 ██   ██ ██   ██ ██  ██  ██ ██   ██ ██    ██ ██   ██ ██    ██ ██      ██   ██
 ██   ██ ██   ██ ██      ██ ██████   ██████  ██   ██  ██████  ███████ ██   ██
 */
-/* Icon 1 */
 
 #nav-icon4 {
 	width             : 60px;
 	height            : 45px;
 	position          : relative;
-	margin            : 6px 0 6px -2px;
+	margin            : 5px 0 0 -2px;
 	-webkit-transform : rotate(0deg);
 	-moz-transform    : rotate(0deg);
 	-o-transform      : rotate(0deg);
 	transform         : rotate(0deg);
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition   : 0.5s ease-in-out;
+	-o-transition     : 0.5s ease-in-out;
+	transition        : 0.5s ease-in-out;
 	cursor            : pointer;
-	transform         : scale(0.35);
-	-moz-transition   : transform 0.35s ease-in-out;
-	-webkit-transition: transform 0.35s ease-in-out;
-	-o-transition     : transform 0.35s ease-in-out;
-	transition        : transform 0.35s ease-in-out;
-	will-change       : transform;
+	transform         : scale(.4);
 }
 
 #nav-icon4 span {
@@ -96,50 +94,37 @@ img.logoImg:hover {
 	-moz-transform    : rotate(0deg);
 	-o-transform      : rotate(0deg);
 	transform         : rotate(0deg);
-	-webkit-transition: transform 0.35s ease-in-out;
-	-moz-transition   : transform 0.35s ease-in-out;
-	-o-transition     : transform 0.35s ease-in-out;
-	transition        : transform 0.35s ease-in-out;
-	will-change       : transform;
+	-webkit-transition: 0.25s ease-in-out;
+	-moz-transition   : 0.25s ease-in-out;
+	-o-transition     : 0.25s ease-in-out;
+	transition        : 0.25s ease-in-out;
 }
 
-/* Icon 4 */
+/* Icon 3 */
 #nav-icon4 span:nth-child(1) {
-	top                     : 0;
-	-webkit-transform-origin: left center;
-	-moz-transform-origin   : left center;
-	-o-transform-origin     : left center;
-	transform-origin        : left center;
+	top: 0;
 }
 
-#nav-icon4 span:nth-child(2) {
-	top                     : 18px;
-	-webkit-transform-origin: left center;
-	-moz-transform-origin   : left center;
-	-o-transform-origin     : left center;
-	transform-origin        : left center;
-}
-
+#nav-icon4 span:nth-child(2),
 #nav-icon4 span:nth-child(3) {
-	top                     : 36px;
-	-webkit-transform-origin: left center;
-	-moz-transform-origin   : left center;
-	-o-transform-origin     : left center;
-	transform-origin        : left center;
+	top: 18px;
+}
+
+#nav-icon4 span:nth-child(4) {
+	top: 36px;
 }
 
 #nav-icon4.open span:nth-child(1) {
+	top  : 18px;
+	width: 0;
+	left : 50%;
+}
+
+#nav-icon4.open span:nth-child(2) {
 	-webkit-transform: rotate(45deg);
 	-moz-transform   : rotate(45deg);
 	-o-transform     : rotate(45deg);
 	transform        : rotate(45deg);
-	top              : -3px;
-	left             : 8px;
-}
-
-#nav-icon4.open span:nth-child(2) {
-	width  : 0;
-	opacity: 0;
 }
 
 #nav-icon4.open span:nth-child(3) {
@@ -147,6 +132,10 @@ img.logoImg:hover {
 	-moz-transform   : rotate(-45deg);
 	-o-transform     : rotate(-45deg);
 	transform        : rotate(-45deg);
-	top              : 39px;
-	left             : 8px;
+}
+
+#nav-icon4.open span:nth-child(4) {
+	top  : 18px;
+	width: 0;
+	left : 50%;
 }
