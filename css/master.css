@@ -98,20 +98,20 @@ img.logoImg:hover {
 
 /* Icon 3 */
 #nav-icon4 span:nth-child(1) {
-	transform: translate3d(0, 0, 0);
+	transform: translate3d(0,0,0) scale(1,1);
 }
 
 #nav-icon4 span:nth-child(2),
 #nav-icon4 span:nth-child(3) {
-	transform: translate3d(0, 18px, 0);
+	transform: translate3d(0, 18px, 0) scale(1, 1);
 }
 
 #nav-icon4 span:nth-child(4) {
-	transform: translate3d(0, 36px, 0);
+	transform: translate3d(0, 36px, 0) scale(1,1);
 }
 
 #nav-icon4.open span:nth-child(1) {
-	transform: translate3d(50%, 18px, 0) scale(0, 1);
+	transform: translate3d(0,18px,0) scale(0,0);
 }
 
 #nav-icon4.open span:nth-child(2) {
@@ -129,5 +129,5 @@ img.logoImg:hover {
 }
 
 #nav-icon4.open span:nth-child(4) {
-	transform: translate3d(50%, 18px, 0) scale(0, 1);
+	transform: translate3d(0,18px,0) scale(0,0);
 }
