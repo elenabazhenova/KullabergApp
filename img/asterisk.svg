@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-	<style type="text/css">
-		.st0 {
-			fill: #FFFFFF;
-		}
-
-	</style>
-	<polygon class="st0" points="6.897799,2.399384 4.985073,3.283214 4.985073,10.113955 8.810524,10.113955 8.810524,3.283214 "/>
-	<polygon class="st0" points="4.9851,10.285429 4.9851,17.116171 6.897557,18 8.810552,17.116171 8.810552,10.285429 "/>
-	<polygon class="st0" points="0.000139,12.051611 0.209411,14.148355 1.94161,15.347839 7.827271,11.881024 5.885801,8.584795 "/>
-	<polygon class="st0" points="0.209276,6.338659 0,8.435405 5.885666,11.90222 7.827137,8.60626 1.941744,5.139445 "/>
-	<polygon class="st0" points="5.88572,11.880917 11.771381,15.347732 13.503581,14.148249 13.712852,12.051503 7.82719,8.584688 "/>
-	<polygon class="st0" points="5.88572,8.606286 7.82719,11.902246 13.712852,8.435431 13.503581,6.338686 11.771381,5.139471 "/>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48px" height="48px" viewBox="-207.1 179.1 48 48" style="enable-background:new -207.1 179.1 48 48;" xml:space="preserve"
+	>
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<polygon class="st0" points="-183,182.8 -188,185.1 -188,202.9 -178.1,202.9 -178.1,185.1 "/>
+<polygon class="st0" points="-188,203.4 -188,221.1 -183,223.4 -178.1,221.1 -178.1,203.4 "/>
+<polygon class="st0" points="-201,208 -200.5,213.4 -195.9,216.5 -180.6,207.5 -185.7,198.9 "/>
+<polygon class="st0" points="-200.5,193.1 -201,198.5 -185.7,207.6 -180.6,199 -195.9,190 "/>
+<polygon class="st0" points="-185.7,207.5 -170.3,216.5 -165.8,213.4 -165.3,208 -180.6,198.9 "/>
+<polygon class="st0" points="-185.7,199 -180.6,207.6 -165.3,198.5 -165.8,193.1 -170.3,190 "/>
 </svg>
