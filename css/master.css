@@ -37,7 +37,8 @@
 
 .logoImg {
 	transition: transform 1s ease-in-out;
-	margin-top: 14%;
+	margin-top: 0.2rem;
+
 }
 
 img.logoImg:hover {
