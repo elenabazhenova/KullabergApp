@@ -60,7 +60,7 @@ img.logoImg:hover {
 */
 
 .fixed-action-btn .horizontal .click-to-toggle {
-	transform: translateY(18px);
+	transform: translate3d(0, 18px, 0);
 }
 
 #nav-icon4 {
@@ -70,10 +70,10 @@ img.logoImg:hover {
 	-o-transition     : 0.5s ease-in-out;
 	transition        : 0.5s ease-in-out;
 	cursor            : pointer;
-	-webkit-transform : rotate(0deg)translateY(18px) scale(0.4);
-	-o-transform      : rotate(0deg)translateY(18px) scale(0.4);
-	-moz-transform    : rotate(0deg)translateY(18px) scale(0.4);
-	transform         : rotate(0deg)translateY(18px) scale(0.4);
+	-webkit-transform : rotate(0deg) translate3d(0, 18px, 0) scale(0.4);
+	-o-transform      : rotate(0deg) translate3d(0, 18px, 0) scale(0.4);
+	-moz-transform    : rotate(0deg) translate3d(0, 18px, 0) scale(0.4);
+	transform         : rotate(0deg) translate3d(0, 18px, 0) scale(0.4);
 	/*will-change       : transform;*/
 }
 
@@ -98,36 +98,36 @@ img.logoImg:hover {
 
 /* Icon 3 */
 #nav-icon4 span:nth-child(1) {
-	transform: translateY(0px);
+	transform: translate3d(0, 0, 0);
 }
 
 #nav-icon4 span:nth-child(2),
 #nav-icon4 span:nth-child(3) {
-	transform: translateY(18px);
+	transform: translate3d(0, 18px, 0);
 }
 
 #nav-icon4 span:nth-child(4) {
-	transform: translateY(36px);
+	transform: translate3d(0, 36px, 0);
 }
 
 #nav-icon4.open span:nth-child(1) {
-	transform: translateX(50%) translateY(18px) scale(0, 1);
+	transform: translate3d(50%, 18px, 0) scale(0, 1);
 }
 
 #nav-icon4.open span:nth-child(2) {
-	-webkit-transform: translateY(18px) rotate(45deg);
-	-moz-transform   : translateY(18px) rotate(45deg);
-	-o-transform     : translateY(18px) rotate(45deg);
-	transform        : translateY(18px) rotate(45deg);
+	-webkit-transform: translate3d(0, 18px, 0) rotate(45deg);
+	-moz-transform   : translate3d(0, 18px, 0) rotate(45deg);
+	-o-transform     : translate3d(0, 18px, 0) rotate(45deg);
+	transform        : translate3d(0, 18px, 0) rotate(45deg);
 }
 
 #nav-icon4.open span:nth-child(3) {
-	-webkit-transform: translateY(18px) rotate(-45deg);
-	-moz-transform   : translateY(18px) rotate(-45deg);
-	-o-transform     : translateY(18px) rotate(-45deg);
-	transform        : translateY(18px) rotate(-45deg);
+	-webkit-transform: translate3d(0, 18px, 0) rotate(-45deg);
+	-moz-transform   : translate3d(0, 18px, 0) rotate(-45deg);
+	-o-transform     : translate3d(0, 18px, 0) rotate(-45deg);
+	transform        : translate3d(0, 18px, 0) rotate(-45deg);
 }
 
 #nav-icon4.open span:nth-child(4) {
-	transform: translateX(50%) translateY(18px) scale(0, 1);
+	transform: translate3d(50%, 18px, 0) scale(0, 1);
 }
