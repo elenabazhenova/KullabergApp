@@ -75,11 +75,12 @@ img.logoImg:hover {
 	-o-transform      : rotate(0deg);
 	transform         : rotate(0deg);
 	cursor            : pointer;
-	transform         : scale(0.375);
-	-webkit-transition: 0.35s ease-in-out;
-	-moz-transition   : 0.35s ease-in-out;
-	-o-transition     : 0.35s ease-in-out;
-	transition        : 0.35s ease-in-out;
+	transform         : scale(0.35);
+	-moz-transition   : transform 0.35s ease-in-out;
+	-webkit-transition: transform 0.35s ease-in-out;
+	-o-transition     : transform 0.35s ease-in-out;
+	transition        : transform 0.35s ease-in-out;
+	will-change       : transform;
 }
 
 #nav-icon4 span {
@@ -95,10 +96,11 @@ img.logoImg:hover {
 	-moz-transform    : rotate(0deg);
 	-o-transform      : rotate(0deg);
 	transform         : rotate(0deg);
-	-webkit-transition: 0.35s ease-in-out;
-	-moz-transition   : 0.35s ease-in-out;
-	-o-transition     : 0.35s ease-in-out;
-	transition        : 0.35s ease-in-out;
+	-webkit-transition: transform 0.35s ease-in-out;
+	-moz-transition   : transform 0.35s ease-in-out;
+	-o-transition     : transform 0.35s ease-in-out;
+	transition        : transform 0.35s ease-in-out;
+	will-change       : transform;
 }
 
 /* Icon 4 */
