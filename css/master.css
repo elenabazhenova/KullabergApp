@@ -19,10 +19,6 @@
 	transition: box-shadow 0.25s;*/
 }
 
-#trails {
-	margin-bottom: 0;
-}
-
 .trail1 {
 	color: #df622b;
 }
@@ -39,14 +35,11 @@
 	font-weight: 800;
 }
 
-.ullaberg {
-	font-size     : 36px;
-	margin-left   : -28px;
-	text-transform: none;
-	letter-spacing: -1px;
-	line-height   : 72px;
+.logoImg {
+	transition: transform 1s ease-in-out;
+	margin-top: 14%;
 }
 
-.logoImg {
-	height: 2.65em;
+img.logoImg:hover {
+	transform: rotate(1turn);
 }
