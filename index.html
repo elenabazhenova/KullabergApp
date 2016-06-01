@@ -57,8 +57,7 @@
 -->
 		<header class="navbar trails">
 			<nav class="blue darken-4" role="navigation">
-				<div class="nav-wrapper scrollspy">
-					<a class="brand-logo blue-text text-accent-2 modal-trigger" id="logo-container" href="#top"><img class="left logoImg" src="img/asterisk.svg" alt="Kullaberg" /></a>
+				<div class="nav-wrapper scrollspy"> <a class="brand-logo modal-trigger" id="logo-container" href="#top"><span class="kullaberg"><img class="left logoImg responsive-img" src="img/asterisk.svg" alt="Kullaberg" />Kullaberg</span></a>
 					<ul class="right hide-on-med-and-down">
 						<li><a onclick="showNotification();">Notify</a></li>
 						<li><a href="img/kullabergKarta.svg" onclick="mapMsg();">Trail Map</a></li>
@@ -117,10 +116,12 @@
 				-->
 				<section id="trail1">
 					<section class="col s12 m6 l6">
-						<ul class="collection card noBorder">
-							<li class="collection-item avatar"><img class="circle materialboxed" src="img/t1/trail1sign.png" alt="Kullaleden">
-								<h5 class="title">Welcome to the Kullaleden Trail</h5>
-								<p>Marked with orange, taking you forward step by step.</p>
+						<ul class="card">
+							<li class="row card-content">
+								<div class="col s4 m4 l3"> <img class="circle materialboxed responsive-img" src="img/t1/trail1sign.png" alt="Kullaleden"></div>
+								<div class="col s8 m8 l9 flow-text">
+									<p>Welcome to the Kullaleden Trail, marked with orange, taking you forward step by step.</p>
+								</div>
 							</li>
 						</ul>
 						<div class="card grey lighten-5">

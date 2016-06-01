@@ -37,7 +37,8 @@
 
 .logoImg {
 	transition: transform 1s ease-in-out;
-	margin-top: 14%;
+	margin-top: 0.2rem;
+
 }
 
 img.logoImg:hover {
@@ -65,16 +66,20 @@ img.logoImg:hover {
 /* Icon 1 */
 
 #nav-icon4 {
-	width            : 60px;
-	height           : 45px;
-	position         : relative;
-	margin           : 6px 0 6px -2px;
-	-webkit-transform: rotate(0deg);
-	-moz-transform   : rotate(0deg);
-	-o-transform     : rotate(0deg);
-	transform        : rotate(0deg);
-	cursor           : pointer;
-	transform        : scale(0.375);
+	width             : 60px;
+	height            : 45px;
+	position          : relative;
+	margin            : 6px 0 6px -2px;
+	-webkit-transform : rotate(0deg);
+	-moz-transform    : rotate(0deg);
+	-o-transform      : rotate(0deg);
+	transform         : rotate(0deg);
+	cursor            : pointer;
+	transform         : scale(0.375);
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition   : 0.35s ease-in-out;
+	-o-transition     : 0.35s ease-in-out;
+	transition        : 0.35s ease-in-out;
 }
 
 #nav-icon4 span {
@@ -97,9 +102,6 @@ img.logoImg:hover {
 }
 
 /* Icon 4 */
-
-#nav-icon4 {}
-
 #nav-icon4 span:nth-child(1) {
 	top                     : 0;
 	-webkit-transform-origin: left center;
