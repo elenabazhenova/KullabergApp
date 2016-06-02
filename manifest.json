@@ -39,7 +39,8 @@
 			"density": 4
 		}
 	],
-	"theme-color": "#0d47a1",
+	"theme_color": "#0d47a1",
+	"background_color": "#0d47a1",
 	"start_url": "index.html",
 	"start_image": "favicon\/android-chrome-192x192.png?v=eEEwEaEvp9",
 	"display": "standalone",
