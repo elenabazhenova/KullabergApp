@@ -2,4 +2,4 @@
 
 MIT Open Source
 
-[Preview HTML](https://xtreemze.github.io/KullabergApp/)
+[Preview HTML](https://goo.gl/NsqAGq)
