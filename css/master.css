@@ -31,8 +31,10 @@
 }
 
 .logoImg {
-	transition: transform 1s ease-in-out;
-	margin-top: 0.2rem;
+	transition  : transform 1s ease-in-out;
+	margin-top  : 0.9rem;
+	margin-right: 9px;
+	width       : 32px;
 
 }
 
