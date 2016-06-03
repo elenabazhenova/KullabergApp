@@ -55,11 +55,12 @@ img.logoImg:hover {
 }
 
 .maps {
-	width: 4000px;
+	min-width: 100%;
 }
 
 .scroll {
-	overflow: scroll;
+	overflow-x: scroll;
+	min-height: 500px;
 }
 /*
 ██   ██  █████  ███    ███ ██████  ██    ██ ██████   ██████  ███████ ██████
