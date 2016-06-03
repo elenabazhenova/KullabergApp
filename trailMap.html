@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- <html lang="en" manifest="manifest.appcache"> -->
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Kullaberg</title>
+		<meta name="theme-color" content="#0d47a1">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=0.0, maximum-scale=10.0">
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/materialdesignicons.min.css">
+		<link rel="stylesheet" href="css/master.min.css">
+		<!--
+		███████  █████  ██    ██ ██  ██████  ██████  ███    ██
+		██      ██   ██ ██    ██ ██ ██      ██    ██ ████   ██
+		█████   ███████ ██    ██ ██ ██      ██    ██ ██ ██  ██
+		██      ██   ██  ██  ██  ██ ██      ██    ██ ██  ██ ██
+		██      ██   ██   ████   ██  ██████  ██████  ██   ████
+		-->
+		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png?v=eEEwEaEvp9" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon/favicon-194x194.png?v=eEEwEaEvp9" sizes="194x194">
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png?v=eEEwEaEvp9" sizes="96x96">
+		<link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png?v=eEEwEaEvp9" sizes="192x192">
+		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png?v=eEEwEaEvp9" sizes="16x16">
+		<link rel="shortcut icon" href="favicon.ico?v=eEEwEaEvp9"> </head>
+
+	<body class="grey lighten-3">
+		<!--
+		███████  ██████ ██████  ██ ██████  ████████
+		██      ██      ██   ██ ██ ██   ██    ██
+		███████ ██      ██████  ██ ██████     ██
+		     ██ ██      ██   ██ ██ ██         ██
+		███████  ██████ ██   ██ ██ ██         ██
+		-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<!--
+███    ██  █████  ██    ██
+████   ██ ██   ██ ██    ██
+██ ██  ██ ███████ ██    ██
+██  ██ ██ ██   ██  ██  ██
+██   ████ ██   ██   ████
+-->
+		<header class="navbar">
+			<nav class="blue darken-4" role="navigation">
+				<div class="nav-wrapper scrollspy"> <a onclick="window.history.back();" class="brand-logo" href="index.html"><span class="kullaberg"><img class="left logoImg responsive-img" src="img/asterisk.svg" alt="Kullaberg" />Kullaberg</span></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a onclick="position();">Locate</a></li>
+						<li> <a onclick="window.history.back();">Go Back</a> </li>
+					</ul>
+				</div>
+			</nav>
+			<!--
+				████████  █████  ██████  ███████
+					 ██    ██   ██ ██   ██ ██
+					 ██    ███████ ██████  ███████
+					 ██    ██   ██ ██   ██      ██
+					 ██    ██   ██ ██████  ███████
+				-->
+			<div class="tabSpacer">
+				<section class="tabs-wrapper white z-depth-1">
+					<div class="col s12">
+						<ul class="tabs">
+							<li class="tab col s3"><a href="#1">Trail Map</a></li>
+							<li class="tab col s3"><a href="#2">Kullaleden</a></li>
+							<li class="tab col s3"><a href="#3">Kullaleden 2</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!--
+			███████  █████  ██████
+			██      ██   ██ ██   ██
+			█████   ███████ ██████
+			██      ██   ██ ██   ██
+			██      ██   ██ ██████
+			-->
+			<div class="fixed-action-btn click-to-toggle hide-on-large-only">
+				<a class="btn-floating btn-large red darken-2 waves-effect waves-light">
+					<div class="nav-icon4"> <span></span> <span></span> <span></span><span></span> </div>
+				</a>
+				<ul>
+					<li><a class="btn-floating red darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Locate" onclick="position();"><i class="mdi mdi-crosshairs-gps"></i></a></li>
+					<li><a class="btn-floating green darken-2 tooltipped waves-effect waves-light" data-position="left" data-delay="50" data-tooltip="Go Back" onclick="window.history.back();"><i class="mdi mdi-arrow-left"></i></a></li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div id="1" class="scroll"><img class="maps" src="img/kullabergKarta.svg" alt="Kullaberg Trail Map" /> </div>
+			<div id="2" class="scroll"><img class="maps" src="img/t1/mapKullaleden.jpg" alt="Kullaleden Trail Map"></div>
+			<div id="3" class="scroll"><img class="maps" src="img/t1/trail1mapZoom.jpg" alt="Satellite View"></div>
+		</main>
+		<!--
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+-->
+		<footer class="page-footer blue darken-4 white-text trails">
+			<section id="contact" class="row scrollspy">
+				<div class="col s12 m6 l5 offset-l1">
+					<div class="col s8 m12 l6 pad margin-spacerTop"> <img src="img/kullabergsNaturum.svg" alt="Naturum Kullaberg" class="responsive-img" /></div>
+					<div class="col s12 m12 l6 margin-spacerTop pad"> <a href="mailto:naturum.kullaberg@lansstyrelsen.se?cc=carlos.velasco@lansstyrellsen.se" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: naturum.kullaberg@lansstyrelsen.se"><i class="mdi mdi-email medium grey-text text-lighten-4"></i></a>
+						<a href="tel:46042347056" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tel: +46 (0)42 347 056"> <i class="mdi mdi-phone-classic medium grey-text text-lighten-4"></i></a> <a href="http://www.kullabergsnatur.se/En/Pages/default.aspx" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="KullabergsNatur.se"><i class="mdi mdi-web medium grey-text text-lighten-4"></i></a> <a href="https://www.facebook.com/naturumkullaberg/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook naturum Kullaberg"><i class="mdi mdi-facebook medium grey-text text-lighten-4"></i></a> <a href="https://www.instagram.com/naturumkullaberg/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram naturum Kullaberg"><i class="mdi mdi-instagram medium grey-text text-lighten-4"></i></a> </div>
+				</div>
+			</section>
+			<div class="footer-copyright">
+				<div class="row"> <span class="col s12">Design <a class="orange-text text-lighten-3 modal-trigger " href="#modal1">Carlos Velasco</a></span></div>
+			</div>
+		</footer>
+		<!--
+		███████  ██████ ██████  ██ ██████  ████████ ███████
+		██      ██      ██   ██ ██ ██   ██    ██    ██
+		███████ ██      ██████  ██ ██████     ██    ███████
+		     ██ ██      ██   ██ ██ ██         ██         ██
+		███████  ██████ ██   ██ ██ ██         ██    ███████
+		-->
+		<script src="js/init2.min.js"></script>
+		<script src="js/master.min.js"></script>
+	</body>
+
+</html>

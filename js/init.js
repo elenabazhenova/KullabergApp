@@ -28,13 +28,13 @@
       // }
     );
     // $('.hidden').hide();
+    $('.collapsible').collapsible({});
+    $('.btn-floating.btn-large.red').click(function hamburger() {
+      $('.nav-icon4').toggleClass('open');
+    });
     $('.tabs-wrapper').pushpin({
       top: $('.tabs-wrapper').offset().top,
       // offset: $('.nav-wrapper').height(),
-    });
-    $('.collapsible').collapsible({});
-    $('.btn-floating.btn-large').click(function hamburger() {
-      $('#nav-icon4').toggleClass('open');
     });
     // end of document ready
   }(jQuery));
