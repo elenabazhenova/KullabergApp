@@ -7,6 +7,7 @@
     top: $('.tabs-wrapper').offset().top,
     // offset: $('.nav-wrapper').height(),
   });
+  $('.modal-trigger').leanModal();
   // end of document ready
 }(jQuery));
 // end of jQuery name space
