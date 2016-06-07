@@ -55,20 +55,20 @@ img.logoImg:hover {
 }
 
 .map1 {
-	min-width: 150%;
+	min-width: 150vw;
 }
 
 .map2 {
-	width: 180vw;
+	width: 190vh;
 }
 
 .map3 {
-	width: 180vw;
+	width: 200vh;
 }
 
 .scroll {
 	overflow-x: scroll;
-	min-height: 500px;
+	min-height: 400px;
 }
 /*
 ██   ██  █████  ███    ███ ██████  ██    ██ ██████   ██████  ███████ ██████
