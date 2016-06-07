@@ -2875,7 +2875,6 @@ th {
 
 .collection {
 	margin       : 0.5rem 0 1rem;
-	/* border:1px solid #e0e0e0; */
 	border-radius: 2px;
 	overflow     : hidden;
 	position     : relative;
@@ -2932,8 +2931,8 @@ th {
 }
 
 .collection .collection-item.active {
-	background-color: #26a69a;
-	color           : #eafaf9;
+	background-color: #0d47a1;
+	color           : #f3faff;
 }
 
 .collection .collection-item.active .secondary-content {
@@ -2943,7 +2942,7 @@ th {
 .collection a.collection-item {
 	display   : block;
 	transition: 0.25s;
-	color     : #26a69a;
+	color     : #0d47a1;
 }
 
 .collection a.collection-item:not(.active):hover {
@@ -5173,13 +5172,6 @@ a.waves-effect .waves-ripple {
 	max-height   : 45%;
 	border-radius: 0;
 	will-change  : bottom,opacity;
-}
-
-.collapsible {
-	/* border-top:1px solid #ddd; */
-	/* border-right:1px solid #ddd; */
-	/* border-left:1px solid #ddd; */
-	/* margin:.5rem 0 1rem; */
 }
 
 .collapsible-header {
