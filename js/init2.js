@@ -18,6 +18,6 @@
 }(jQuery));
 // end of jQuery name space
 $(window).load(function start2() {
-	// Animate loader off screen
-	                        $('.loader').fadeOut(1000);
+  // Animate loader off screen
+  $('.loader').fadeOut(1000);
 });
