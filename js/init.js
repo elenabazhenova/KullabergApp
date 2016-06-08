@@ -47,3 +47,7 @@
     // end of document ready
   }(jQuery));
   // end of jQuery name space
+  $(window).load(function start1() {
+    // Animate loader off screen
+    $('.loader').fadeOut(1000);
+  });
