@@ -28,7 +28,9 @@
       // }
     );
     // $('.hidden').hide();
-    $('.collapsible').collapsible({});
+    // $('.collapsible').collapsible({
+    //   accordion: false,
+    // });
     $('.btn-floating.btn-large.red').click(function hamburger() {
       $('.nav-icon4').toggleClass('open');
     });
