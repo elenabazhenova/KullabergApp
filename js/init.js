@@ -40,9 +40,6 @@
     });
     if (!window.navigator.onLine) {
       $('.onlineOnly').hide();
-      Materialize.toast('OFFLINE: External links removed.', 2000, 'rounded');
-    } else {
-      Materialize.toast('ONLINE: External links available.', 2000, 'rounded');
     }
     // end of document ready
   }(jQuery));
