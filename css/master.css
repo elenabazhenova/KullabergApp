@@ -53,7 +53,7 @@ img.logoImg:hover {
 }
 
 .map1 {
-	min-width: 150vw;
+	min-height: 90vh;
 }
 
 .map2 {
@@ -79,6 +79,10 @@ img.logoImg:hover {
 
 .centerLoader {
 	margin: 0 auto;
+}
+
+.spacer {
+	height: 30vh;
 }
 /*
 ██   ██  █████  ███    ███ ██████  ██    ██ ██████   ██████  ███████ ██████
