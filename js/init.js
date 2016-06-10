@@ -9,7 +9,8 @@
     //   closeOnClick: true,
     //   // Closes side-nav on <a> clicks, useful for Angular/Meteor
     // });
-    $('.scrollspy').scrollSpy();
+    $('.scrollspy')
+      .scrollSpy();
     // $('.slider').slider({
     //   full_width: true,
     //   indicators: true,
@@ -17,34 +18,44 @@
     //   transition: 500,
     //   interval: 6000,
     // });
-    $('.modal-trigger').leanModal(
-      // 	{
-      //   ready: function blankScreen() {
-      //     $('.trails').fadeOut();
-      //   }, // Callback for Modal open
-      //   complete: function showScreen() {
-      //     $('.trails').fadeIn();
-      //   }, // Callback for Modal close
-      // }
-    );
+    $('.modal-trigger')
+      .leanModal(
+        // 	{
+        //   ready: function blankScreen() {
+        //     $('.trails').fadeOut();
+        //   }, // Callback for Modal open
+        //   complete: function showScreen() {
+        //     $('.trails').fadeIn();
+        //   }, // Callback for Modal close
+        // }
+      );
     // $('.hidden').hide();
     // $('.collapsible').collapsible({
     //   accordion: false,
     // });
-    $('.btn-floating.btn-large.red').click(function hamburger() {
-      $('.nav-icon4').toggleClass('open');
-    });
-    $('.tabs-wrapper').pushpin({
-      top: $('.tabs-wrapper').offset().top,
-      // offset: $('.nav-wrapper').height(),
-    });
+    $('.btn-floating.btn-large.red')
+      .click(function hamburger() {
+        $('.nav-icon4')
+          .toggleClass('open');
+      });
+    $('.tabs-wrapper')
+      .pushpin({
+        top: $('.tabs-wrapper')
+          .offset()
+          .top,
+        // offset: $('.nav-wrapper').height(),
+      });
     if (!window.navigator.onLine) {
-      $('.onlineOnly').hide();
+      $('.onlineOnly')
+        .hide();
     }
     // end of document ready
   }(jQuery));
   // end of jQuery name space
-  $(window).load(function start1() {
-    // Animate loader to fade out
-    $('.loader').delay(800).fadeOut(700);
-  });
+  $(window)
+    .load(function start1() {
+      // Animate loader to fade out
+      $('.loader')
+        .delay(800)
+        .fadeOut(700);
+    });
