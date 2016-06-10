@@ -1,15 +1,21 @@
 var notifyAttempts = 0;
 var tagNotify = 'vibrateTest';
 const flashContact = function flashContact() {
-  $('.contactIcon').fadeOut(270).fadeIn(270).fadeOut(270).fadeIn(270).fadeOut(270).fadeIn(270);
+  $('.contactIcon')
+    .fadeOut(270)
+    .fadeIn(270)
+    .fadeOut(270)
+    .fadeIn(270)
+    .fadeOut(270)
+    .fadeIn(270);
 };
-  /*
-  ██       ██████   ██████  █████  ████████ ███████
-  ██      ██    ██ ██      ██   ██    ██    ██
-  ██      ██    ██ ██      ███████    ██    █████
-  ██      ██    ██ ██      ██   ██    ██    ██
-  ███████  ██████   ██████ ██   ██    ██    ███████
-  */
+/*
+██       ██████   ██████  █████  ████████ ███████
+██      ██    ██ ██      ██   ██    ██    ██
+██      ██    ██ ██      ███████    ██    █████
+██      ██    ██ ██      ██   ██    ██    ██
+███████  ██████   ██████ ██   ██    ██    ███████
+*/
 function position() {
   Materialize.toast('Aquiring your location...', 600);
   const options = {
