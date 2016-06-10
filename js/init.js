@@ -45,6 +45,6 @@
   }(jQuery));
   // end of jQuery name space
   $(window).load(function start1() {
-    // Animate loader off screen
+    // Animate loader to fade out
     $('.loader').delay(800).fadeOut(700);
   });
