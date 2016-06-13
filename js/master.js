@@ -40,31 +40,42 @@ function turnOn() {
 }
 
 function tabOperation() {
+  $('footer')
+    .fadeOut(0)
+    .delay(2000)
+    .fadeIn(400);
   $('main')
-    .slideUp(400, 'easeOutSine', function tOn() { turnOn(); });
+    .slideUp(0, 'easeOutSine', function tOn() {
+      turnOn();
+    })
+    .delay(400)
+    .slideDown(800, 'easeInQuart', function tOff() {
+      turnOff();
+    });
   $('.collapsible-header')
     .removeClass('active');
   $('.collapsible')
-    .delay(0)
     .collapsible({
       accordion: true,
-    });
-  $('.collapsible')
-    .delay(0)
+    })
     .collapsible({
       accordion: false,
     });
-  $('main')
-    .delay(400)
-    .slideDown(800, 'easeInQuart', function tOff() { turnOff(); });
 }
 
 function mapTabOperation() {
+  $('footer')
+    .fadeOut(0)
+    .delay(2000)
+    .fadeIn(400);
   $('main')
-    .slideUp(400, 'easeOutSine', turnOn());
-  $('main')
+    .slideUp(0, 'easeOutSine', function t2O1() {
+      turnOn();
+    })
     .delay(400)
-    .slideDown(800, 'easeInQuart', turnOff());
+    .slideDown(800, 'easeInQuart', function t2O2() {
+      turnOff();
+    });
 }
 
 function back() {

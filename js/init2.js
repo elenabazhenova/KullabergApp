@@ -24,8 +24,14 @@
 // end of jQuery name space
 $(window)
   .load(function start2() {
+    $('footer')
+      .fadeOut(0)
+      .delay(2000)
+      .fadeIn(400);
     $('main')
-      .slideUp();
+      .slideUp(0)
+      .delay(1200)
+      .slideDown(800, 'easeInQuart');
     // Animate loader to fade out
     $('.loader')
       .delay(800)
@@ -33,7 +39,4 @@ $(window)
         $('.logoImg')
           .removeClass('turn');
       });
-    $('main')
-      .delay(1200)
-      .slideDown(800, 'easeInQuart');
   });
