@@ -55,9 +55,7 @@
   $(window)
     .load(function start2() {
       $('footer')
-        .fadeOut(0)
-        .delay(2000)
-        .fadeIn(400);
+        .fadeOut(0);
       $('main')
         .slideUp(0)
         .delay(1200)
@@ -68,5 +66,8 @@
         .fadeOut(700, 'easeOutSine', function turnOff1() {
           $('.logoImg')
             .removeClass('turn');
+          $('footer')
+            .delay(1000)
+            .fadeIn(400);
         });
     });

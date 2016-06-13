@@ -41,9 +41,7 @@ function turnOn() {
 
 function tabOperation() {
   $('footer')
-    .fadeOut(0)
-    .delay(2000)
-    .fadeIn(400);
+    .fadeOut(0);
   $('main')
     .slideUp(0, 'easeOutSine', function tOn() {
       turnOn();
@@ -51,6 +49,9 @@ function tabOperation() {
     .delay(400)
     .slideDown(800, 'easeInQuart', function tOff() {
       turnOff();
+      $('footer')
+        .delay(1000)
+        .fadeIn(400);
     });
   $('.collapsible-header')
     .removeClass('active');
@@ -65,9 +66,7 @@ function tabOperation() {
 
 function mapTabOperation() {
   $('footer')
-    .fadeOut(0)
-    .delay(2000)
-    .fadeIn(400);
+    .fadeOut(0);
   $('main')
     .slideUp(0, 'easeOutSine', function t2O1() {
       turnOn();
@@ -75,6 +74,9 @@ function mapTabOperation() {
     .delay(400)
     .slideDown(800, 'easeInQuart', function t2O2() {
       turnOff();
+      $('footer')
+        .delay(1000)
+        .fadeIn(400);
     });
 }
 
