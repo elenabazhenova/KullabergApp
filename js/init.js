@@ -53,14 +53,17 @@
   }(jQuery));
   // end of jQuery name space
   $(window)
-    .load(function start1() {
+    .load(function start2() {
       $('main')
         .slideUp();
       // Animate loader to fade out
       $('.loader')
         .delay(800)
-        .fadeOut(700, 'easeInOutCubic');
+        .fadeOut(700, 'easeOutSine', function turnOff1() {
+          $('.logoImg')
+            .removeClass('turn');
+        });
       $('main')
         .delay(1200)
-        .slideDown(800, 'easeInOutCubic');
+        .slideDown(800, 'easeInQuart');
     });

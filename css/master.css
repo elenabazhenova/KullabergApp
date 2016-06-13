@@ -40,6 +40,10 @@ img.logoImg:hover {
 	transform: rotate(1turn);
 }
 
+.turn{
+		transform: rotate(1turn);
+}
+
 .margin-spacerTop {
 	margin-top: 1.65em;
 }

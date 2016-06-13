@@ -13,12 +13,13 @@ function scrollEnd() {
 function flashContact() {
   scrollEnd();
   $('.contactIcon')
-    .fadeOut(270)
-    .fadeIn(270)
-    .fadeOut(270)
-    .fadeIn(270)
-    .fadeOut(270)
-    .fadeIn(270);
+    .delay(400)
+    .fadeOut(250)
+    .fadeIn(250)
+    .fadeOut(250)
+    .fadeIn(250)
+    .fadeOut(250)
+    .fadeIn(250);
 }
 
 function scrollTop() {
@@ -28,9 +29,19 @@ function scrollTop() {
     }, 800, 'easeInOutCubic');
 }
 
+function turnOff() {
+  $('.logoImg')
+    .removeClass('turn');
+}
+
+function turnOn() {
+  $('.logoImg')
+    .addClass('turn');
+}
+
 function tabOperation() {
   $('main')
-    .slideUp(800, 'easeInOutCubic');
+    .slideUp(400, 'easeOutSine', function tOn() { turnOn(); });
   $('.collapsible-header')
     .removeClass('active');
   $('.collapsible')
@@ -44,14 +55,16 @@ function tabOperation() {
       accordion: false,
     });
   $('main')
-    .delay(400).slideDown(800, 'easeInOutCubic');
+    .delay(400)
+    .slideDown(800, 'easeInQuart', function tOff() { turnOff(); });
 }
 
 function mapTabOperation() {
   $('main')
-    .slideUp(800, 'easeInOutCubic');
+    .slideUp(400, 'easeOutSine', turnOn());
   $('main')
-    .delay(400).slideDown(800, 'easeInOutCubic');
+    .delay(400)
+    .slideDown(800, 'easeInQuart', turnOff());
 }
 
 function back() {
