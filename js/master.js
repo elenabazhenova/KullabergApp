@@ -50,8 +50,7 @@ function tabOperation() {
     .slideDown(800, 'easeInQuart', function tOff() {
       turnOff();
       $('footer')
-        .delay(1000)
-        .fadeIn(400);
+        .fadeIn();
     });
   $('.collapsible-header')
     .removeClass('active');
@@ -75,8 +74,7 @@ function mapTabOperation() {
     .slideDown(800, 'easeInQuart', function t2O2() {
       turnOff();
       $('footer')
-        .delay(1000)
-        .fadeIn(400);
+        .fadeIn();
     });
 }
 

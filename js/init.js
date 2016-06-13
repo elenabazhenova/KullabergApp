@@ -59,15 +59,14 @@
       $('main')
         .slideUp(0)
         .delay(1200)
-        .slideDown(800, 'easeInQuart');
-      // Animate loader to fade out
-      $('.loader')
-        .delay(800)
-        .fadeOut(700, 'easeOutSine', function turnOff1() {
+        .slideDown(800, 'easeInQuart', function turnOff1() {
           $('.logoImg')
             .removeClass('turn');
           $('footer')
-            .delay(1000)
-            .fadeIn(400);
+            .fadeIn();
         });
+      // Animate loader to fade out
+      $('.loader')
+        .delay(800)
+        .fadeOut(700, 'easeOutSine');
     });
