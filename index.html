@@ -84,7 +84,7 @@
 	<meta name="msapplication-config"
 					content="favicon/browserconfig.xml?v=eEEwEaEvl1"> </head>
 
-<body class="grey lighten-3">
+<body class="blue darken-4">
 	<section class="loader valign-wrapper">
 		<div class="centerLoader">
 			<div class="preloader-wrapper big active valign center-align">
@@ -152,8 +152,7 @@
 					<li><a onclick="showNotification();">Notify</a></li>
 					<li><a href="maps.html"
 										onclick="mapMsg();">Trail Map</a></li>
-					<li> <a onclick="flashContact();"
-										href="#contact">Contact Us</a> </li>
+					<li> <a onclick="flashContact();">Contact Us</a> </li>
 					<li> <a onclick="detectLanguage();">Language</a> </li>
 				</ul>
 			</div>
@@ -185,7 +184,6 @@
 									data-position="left"
 									data-delay="50"
 									data-tooltip="Contact Us"
-									href="#contact"
 									onclick="flashContact();"><i class="mdi mdi-phone"></i></a></li>
 				<li><a class="btn-floating green darken-2 tooltipped waves-effect waves-light"
 									data-position="left"
@@ -205,9 +203,12 @@
 			<section class="tabs-wrapper white z-depth-1">
 				<div class="col s12">
 					<ul class="tabs">
-						<li class="tab col s3"><a href="#trail1">Kullaleden</a></li>
-						<li class="tab col s3"><a href="#trail2">Western Kullaberg</a></li>
-						<li class="tab col s3"><a href="#trail3">Sights of Heritage</a></li>
+						<li class="tab col s3"><a href="#trail1"
+											onclick="tabOperation();">Kullaleden</a></li>
+						<li class="tab col s3"><a href="#trail2"
+											onclick="tabOperation();">Western Kullaberg</a></li>
+						<li class="tab col s3"><a href="#trail3"
+											onclick="tabOperation();">Sights of Heritage</a></li>
 					</ul>
 				</div>
 			</section>
@@ -222,7 +223,7 @@
 -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/materialize.min.js"></script>
-	<main class="trails row">
+	<main class="trails row grey lighten-3">
 		<section class="col s12 m12 l12">
 			<!--
 ████████ ██████   █████  ██ ██           ██
@@ -231,8 +232,7 @@
    ██    ██   ██ ██   ██ ██ ██           ██
    ██    ██   ██ ██   ██ ██ ███████      ██
 -->
-			<section id="trail1"
-							class="scrollspy">
+			<section id="trail1">
 				<section class="col s12 m12 l8">
 					<ul class="card">
 						<div class="card-content">
@@ -380,8 +380,7 @@
    ██    ██   ██ ██   ██ ██ ██          ██
    ██    ██   ██ ██   ██ ██ ███████     ███████
 -->
-			<section id="trail2"
-							class="scrollspy">
+			<section id="trail2">
 				<section class="col s12 m12 l8">
 					<ul class="card">
 						<div class="card-content">
@@ -547,8 +546,7 @@
    ██    ██   ██ ██   ██ ██ ██               ██
    ██    ██   ██ ██   ██ ██ ███████     ██████
 -->
-			<section id="trail3"
-							class="scrollspy">
+			<section id="trail3">
 				<section class="col s12 m12 l8">
 					<ul class="card">
 						<div class="card-content">
@@ -734,7 +732,7 @@
 -->
 	<footer class="page-footer blue darken-4 white-text trails">
 		<section id="contact"
-						class="row scrollspy">
+						class="row">
 			<div class="col s12 m6 l12">
 				<div class="col s8 m12 l4 pad margin-spacerTop"> <img src="img/kullabergsNaturum.svg"
 									alt="Naturum Kullaberg"
@@ -762,7 +760,7 @@
 									data-delay="50"
 									data-tooltip="Instagram: naturum Kullaberg"><i class="mdi mdi-instagram medium grey-text text-lighten-4 contactIcon"></i></a> </div>
 			</div>
-			<div class="spacer"></div>
+			<!-- <div class="spacer"></div> -->
 		</section>
 		<div class="footer-copyright">
 			<div class="row"> <span class="col s12">Design <a class="orange-text text-lighten-3 modal-trigger " href="#modal1">Carlos Velasco</a></span></div>
@@ -835,7 +833,7 @@
 						<li class="collection-item avatar"><i class="mdi mdi-check circle green darken-1"></i><span class="title">Automatic Language Detection</span></li>
 						<li class="collection-item avatar"><i class="mdi mdi-check circle green darken-1"></i><span class="title">Direct Contact Buttons</span></li>
 						<li class="collection-item avatar"><i class="mdi mdi-check circle green darken-1"></i><span class="title">Optional Install to Home or Desktop</span></li>
-						<li class="collection-item avatar"><i class="mdi mdi-check circle green darken-1"></i><span class="title">MIT Open Source Github Repo</span></li>
+						<li class="collection-item avatar"><i class="mdi mdi-check circl-check circle green darken-1"></i><span class="title">MIT Open Source Github Repo</span></li>
 					</ul>
 				</div>
 			</div>
