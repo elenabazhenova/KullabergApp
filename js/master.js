@@ -1,6 +1,17 @@
 var notifyAttempts = 0;
 var tagNotify = 'vibrateTest';
-const flashContact = function flashContact() {
+
+function scrollEnd() {
+  $('html, body')
+    .animate({
+      scrollTop: $(document)
+        .height() - $(window)
+        .height(),
+    }, 800, 'easeInOutCubic');
+}
+
+function flashContact() {
+  scrollEnd();
   $('.contactIcon')
     .fadeOut(270)
     .fadeIn(270)
@@ -8,13 +19,50 @@ const flashContact = function flashContact() {
     .fadeIn(270)
     .fadeOut(270)
     .fadeIn(270);
-};
+}
+
+function scrollTop() {
+  $('html, body')
+    .animate({
+      scrollTop: 0,
+    }, 800);
+}
+
+function tabOperation() {
+  $('main')
+    .slideUp(800, 'easeInOutCubic');
+  $('.collapsible-header')
+    .removeClass('active');
+  $('.collapsible')
+    .delay(0)
+    .collapsible({
+      accordion: true,
+    });
+  $('.collapsible')
+    .delay(0)
+    .collapsible({
+      accordion: false,
+    });
+  $('main')
+    .slideDown(800, 'easeInOutCubic');
+}
+
+function mapTabOperation() {
+  $('main')
+    .slideUp(800, 'easeInOutCubic');
+  $('main')
+    .slideDown(800, 'easeInOutCubic');
+}
+
+function back() {
+  window.history.back();
+}
 /*
-██       ██████   ██████  █████  ████████ ███████
-██      ██    ██ ██      ██   ██    ██    ██
-██      ██    ██ ██      ███████    ██    █████
-██      ██    ██ ██      ██   ██    ██    ██
-███████  ██████   ██████ ██   ██    ██    ███████
+██       ██████   ██████  █████  ████████ ██  ██████  ███    ██
+██      ██    ██ ██      ██   ██    ██    ██ ██    ██ ████   ██
+██      ██    ██ ██      ███████    ██    ██ ██    ██ ██ ██  ██
+██      ██    ██ ██      ██   ██    ██    ██ ██    ██ ██  ██ ██
+███████  ██████   ██████ ██   ██    ██    ██  ██████  ██   ████
 */
 function position() {
   Materialize.toast('Aquiring your location...', 600);

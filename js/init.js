@@ -9,8 +9,8 @@
     //   closeOnClick: true,
     //   // Closes side-nav on <a> clicks, useful for Angular/Meteor
     // });
-    $('.scrollspy')
-      .scrollSpy();
+    // $('.scrollspy')
+    //   .scrollSpy();
     // $('.slider').slider({
     //   full_width: true,
     //   indicators: true,

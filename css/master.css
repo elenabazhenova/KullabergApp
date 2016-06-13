@@ -103,10 +103,10 @@ img.logoImg:hover {
 	-o-transition     : 0.5s ease-in-out;
 	transition        : 0.5s ease-in-out;
 	cursor            : pointer;
-	-webkit-transform : rotate(0deg) translate3d(0, 18px, 0) scale(0.4);
-	-o-transform      : rotate(0deg) translate3d(0, 18px, 0) scale(0.4);
-	-moz-transform    : rotate(0deg) translate3d(0, 18px, 0) scale(0.4);
-	transform         : rotate(0deg) translate3d(0, 18px, 0) scale(0.4);
+	-webkit-transform : rotate(0deg) translate3d(0, 18px, 0) scale(0.48);
+	-o-transform      : rotate(0deg) translate3d(0, 18px, 0) scale(0.48);
+	-moz-transform    : rotate(0deg) translate3d(0, 18px, 0) scale(0.48);
+	transform         : rotate(0deg) translate3d(0, 18px, 0) scale(0.48);
 	/*will-change       : transform;*/
 }
 

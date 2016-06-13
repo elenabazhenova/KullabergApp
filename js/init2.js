@@ -1,6 +1,6 @@
 (function jQ($) {
-  $('.scrollspy')
-    .scrollSpy();
+  // $('.scrollspy')
+  //   .scrollSpy();
   $('.btn-floating.btn-large.red')
     .click(function hamburger() {
       $('.nav-icon4')
