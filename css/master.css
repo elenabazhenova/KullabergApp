@@ -53,6 +53,10 @@ img.logoImg:hover {
 	padding: 0 2rem !important;
 }
 
+.padBottom {
+	padding: 0 0 1rem !important;
+}
+
 .noBorder {
 	border: 0;
 }
@@ -88,6 +92,18 @@ img.logoImg:hover {
 
 .spacer {
 	height: 18vh;
+}
+@media only screen and (min-width: 601px) and (max-width:992px) {
+	.collapsible-body.section.row {
+		columns: 2;
+	}
+
+}
+@media only screen and (min-width: 993px) {
+	.collapsible-body.section.row {
+		columns: 3;
+	}
+
 }
 /*
 ██   ██  █████  ███    ███ ██████  ██    ██ ██████   ██████  ███████ ██████
