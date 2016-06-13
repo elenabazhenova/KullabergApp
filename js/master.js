@@ -41,6 +41,7 @@ function turnOn() {
 
 function tabOperation() {
   $('footer')
+    .stop()
     .fadeOut(0);
   $('main')
     .slideUp(0, 'easeOutSine', function tOn() {
@@ -65,6 +66,7 @@ function tabOperation() {
 
 function mapTabOperation() {
   $('footer')
+    .stop()
     .fadeOut(0);
   $('main')
     .slideUp(0, 'easeOutSine', function t2O1() {

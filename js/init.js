@@ -58,7 +58,8 @@
         .fadeOut(0);
       $('main')
         .slideUp(0)
-        .delay(1200)
+        .finish()
+        .delay(1600)
         .slideDown(800, 'easeInQuart', function turnOff1() {
           $('.logoImg')
             .removeClass('turn');
@@ -67,6 +68,7 @@
         });
       // Animate loader to fade out
       $('.loader')
+        .finish()
         .delay(800)
-        .fadeOut(700, 'easeOutSine');
+        .fadeOut(800, 'easeOutSine');
     });
