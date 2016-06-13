@@ -25,7 +25,7 @@ function scrollTop() {
   $('html, body')
     .animate({
       scrollTop: 0,
-    }, 800);
+    }, 800, 'easeInOutCubic');
 }
 
 function tabOperation() {
@@ -44,14 +44,14 @@ function tabOperation() {
       accordion: false,
     });
   $('main')
-    .slideDown(800, 'easeInOutCubic');
+    .delay(400).slideDown(800, 'easeInOutCubic');
 }
 
 function mapTabOperation() {
   $('main')
     .slideUp(800, 'easeInOutCubic');
   $('main')
-    .slideDown(800, 'easeInOutCubic');
+    .delay(400).slideDown(800, 'easeInOutCubic');
 }
 
 function back() {
