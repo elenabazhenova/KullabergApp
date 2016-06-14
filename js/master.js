@@ -70,7 +70,7 @@ function tabOperation() {
     .slideUp(0, 'easeOutSine', function tOn() {
       turnOn();
     })
-    .delay(400)
+    .delay(200)
     .slideDown(800, 'easeInQuart', function tOff() {
       turnOff();
       $('footer')
@@ -95,7 +95,7 @@ function mapTabOperation() {
     .slideUp(0, 'easeOutSine', function t2O1() {
       turnOn();
     })
-    .delay(400)
+    .delay(200)
     .slideDown(800, 'easeInQuart', function t2O2() {
       turnOff();
       $('footer')
