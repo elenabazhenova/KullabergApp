@@ -64,7 +64,7 @@ img.logoImg:hover {
 	padding-right: 2rem !important;
 }
 
-.padBottom {
+.collapsible-body img.padBottom{
 	padding-bottom: 1rem;
 }
 
