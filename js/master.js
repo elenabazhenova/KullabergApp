@@ -1,6 +1,7 @@
 var notifyAttempts = 0;
 var tagNotify = 'vibrateTest';
 var hiddenContact = false;
+var locate = [];
 /*
  ██████  ███    ██ ██      ██ ███    ██ ███████
 ██    ██ ████   ██ ██      ██ ████   ██ ██
