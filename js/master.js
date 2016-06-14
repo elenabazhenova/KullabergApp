@@ -1,5 +1,23 @@
 var notifyAttempts = 0;
 var tagNotify = 'vibrateTest';
+/*
+ ██████  ███    ██ ██      ██ ███    ██ ███████
+██    ██ ████   ██ ██      ██ ████   ██ ██
+██    ██ ██ ██  ██ ██      ██ ██ ██  ██ █████
+██    ██ ██  ██ ██ ██      ██ ██  ██ ██ ██
+ ██████  ██   ████ ███████ ██ ██   ████ ███████
+*/
+function onlineCheck() {
+  if (!window.navigator.onLine) {
+    $('.onlineOnly')
+      .slideUp();
+  } else {
+    $('.onlineOnly')
+      .show()
+      .slideUp(0)
+      .slideDown();
+  }
+}
 
 function scrollEnd() {
   $('html, body')
@@ -11,6 +29,7 @@ function scrollEnd() {
 }
 
 function flashContact() {
+  onlineCheck();
   scrollEnd();
   $('.contactIcon')
     .delay(400)
