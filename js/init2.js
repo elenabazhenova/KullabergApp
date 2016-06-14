@@ -18,6 +18,7 @@
   if (!window.navigator.onLine) {
     $('.onlineOnly')
       .hide();
+    hiddenContact = true;
   }
   // end of document ready
 }(jQuery));
