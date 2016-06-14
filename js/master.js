@@ -123,10 +123,10 @@ function position() {
 
   function success(pos) {
     const coordinates = pos.coords;
-    location[0] = coordinates.latitude;
-    location[1] = coordinates.longitude;
-    location[2] = coordinates.accuracy;
-    Materialize.toast('Your current position:' + '<br>Latitude : ' + location[0] + '<br>Longitude: ' + location[1] + '<br>Accurate to: ' + location[2] + ' meters.', 6000);
+    locate[0] = coordinates.latitude;
+    locate[1] = coordinates.longitude;
+    locate[2] = coordinates.accuracy;
+    Materialize.toast('Your current position:' + '<br>Latitude : ' + locate[0] + '<br>Longitude: ' + locate[1] + '<br>Accurate to: ' + locate[2] + ' meters.', 6000);
   }
 
   function error(err) {
