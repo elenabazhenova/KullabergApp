@@ -118,12 +118,15 @@ function position() {
   const options = {
     enableHighAccuracy: true,
     timeout: 60000,
-    maximumAge: 15000,
+    maximumAge: 10000,
   };
 
   function success(pos) {
-    const crd = pos.coords;
-    Materialize.toast('Your current position:' + '<br>Latitude : ' + crd.latitude + '<br>Longitude: ' + crd.longitude + '<br>Accurate to: ' + crd.accuracy + ' meters.', 6000);
+    const coordinates = pos.coords;
+    location[0] = coordinates.latitude;
+    location[1] = coordinates.longitude;
+    location[2] = coordinates.accuracy;
+    Materialize.toast('Your current position:' + '<br>Latitude : ' + location[0] + '<br>Longitude: ' + location[1] + '<br>Accurate to: ' + location[2] + ' meters.', 6000);
   }
 
   function error(err) {
@@ -138,7 +141,7 @@ function detectLanguage() {
 }
 
 function mapMsg() {
-  Materialize.toast('Opening Map...', 600);
+  Materialize.toast('Opening Map...', 200);
 }
 /*
 ███████ ██     ██     ███    ██  ██████  ████████ ██ ███████ ██    ██
