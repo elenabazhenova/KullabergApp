@@ -1,5 +1,6 @@
 var notifyAttempts = 0;
 var tagNotify = 'vibrateTest';
+var hiddenContact = false;
 /*
  ██████  ███    ██ ██      ██ ███    ██ ███████
 ██    ██ ████   ██ ██      ██ ████   ██ ██
@@ -8,14 +9,16 @@ var tagNotify = 'vibrateTest';
  ██████  ██   ████ ███████ ██ ██   ████ ███████
 */
 function onlineCheck() {
-  if (!window.navigator.onLine) {
+  if (!window.navigator.onLine && !hiddenContact) {
     $('.onlineOnly')
       .slideUp();
-  } else {
+    hiddenContact = true;
+  } else if (hiddenContact && window.navigator.onLine) {
     $('.onlineOnly')
       .show()
       .slideUp(0)
       .slideDown();
+    hiddenContact = false;
   }
 }
 
@@ -32,6 +35,7 @@ function flashContact() {
   onlineCheck();
   scrollEnd();
   $('.contactIcon')
+    .finish()
     .delay(400)
     .fadeOut(250)
     .fadeIn(250)
