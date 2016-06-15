@@ -30,8 +30,8 @@ $(window)
     $('main')
       .slideUp(0)
       .finish()
-      .delay(800)
-      .slideDown(400, 'easeInQuart', function turnOff2() {
+      .delay(500)
+      .slideDown(520, 'easeInQuart', function turnOff2() {
         $('.logoImg')
           .removeClass('turn');
         $('footer')
