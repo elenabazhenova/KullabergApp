@@ -71,7 +71,8 @@ function tabOperation() {
     .slideUp(0, 'easeOutSine', function tOn() {
       turnOn();
     })
-    .slideDown(400, 'easeInQuart', function tOff() {
+    .delay(80)
+    .slideDown(520, 'easeInQuart', function tOff() {
       turnOff();
       $('footer')
         .fadeIn();
@@ -95,7 +96,8 @@ function mapTabOperation() {
     .slideUp(0, 'easeOutSine', function t2O1() {
       turnOn();
     })
-    .slideDown(400, 'easeInQuart', function t2O2() {
+    .delay(80)
+    .slideDown(520, 'easeInQuart', function t2O2() {
       turnOff();
       $('footer')
         .fadeIn();
