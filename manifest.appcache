@@ -4,6 +4,8 @@ CACHE MANIFEST
 
 CACHE:
 https://xtreemze.github.io/KullabergApp/
+https://xtreemze.github.io/KullabergApp/index.html
+https://xtreemze.github.io/KullabergApp/maps.html
 https://xtreemze.github.io/KullabergApp/css/materialize.min.css
 https://xtreemze.github.io/KullabergApp/css/materialdesignicons.min.css
 https://xtreemze.github.io/KullabergApp/css/master.min.css
@@ -66,11 +68,16 @@ https://xtreemze.github.io/KullabergApp/img/t3/16.jpg
 https://xtreemze.github.io/KullabergApp/img/t3/17.jpg
 https://xtreemze.github.io/KullabergApp/img/kullabergsNaturum.svg
 https://xtreemze.github.io/KullabergApp/img/Kv4sq.svg
-https://xtreemze.github.io/KullabergApp/maps.html
 https://xtreemze.github.io/KullabergApp/js/init2.min.js
 https://xtreemze.github.io/KullabergApp/img/kullabergKarta.svg
 https://xtreemze.github.io/KullabergApp/img/t1/mapKullaleden.jpg
 https://xtreemze.github.io/KullabergApp/img/t1/trail1mapZoom.jpg
+https://xtreemze.github.io/KullabergApp/favicon/favicon-32x32.png?v=eEEwEaEvl1
+https://xtreemze.github.io/KullabergApp/favicon/favicon-194x194.png?v=eEEwEaEvl1
+https://xtreemze.github.io/KullabergApp/favicon/favicon-96x96.png?v=eEEwEaEvl1
+https://xtreemze.github.io/KullabergApp/favicon/android-chrome-192x192.png?v=eEEwEaEvl1
+https://xtreemze.github.io/KullabergApp/favicon/favicon-16x16.png?v=eEEwEaEvl1
+https://xtreemze.github.io/KullabergApp/favicon.ico?v=eEEwEaEvl1
 
 NETWORK:
 *
