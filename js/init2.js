@@ -1,4 +1,4 @@
-(function jQ($) {
+(function jQ2($) {
   // $('.scrollspy')
   //   .scrollSpy();
   $('.btn-floating.btn-large.red')
@@ -30,8 +30,8 @@ $(window)
     $('main')
       .slideUp(0)
       .finish()
-      .delay(1200)
-      .slideDown(800, 'easeInQuart', function turnOff2() {
+      .delay(800)
+      .slideDown(400, 'easeInQuart', function turnOff2() {
         $('.logoImg')
           .removeClass('turn');
         $('footer')
@@ -40,6 +40,5 @@ $(window)
     // Animate loader to fade out
     $('.loader')
       .finish()
-      .delay(800)
-      .fadeOut(800, 'easeOutSine');
+      .fadeOut(600, 'easeOutSine');
   });
