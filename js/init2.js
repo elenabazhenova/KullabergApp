@@ -25,6 +25,10 @@
 // end of jQuery name space
 $(window)
   .load(function start2() {
+    if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+      // Browser downloaded a new app cache.
+      window.location.reload();
+    }
     $('footer')
       .fadeOut(0);
     $('main')
