@@ -178,8 +178,8 @@ function showNotification() {
 */
 setInterval(function updateCache() {
   window.applicationCache.update();
-}, 3600000);
-// Check for an updated manifest file every 60 minutes. If it's updated, download a new cache as defined by the new manifest file.
+}, 60000);
+// Check for an updated manifest file every 60 seconds. If it's updated, download a new cache as defined by the new manifest file.
 window.applicationCache.addEventListener('updateready', function downloadedNewCache() { // when an updated cache is downloaded and ready to be used
   window.applicationCache.swapCache();
   // swap to the newest version of the cache
