@@ -161,7 +161,7 @@ function showNotification() {
       navigator.serviceWorker.ready.then(function whenReady(registration) {
         registration.showNotification('Kullaberg', {
           body: 'You asked to be notified ' + notifyAttempts + ' times.',
-          icon: 'favicon/android-chrome-192x192.png',
+          icon: 'favicon/android-chrome-192x192.png?v=eEEwEaEvl1',
           vibrate: [80, 100, 100, 80, 250, 250, 80],
           tag: tagNotify,
         });
