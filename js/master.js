@@ -9,6 +9,11 @@ var locate = [];
 ██    ██ ██  ██ ██ ██      ██ ██  ██ ██ ██
  ██████  ██   ████ ███████ ██ ██   ████ ███████
 */
+function onUpdateReady() {
+  Materialize.toast('New version available. Reload site...', 1000, 'rounded');
+  window.applicationCache.swapCache();
+}
+
 function onlineCheck() {
   if (!window.navigator.onLine && !hiddenContact) {
     $('.onlineOnly')
@@ -20,6 +25,11 @@ function onlineCheck() {
       .slideUp(0)
       .slideDown();
     hiddenContact = false;
+  } else {
+    window.applicationCache.addEventListener('updateready', onUpdateReady);
+    if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+      onUpdateReady();
+    }
   }
 }
 
@@ -170,24 +180,24 @@ function showNotification() {
   });
 }
 // Check if a new cache is available on page load.
-    /*
-    ███    ██  ██████  ████████ ███████ ███████
-    ████   ██ ██    ██    ██    ██      ██
-    ██ ██  ██ ██    ██    ██    █████   ███████
-    ██  ██ ██ ██    ██    ██    ██           ██
-    ██   ████  ██████     ██    ███████ ███████
+/*
+███    ██  ██████  ████████ ███████ ███████
+████   ██ ██    ██    ██    ██      ██
+██ ██  ██ ██    ██    ██    █████   ███████
+██  ██ ██ ██    ██    ██    ██           ██
+██   ████  ██████     ██    ███████ ███████
 
-    Transportation
-    	Skanetraffiken link
-    	App download link
-    Restaurants
-    	name
-    	phone, email
-    	hours
-    	description
-    	picture
-    Hotel
-    	name
-    	Phone, email
-    	picture
-    */
+Transportation
+	Skanetraffiken link
+	App download link
+Restaurants
+	name
+	phone, email
+	hours
+	description
+	picture
+Hotel
+	name
+	Phone, email
+	picture
+*/
