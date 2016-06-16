@@ -3,7 +3,6 @@ CACHE MANIFEST
 # Time: Mon Jun 16 2016 12:43:20 GMT+0000 (UTC)
 
 CACHE:
-https://xtreemze.github.io/KullabergApp/
 https://xtreemze.github.io/KullabergApp/index.html
 https://xtreemze.github.io/KullabergApp/maps.html
 https://xtreemze.github.io/KullabergApp/css/materialize.min.css
@@ -78,3 +77,6 @@ https://xtreemze.github.io/KullabergApp/favicon/favicon-96x96.png?v=eEEwEaEvl1
 https://xtreemze.github.io/KullabergApp/favicon/android-chrome-192x192.png?v=eEEwEaEvl1
 https://xtreemze.github.io/KullabergApp/favicon/favicon-16x16.png?v=eEEwEaEvl1
 https://xtreemze.github.io/KullabergApp/favicon.ico?v=eEEwEaEvl1
+
+NETWORK
+*
