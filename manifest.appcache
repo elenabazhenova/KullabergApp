@@ -1,9 +1,9 @@
 CACHE MANIFEST
 
-# Time: Jun 16 2016 13:59:20 GMT+0000 (UTC)
+# Time: Jun 17 2016 13:59:20 GMT+0000 (UTC)
 
 CACHE:
-index.html
+/
 maps.html
 css/materialize.min.css
 css/materialdesignicons.min.css
