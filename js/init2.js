@@ -24,23 +24,14 @@
 }(jQuery));
 // end of jQuery name space
 $(window)
-  .load(function start2() {
-    $('footer')
-      .fadeOut(0);
-    $('main')
-      .fadeOut(0)
-      .finish()
-      .delay(500)
-      .fadeIn(1000, 'easeOutSine', function turnOff2() {
-        $('.logoImg')
-          .removeClass('turn');
-        $('footer')
-          .fadeIn();
-        $('.btn-floating')
-          .removeClass('bounceIn');
-      });
+  .load(function start3() {
     // Animate loader to fade out
     $('.loader')
       .finish()
-      .fadeOut(600, 'easeOutSine');
+      .fadeOut(600, 'easeOutSine', function present() {
+        $('.logoImg')
+          .removeClass('turn');
+        $('.btn-floating')
+          .removeClass('bounceIn');
+      });
   });

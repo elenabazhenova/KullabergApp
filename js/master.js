@@ -89,12 +89,12 @@ function tabOperation() {
       $('.btn-floating')
         .addClass('bounceIn');
     })
-    .delay(80)
+    // .delay(80)
     // .slideDown(520, 'easeInQuart', function tOff() {
     .fadeIn(200, 'easeInQuart', function tOff() {
       turnOff();
       $('footer')
-        .fadeIn();
+        .fadeIn(0);
       $('.btn-floating')
         .removeClass('bounceIn');
     });
@@ -119,11 +119,11 @@ function mapTabOperation() {
       $('.btn-floating')
         .addClass('bounceIn');
     })
-    .delay(80)
-    .fadeIn(1000, 'easeOutSine', function t2O2() {
+    // .delay(80)
+    .fadeIn(200, 'easeOutSine', function t2O2() {
       turnOff();
       $('footer')
-        .fadeIn();
+        .fadeIn(0);
       $('.btn-floating')
         .removeClass('bounceIn');
     });
