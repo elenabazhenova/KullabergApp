@@ -80,24 +80,7 @@ function turnOn() {
    ██    ██   ██ ██████  ███████
 */
 function tabOperation() {
-  $('footer')
-    .stop()
-    .fadeOut(0);
-  $('main')
-    .fadeOut(0, 'easeOutSine', function tOn() {
-      turnOn();
-      $('.btn-floating')
-        .addClass('bounceIn');
-    })
-    // .delay(80)
-    // .slideDown(520, 'easeInQuart', function tOff() {
-    .fadeIn(200, 'easeInQuart', function tOff() {
-      turnOff();
-      $('footer')
-        .fadeIn(0);
-      $('.btn-floating')
-        .removeClass('bounceIn');
-    });
+  scrollTop();
   $('.collapsible-header')
     .removeClass('active');
   $('.collapsible')
@@ -110,23 +93,7 @@ function tabOperation() {
 }
 
 function mapTabOperation() {
-  $('footer')
-    .stop()
-    .fadeOut(0);
-  $('main')
-    .fadeOut(0, 'easeOutSine', function t2O1() {
-      turnOn();
-      $('.btn-floating')
-        .addClass('bounceIn');
-    })
-    // .delay(80)
-    .fadeIn(200, 'easeOutSine', function t2O2() {
-      turnOff();
-      $('footer')
-        .fadeIn(0);
-      $('.btn-floating')
-        .removeClass('bounceIn');
-    });
+  scrollTop();
 }
 
 function back() {
