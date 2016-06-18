@@ -62,22 +62,13 @@
   // end of jQuery name space
   $(window)
     .load(function start2() {
-      $('footer')
-        .fadeOut(0);
-      $('main')
-        .fadeOut(0)
-        .finish()
-        .delay(500)
-        .fadeIn(520, 'easeInQuart', function turnOff1() {
-          $('.logoImg')
-            .removeClass('turn');
-          $('footer')
-            .fadeIn();
-          $('.btn-floating')
-            .removeClass('bounceIn');
-        });
       // Animate loader to fade out
       $('.loader')
         .finish()
-        .fadeOut(600, 'easeOutSine');
+        .fadeOut(600, 'easeOutSine', function present() {
+          $('.logoImg')
+            .removeClass('turn');
+          $('.btn-floating')
+            .removeClass('bounceIn');
+        });
     });
