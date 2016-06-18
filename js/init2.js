@@ -36,6 +36,8 @@ $(window)
           .removeClass('turn');
         $('footer')
           .fadeIn();
+        $('.btn-floating')
+          .removeClass('bounceIn');
       });
     // Animate loader to fade out
     $('.loader')
