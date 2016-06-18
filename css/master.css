@@ -1,15 +1,20 @@
-.pin-top {
+/*.pin-top {
 	position: relative;
 }
 
 .pin-bottom {
 	position: relative;
-}
+}*/
 
 .pinned {
-	position: fixed !important;
-	z-index : 1;
-	width   : 100%;
+	position  : fixed !important;
+	z-index   : 1;
+	width     : 100%;
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.navbar {
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .trail1 {
@@ -135,6 +140,18 @@ img.logoImg:hover {
 ██   ██ ██   ██ ██  ██  ██ ██   ██ ██    ██ ██   ██ ██    ██ ██      ██   ██
 ██   ██ ██   ██ ██      ██ ██████   ██████  ██   ██  ██████  ███████ ██   ██
 */
+a.bounceIn {
+	-webkit-transform: scale(0);
+	-moz-transform   : scale(0);
+	-ms-transform    : scale(0);
+	-o-transform     : scale(0);
+	transform        : scale(0);
+}
+
+.btn-floating {
+	-webkit-transition: transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition        : transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
 .fixed-action-btn .horizontal .click-to-toggle {
 	transform: translate3d(0, 18px, 0);

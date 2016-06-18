@@ -80,12 +80,16 @@ function tabOperation() {
   $('main')
     .slideUp(0, 'easeOutSine', function tOn() {
       turnOn();
+      $('.btn-floating')
+        .addClass('bounceIn');
     })
     .delay(80)
     .slideDown(520, 'easeInQuart', function tOff() {
       turnOff();
       $('footer')
         .fadeIn();
+      $('.btn-floating')
+        .removeClass('bounceIn');
     });
   $('.collapsible-header')
     .removeClass('active');
@@ -105,12 +109,16 @@ function mapTabOperation() {
   $('main')
     .slideUp(0, 'easeOutSine', function t2O1() {
       turnOn();
+      $('.btn-floating')
+        .addClass('bounceIn');
     })
     .delay(80)
     .slideDown(520, 'easeInQuart', function t2O2() {
       turnOff();
       $('footer')
         .fadeIn();
+      $('.btn-floating')
+        .removeClass('bounceIn');
     });
 }
 
