@@ -72,19 +72,26 @@ function turnOn() {
   $('.logoImg')
     .addClass('turn');
 }
-
+/*
+████████  █████  ██████  ███████
+   ██    ██   ██ ██   ██ ██
+   ██    ███████ ██████  ███████
+   ██    ██   ██ ██   ██      ██
+   ██    ██   ██ ██████  ███████
+*/
 function tabOperation() {
   $('footer')
     .stop()
     .fadeOut(0);
   $('main')
-    .slideUp(0, 'easeOutSine', function tOn() {
+    .fadeOut(0, 'easeOutSine', function tOn() {
       turnOn();
       $('.btn-floating')
         .addClass('bounceIn');
     })
     .delay(80)
-    .slideDown(520, 'easeInQuart', function tOff() {
+    // .slideDown(520, 'easeInQuart', function tOff() {
+    .fadeIn(200, 'easeInQuart', function tOff() {
       turnOff();
       $('footer')
         .fadeIn();
@@ -107,13 +114,13 @@ function mapTabOperation() {
     .stop()
     .fadeOut(0);
   $('main')
-    .slideUp(0, 'easeOutSine', function t2O1() {
+    .fadeOut(0, 'easeOutSine', function t2O1() {
       turnOn();
       $('.btn-floating')
         .addClass('bounceIn');
     })
     .delay(80)
-    .slideDown(520, 'easeInQuart', function t2O2() {
+    .fadeIn(1000, 'easeOutSine', function t2O2() {
       turnOff();
       $('footer')
         .fadeIn();
@@ -160,7 +167,7 @@ function detectLanguage() {
 }
 
 function mapMsg() {
-  Materialize.toast('Opening Map...', 200);
+  // Materialize.toast('Opening Map...', 200);
 }
 /*
 ███████ ██     ██     ███    ██  ██████  ████████ ██ ███████ ██    ██

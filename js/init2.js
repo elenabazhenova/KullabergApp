@@ -28,10 +28,10 @@ $(window)
     $('footer')
       .fadeOut(0);
     $('main')
-      .slideUp(0)
+      .fadeOut(0)
       .finish()
       .delay(500)
-      .slideDown(520, 'easeInQuart', function turnOff2() {
+      .fadeIn(1000, 'easeOutSine', function turnOff2() {
         $('.logoImg')
           .removeClass('turn');
         $('footer')
