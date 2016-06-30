@@ -13,8 +13,12 @@ function onUpdateReady() {
   Materialize.toast('New version available. Reload site...', 1000, 'rounded');
   window.applicationCache.swapCache();
 }
+window.applicationCache.addEventListener('updateready', onUpdateReady);
 
 function onlineCheck() {
+  if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+    onUpdateReady();
+  }
   if (!window.navigator.onLine && !hiddenContact) {
     $('.onlineOnly')
       .slideUp();
@@ -25,11 +29,6 @@ function onlineCheck() {
       .slideUp(0)
       .slideDown();
     hiddenContact = false;
-  } else {
-    window.applicationCache.addEventListener('updateready', onUpdateReady);
-    if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
-      onUpdateReady();
-    }
   }
 }
 
