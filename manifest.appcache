@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version: 1
+# Version: 2
 
 CACHE:
 index.html
@@ -72,8 +72,14 @@ img/kullabergKarta.svg
 img/t1/mapKullaleden.jpg
 img/t1/trail1mapZoom.jpg
 favicon/favicon-32x32.png?v=eEEwEaEvl1
-favicon/favicon-194x194.png?v=eEEwEaEvl1
+favicon/favicon-16x16.png?v=eEEwEaEvl1
 favicon/favicon-96x96.png?v=eEEwEaEvl1
+favicon/favicon-194x194.png?v=eEEwEaEvl1
+favicon/android-chrome-36x36.png?v=eEEwEaEvl1
+favicon/android-chrome-48x48.png?v=eEEwEaEvl1
+favicon/android-chrome-72x72.png?v=eEEwEaEvl1
+favicon/android-chrome-96x96.png?v=eEEwEaEvl1
+favicon/android-chrome-144x144.png?v=eEEwEaEvl1
 favicon/android-chrome-192x192.png?v=eEEwEaEvl1
 favicon/favicon-16x16.png?v=eEEwEaEvl1
 favicon.ico?v=eEEwEaEvl1
