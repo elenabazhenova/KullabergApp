@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Jun 19 2016 12:10:40 GMT+0000 (UTC)
+# Version: 1
 
 CACHE:
 index.html
@@ -78,6 +78,3 @@ favicon/android-chrome-192x192.png?v=eEEwEaEvl1
 favicon/favicon-16x16.png?v=eEEwEaEvl1
 favicon.ico?v=eEEwEaEvl1
 sw.min.js
-
-NETWORK:
-*
