@@ -5,6 +5,9 @@
 .pin-bottom {
 	position: relative;
 }*/
+.tabs a.active {
+	color: white;
+}
 
 .pinned {
 	position  : fixed !important;
