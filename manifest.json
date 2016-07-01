@@ -51,10 +51,6 @@
 		"notifications": {
 			"description": "Needed for creating system notifications."
 		}
-  },
-	"app": {
-	 "background": {
-		 "scripts": ["sw.min.js"]
-	 }
+  }
  }
 }
