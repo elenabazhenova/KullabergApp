@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version: 5
+# Version: 6
 
 CACHE:
 https://xtreemze.github.io/KullabergApp/index.html
@@ -90,3 +90,6 @@ https://xtreemze.github.io/KullabergApp/favicon/android-chrome-192x192.png?v=eEE
 https://xtreemze.github.io/KullabergApp/favicon/favicon-16x16.png?v=eEEwEaEvl1
 https://xtreemze.github.io/KullabergApp/favicon.ico?v=eEEwEaEvl1
 https://xtreemze.github.io/KullabergApp/manifest.json
+
+NETWORK:
+https://xtreemze.github.io/KullabergApp/sw.min.js
