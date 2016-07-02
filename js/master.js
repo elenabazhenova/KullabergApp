@@ -11,7 +11,7 @@ var locate = [];
 */
 
 window.applicationCache.ondownloading = function onDownloading() {
-  Materialize.toast('New version available. Downloading...', 2000, 'rounded');
+  Materialize.toast('New version available. Downloading...', 5000, 'rounded');
 };
 
 window.applicationCache.onupdateready = function onUpdateReady() {
@@ -25,6 +25,10 @@ window.applicationCache.onchecking = function onChecking() {
 
 window.applicationCache.oncached = function onCached() {
   Materialize.toast('Update Completed!', 3000, 'rounded');
+};
+
+window.applicationCache.onnoupdate = function onNoUpdate() {
+  Materialize.toast('No updates.', 3000, 'rounded');
 };
 
 function onlineCheck() {
