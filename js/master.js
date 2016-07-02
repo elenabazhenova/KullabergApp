@@ -19,6 +19,9 @@ window.applicationCache.onupdateready = function onUpdateReady() {
   window.applicationCache.swapCache();
 };
 
+window.applicationCache.onchecking = function onChecking() {
+  Materialize.toast('Checking for new version...', 1000, 'rounded');
+};
 
 function onlineCheck() {
   window.applicationCache.update();
