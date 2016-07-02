@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Version: 9
+# Version: 1.2
 
 CACHE:
 https://xtreemze.github.io/KullabergApp/
@@ -93,4 +93,4 @@ https://xtreemze.github.io/KullabergApp/favicon.ico?v=eEEwEaEvl
 https://xtreemze.github.io/KullabergApp/manifest.json
 
 NETWORK:
-https://xtreemze.github.io/KullabergApp/sw.min.js
+*
