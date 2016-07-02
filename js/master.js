@@ -17,14 +17,11 @@ function onUpdateReady() {
 function onDownloading() {
   Materialize.toast('New version available. Downloading...', 2000, 'rounded');
 }
-
-window.applicationCache.addEventListener('UPDATEREADY', onUpdateReady);
-window.applicationCache.addEventListener('DOWNLOADING', onDownloading);
+window.applicationCache.ondownloading = onDownloading();
+window.applicationCache.onupdateready = onUpdateReady();
 
 function onlineCheck() {
-  if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
-    onUpdateReady();
-  }
+  window.applicationCache.update();
   if (!window.navigator.onLine && !hiddenContact) {
     $('.onlineOnly')
       .slideUp();
@@ -149,7 +146,6 @@ function mapMsg() {
 ███████  ███ ███      ██   ████  ██████     ██    ██ ██         ██
 */
 // navigator.serviceWorker.register('sw.min.js');
-
 function showNotification() {
   notifyAttempts++;
   Materialize.toast('Notification requested ' + notifyAttempts + ' times.', 1000);
