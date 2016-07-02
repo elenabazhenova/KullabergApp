@@ -142,7 +142,7 @@ function mapMsg() {
      ██ ██ ███ ██     ██  ██ ██ ██    ██    ██    ██ ██         ██
 ███████  ███ ███      ██   ████  ██████     ██    ██ ██         ██
 */
-navigator.serviceWorker.register('sw.min.js');
+// navigator.serviceWorker.register('sw.min.js');
 
 function showNotification() {
   notifyAttempts++;
