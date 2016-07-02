@@ -9,16 +9,16 @@ var locate = [];
 ██    ██ ██  ██ ██ ██      ██ ██  ██ ██ ██
  ██████  ██   ████ ███████ ██ ██   ████ ███████
 */
-function onUpdateReady() {
+
+window.applicationCache.ondownloading = function onDownloading() {
+  Materialize.toast('New version available. Downloading...', 2000, 'rounded');
+};
+
+window.applicationCache.onupdateready = function onUpdateReady() {
   Materialize.toast('New version ready. Reload site...', 2000, 'rounded');
   window.applicationCache.swapCache();
-}
+};
 
-function onDownloading() {
-  Materialize.toast('New version available. Downloading...', 2000, 'rounded');
-}
-window.applicationCache.ondownloading = onDownloading();
-window.applicationCache.onupdateready = onUpdateReady();
 
 function onlineCheck() {
   window.applicationCache.update();
