@@ -23,6 +23,10 @@ window.applicationCache.onchecking = function onChecking() {
   Materialize.toast('Checking for new version...', 1000, 'rounded');
 };
 
+window.applicationCache.oncached = function onCached() {
+  Materialize.toast('Update Completed!', 3000, 'rounded');
+};
+
 function onlineCheck() {
   window.applicationCache.update();
   if (!window.navigator.onLine && !hiddenContact) {
