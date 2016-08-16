@@ -25,3 +25,11 @@ Direct Contact Buttons
 Optional Install to Home or Desktop
 
 MIT Open Source Github Repo
+
+ToDo Add start page
+
+News - Newsletter - Calendar with interactive events today at naturum, events this week, events section Contact-Report notify visitors they can send pictures or reports
+
+Have appropriate trail map for each section
+
+Report on app advances Gather statistics
