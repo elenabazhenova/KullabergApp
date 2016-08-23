@@ -6,6 +6,10 @@
 	position: relative;
 }*/
 
+.collapsible-body p {
+	padding: 0.8rem 2rem;
+}
+
 .tabs .indicator {
 	background-color: white;
 
