@@ -5,8 +5,34 @@
 .pin-bottom {
 	position: relative;
 }*/
+
+.tabs .indicator {
+	background-color: white;
+
+}
+
+.tabs .tab a {
+	color: hsla(358,0%,68%,1);
+}
+
 .tabs a.active {
 	color: white;
+}
+
+.tabs {
+	background-color: #0d47a1;
+}
+
+.tabs .tab a:hover {
+	color: hsla(358,0%,88%,1);
+}
+
+.sl5 {
+	width: 9rem;
+}
+
+.collection a.collection-item {
+	color: #0d47a1;
 }
 
 .pinned {
@@ -46,6 +72,12 @@
 ██      ██    ██ ██    ██ ██    ██
 ███████  ██████   ██████   ██████
 */
+nav .brand-logo {
+	font-size     : 1.6rem;
+	text-transform: uppercase;
+	font-weight   : 600;
+}
+
 .logoImg {
 	-webkit-transition: transform 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
 	transition        : transform 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
