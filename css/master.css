@@ -19,6 +19,13 @@
 	color: rgba(250,250,250,0.49);
 }
 
+footer.page-footer .footer-copyright {
+	line-height : 18px;
+	height      : 250px;
+	padding-left: 30px;
+	padding-top : 50px;
+}
+
 .orangeBack {
 	background: #e0632b;
 }
