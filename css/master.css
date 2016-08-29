@@ -20,10 +20,11 @@
 }
 
 footer.page-footer .footer-copyright {
-	line-height : 18px;
-	height      : 250px;
-	padding-left: 30px;
-	padding-top : 50px;
+	line-height  : 18px;
+	height       : 250px;
+	padding-left : 30px;
+	padding-top  : 50px;
+	margin-bottom: 0;
 }
 
 .orangeBack {
