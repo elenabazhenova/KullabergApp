@@ -10,6 +10,12 @@
 	padding: 0.8rem 2rem;
 }
 
+.poi {
+	font-size  : 1.7em;
+	font-weight: 500;
+	/*font-family: roboto;*/
+}
+
 .tabs .indicator {
 	background-color: white;
 
@@ -28,7 +34,7 @@ footer.page-footer .footer-copyright {
 }
 
 .orangeBack {
-	background: #e0632b;
+	background: #df622b;
 }
 
 .tabs a.active {
