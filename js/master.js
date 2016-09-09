@@ -100,6 +100,18 @@ function tabOperation() {
     });
 }
 
+function tabOperationNews() {
+  scrollTop();
+
+  $('.collapsible')
+    .collapsible({
+      accordion: true,
+    })
+    .collapsible({
+      accordion: false,
+    });
+}
+
 function mapTabOperation() {
   scrollTop();
 }
