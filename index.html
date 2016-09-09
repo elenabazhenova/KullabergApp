@@ -214,11 +214,11 @@
 					<div class="col s12">
 						<ul class="tabs">
 							<li class="tab col s3"><a href="#news"
-												onclick="tabOperation();">News</a></li>
+												onclick="tabOperationNews();">News</a></li>
 							<li class="tab col s3"><a href="#instructions"
-												onclick="tabOperation();">Instructions</a></li>
+												onclick="tabOperationNews();">Instructions</a></li>
 							<li class="tab col s3"><a href="#report"
-												onclick="tabOperation();">Report</a></li>
+												onclick="tabOperationNews();">Report</a></li>
 						</ul>
 					</div>
 				</section>
@@ -264,11 +264,12 @@
 				<section class="col s12 m12 l12">
 					<ul class="collapsible white"
 									data-collapsible="expandable">
-						<li> <span class="title collapsible-header"><i class="mdi mdi-new-box green-text text-darken-2"></i>Kullaberg Webapp Launched</span>
+						<li> <span class="title collapsible-header active"><i class="mdi mdi-new-box green-text text-darken-2"></i>Kullaberg Webapp Launched</span>
 							<div class="collapsible-body section row"> <img src="img/Kv4sq.svg"
 												alt="Kullaberg"
 												class="padBottom responsive-img " />
 								<p>The Kullaberg Webapp has been rebuilt from the ground up. You may now open the app on any internet web browser on any modern platform.</p>
+								<p>If you would like to contribute, you can contact us or get started right away if you have web programming experience. This is an opensource project.</p>
 								<p>
 									<ul>
 										<li>
@@ -287,6 +288,16 @@
 							</div>
 						</li>
 					</ul>
+				</section>
+				<section class="col s12 center-align hide-on-large-only">
+					<div class="row">
+						<a href="maps.html">
+							<div class="btn blue darken-2"><i class="mdi mdi-map"></i>View Trail Maps</div>
+						</a>
+						<a href="poi.html">
+							<div class="btn orange darken-2"><i class="mdi mdi-map-marker-radius"></i>Points of Interest</div>
+						</a>
+					</div>
 				</section>
 			</section>
 			<!--
@@ -320,12 +331,13 @@
 					<div class="card">
 						<ul class="collapsible white"
 										data-collapsible="expandable">
-							<li> <span class="title collapsible-header"><i class="mdi mdi-menu red-text text-darken-2"></i>Using the Floating Action Button</span>
+							<li> <span class="title collapsible-header active"><i class="mdi mdi-menu red-text text-darken-2"></i>Using the Floating Action Button</span>
 								<div class="collapsible-body section row">
 									<p>You will find a red floating action button on the bottom right corner of your screen. When this button is pressed, it will reveal a few additional buttons that you may also press. These buttons are detailed bellow.</p>
 									<p><a class="btn green darken-2 z-depth-0 col s12"><i class="mdi mdi-newspaper"></i>News</a> <br>This is the main page of the app which you will see first. Use this button to check recent news and events in Kullaberg, access app instructions and recomended ways to report your observations to the staff. </p>
 									<p><a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-map"></i>Maps</a> <br>Click this button to see the available maps: Kullaberg Trail Map, Kullaleden Infomap, and a Sattelite view of the Kullaleden SL5 Trail. Use pinch-zoom gestures to zoom in on the maps to get a better view of the desired area. You can also reference these maps offline.</p>
 									<p><a class="btn orange darken-2 z-depth-0 col s12"><i class="mdi mdi-map-marker-radius"></i>Points of Interest</a> <br>Click or touch this button to learn and browser through important points of interest from Kullaleden, Western Kullaberg and Sights of Heritage. </p>
+									<p><a class="btn orange darken-2 z-depth-0 col s12"><i class="mdi mdi-google-maps"></i>Explore Location</a> <br>You will find this button once you expand a Point of Interest while exploring the trails. Click or touch this button to open your prefered map application, Google or Apple Maps and learn about landmarks that interest you. You can then use your map app as you normally would to find directions and compare the destination to your location. You can then press the back button on your phone to return to the Kullaberg App and continue browsing other points of interest.</p>
 									<p><a class="btn yellow darken-2 z-depth-0 col s12"><i class="mdi mdi-phone"></i>Contact</a> </p>
 									<p>Use this button to contact us. Contact options include email, phone, website, facebook and instagram. </p>
 									<p><a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-crosshairs-gps"></i>Locate</a> <br>Use this button to find your longitude and lattitude. The app will ask for permission to find your location.</p>
@@ -366,7 +378,7 @@
 					<div class="card">
 						<ul class="collapsible white"
 										data-collapsible="expandable">
-							<li> <span class="title collapsible-header"><i class="mdi mdi-menu red-text text-darken-2"></i>Using the Contact Icons</span>
+							<li> <span class="title collapsible-header active"><i class="mdi mdi-menu red-text text-darken-2"></i>Using the Contact Icons</span>
 								<div class="collapsible-body section row">
 									<p>You will find contact buttons on the bottom of the app. When these buttons are pressed, it will perform an action to contact us. These buttons are detailed bellow.</p>
 									<p><a class="btn blue darken-2 z-depth-0 col s12"><i class="mdi mdi-email"></i>EMail</a> <br>This button will automatically open your prefered email client and address the email to the naturum. You may then proceed to provide your name as a sender and a message in the body of the email. You may also attach any necesary files or pictures and send the email when you are ready. </p>
