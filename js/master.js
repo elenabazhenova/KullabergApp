@@ -10,14 +10,14 @@ var locate = [];
  ██████  ██   ████ ███████ ██ ██   ████ ███████
 */
 window.applicationCache.ondownloading = function onDownloading() {
-  Materialize.toast('New version available. Downloading...', 5000, 'rounded');
+  Materialize.toast('New version available. Downloading...', 500000, 'rounded');
 };
 window.applicationCache.onupdateready = function onUpdateReady() {
-  Materialize.toast('New version ready. Reload site...', 2000, 'rounded');
+  Materialize.toast('New version ready. Reload site...', 200000, 'rounded');
   window.applicationCache.swapCache();
 };
 window.applicationCache.oncached = function onCached() {
-  Materialize.toast('Update Completed!', 3000, 'rounded');
+  Materialize.toast('Update Completed!', 300000, 'rounded');
 };
 // window.applicationCache.onchecking = function onChecking() {
 //   Materialize.toast('Checking for new version...', 1000, 'rounded');
