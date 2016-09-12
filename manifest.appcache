@@ -1,10 +1,11 @@
 CACHE MANIFEST
 
-# Version: 3
+# Version: 9.65
 
 CACHE:
 https://xtreemze.github.io/KullabergApp/
 https://xtreemze.github.io/KullabergApp/index.html
+https://xtreemze.github.io/KullabergApp/poi.html
 https://xtreemze.github.io/KullabergApp/maps.html
 https://xtreemze.github.io/KullabergApp/css/materialize.min.css
 https://xtreemze.github.io/KullabergApp/css/materialdesignicons.min.css
@@ -47,6 +48,7 @@ https://xtreemze.github.io/KullabergApp/img/t3/1.jpg
 https://xtreemze.github.io/KullabergApp/img/t3/2.jpg
 https://xtreemze.github.io/KullabergApp/img/t3/3.jpg
 https://xtreemze.github.io/KullabergApp/img/t3/4.jpg
+https://xtreemze.github.io/KullabergApp/img/t3/trail3map.jpg
 https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Medium.woff
 https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Regular.woff
 https://xtreemze.github.io/KullabergApp/fonts/roboto/Roboto-Light.woff
@@ -91,6 +93,8 @@ https://xtreemze.github.io/KullabergApp/favicon/android-chrome-192x192.png?v=eEE
 https://xtreemze.github.io/KullabergApp/favicon/favicon-16x16.png?v=eEEwEaEvl1
 https://xtreemze.github.io/KullabergApp/favicon.ico?v=eEEwEaEvl
 https://xtreemze.github.io/KullabergApp/manifest.json
+https://xtreemze.github.io/KullabergApp/img/lansstyrelsen.svg
+https://xtreemze.github.io/KullabergApp/img/regionSkane.svg
 
 NETWORK:
 *

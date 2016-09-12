@@ -5,8 +5,65 @@
 .pin-bottom {
 	position: relative;
 }*/
+
+.collapsible-body p {
+	padding: 0.8rem 2rem;
+}
+
+.poi {
+	font-size  : 1.7em;
+	font-weight: 500;
+	/*font-family: roboto;*/
+}
+
+.tabs .indicator {
+	background-color: white;
+
+}
+
+.tabs .tab a {
+	color: rgba(250,250,250,0.49);
+}
+
+footer.page-footer .footer-copyright {
+	line-height  : 18px;
+	height       : 250px;
+	padding-left : 30px;
+	padding-top  : 50px;
+	margin-bottom: 0;
+}
+
+.orangeBack {
+	background: #df622b;
+}
+
 .tabs a.active {
 	color: white;
+}
+
+.tabs {
+	background-color: #0d47a1;
+	white-space     : normal;
+}
+
+.tabs .tab {
+	padding-top: 0.8rem;
+
+	line-height: 1rem;
+}
+
+ul.tabs {}
+
+.tabs .tab a:hover {
+	color: hsla(358,0%,88%,1);
+}
+
+.sl5 {
+	width: 9rem;
+}
+
+.collection a.collection-item {
+	color: #0d47a1;
 }
 
 .pinned {
@@ -14,10 +71,12 @@
 	z-index   : 1;
 	width     : 100%;
 	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 .navbar {
 	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 .trail1 {
@@ -46,6 +105,12 @@
 ██      ██    ██ ██    ██ ██    ██
 ███████  ██████   ██████   ██████
 */
+nav .brand-logo {
+	font-size     : 1.6rem;
+	text-transform: uppercase;
+	font-weight   : 600;
+}
+
 .logoImg {
 	-webkit-transition: transform 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
 	transition        : transform 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -81,15 +146,15 @@ img.logoImg:hover {
 }
 
 .map1 {
-	min-height: 90vh;
+	min-height: 60vh;
 }
 
 .map2 {
-	width: 196vh;
+	width: 120vh;
 }
 
 .map3 {
-	width: 204vh;
+	width: 120vh;
 }
 
 .scroll {

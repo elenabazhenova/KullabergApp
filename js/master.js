@@ -9,20 +9,16 @@ var locate = [];
 ██    ██ ██  ██ ██ ██      ██ ██  ██ ██ ██
  ██████  ██   ████ ███████ ██ ██   ████ ███████
 */
-
 window.applicationCache.ondownloading = function onDownloading() {
-  Materialize.toast('New version available. Downloading...', 5000, 'rounded');
+  Materialize.toast('New version available. Downloading...', 120000, 'rounded');
 };
-
 window.applicationCache.onupdateready = function onUpdateReady() {
-  Materialize.toast('New version ready. Reload site...', 2000, 'rounded');
+  Materialize.toast('New version ready. Reload site...', 300000, 'rounded');
   window.applicationCache.swapCache();
 };
-
 window.applicationCache.oncached = function onCached() {
-  Materialize.toast('Update Completed!', 3000, 'rounded');
+  Materialize.toast('Update Completed!', 300000, 'rounded');
 };
-
 // window.applicationCache.onchecking = function onChecking() {
 //   Materialize.toast('Checking for new version...', 1000, 'rounded');
 // };
@@ -30,7 +26,6 @@ window.applicationCache.oncached = function onCached() {
 // window.applicationCache.onnoupdate = function onNoUpdate() {
 //   Materialize.toast('No updates.', 3000, 'rounded');
 // };
-
 function onlineCheck() {
   window.applicationCache.update();
   if (!window.navigator.onLine && !hiddenContact) {
@@ -56,7 +51,6 @@ function scrollEnd() {
 }
 
 function flashContact() {
-  onlineCheck();
   scrollEnd();
   $('.contactIcon')
     .finish()
@@ -67,6 +61,7 @@ function flashContact() {
     .fadeIn(250)
     .fadeOut(250)
     .fadeIn(250);
+  onlineCheck();
 }
 
 function scrollTop() {
@@ -96,6 +91,18 @@ function tabOperation() {
   scrollTop();
   $('.collapsible-header')
     .removeClass('active');
+  $('.collapsible')
+    .collapsible({
+      accordion: true,
+    })
+    .collapsible({
+      accordion: false,
+    });
+}
+
+function tabOperationNews() {
+  scrollTop();
+
   $('.collapsible')
     .collapsible({
       accordion: true,
