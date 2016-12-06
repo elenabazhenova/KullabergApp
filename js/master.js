@@ -102,7 +102,6 @@ function tabOperation() {
 
 function tabOperationNews() {
   scrollTop();
-
   $('.collapsible')
     .collapsible({
       accordion: true,
@@ -118,6 +117,61 @@ function mapTabOperation() {
 
 function back() {
   window.history.back();
+}
+
+
+function scrollTrail1Poi() {
+  $('.collapsible-header')
+    .removeClass('active');
+  $('.collapsible')
+    .collapsible({
+      accordion: true,
+    })
+    .collapsible({
+      accordion: false,
+    });
+  $('html, body')
+    .animate({
+      scrollTop: $('#trail1Poi')
+        .offset()
+        .top + 20,
+    }, 800, 'easeInOutCubic');
+}
+
+function scrollTrail2Poi() {
+  $('.collapsible-header')
+    .removeClass('active');
+  $('.collapsible')
+    .collapsible({
+      accordion: true,
+    })
+    .collapsible({
+      accordion: false,
+    });
+  $('html, body')
+    .animate({
+      scrollTop: $('#trail2Poi')
+        .offset()
+        .top + 20,
+    }, 800, 'easeInOutCubic');
+}
+
+function scrollTrail3Poi() {
+  $('.collapsible-header')
+    .removeClass('active');
+  $('.collapsible')
+    .collapsible({
+      accordion: true,
+    })
+    .collapsible({
+      accordion: false,
+    });
+  $('html, body')
+    .animate({
+      scrollTop: $('#trail3Poi')
+        .offset()
+        .top + 20,
+    }, 800, 'easeInOutCubic');
 }
 /*
 ██       ██████   ██████  █████  ████████ ██  ██████  ███    ██

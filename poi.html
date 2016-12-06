@@ -214,11 +214,11 @@
 					<div class="col s12">
 						<ul class="tabs">
 							<li class="tab col s3"><a href="#trail1"
-												onclick="tabOperation();">Kullaleden</a></li>
+												onclick="scrollTrail1Poi();">Kullaleden</a></li>
 							<li class="tab col s3"><a href="#trail2"
-												onclick="tabOperation();">Western Kullaberg</a></li>
+												onclick="scrollTrail2Poi();">Western Kullaberg</a></li>
 							<li class="tab col s3"><a href="#trail3"
-												onclick="tabOperation();">Sights of Heritage</a></li>
+												onclick="scrollTrail3Poi();">Sights of Heritage</a></li>
 						</ul>
 					</div>
 				</section>
@@ -294,7 +294,8 @@
 ██      ██    ██ ██
 ██       ██████  ██
 -->
-				<section class="col s12 m12 l12">
+				<section id="trail1Poi"
+								class="col s12 m12 l12">
 					<ul class="collapsible white"
 									data-collapsible="expandable">
 						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>A,N: Our Responsibility</span>
@@ -306,13 +307,13 @@
 								<p class="center-align"><a class="trail1 poi"
 													href="
 
-								https://www.google.com/maps/place/56%C2%B017'55.0%22N+12%C2%B028'59.0%22E/@56.2986111,12.4808669,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2986111!4d12.4830556
+								https://www.google.com/maps/dir/Current+Location/56%C2%B017'55.0%22N+12%C2%B028'59.0%22E/@56.2986111,12.4808669,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2986111!4d12.4830556
 
-								"><span class="poi">A:</span><i class="mdi mdi-google-maps medium"></i></a></p>
+								"><span class="poi">A:</span><i class="mdi mdi-map-marker medium"></i></a></p>
 								<p class="center-align"><a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B013'19.0%22N+12%C2%B045'36.0%22E/@56.2219444,12.7578113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2219444!4d12.76
-								"><span class="poi">N:</span><i class="mdi mdi-google-maps medium"></i></a></p>
+https://www.google.com/maps/dir/Current+Location/56%C2%B013'19.0%22N+12%C2%B045'36.0%22E/@56.2219444,12.7578113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2219444!4d12.76
+								"><span class="poi">N:</span><i class="mdi mdi-map-marker medium"></i></a></p>
 							</div>
 						</li>
 						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>B: Rocky Bottoms</span>
@@ -324,9 +325,9 @@ https://www.google.com/maps/place/56%C2%B013'19.0%22N+12%C2%B045'36.0%22E/@56.22
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-								https://www.google.com/maps/place/56%C2%B017'19.6%22N+12%C2%B032'18.2%22E/@56.2887764,12.5362129,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2887764!4d12.5384016
+								https://www.google.com/maps/dir/Current+Location/56%C2%B017'19.6%22N+12%C2%B032'18.2%22E/@56.2887764,12.5362129,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2887764!4d12.5384016
 
-								"> <span class="poi">B:</span> <i class="mdi mdi-google-maps medium"></i></a>
+								"> <span class="poi">B:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -340,15 +341,15 @@ https://www.google.com/maps/place/56%C2%B013'19.0%22N+12%C2%B045'36.0%22E/@56.22
 									<a class="trail1 poi"
 													href="
 
-								https://www.google.com/maps/place/56%C2%B016'33.0%22N+12%C2%B034'20.0%22E/@56.2758333,12.5700335,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2758333!4d12.5722222
+								https://www.google.com/maps/dir/Current+Location/56%C2%B016'33.0%22N+12%C2%B034'20.0%22E/@56.2758333,12.5700335,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2758333!4d12.5722222
 
-								"> <span class="poi">C:</span> <i class="mdi mdi-google-maps medium"></i></a>
+								"> <span class="poi">C:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B011'57.0%22N+12%C2%B033'08.0%22E/@56.1991667,12.5500335,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.1991667!4d12.5522222
-								"> <span class="poi">L:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B011'57.0%22N+12%C2%B033'08.0%22E/@56.1991667,12.5500335,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.1991667!4d12.5522222
+								"> <span class="poi">L:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -368,15 +369,15 @@ https://www.google.com/maps/place/56%C2%B011'57.0%22N+12%C2%B033'08.0%22E/@56.19
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-									https://www.google.com/maps/place/56%C2%B015'41.0%22N+12%C2%B037'15.0%22E/@56.2613889,12.6186446,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2613889!4d12.6208333
+									https://www.google.com/maps/dir/Current+Location/56%C2%B015'41.0%22N+12%C2%B037'15.0%22E/@56.2613889,12.6186446,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2613889!4d12.6208333
 
-								"> <span class="poi">D:</span> <i class="mdi mdi-google-maps medium"></i></a>
+								"> <span class="poi">D:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B014'06.0%22N+12%C2%B032'13.0%22E/@56.235,12.5347557,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.235!4d12.5369444
-								"> <span class="poi">K:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B014'06.0%22N+12%C2%B032'13.0%22E/@56.235,12.5347557,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.235!4d12.5369444
+								"> <span class="poi">K:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -391,15 +392,15 @@ https://www.google.com/maps/place/56%C2%B014'06.0%22N+12%C2%B032'13.0%22E/@56.23
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B015'04.0%22N+12%C2%B039'43.0%22E/@56.2511111,12.6597557,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2511111!4d12.6619444
-								"> <span class="poi">E:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B015'04.0%22N+12%C2%B039'43.0%22E/@56.2511111,12.6597557,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2511111!4d12.6619444
+								"> <span class="poi">E:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B013'51.0%22N+12%C2%B041'16.0%22E/@56.2308333,12.6855891,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2308333!4d12.6877778
+https://www.google.com/maps/dir/Current+Location/56%C2%B013'51.0%22N+12%C2%B041'16.0%22E/@56.2308333,12.6855891,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2308333!4d12.6877778
 
-								"> <span class="poi">F:</span> <i class="mdi mdi-google-maps medium"></i></a>
+								"> <span class="poi">F:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -412,8 +413,8 @@ https://www.google.com/maps/place/56%C2%B013'51.0%22N+12%C2%B041'16.0%22E/@56.23
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-								https://www.google.com/maps/place/56%C2%B013'19.0%22N+12%C2%B045'36.0%22E/@56.2219444,12.7578113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2219444!4d12.76
-								"> <span class="poi">G:</span> <i class="mdi mdi-google-maps medium"></i></a>
+								https://www.google.com/maps/dir/Current+Location/56%C2%B013'19.0%22N+12%C2%B045'36.0%22E/@56.2219444,12.7578113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2219444!4d12.76
+								"> <span class="poi">G:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -427,14 +428,14 @@ https://www.google.com/maps/place/56%C2%B013'51.0%22N+12%C2%B041'16.0%22E/@56.23
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-							https://www.google.com/maps/place/56%C2%B013'04.0%22N+12%C2%B045'36.0%22E/@56.2177778,12.7578113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2177778!4d12.76
-								"> <span class="poi">H:</span> <i class="mdi mdi-google-maps medium"></i></a>
+							https://www.google.com/maps/dir/Current+Location/56%C2%B013'04.0%22N+12%C2%B045'36.0%22E/@56.2177778,12.7578113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2177778!4d12.76
+								"> <span class="poi">H:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B016'58.0%22N+12%C2%B029'40.0%22E/@56.2827778,12.4922557,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2827778!4d12.4944444
-								"> <span class="poi">I:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B016'58.0%22N+12%C2%B029'40.0%22E/@56.2827778,12.4922557,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2827778!4d12.4944444
+								"> <span class="poi">I:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -450,9 +451,9 @@ https://www.google.com/maps/place/56%C2%B016'58.0%22N+12%C2%B029'40.0%22E/@56.28
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-								https://www.google.com/maps/place/56%C2%B014'42.0%22N+12%C2%B031'55.0%22E/@56.2449983,12.5144348,14z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.245!4d12.5319444
+								https://www.google.com/maps/dir/Current+Location/56%C2%B014'42.0%22N+12%C2%B031'55.0%22E/@56.2449983,12.5144348,14z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.245!4d12.5319444
 
-								"> <span class="poi">J:</span> <i class="mdi mdi-google-maps medium"></i></a>
+								"> <span class="poi">J:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -465,9 +466,9 @@ https://www.google.com/maps/place/56%C2%B016'58.0%22N+12%C2%B029'40.0%22E/@56.28
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-								https://www.google.com/maps/place/56%C2%B010'41.0%22N+12%C2%B033'22.0%22E/@56.1780556,12.5539224,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.1780556!4d12.5561111
+								https://www.google.com/maps/dir/Current+Location/56%C2%B010'41.0%22N+12%C2%B033'22.0%22E/@56.1780556,12.5539224,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.1780556!4d12.5561111
 
-								"> <span class="poi">M:</span> <i class="mdi mdi-google-maps medium"></i></a>
+								"> <span class="poi">M:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -502,7 +503,8 @@ https://www.google.com/maps/place/56%C2%B016'58.0%22N+12%C2%B029'40.0%22E/@56.28
 ██      ██    ██ ██
 ██       ██████  ██
 -->
-				<section class="col s12 m12 l12">
+				<section id="trail2Poi"
+								class="col s12 m12 l12">
 					<ul class="collapsible white"
 									data-collapsible="expandable">
 						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>Austrian Pine</span>
@@ -723,7 +725,8 @@ https://www.google.com/maps/place/56%C2%B016'58.0%22N+12%C2%B029'40.0%22E/@56.28
 ██      ██    ██ ██
 ██       ██████  ██
 -->
-				<section class="col s12 m12 l12">
+				<section id="trail3Poi"
+								class="col s12 m12 l12">
 					<ul class="collapsible white"
 									data-collapsible="expandable">
 						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>1: Kärnan Castle</span>
@@ -731,12 +734,21 @@ https://www.google.com/maps/place/56%C2%B016'58.0%22N+12%C2%B029'40.0%22E/@56.28
 												class="col s12 m12 l12 padBottom"
 												alt="Kärnan Castle" />
 								<p>Kullaleden and Öresundsleden merge at Kärnan, which is the last remnant of the Helsingborg castle. The 34 meter high tower from the 1300s is later replaced with a tower from the 1100s. This is where the Danish Queen Dorothea and Barbara Brahe from Krapperup met before a pilgrimage to Rome in 1475. The surrounding buildings were demolished following the war in the 1600s. A wall chart below Kärnan illustrates the earlier state of the site. In the 1800s the Swedish flag through the work of Alfred Hellerström received its battlements and is now hung now hung on top of Kärnan, which got it´s colors from Oscar Trapp. Trapp visited the National Museum in Amsterdam and managed to get a piece of a looted Swedish flag. Different manufacturers reproduced the colors differently and that´s how the bright colors were established.</p>
-								<p class="center-align">
-									<a class="trail1 poi"
+								<p class="row">
+									<a class="trail1 poi col s4"
 													href="
-https://www.google.com/maps/place/56%C2%B002'56.8%22N+12%C2%B041'51.2%22E/@56.0489938,12.6949048,16.67z/data=!4m5!3m4!1s0x0:0x0!8m2!3d56.049117!4d12.697567
+https://www.google.com/maps/place/K%C3%A4rnan/@56.0475104,12.6933197,16.19z/data=!4m5!3m4!1s0x0:0xf14aa52ac4a88c9f!8m2!3d56.0483045!4d12.6974978
 
-								"> <span class="poi">1:</span> <i class="mdi mdi-google-maps medium"></i></a>
+								"> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
+									<a class="trail1 poi col s4"
+													href="
+https://www.google.com/maps/dir/Current+Location/56.0491111,12.6975556/@56.0471221,12.6954529,16.36z/data=!4m8!1m7!3m6!1s0x0:0x0!2zNTbCsDAyJzU2LjgiTiAxMsKwNDEnNTEuMiJF!3b1!8m2!3d56.049117!4d12.697567
+								"> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
+									<a class="trail1 poi col s4"
+													href="
+https://www.google.com/maps/@56.0479393,12.6971674,3a,75y,32.01h,118.99t/data=!3m8!1e1!3m6!1s-HGxiCXJ71nI%2FVa9PGTSwztI%2FAAAAAAAAbKU%2FohfK3sr6WRgXtfe_5e1FbWaFnBHWkVV6wCJkC!2e4!3e11!6s%2F%2Flh5.googleusercontent.com%2F-HGxiCXJ71nI%2FVa9PGTSwztI%2FAAAAAAAAbKU%2FohfK3sr6WRgXtfe_5e1FbWaFnBHWkVV6wCJkC%2Fw203-h100-k-no-pi-0-ya174.40637-ro0-fo100%2F!7i7168!8i3584
+
+								"> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -748,10 +760,20 @@ https://www.google.com/maps/place/56%C2%B002'56.8%22N+12%C2%B041'51.2%22E/@56.04
 								<p> Prince Gustav Adolf and his wife Margaret had Sofiero as a wedding gift in 1905. The English-born Princess Margaret was very knowledgeable garden and gave the garden a prominent role. She believed that people would use fewer varieties, but many out of each and put the specimens closely together, something that still lives on, for example, in Blomstergatan that bears her name. Crown Prince Gustaf Adolf, whose main interest was the rhododendron garden continued work after Margaret's death, even after he was king. Approximately 10 000 copies of the rhododendrons attracts thousands of visitors every year, especially during the flowering period. On the castle's website you can learn the latest information on flowering. There are also descriptions of the hikes illustrating the royal summer life, gentry and servants, Sofieros flowers and the sculptures found in the park.</p>
 								<p>King Gustav VI Adolf bequeathed the entire plant to the city of Helsingborg which took over in 1974. The park, which in 2010 was named Europe's best park, is also used for outdoor concerts and other events.</p>
 								<p class="center-align">
-									<a class="trail1 poi"
+									<a class="trail1 poi col s4"
 													href="
-https://www.google.com/maps/place/56%C2%B004'47.6%22N+12%C2%B039'50.5%22E/@56.079883,12.6618443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.079883!4d12.664033
-								"> <span class="poi">2:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/place/Sofiero/@56.0839179,12.6574907,17z/data=!3m1!4b1!4m5!3m4!1s0x465231e4cd906d1f:0x2a6a3d15a0a05e3c!8m2!3d56.0839149!4d12.6596794
+
+							"> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
+									<a class="trail1 poi col s4"
+													href="
+https://www.google.com/maps/dir/Current+Location/56%C2%B004'47.6%22N+12%C2%B039'50.5%22E/@56.079883,12.6618443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.079883!4d12.664033
+							"> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
+									<a class="trail1 poi col s4"
+													href="
+https://www.google.com/maps/@56.0841258,12.6598517,3a,75y,210.62h,98.78t/data=!3m6!1e1!3m4!1svB3lwLuIOvZGe34UW1KAIA!2e0!7i13312!8i6656
+
+							"> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -763,8 +785,8 @@ https://www.google.com/maps/place/56%C2%B004'47.6%22N+12%C2%B039'50.5%22E/@56.07
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B005'37.7%22N+12%C2%B038'26.3%22E/@56.093817,12.6384613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.093817!4d12.64065
-								"> <span class="poi">3:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B005'37.7%22N+12%C2%B038'26.3%22E/@56.093817,12.6384613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.093817!4d12.64065
+								"> <span class="poi">3:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -776,8 +798,8 @@ https://www.google.com/maps/place/56%C2%B005'37.7%22N+12%C2%B038'26.3%22E/@56.09
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B006'25.0%22N+12%C2%B037'31.5%22E/@56.106933,12.6232283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.106933!4d12.625417
-								"> <span class="poi">4:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B006'25.0%22N+12%C2%B037'31.5%22E/@56.106933,12.6232283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.106933!4d12.625417
+								"> <span class="poi">4:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -790,8 +812,8 @@ https://www.google.com/maps/place/56%C2%B006'25.0%22N+12%C2%B037'31.5%22E/@56.10
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B006'37.6%22N+12%C2%B037'02.0%22E/@56.110433,12.6150283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.110433!4d12.617217
-								"> <span class="poi">5:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B006'37.6%22N+12%C2%B037'02.0%22E/@56.110433,12.6150283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.110433!4d12.617217
+								"> <span class="poi">5:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -804,8 +826,8 @@ https://www.google.com/maps/place/56%C2%B006'37.6%22N+12%C2%B037'02.0%22E/@56.11
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B007'29.8%22N+12%C2%B035'54.3%22E/@56.124933,12.5962283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.124933!4d12.598417
-								"> <span class="poi">6:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B007'29.8%22N+12%C2%B035'54.3%22E/@56.124933,12.5962283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.124933!4d12.598417
+								"> <span class="poi">6:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -820,8 +842,8 @@ https://www.google.com/maps/place/56%C2%B007'29.8%22N+12%C2%B035'54.3%22E/@56.12
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B009'03.8%22N+12%C2%B034'08.9%22E/@56.15105,12.5669613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.15105!4d12.56915
-								"> <span class="poi">7:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B009'03.8%22N+12%C2%B034'08.9%22E/@56.15105,12.5669613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.15105!4d12.56915
+								"> <span class="poi">7:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -833,8 +855,8 @@ https://www.google.com/maps/place/56%C2%B009'03.8%22N+12%C2%B034'08.9%22E/@56.15
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B012'00.8%22N+12%C2%B032'54.7%22E/@56.200217,12.5463443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.200217!4d12.548533
-								"> <span class="poi">8:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B012'00.8%22N+12%C2%B032'54.7%22E/@56.200217,12.5463443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.200217!4d12.548533
+								"> <span class="poi">8:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -850,8 +872,8 @@ https://www.google.com/maps/place/56%C2%B012'00.8%22N+12%C2%B032'54.7%22E/@56.20
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B016'41.2%22N+12%C2%B030'07.8%22E/@56.2781,12.4999783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2781!4d12.502167
-								"> <span class="poi">9:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B016'41.2%22N+12%C2%B030'07.8%22E/@56.2781,12.4999783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2781!4d12.502167
+								"> <span class="poi">9:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -864,8 +886,8 @@ https://www.google.com/maps/place/56%C2%B016'41.2%22N+12%C2%B030'07.8%22E/@56.27
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B017'22.2%22N+12%C2%B029'08.0%22E/@56.2895,12.4833783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2895!4d12.485567
-								"> <span class="poi">10:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B017'22.2%22N+12%C2%B029'08.0%22E/@56.2895,12.4833783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2895!4d12.485567
+								"> <span class="poi">10:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -878,8 +900,8 @@ https://www.google.com/maps/place/56%C2%B017'22.2%22N+12%C2%B029'08.0%22E/@56.28
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B017'30.2%22N+12%C2%B028'34.3%22E/@56.291733,12.4739943,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.291733!4d12.476183
-								"> <span class="poi">11:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B017'30.2%22N+12%C2%B028'34.3%22E/@56.291733,12.4739943,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.291733!4d12.476183
+								"> <span class="poi">11:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -894,8 +916,8 @@ https://www.google.com/maps/place/56%C2%B017'30.2%22N+12%C2%B028'34.3%22E/@56.29
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/260+43+Arild,+Sweden/@56.2752522,12.5713686,16.67z/data=!4m5!3m4!1s0x4652277892343af5:0x34474d479e2d4217!8m2!3d56.2708361!4d12.5783573
-								"> <span class="poi">12:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/260+43+Arild,+Sweden/@56.2752522,12.5713686,16.67z/data=!4m5!3m4!1s0x4652277892343af5:0x34474d479e2d4217!8m2!3d56.2708361!4d12.5783573
+								"> <span class="poi">12:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -907,8 +929,8 @@ https://www.google.com/maps/place/260+43+Arild,+Sweden/@56.2752522,12.5713686,16
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/KL%C3%96TETS+BADPLATS+1NA,+260+43+Arild,+Sweden/@56.2730383,12.5776347,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x46522783933bfacd:0x346383c98d0506fc!2sKl%C3%B6tesv%C3%A4gen,+260+43+Arild,+Sweden!3b1!8m2!3d56.2744416!4d12.5751604!3m4!1s0x465227845422b205:0x494b44e0e587cc6f!8m2!3d56.2730383!4d12.5798234
-								"> <span class="poi">13:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/KL%C3%96TETS+BADPLATS+1NA,+260+43+Arild,+Sweden/@56.2730383,12.5776347,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x46522783933bfacd:0x346383c98d0506fc!2sKl%C3%B6tesv%C3%A4gen,+260+43+Arild,+Sweden!3b1!8m2!3d56.2744416!4d12.5751604!3m4!1s0x465227845422b205:0x494b44e0e587cc6f!8m2!3d56.2730383!4d12.5798234
+								"> <span class="poi">13:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -923,8 +945,8 @@ https://www.google.com/maps/place/KL%C3%96TETS+BADPLATS+1NA,+260+43+Arild,+Swede
 								<p class="center-align">
 									<a class="trail1 poi"
 													href="
-https://www.google.com/maps/place/56%C2%B016'00.3%22N+12%C2%B036'14.0%22E/@56.266751,12.6017003,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.266751!4d12.603889
-								"> <span class="poi">14:</span> <i class="mdi mdi-google-maps medium"></i></a>
+https://www.google.com/maps/dir/Current+Location/56%C2%B016'00.3%22N+12%C2%B036'14.0%22E/@56.266751,12.6017003,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.266751!4d12.603889
+								"> <span class="poi">14:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
@@ -941,9 +963,9 @@ https://www.google.com/maps/place/56%C2%B016'00.3%22N+12%C2%B036'14.0%22E/@56.26
 									<a class="trail1 poi"
 													href="
 
-													https://www.google.com/maps/place/56%C2%B015'51.9%22N+12%C2%B036'47.3%22E/@56.264414,12.6109443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.264414!4d12.613133
+													https://www.google.com/maps/dir/Current+Location/56%C2%B015'51.9%22N+12%C2%B036'47.3%22E/@56.264414,12.6109443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.264414!4d12.613133
 
-								"> <span class="poi">15:</span> <i class="mdi mdi-google-maps medium"></i></a>
+								"> <span class="poi">15:</span> <i class="mdi mdi-map-marker medium"></i></a>
 								</p>
 							</div>
 						</li>
