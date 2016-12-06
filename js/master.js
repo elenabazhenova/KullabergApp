@@ -88,7 +88,6 @@ function turnOn() {
    ██    ██   ██ ██████  ███████
 */
 function tabOperation() {
-  scrollTop();
   $('.collapsible-header')
     .removeClass('active');
   $('.collapsible')
@@ -98,6 +97,7 @@ function tabOperation() {
     .collapsible({
       accordion: false,
     });
+  scrollTop();
 }
 
 function tabOperationNews() {
@@ -119,58 +119,33 @@ function back() {
   window.history.back();
 }
 
-
 function scrollTrail1Poi() {
-  $('.collapsible-header')
-    .removeClass('active');
-  $('.collapsible')
-    .collapsible({
-      accordion: true,
-    })
-    .collapsible({
-      accordion: false,
-    });
+  tabOperation();
   $('html, body')
     .animate({
       scrollTop: $('#trail1Poi')
         .offset()
-        .top + 20,
+        .top - 80,
     }, 800, 'easeInOutCubic');
 }
 
 function scrollTrail2Poi() {
-  $('.collapsible-header')
-    .removeClass('active');
-  $('.collapsible')
-    .collapsible({
-      accordion: true,
-    })
-    .collapsible({
-      accordion: false,
-    });
+  tabOperation();
   $('html, body')
     .animate({
       scrollTop: $('#trail2Poi')
         .offset()
-        .top + 20,
+        .top - 80,
     }, 800, 'easeInOutCubic');
 }
 
 function scrollTrail3Poi() {
-  $('.collapsible-header')
-    .removeClass('active');
-  $('.collapsible')
-    .collapsible({
-      accordion: true,
-    })
-    .collapsible({
-      accordion: false,
-    });
+  tabOperation();
   $('html, body')
     .animate({
       scrollTop: $('#trail3Poi')
         .offset()
-        .top + 20,
+        .top - 80,
     }, 800, 'easeInOutCubic');
 }
 /*

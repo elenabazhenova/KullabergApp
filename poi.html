@@ -214,11 +214,11 @@
 					<div class="col s12">
 						<ul class="tabs">
 							<li class="tab col s3"><a href="#trail1"
-												onclick="scrollTrail1Poi();">Kullaleden</a></li>
+												onclick="tabOperation();">Kullaleden</a></li>
 							<li class="tab col s3"><a href="#trail2"
-												onclick="scrollTrail2Poi();">Western Kullaberg</a></li>
+												onclick="tabOperation();">Western Kullaberg</a></li>
 							<li class="tab col s3"><a href="#trail3"
-												onclick="scrollTrail3Poi();">Sights of Heritage</a></li>
+												onclick="tabOperation();">Sights of Heritage</a></li>
 						</ul>
 					</div>
 				</section>
@@ -254,38 +254,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="card">
-						<a href="maps.html#3">
-							<div class="card-image"><img src="img/t1/trail1map.jpg"
-												onclick="mapMsg();"
-												alt="Kullaleden"></div>
-						</a>
-						<div class="card-content extendedInfo">
-							<p>Kullaleden is section 1-6 of Skåneleden trail no. SL 5 in total 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
-							<p>Kullaleden is certified according to the European Ramblers’ Association’s (ERA) criteria for being a Leading Quality Trail. This entails a quality assurance of the trail’s physical standard as well as the experiences and services along the trail. The certification is renewed every three years.</p>
-							<p><span class="strong">
-												Gradings</span> <br> <span class="strong">From Mölle to Kullen Lighthouse and back to Arild:</span> <br> Undulating terrain, steep sections on nature trails exist. Moderate to hard (northern side)</p>
-							<p> <span class="strong">Other:</span> <br> Easy-varied terrain with only minor height differences, more than 50% of the stretch runs on nature trails.</p>
-						</div>
-					</div>
-				</section>
-				<section class="col s12 m12 l4">
-					<div class="card grey lighten-5">
-						<a href="maps.html#2">
-							<div class="card-image"><img src="img/t1/0.jpg"
-												onclick="mapMsg();"
-												alt="Kullaleden Trail Map"></div>
-						</a>
-						<div class="card-content">
-							<p>Kullaleden offers a great variety of experiences along the way. Here you find everything including the medieval city centre of Helsingborg, beautiful views over the straits from the plateau heights, the well-known Sofiero Palace, Kulla-Gunnarstorp and Krapperup Estates, beaches and picturesque seaside villages, and Kullaberg’s dramatic cliff formations.</p>
-						</div>
-					</div>
-					<section class="collection card onlineOnly"> <a href="http://kullaleden.se/en"
-										class="collection-item"><i class="mdi mdi-link"></i> Kullaleden.se</a> <a href="http://en.skaneleden.se/the-trail/sl-5-oresundsleden/"
-										class="collection-item"><i class="mdi mdi-link"></i> Skaneleden.se</a> <a href="http://www.era-ewv-ferp.com/frontpage/"
-										class="collection-item"><i class="mdi mdi-link"></i> EURORANDO</a> <a href="http://www.era-ewv-ferp.com/programs/lqt/kullaleden/"
-										class="collection-item"><i class="mdi mdi-link"></i> Kullaleden: Certified Leading Quality Trail</a> <a href="https://www.google.com/maps/streetview/#skane"
-										class="collection-item"><i class="mdi mdi-link"></i> Skåneleden SL5 Street View</a> </section>
 				</section>
 				<!--
 ██████   ██████  ██
@@ -298,6 +266,22 @@
 								class="col s12 m12 l12">
 					<ul class="collapsible white"
 									data-collapsible="expandable">
+						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>About Kullaleden</span>
+							<div class="collapsible-body section row">
+								<p>Kullaleden is section 1-6 of Skåneleden trail no. SL 5 in total 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
+								<p>Kullaleden is certified according to the European Ramblers’ Association’s (ERA) criteria for being a Leading Quality Trail. This entails a quality assurance of the trail’s physical standard as well as the experiences and services along the trail. The certification is renewed every three years.</p>
+								<p><span class="strong">
+																				Gradings</span> <br> <span class="strong">From Mölle to Kullen Lighthouse and back to Arild:</span> <br> Undulating terrain, steep sections on nature trails exist. Moderate to hard (northern side)</p>
+								<p> <span class="strong">Other:</span> <br> Easy-varied terrain with only minor height differences, more than 50% of the stretch runs on nature trails.</p>
+								<p>Kullaleden offers a great variety of experiences along the way. Here you find everything including the medieval city centre of Helsingborg, beautiful views over the straits from the plateau heights, the well-known Sofiero Palace, Kulla-Gunnarstorp and Krapperup Estates, beaches and picturesque seaside villages, and Kullaberg’s dramatic cliff formations.</p>
+								<section class="collection onlineOnly"> <a href="http://kullaleden.se/en"
+													class="collection-item"><i class="mdi mdi-link"></i> Kullaleden.se</a> <a href="http://en.skaneleden.se/the-trail/sl-5-oresundsleden/"
+													class="collection-item"><i class="mdi mdi-link"></i> Skaneleden.se</a> <a href="http://www.era-ewv-ferp.com/frontpage/"
+													class="collection-item"><i class="mdi mdi-link"></i> EURORANDO</a> <a href="http://www.era-ewv-ferp.com/programs/lqt/kullaleden/"
+													class="collection-item"><i class="mdi mdi-link"></i> Kullaleden: Certified Leading Quality Trail</a> <a href="https://www.google.com/maps/streetview/#skane"
+													class="collection-item"><i class="mdi mdi-link"></i> Skåneleden SL5 Street View</a> </section>
+							</div>
+						</li>
 						<li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>A,N: Our Responsibility</span>
 							<div class="collapsible-body section row"> <img src="img/t1/1.jpg"
 												class="col s12 m12 l12 padBottom"
@@ -693,28 +677,6 @@ https://www.google.com/maps/dir/Current+Location/56%C2%B016'58.0%22N+12%C2%B029'
 									<p>Welcome to the Sights of Heritage, marvels of Swedish culture and history with a rich and colorful past.</p>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="card">
-						<a href="maps.html#2">
-							<div class="card-image"><img src="img/t3/trail3map.jpg"
-												onclick="mapMsg();"
-												alt="Kullaleden"></div>
-						</a>
-						<div class="card-content">
-							<p>Kullaleden, section 1-6 of Skåneleden trail no. SL 5. 72 kilometers around the Kullahalvön peninsula from Helsingborg city center via Kullaberg Lighthouse to Utvälinge.</p>
-						</div>
-					</div>
-				</section>
-				<section class="col s12 m12 l4">
-					<div class="card grey lighten-5">
-						<a href="maps.html#2">
-							<div class="card-image"><img src="img/t1/0.jpg"
-												onclick="mapMsg();"
-												alt="Kullaleden Trail Map"></div>
-						</a>
-						<div class="card-content">
-							<p>Here you find everything including the medieval city centre of Helsingborg, beautiful views over the straits from the plateau heights, the well-known Sofiero Palace, Kulla-Gunnarstorp and Krapperup Estates, beaches and picturesque seaside villages.</p>
 						</div>
 					</div>
 				</section>
