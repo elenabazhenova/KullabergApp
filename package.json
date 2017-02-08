@@ -1,7 +1,7 @@
 {
   "name": "kullabergapp",
   "version": "1.0.0",
-  "description": "[View here](https://xtreemze.github.com/KullabergApp/)",
+  "description": "Information for Kullaberg",
   "main": "index.html",
   "scripts": {
     "test": "none"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/xtreemze/KullabergApp.git"
   },
   "author": "Carlos Velasco",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/xtreemze/KullabergApp/issues"
   },
