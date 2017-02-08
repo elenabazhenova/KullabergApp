@@ -20,7 +20,7 @@
     // });
     $('.modal-trigger')
       .leanModal(
-        // 	{
+        // {
         //   ready: function blankScreen() {
         //     $('.trails').fadeOut();
         //   }, // Callback for Modal open

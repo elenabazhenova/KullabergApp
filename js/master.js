@@ -168,18 +168,18 @@ function position() {
     locate[0] = coordinates.latitude;
     locate[1] = coordinates.longitude;
     locate[2] = coordinates.accuracy;
-    Materialize.toast('Your current position:' + '<br>Latitude : ' + locate[0] + '<br>Longitude: ' + locate[1] + '<br>Accurate to: ' + locate[2] + ' meters.', 6000);
+    Materialize.toast(`${'Your current position: <br>Latitude : '}${locate[0]}<br>Longitude: ${locate[1]}<br>Accurate to: ${locate[2]} meters.`, 6000);
   }
 
   function error(err) {
-    Materialize.toast('ERROR(' + err.code + '): ' + err.message, 1000, 'rounded');
+    Materialize.toast(`ERROR(${err.code}): ${err.message}`, 1000, 'rounded');
   }
   navigator.geolocation.getCurrentPosition(success, error, options);
 }
 
 function detectLanguage() {
   const lang = window.navigator.language;
-  Materialize.toast('Your preferred language is ' + lang, 1000);
+  Materialize.toast(`Your preferred language is ${lang}`, 1000);
 }
 
 function mapMsg() {
@@ -194,13 +194,13 @@ function mapMsg() {
 */
 // navigator.serviceWorker.register('sw.min.js');
 function showNotification() {
-  notifyAttempts++;
-  Materialize.toast('Notification requested ' + notifyAttempts + ' times.', 1000);
+  notifyAttempts += 1;
+  Materialize.toast(`Notification requested ${notifyAttempts} times.`, 1000);
   Notification.requestPermission(function askPermission(result) {
     if (result === 'granted') {
       navigator.serviceWorker.ready.then(function whenReady(registration) {
         registration.showNotification('Kullaberg', {
-          body: 'You asked to be notified ' + notifyAttempts + ' times.',
+          body: `You asked to be notified ${notifyAttempts} times.`,
           icon: 'favicon/android-chrome-192x192.png?v=eEEwEaEvl1',
           vibrate: [80, 100, 100, 80, 250, 250, 80],
           tag: tagNotify,
@@ -209,25 +209,3 @@ function showNotification() {
     }
   });
 }
-// Check if a new cache is available on page load.
-/*
-███    ██  ██████  ████████ ███████ ███████
-████   ██ ██    ██    ██    ██      ██
-██ ██  ██ ██    ██    ██    █████   ███████
-██  ██ ██ ██    ██    ██    ██           ██
-██   ████  ██████     ██    ███████ ███████
-
-Transportation
-	Skanetraffiken link
-	App download link
-Restaurants
-	name
-	phone, email
-	hours
-	description
-	picture
-Hotel
-	name
-	Phone, email
-	picture
-*/
