@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:2/12/2017, 11:28:59 PM
+#ver:2/13/2017, 12:41:46 AM
 #plugin:4.6.1
 
 CACHE:
@@ -9,7 +9,9 @@ CACHE:
 ../maps.html
 ../css/materialize.min.css
 ../css/materialdesignicons.min.css
-../js/init.min.js
+../js/master.js
+../js/init.js
+../js/materialize.min.js
 ../img/asterisk.svg
 ../img/t1/trail1sign.png
 ../img/t1/trail1map.jpg
@@ -72,7 +74,7 @@ CACHE:
 ../img/t3/17.jpg
 ../img/kullabergsNaturum.svg
 ../img/Kv4sq.svg
-../js/init2.min.js
+../js/init2.js
 ../js/jquery.min.js
 ../img/kullabergKarta.svg
 ../img/t1/mapKullaleden.jpg
