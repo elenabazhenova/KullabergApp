@@ -1,23 +1,21 @@
-// !minifyOnSave
-// minifyOnSave: false
 module.exports = {
   "extends": "airbnb",
-  "installedESLint": true,
-  // "plugins": ["react"],
-  "ecmaVersion": 6,
-  "ecmaFeatures": {
-    "jsx": false,
-    "modules": false,
-    "arrowFunctions": false,
-    "classes": true,
-    "spread": true,
-  },
-  "env": {
-    "browser": true,
-    "jquery": true,
-		"worker": true,
-		"serviceworker": true,
-  },
+  // "installedESLint": true,
+  // // "plugins": ["react"],
+  // "ecmaVersion": 6,
+  // "ecmaFeatures": {
+  //   "jsx": false,
+  //   "modules": false,
+  //   "arrowFunctions": false,
+  //   "classes": true,
+  //   "spread": true,
+  // },
+  // "env": {
+  //   "browser": true,
+  //   "jquery": true,
+	// 	"worker": true,
+	// 	"serviceworker": true,
+  // },
   "rules": {
     // "indent": [ "error", "tab" ],
     // "linebreak-style": [ "error", "windows" ],
