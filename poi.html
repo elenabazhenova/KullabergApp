@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="https://xtreemze.github.io/KullabergApp/manifest.appcache">
+<html lang="en">
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -9,7 +9,7 @@
 		<link rel="canonical" href="https://xtreemze.github.io/KullabergApp/index.html" />
 		<link rel="stylesheet" href="css/materialize.min.css">
 		<link rel="stylesheet" href="css/materialdesignicons.min.css">
-		<link rel="stylesheet" href="css/master.min.css">
+		<!-- <link rel="stylesheet" href="css/master.min.css"> -->
 		<!--
 ███████  █████  ██    ██ ██  ██████  ██████  ███    ██
 ██      ██   ██ ██    ██ ██ ██      ██    ██ ████   ██
@@ -36,16 +36,31 @@
 		<link rel="shortcut icon" href="favicon.ico?v=eEEwEaEvl1">
 		<meta name="msapplication-TileColor" content="#336699">
 		<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png?v=eEEwEaEvl1">
-		<meta name="msapplication-config" content="favicon/browserconfig.xml?v=eEEwEaEvl1"> </head>
+		<meta name="msapplication-config" content="favicon/browserconfig.xml?v=eEEwEaEvl1">
+		<!--
+		███████  ██████ ██████  ██ ██████  ████████
+		██      ██      ██   ██ ██ ██   ██    ██
+		███████ ██      ██████  ██ ██████     ██
+		     ██ ██      ██   ██ ██ ██         ██
+		███████  ██████ ██   ██ ██ ██         ██
+		-->
+		<script src="js/jquery.min.js" charset="utf-8"></script>
+		<script src="js/materialize.min.js" charset="utf-8"></script>
+		<script src="js/master.js"></script>
+		<script src="bundle.js"></script>
+
+
+	 </head>
 
 	<body class="grey lighten-4">
+
 		<!--
-		██       ██████   █████  ██████  ███████ ██████
-		██      ██    ██ ██   ██ ██   ██ ██      ██   ██
-		██      ██    ██ ███████ ██   ██ █████   ██████
-		██      ██    ██ ██   ██ ██   ██ ██      ██   ██
-		███████  ██████  ██   ██ ██████  ███████ ██   ██
-		-->
+██       ██████   █████  ██████  ███████ ██████
+██      ██    ██ ██   ██ ██   ██ ██      ██   ██
+██      ██    ██ ███████ ██   ██ █████   ██████
+██      ██    ██ ██   ██ ██   ██ ██      ██   ██
+███████  ██████  ██   ██ ██████  ███████ ██   ██
+-->
 		<section class="loader valign-wrapper">
 			<div class="centerLoader">
 				<div class="preloader-wrapper big active valign center-align">
@@ -181,8 +196,7 @@
      ██ ██      ██   ██ ██ ██         ██
 ███████  ██████ ██   ██ ██ ██         ██
 -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/materialize.min.js"></script> <br>
+		<script src="bundle.js"></script><br>
 		<main class="trails row">
 			<!--
 ████████ ██████   █████  ██ ██           ██
@@ -846,8 +860,7 @@ https://www.google.com/maps/dir/Current+Location/56%C2%B016'00.3%22N+12%C2%B036'
      ██ ██      ██   ██ ██ ██         ██
 ███████  ██████ ██   ██ ██ ██         ██
 -->
-		<script src="js/init.min.js"></script>
-		<script src="js/master.min.js"></script>
+		<script src="js/init.js"></script>
 	</body>
 
 </html>
