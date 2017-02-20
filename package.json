@@ -5,10 +5,10 @@
   "main": "index.html",
   "scripts": {
     "test": "none",
-    "dev": "webpack-dev-server --progress --colors --host 0.0.0.0 --port 8080 --inline --compress -p",
-    "export": "webpack --progress --colors -p",
-    "exportw": "webpack --progress --colors --watch -p",
-    "exportp": "webpack --progress --colors --watch"
+    "dev": "webpack-dev-server --progress --colors --host 0.0.0.0 --port 8080 --inline --env=dev --profile --open",
+    "export": "webpack --progress --env=dev --profile --colors",
+    "exportw": "webpack --progress --colors --env=dev --profile --watch",
+    "exportp": "webpack --progress --colors --env=prod --profile -p"
   },
   "repository": {
     "type": "git",
@@ -22,22 +22,24 @@
   "homepage": "https://github.com/xtreemze/KullabergApp#readme",
   "devDependencies": {
     "css-loader": "^0.26.1",
-    "eslint": "^3.15.0",
+    "eslint": "^3.16.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
+    "extract-loader": "^0.1.0",
     "file-loader": "^0.10.0",
-    "offline-plugin": "^4.6.1",
+    "html-loader": "^0.4.4",
     "style-loader": "^0.13.1",
-    "stylelint": "^7.8.0",
-    "stylelint-config-standard": "^16.0.0",
+    "svg-url-loader": "^2.0.2",
     "svgo-loader": "^1.1.2",
+    "url-loader": "^0.5.7",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
-    "materialize-css": "^0.98.0",
+    "webpack-closure-compiler": "^2.1.4",
+    "html-minifier-webpack-plugin": "^1.0.1",
     "offline-plugin": "^4.6.1"
   }
 }
