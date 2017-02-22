@@ -1,4 +1,4 @@
-module.exports = function (env) {
+module.exports = function d(env) {
   return {
     entry: './entry.js',
     output: {
@@ -7,13 +7,13 @@ module.exports = function (env) {
     },
     module: {
       rules: [{
-        test: /\indexB.html$/,
+        test: /indexB.html$/,
         loaders: ['file-loader?name=index.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
-        test: /\mapsB.html$/,
+        test: /mapsB.html$/,
         loaders: ['file-loader?name=maps.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
-        test: /\poiB.html$/,
+        test: /poiB.html$/,
         loaders: ['file-loader?name=poi.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
         test: /\.css$/,

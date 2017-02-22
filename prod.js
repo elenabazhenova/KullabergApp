@@ -1,8 +1,9 @@
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const HtmlMinifierPlugin = require('html-minifier-webpack-plugin');
 const ClosureCompilerPlugin = require('webpack-closure-compiler');
 const OfflinePlugin = require('offline-plugin');
 
-module.exports = function (env) {
+module.exports = function e(env) {
   return {
     entry: './entry.js',
     output: {
@@ -11,13 +12,13 @@ module.exports = function (env) {
     },
     module: {
       rules: [{
-        test: /\indexB.html$/,
+        test: /indexB.html$/,
         loaders: ['file-loader?name=index.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
-        test: /\mapsB.html$/,
+        test: /mapsB.html$/,
         loaders: ['file-loader?name=maps.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
-        test: /\poiB.html$/,
+        test: /poiB.html$/,
         loaders: ['file-loader?name=poi.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
         test: /\.css$/,
@@ -36,6 +37,11 @@ module.exports = function (env) {
       }],
     },
     plugins: [
+      new ImageminPlugin({
+        pngquant: {
+          quality: '95-100',
+        },
+      }),
       // ... other plugins
       new HtmlMinifierPlugin({}),
       new ClosureCompilerPlugin({
