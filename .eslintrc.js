@@ -31,6 +31,7 @@ module.exports = {
   },
   "globals": {
     "Materialize": true,
-    "intervalID": true
+    "intervalID": true,
+    "jQuery" : true
   },
 };
