@@ -1,7 +1,7 @@
-var notifyAttempts = 0;
-var tagNotify = 'vibrateTest';
-var hiddenContact = false;
-var locate = [];
+let notifyAttempts = 0;
+const tagNotify = 'vibrateTest';
+let hiddenContact = false;
+const locate = [];
 /*
  ██████  ███    ██ ██      ██ ███    ██ ███████
 ██    ██ ████   ██ ██      ██ ████   ██ ██
@@ -193,19 +193,19 @@ function mapMsg() {
 ███████  ███ ███      ██   ████  ██████     ██    ██ ██         ██
 */
 // navigator.serviceWorker.register('sw.min.js');
-function showNotification() {
-  notifyAttempts += 1;
-  Materialize.toast(`Notification requested ${notifyAttempts} times.`, 1000);
-  Notification.requestPermission(function askPermission(result) {
-    if (result === 'granted') {
-      navigator.serviceWorker.ready.then(function whenReady(registration) {
-        registration.showNotification('Kullaberg', {
-          body: `You asked to be notified ${notifyAttempts} times.`,
-          icon: 'favicon/android-chrome-192x192.png?v=eEEwEaEvl1',
-          vibrate: [80, 100, 100, 80, 250, 250, 80],
-          tag: tagNotify,
-        });
-      });
-    }
-  });
-}
+// function showNotification() {
+//   notifyAttempts += 1;
+//   Materialize.toast(`Notification requested ${notifyAttempts} times.`, 1000);
+//   Notification.requestPermission(function askPermission(result) {
+//     if (result === 'granted') {
+//       navigator.serviceWorker.ready.then(function whenReady(registration) {
+//         registration.showNotification('Kullaberg', {
+//           body: `You asked to be notified ${notifyAttempts} times.`,
+//           icon: 'favicon/android-chrome-192x192.png?v=eEEwEaEvl1',
+//           vibrate: [80, 100, 100, 80, 250, 250, 80],
+//           tag: tagNotify,
+//         });
+//       });
+//     }
+//   });
+// }
