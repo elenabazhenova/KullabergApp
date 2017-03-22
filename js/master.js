@@ -19,13 +19,13 @@ window.applicationCache.onupdateready = function onUpdateReady() {
 window.applicationCache.oncached = function onCached() {
   Materialize.toast('Update Completed! Reload site...', 300000, 'rounded');
 };
-// window.applicationCache.onchecking = function onChecking() {
-//   Materialize.toast('Checking for new version...', 1000, 'rounded');
-// };
-//
-// window.applicationCache.onnoupdate = function onNoUpdate() {
-//   Materialize.toast('No updates.', 3000, 'rounded');
-// };
+window.applicationCache.onchecking = function onChecking() {
+  Materialize.toast('Checking for new version...', 1000, 'rounded');
+};
+
+window.applicationCache.onnoupdate = function onNoUpdate() {
+  Materialize.toast('No updates.', 3000, 'rounded');
+};
 function onlineCheck() {
   window.applicationCache.update();
   if (!window.navigator.onLine && !hiddenContact) {
@@ -156,7 +156,7 @@ function scrollTrail3Poi() {
 ███████  ██████   ██████ ██   ██    ██    ██  ██████  ██   ████
 */
 // function position() {
-//   Materialize.toast('Aquiring your location...', 600);
+//   Materialize.toast('Acquiring your location...', 600);
 //   const options = {
 //     enableHighAccuracy: true,
 //     timeout: 60000,
