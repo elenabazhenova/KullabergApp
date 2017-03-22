@@ -1,7 +1,7 @@
-let notifyAttempts = 0;
-const tagNotify = 'vibrateTest';
+// let notifyAttempts = 0;
+// const tagNotify = 'vibrateTest';
+// const locate = [];
 let hiddenContact = false;
-const locate = [];
 /*
  ██████  ███    ██ ██      ██ ███    ██ ███████
 ██    ██ ████   ██ ██      ██ ████   ██ ██
@@ -155,36 +155,36 @@ function scrollTrail3Poi() {
 ██      ██    ██ ██      ██   ██    ██    ██ ██    ██ ██  ██ ██
 ███████  ██████   ██████ ██   ██    ██    ██  ██████  ██   ████
 */
-function position() {
-  Materialize.toast('Aquiring your location...', 600);
-  const options = {
-    enableHighAccuracy: true,
-    timeout: 60000,
-    maximumAge: 10000,
-  };
+// function position() {
+//   Materialize.toast('Aquiring your location...', 600);
+//   const options = {
+//     enableHighAccuracy: true,
+//     timeout: 60000,
+//     maximumAge: 10000,
+//   };
 
-  function success(pos) {
-    const coordinates = pos.coords;
-    locate[0] = coordinates.latitude;
-    locate[1] = coordinates.longitude;
-    locate[2] = coordinates.accuracy;
-    Materialize.toast(`${'Your current position: <br>Latitude : '}${locate[0]}<br>Longitude: ${locate[1]}<br>Accurate to: ${locate[2]} meters.`, 6000);
-  }
+//   function success(pos) {
+//     const coordinates = pos.coords;
+//     locate[0] = coordinates.latitude;
+//     locate[1] = coordinates.longitude;
+//     locate[2] = coordinates.accuracy;
+//     Materialize.toast(`${'Your current position: <br>Latitude : '}${locate[0]}<br>Longitude: ${locate[1]}<br>Accurate to: ${locate[2]} meters.`, 6000);
+//   }
 
-  function error(err) {
-    Materialize.toast(`ERROR(${err.code}): ${err.message}`, 1000, 'rounded');
-  }
-  navigator.geolocation.getCurrentPosition(success, error, options);
-}
+//   function error(err) {
+//     Materialize.toast(`ERROR(${err.code}): ${err.message}`, 1000, 'rounded');
+//   }
+//   navigator.geolocation.getCurrentPosition(success, error, options);
+// }
 
-function detectLanguage() {
-  const lang = window.navigator.language;
-  Materialize.toast(`Your preferred language is ${lang}`, 1000);
-}
+// function detectLanguage() {
+//   const lang = window.navigator.language;
+//   Materialize.toast(`Your preferred language is ${lang}`, 1000);
+// }
 
-function mapMsg() {
-  // Materialize.toast('Opening Map...', 200);
-}
+// function mapMsg() {
+//   // Materialize.toast('Opening Map...', 200);
+// }
 /*
 ███████ ██     ██     ███    ██  ██████  ████████ ██ ███████ ██    ██
 ██      ██     ██     ████   ██ ██    ██    ██    ██ ██       ██  ██
