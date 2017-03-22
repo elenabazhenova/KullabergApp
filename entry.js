@@ -3,6 +3,7 @@ require('./mapsB.html');
 require('./poiB.html');
 // require('./js/jquery.min.js');
 // require('./js/materialize.min.js');
+// require('./js/master.js');
 // require('offline-plugin/runtime').install();
 
 // 888     888               888          888                     
