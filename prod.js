@@ -54,6 +54,9 @@ module.exports = function e(env) {
       }),
       new OfflinePlugin({
         externals: ['./index.html', './poi.html', './maps.html', './js/master.js', './js/init.js', './js/init2.js', './js/materialize.min.js', './js/jquery.min.js', './manifest.json', './css/materialize.min.css', './css/materialdesignicons.min.css', './fonts/roboto/Roboto-Medium.woff', './fonts/roboto/Roboto-Regular.woff', './fonts/roboto/Roboto-Light.woff', './fonts/roboto/Roboto-Thin.woff', './fonts/roboto/Roboto-Bold.woff', './fonts/roboto/Roboto-Medium.woff2', './fonts/roboto/Roboto-Regular.woff2', './fonts/roboto/Roboto-Light.woff2', './fonts/roboto/Roboto-Thin.woff2', './fonts/roboto/Roboto-Bold.woff2', './fonts/materialdesignicons-webfont.woff?v=1.5.54', './fonts/materialdesignicons-webfont.woff2?v=1.5.54'],
+        ServiceWorker: {
+          events: true
+        }
       }),
     ],
   };
