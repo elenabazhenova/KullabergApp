@@ -1,6 +1,8 @@
 require('./indexB.html');
 require('./mapsB.html');
 require('./poiB.html');
+// require('./js/jquery.min.js');
+// require('./js/materialize.min.js');
 // require('offline-plugin/runtime').install();
 
 // 888     888               888          888                     
@@ -21,20 +23,20 @@ const runtime = require('offline-plugin/runtime');
 
 runtime.install({
   onUpdating: () => {
-    Materialize.toast('New version available. Downloading...', 120000, 'rounded');
+    console.log('SW Event:', 'onUpdating');
   },
   onUpdateReady: () => {
-    Materialize.toast('Update ready. Reload site...', 300000, 'rounded');
+    console.log('SW Event:', 'onUpdateReady');
     // Tells to new SW to take control immediately
     runtime.applyUpdate();
   },
   onUpdated: () => {
-    Materialize.toast('New version ready. Reload site...', 300000, 'rounded');
+    console.log('SW Event:', 'onUpdated');
     // Reload the webpage to load into the new version
     window.location.reload();
   },
 
   onUpdateFailed: () => {
-    Materialize.toast('Update failed. Reload site...', 300000, 'rounded');
+    console.log('SW Event:', 'onUpdateFailed');
   }
 });
