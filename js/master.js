@@ -49,14 +49,14 @@ function scrollEnd() {
       scrollTop: $(document)
         .height() - $(window)
         .height(),
-    }, 800, 'easeInOutCubic');
+    }, 80, 'easeInOutCubic');
 }
 
 function flashContact() {
   scrollEnd();
   $('.contactIcon')
     .finish()
-    .delay(400)
+    .delay(200)
     .fadeOut(250)
     .fadeIn(250)
     .fadeOut(250)
@@ -70,7 +70,7 @@ function scrollTop() {
   $('html, body')
     .animate({
       scrollTop: 0,
-    }, 800, 'easeInOutCubic');
+    }, 80, 'easeInOutCubic');
 }
 
 function turnOff() {
@@ -121,35 +121,35 @@ function back() {
   window.history.back();
 }
 
-function scrollTrail1Poi() {
-  tabOperation();
-  $('html, body')
-    .animate({
-      scrollTop: $('#trail1Poi')
-        .offset()
-        .top - 80,
-    }, 800, 'easeInOutCubic');
-}
+// function scrollTrail1Poi() {
+//   tabOperation();
+//   $('html, body')
+//     .animate({
+//       scrollTop: $('#trail1Poi')
+//         .offset()
+//         .top - 80,
+//     }, 80, 'easeInOutCubic');
+// }
 
-function scrollTrail2Poi() {
-  tabOperation();
-  $('html, body')
-    .animate({
-      scrollTop: $('#trail2Poi')
-        .offset()
-        .top - 80,
-    }, 800, 'easeInOutCubic');
-}
+// function scrollTrail2Poi() {
+//   tabOperation();
+//   $('html, body')
+//     .animate({
+//       scrollTop: $('#trail2Poi')
+//         .offset()
+//         .top - 80,
+//     }, 80, 'easeInOutCubic');
+// }
 
-function scrollTrail3Poi() {
-  tabOperation();
-  $('html, body')
-    .animate({
-      scrollTop: $('#trail3Poi')
-        .offset()
-        .top - 80,
-    }, 800, 'easeInOutCubic');
-}
+// function scrollTrail3Poi() {
+//   tabOperation();
+//   $('html, body')
+//     .animate({
+//       scrollTop: $('#trail3Poi')
+//         .offset()
+//         .top - 80,
+//     }, 80, 'easeInOutCubic');
+// }
 /*
 ██       ██████   ██████  █████  ████████ ██  ██████  ███    ██
 ██      ██    ██ ██      ██   ██    ██    ██ ██    ██ ████   ██
