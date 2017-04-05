@@ -1,6 +1,9 @@
 require('./indexB.html');
 require('./mapsB.html');
 require('./poiB.html');
+require('./indexBsv.html');
+require('./mapsBsv.html');
+require('./poiBsv.html');
 // require('./js/jquery.min.js');
 // require('./js/materialize.min.js');
 // require('./js/master.js');
