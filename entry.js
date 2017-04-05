@@ -1,8 +1,8 @@
 require('./indexB.html');
-require('./mapsB.html');
+require('./newsB.html');
 require('./poiB.html');
 require('./indexBsv.html');
-require('./mapsBsv.html');
+require('./newsBsv.html');
 require('./poiBsv.html');
 // require('./js/jquery.min.js');
 // require('./js/materialize.min.js');

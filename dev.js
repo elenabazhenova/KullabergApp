@@ -10,8 +10,8 @@ module.exports = function d(env) {
         test: /indexB.html$/,
         loaders: ['file-loader?name=index.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
-        test: /mapsB.html$/,
-        loaders: ['file-loader?name=maps.[ext]?[hash]!', 'extract-loader', 'html-loader'],
+        test: /newsB.html$/,
+        loaders: ['file-loader?name=news.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
         test: /poiB.html$/,
         loaders: ['file-loader?name=poi.[ext]?[hash]!', 'extract-loader', 'html-loader'],
@@ -19,8 +19,8 @@ module.exports = function d(env) {
         test: /indexBsv.html$/,
         loaders: ['file-loader?name=indexsv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
-        test: /mapsBsv.html$/,
-        loaders: ['file-loader?name=mapssv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
+        test: /newsBsv.html$/,
+        loaders: ['file-loader?name=newssv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
         test: /poiBsv.html$/,
         loaders: ['file-loader?name=poisv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
