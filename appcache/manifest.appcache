@@ -1,17 +1,20 @@
 CACHE MANIFEST
-#ver:3/30/2017, 3:03:11 PM
+#ver:4/5/2017, 4:13:02 PM
 #plugin:4.6.2
 
 CACHE:
 ../img/asterisk.svg?591c26a4e965acf3b232cc966801e0ca!
 ../img/kullabergsNaturum.svg?565bbf933a1a1a6f7498e42cb5e9b090!
-../index.html?003911e3f5dd5e4fc29397b8e702c604!
-../maps.html?343eedc1e7a4861bc08deac1ba43da16!
-../poi.html?745e65d0482cfebbb00d1909fd795260!
 ../img/lansstyrelsen.svg?14ac55e5c7c2e4abafc011efa7a6818e!
 ../img/regionSkane.svg?88f194c8700e676371cb8344b6e215b7!
 ../img/t1/4.jpg?97af90e2035b1a4b1a2d41286710cd31!
 ../img/t1/trail1sign.png?06d111a41cedec97a063b66ead6692fb!
+../index.html?003911e3f5dd5e4fc29397b8e702c604!
+../indexsv.html?c65a0c85b77753c13457fed53e60765a!
+../maps.html?343eedc1e7a4861bc08deac1ba43da16!
+../mapssv.html?acbc2f71fe0ed122e4ef82524375a6c2!
+../poi.html?745e65d0482cfebbb00d1909fd795260!
+../poisv.html?f645368f27ea8050b9f1bd0ce89c4b67!
 ../img/Kv4sq.svg?ce812da7504a377dca2e0a662bc586fb!
 ../img/kullabergKarta.svg?e34ca8b63b9d5fe961cff4f48afa1736!
 ../img/t1/0.jpg?538a6bfcc13011b6cb8d99d65d7b5bc4!
@@ -65,6 +68,9 @@ CACHE:
 ../
 ../poi.html
 ../maps.html
+../indexsv.html
+../poisv.html
+../mapssv.html
 ../js/master.js
 ../js/init.js
 ../js/init2.js

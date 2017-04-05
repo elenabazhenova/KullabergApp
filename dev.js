@@ -15,6 +15,15 @@ module.exports = function d(env) {
       }, {
         test: /poiB.html$/,
         loaders: ['file-loader?name=poi.[ext]?[hash]!', 'extract-loader', 'html-loader'],
+      },{
+        test: /indexBsv.html$/,
+        loaders: ['file-loader?name=indexsv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
+      }, {
+        test: /mapsBsv.html$/,
+        loaders: ['file-loader?name=mapssv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
+      }, {
+        test: /poiBsv.html$/,
+        loaders: ['file-loader?name=poisv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],

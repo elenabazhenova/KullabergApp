@@ -20,6 +20,16 @@ module.exports = function e(env) {
       }, {
         test: /poiB.html$/,
         loaders: ['file-loader?name=poi.[ext]?[hash]!', 'extract-loader', 'html-loader'],
+      },
+      {
+        test: /indexBsv.html$/,
+        loaders: ['file-loader?name=indexsv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
+      }, {
+        test: /mapsBsv.html$/,
+        loaders: ['file-loader?name=mapssv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
+      }, {
+        test: /poiBsv.html$/,
+        loaders: ['file-loader?name=poisv.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
@@ -53,7 +63,7 @@ module.exports = function e(env) {
         concurrency: 3,
       }),
       new OfflinePlugin({
-        externals: ['./index.html', './poi.html', './maps.html', './js/master.js', './js/init.js', './js/init2.js', './js/materialize.min.js', './js/jquery.min.js', './manifest.json', './css/materialize.min.css', './css/materialdesignicons.min.css', './fonts/roboto/Roboto-Medium.woff', './fonts/roboto/Roboto-Regular.woff', './fonts/roboto/Roboto-Light.woff', './fonts/roboto/Roboto-Thin.woff', './fonts/roboto/Roboto-Bold.woff', './fonts/roboto/Roboto-Medium.woff2', './fonts/roboto/Roboto-Regular.woff2', './fonts/roboto/Roboto-Light.woff2', './fonts/roboto/Roboto-Thin.woff2', './fonts/roboto/Roboto-Bold.woff2', './fonts/materialdesignicons-webfont.woff?v=1.5.54', './fonts/materialdesignicons-webfont.woff2?v=1.5.54'],
+        externals: ['./index.html', './poi.html', './maps.html', './indexsv.html', './poisv.html', './mapssv.html', './js/master.js', './js/init.js', './js/init2.js', './js/materialize.min.js', './js/jquery.min.js', './manifest.json', './css/materialize.min.css', './css/materialdesignicons.min.css', './fonts/roboto/Roboto-Medium.woff', './fonts/roboto/Roboto-Regular.woff', './fonts/roboto/Roboto-Light.woff', './fonts/roboto/Roboto-Thin.woff', './fonts/roboto/Roboto-Bold.woff', './fonts/roboto/Roboto-Medium.woff2', './fonts/roboto/Roboto-Regular.woff2', './fonts/roboto/Roboto-Light.woff2', './fonts/roboto/Roboto-Thin.woff2', './fonts/roboto/Roboto-Bold.woff2', './fonts/materialdesignicons-webfont.woff?v=1.5.54', './fonts/materialdesignicons-webfont.woff2?v=1.5.54'],
         ServiceWorker: {
           events: true
         },
