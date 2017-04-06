@@ -29,7 +29,6 @@ window.applicationCache.oncached = function onCached() {
 //   Materialize.toast('No updates.', 3000, 'rounded');
 // };
 function onlineCheck() {
-  window.applicationCache.update();
   if (!window.navigator.onLine && !hiddenContact) {
     $('.onlineOnly')
       .slideUp();
@@ -117,39 +116,8 @@ function mapTabOperation() {
   scrollTop();
 }
 
-function back() {
-  window.history.back();
-}
 
-// function scrollTrail1Poi() {
-//   tabOperation();
-//   $('html, body')
-//     .animate({
-//       scrollTop: $('#trail1Poi')
-//         .offset()
-//         .top - 80,
-//     }, 80, 'easeInOutCubic');
-// }
 
-// function scrollTrail2Poi() {
-//   tabOperation();
-//   $('html, body')
-//     .animate({
-//       scrollTop: $('#trail2Poi')
-//         .offset()
-//         .top - 80,
-//     }, 80, 'easeInOutCubic');
-// }
-
-// function scrollTrail3Poi() {
-//   tabOperation();
-//   $('html, body')
-//     .animate({
-//       scrollTop: $('#trail3Poi')
-//         .offset()
-//         .top - 80,
-//     }, 80, 'easeInOutCubic');
-// }
 /*
 ██       ██████   ██████  █████  ████████ ██  ██████  ███    ██
 ██      ██    ██ ██      ██   ██    ██    ██ ██    ██ ████   ██
