@@ -1,9 +1,10 @@
 require('./indexB.html');
+require('./mapsB.html');
 require('./newsB.html');
 require('./poiB.html');
-require('./indexBsv.html');
-require('./newsBsv.html');
-require('./poiBsv.html');
+require('./mapsBSv.html');
+require('./newsBSv.html');
+require('./poiBSv.html');
 // require('./js/jquery.min.js');
 // require('./js/materialize.min.js');
 // require('./js/master.js');
