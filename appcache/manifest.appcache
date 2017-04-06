@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:4/6/2017, 2:09:16 PM
+#ver:4/6/2017, 2:19:52 PM
 #plugin:4.6.2
 
 CACHE:
@@ -10,12 +10,12 @@ CACHE:
 ../img/t1/4.jpg?97af90e2035b1a4b1a2d41286710cd31!
 ../img/t1/trail1sign.png?06d111a41cedec97a063b66ead6692fb!
 ../index.html?f330e1d08ba3c844c3d20351003d3519!
-../maps.html?fd4f93ca82fedf908844f51707773a53!
-../mapsSv.html?e0fdc87603c745b0f9d7d5b2b57e4a8e!
-../news.html?f418835e4cdca2d85e87fd611533c272!
-../newsSv.html?8258231f6bea213799414170865180c1!
-../poi.html?c97074b83e8f99d65d2cca46136d5ebf!
-../poiSv.html?34689178085060f514f7d8aea7520409!
+../maps.html?dbe3e3dd0be1a863bae7287a4e426b94!
+../mapsSv.html?37b0b46031a0134163d301823a392adf!
+../news.html?b9b84766b3466b2115c2f6936fb0a83e!
+../newsSv.html?69b63318208c02302ac5e6870826bdc3!
+../poi.html?475ec0201b981a8474cd8f4edcf28cd0!
+../poiSv.html?2cf187dc8b96d1655e9d55b4a0e82656!
 ../img/Kv4sq.svg?ce812da7504a377dca2e0a662bc586fb!
 ../img/t1/0.jpg?538a6bfcc13011b6cb8d99d65d7b5bc4!
 ../img/t1/1.jpg?fc3477f48255d87cc66fb64b720d5e56!
@@ -67,7 +67,7 @@ CACHE:
 ../img/kullabergKarta.svg?e34ca8b63b9d5fe961cff4f48afa1736!
 ../img/kullabergKartaSV.svg?1b75b1aec64efd5e0ded1530a39c241d!
 ../bundle.js
-../maps.html
+../index.html, ./maps.html
 ../poi.html
 ../news.html
 ../mapsSv.html
