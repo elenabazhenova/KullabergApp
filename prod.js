@@ -46,6 +46,13 @@ module.exports = function e(env) {
         use: [{
           loader: 'file-loader?name=[path][name].[ext]?[hash]!',
         }],
+      }, {
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        use: [{
+          loader: 'babel-loader',
+          options: { presets: ['es2015'] }
+        }],
       }],
     },
     plugins: [
