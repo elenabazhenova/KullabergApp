@@ -55,7 +55,7 @@
         //  "Y88888P"  888  888 88888888 "Y88P"  "Y888888  "Y88888 
 
         window.onload = function() {
-            if (navigator.languages[0][0] !== "s" && navigator.languages[0][1] !== "v") {
+            if (navigator.language[0] !== "s" && navigator.language[1] !== "v") {
                 window.location.replace("maps.html");
             } else {
                 window.location.replace("mapsSv.html");
@@ -139,16 +139,8 @@
      ██ ██      ██   ██ ██ ██         ██
 ███████  ██████ ██   ██ ██ ██         ██-->
 
-    <script src="bundle.js"></script>
+    <!--<script src="bundle.js"></script>-->
 
-    <!--
-███████  ██████ ██████  ██ ██████  ████████
-██      ██      ██   ██ ██ ██   ██    ██
-███████ ██      ██████  ██ ██████     ██
-     ██ ██      ██   ██ ██ ██         ██
-███████  ██████ ██   ██ ██ ██         ██
--->
-    <script src="js/init2.js"></script>
 </body>
 
 </html>
