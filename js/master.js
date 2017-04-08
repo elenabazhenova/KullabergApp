@@ -117,7 +117,6 @@ function mapTabOperation() {
 }
 
 
-
 /*
 ██       ██████   ██████  █████  ████████ ██  ██████  ███    ██
 ██      ██    ██ ██      ██   ██    ██    ██ ██    ██ ████   ██
@@ -138,7 +137,8 @@ function mapTabOperation() {
 //     locate[0] = coordinates.latitude;
 //     locate[1] = coordinates.longitude;
 //     locate[2] = coordinates.accuracy;
-//     Materialize.toast(`${'Your current position: <br>Latitude : '}${locate[0]}<br>Longitude: ${locate[1]}<br>Accurate to: ${locate[2]} meters.`, 6000);
+//     Materialize.toast(`${'Your current position: <br>Latitude : '}
+//      ${locate[0]}<br>Longitude: ${locate[1]}<br>Accurate to: ${locate[2]} meters.`, 6000);
 //   }
 
 //   function error(err) {
@@ -179,5 +179,3 @@ function mapTabOperation() {
 //     }
 //   });
 // }
-
-
