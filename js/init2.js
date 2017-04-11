@@ -29,7 +29,8 @@ $(document)
     // Animate loader to fade out
     $('.loader')
       .finish()
-      .fadeOut(600, 'easeOutSine', function present() {
+      .delay(300)
+      .fadeOut(300, 'linear', function present() {
         $('.logoImg')
           .removeClass('turn');
         $('.btn-floating')
