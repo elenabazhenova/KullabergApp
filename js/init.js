@@ -54,7 +54,7 @@
   // end of document ready
 }(jQuery));
 // end of jQuery name space
-$(window).load(function start2() {
+$(document).ready(function start2() {
   // Animate loader to fade out
   $('.loader').finish().fadeOut(600, 'easeOutSine', function present() {
     $('.logoImg').removeClass('turn');
