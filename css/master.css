@@ -6,9 +6,9 @@
 	position: relative;
 }*/
 
-.collapsible-body p {
+/*.collapsible-body p {
 	padding: 0.8rem 2rem;
-}
+}*/
 
 .carousel{
 	overflow-y: auto;
@@ -148,6 +148,8 @@ img.logoImg:hover {
 
 .collapsible-body img.padBottom {
 	padding-bottom: 1rem;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .noBorder {
