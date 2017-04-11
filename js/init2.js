@@ -1,7 +1,7 @@
 (function jQ2($) {
   // $('.scrollspy')
   //   .scrollSpy();
-  $('ul.tabs').tabs({ swipeable: true, responsiveThreshold: Infinity });
+  // $('ul.tabs').tabs({ swipeable: true, responsiveThreshold: 2000 });
   $('.btn-floating.btn-large.red')
     .click(function hamburger() {
       $('.nav-icon4')

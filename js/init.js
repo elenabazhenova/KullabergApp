@@ -18,7 +18,7 @@
   //   transition: 500,
   //   interval: 6000,
   // });
-  $('ul.tabs').tabs({ swipeable: true, responsiveThreshold: Infinity });
+  // $('ul.tabs').tabs({ swipeable: true, responsiveThreshold: 2000 });
   $('.modal').modal(
     // {
     //   ready: function blankScreen() {
