@@ -1,6 +1,7 @@
 (function jQ2($) {
   // $('.scrollspy')
   //   .scrollSpy();
+  // $('ul.tabs').tabs({ swipeable: true, responsiveThreshold: 2000 });
   $('.btn-floating.btn-large.red')
     .click(function hamburger() {
       $('.nav-icon4')
@@ -13,8 +14,8 @@
         .top,
       // offset: $('.nav-wrapper').height(),
     });
-  $('.modal-trigger')
-    .leanModal();
+  $('.modal')
+    .modal();
   if (!window.navigator.onLine) {
     $('.onlineOnly')
       .hide();
