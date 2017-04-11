@@ -41,7 +41,7 @@ footer.page-footer .footer-copyright {
 	background: #df622b;
 }
 
-.tabs a.active {
+.tabs a.active, .tabs .tab a:hover, .tabs .tab a.active {
 	color: white;
 }
 
@@ -52,7 +52,7 @@ footer.page-footer .footer-copyright {
 
 .tabs .tab {
 	padding-top: 0.8rem;
-
+	flex-grow: 1;
 	line-height: 1rem;
 }
 
