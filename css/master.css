@@ -7,7 +7,12 @@
 }*/
 
 .collapsible-body p {
-	padding: 0.8rem 1.2rem;
+	padding-top: 0.8rem;
+}
+
+.collapsible-body {
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
 }
 
 .carousel{
@@ -147,7 +152,9 @@ img.logoImg:hover {
 }
 
 .collapsible-body img.padBottom {
-	padding: 1.2rem;
+	padding-bottom: 1.2rem;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .noBorder {
