@@ -34,6 +34,6 @@ $(document)
         $('.logoImg')
           .removeClass('turn');
         $('.btn-floating')
-          .removeClass('bounceIn');
+          .removeClass('scale-out');
       });
   });
