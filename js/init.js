@@ -56,7 +56,7 @@
 // end of jQuery name space
 $(document).ready(function start2() {
   // Animate loader to fade out
-  $('.loader').finish().fadeOut(600, 'easeOutSine', function present() {
+  $('.loader').finish().delay(300).fadeOut(300, 'linear', function present() {
     $('.logoImg').removeClass('turn');
     $('.btn-floating').removeClass('bounceIn');
   });
