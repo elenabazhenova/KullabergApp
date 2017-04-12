@@ -60,6 +60,6 @@ $(document).ready(function start2() {
     .delay(10)
     .fadeOut(0, 'linear', function present() {
       $('.logoImg').delay(100).removeClass('turn');
-      $('.btn-floating').delay(100).removeClass('scale-out');
+      $('.btn-floating').delay(120).removeClass('scale-out');
     });
 });

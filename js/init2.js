@@ -24,8 +24,8 @@
   // end of document ready
 }(jQuery));
 // end of jQuery name space
-$(document)
-  .ready(function start3() {
+$(window)
+  .load(function start3() {
     // Animate loader to fade out
     $('.loader')
       .finish()
@@ -34,6 +34,6 @@ $(document)
         $('.logoImg')
           .delay(100).removeClass('turn');
         $('.btn-floating')
-          .delay(100).removeClass('scale-out');
+          .delay(120).removeClass('scale-out');
       });
   });
