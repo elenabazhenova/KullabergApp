@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:4/12/2017, 1:08:46 PM
+#ver:4/12/2017, 1:27:33 PM
 #plugin:4.6.2
 
 CACHE:
@@ -67,13 +67,15 @@ CACHE:
 ../img/kullabergKarta.svg
 ../img/kullabergKartaSV.svg
 ../bundle.js
-../js/master.js
+../.
+../js/master.min.js
 ../js/init.js
 ../js/init2.js
 ../js/materialize.min.js
 ../js/jquery.min.js
 ../manifest.json
 ../css/materialize.min.css
+../css/master.min.css
 ../css/materialdesignicons.min.css
 ../fonts/roboto/Roboto-Medium.woff
 ../fonts/roboto/Roboto-Regular.woff
