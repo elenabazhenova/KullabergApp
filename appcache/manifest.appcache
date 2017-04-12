@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:4/12/2017, 1:27:33 PM
+#ver:4/12/2017, 2:33:39 PM
 #plugin:4.6.2
 
 CACHE:
@@ -67,7 +67,7 @@ CACHE:
 ../img/kullabergKarta.svg
 ../img/kullabergKartaSV.svg
 ../bundle.js
-../.
+../
 ../js/master.min.js
 ../js/init.js
 ../js/init2.js
