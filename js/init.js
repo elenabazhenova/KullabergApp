@@ -57,8 +57,9 @@
 $(document).ready(function start2() {
   // Animate loader to fade out
   $('.loader').finish()
-  .delay(0).fadeOut(0, 'linear', function present() {
-    $('.logoImg').removeClass('turn');
-    $('.btn-floating').removeClass('scale-out');
-  });
+    .delay(10)
+    .fadeOut(0, 'linear', function present() {
+      $('.logoImg').delay(100).removeClass('turn');
+      $('.btn-floating').delay(100).removeClass('scale-out');
+    });
 });

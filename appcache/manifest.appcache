@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:4/12/2017, 2:45:58 PM
+#ver:4/12/2017, 3:01:55 PM
 #plugin:4.6.2
 
 CACHE:
@@ -69,8 +69,8 @@ CACHE:
 ../bundle.js
 ../
 ../js/master.min.js
-../js/init.js
-../js/init2.js
+../js/init.min.js
+../js/init2.min.js
 ../js/materialize.min.js
 ../js/jquery.min.js
 ../manifest.json

@@ -29,11 +29,11 @@ $(document)
     // Animate loader to fade out
     $('.loader')
       .finish()
-      .delay(0)
+      .delay(10)
       .fadeOut(0, 'linear', function present() {
         $('.logoImg')
-          .removeClass('turn');
+          .delay(100).removeClass('turn');
         $('.btn-floating')
-          .removeClass('scale-out');
+          .delay(100).removeClass('scale-out');
       });
   });
