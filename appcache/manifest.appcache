@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:4/12/2017, 11:07:43 PM
+#ver:4/12/2017, 11:59:26 PM
 #plugin:4.6.2
 
 CACHE:
@@ -67,17 +67,6 @@ CACHE:
 ../img/kullabergKarta.svg
 ../img/kullabergKartaSV.svg
 ../bundle.js
-../android-chrome-192x192.png
-../android-chrome-512x512.png
-../favicon-32x32.png
-../favicon-16x16.png
-../
-../js/master.min.js
-../js/init.min.js
-../js/init2.min.js
-../js/materialize.min.js
-../js/jquery.min.js
-../manifest.json
 ../css/materialize.min.css
 ../css/master.min.css
 ../css/materialdesignicons.min.css
@@ -93,6 +82,17 @@ CACHE:
 ../fonts/roboto/Roboto-Bold.woff2
 ../fonts/materialdesignicons-webfont.woff
 ../fonts/materialdesignicons-webfont.woff2
+../android-chrome-192x192.png
+../android-chrome-512x512.png
+../favicon-32x32.png
+../favicon-16x16.png
+../
+../js/master.min.js
+../js/init.min.js
+../js/init2.min.js
+../js/materialize.min.js
+../js/jquery.min.js
+../manifest.json
 
 NETWORK:
 *
