@@ -106,7 +106,6 @@
 ███████ ██      ██████  ██ ██████     ██
      ██ ██      ██   ██ ██ ██         ██
 ███████  ██████ ██   ██ ██ ██         ██-->
-    
     <!--
 		███████  ██████ ██████  ██ ██████  ████████
 		██      ██      ██   ██ ██ ██   ██    ██
@@ -116,6 +115,7 @@
 		-->
     <script src="js/jquery.min.js" charset="utf-8"></script>
     <script src="js/materialize.min.js" charset="utf-8"></script>
+    <script src="bundle.js"></script>
     <script>
         //  .d88888b.           888                            888 
         // d88P" "Y88b          888                            888 
@@ -129,13 +129,14 @@
         window.onload = function() {
             if (navigator.language && navigator.language[0] !== "s" && navigator.language[1] !== "v") {
                 window.location.replace("./maps.html");
-            } else {
+            } else if (navigator.language) {
                 window.location.replace("./mapsSv.html");
+            } else {
+                window.location.replace("./maps.html");
             }
         }
 
     </script>
-<script src="bundle.js"></script>
 </body>
 
 </html>
