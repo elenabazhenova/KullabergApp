@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:4/12/2017, 1:25:00 PM
+#ver:4/12/2017, 1:27:33 PM
 #plugin:4.6.2
 
 CACHE:
@@ -75,6 +75,7 @@ CACHE:
 ../js/jquery.min.js
 ../manifest.json
 ../css/materialize.min.css
+../css/master.min.css
 ../css/materialdesignicons.min.css
 ../fonts/roboto/Roboto-Medium.woff
 ../fonts/roboto/Roboto-Regular.woff
