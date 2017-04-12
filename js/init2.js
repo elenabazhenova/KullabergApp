@@ -27,13 +27,21 @@
 $(window)
   .load(function start3() {
     // Animate loader to fade out
-    $('.loader')
-      .finish()
-      .delay(10)
-      .fadeOut(0, 'linear', function present() {
-        $('.logoImg')
-          .delay(100).removeClass('turn');
-        $('.btn-floating')
-          .delay(120).removeClass('scale-out');
-      });
+    $('.logoImg')
+      .delay(100)
+      .removeClass('turn');
+    $('.btn-floating')
+      .delay(120)
+      .removeClass('scale-out');
+
+
+    // $('.loader')
+    //   .finish()
+    //   .delay(10)
+    //   .fadeOut(0, 'linear', function present() {
+    //     $('.logoImg')
+    //       .delay(100).removeClass('turn');
+    //     $('.btn-floating')
+    //       .delay(120).removeClass('scale-out');
+    //   });
   });
