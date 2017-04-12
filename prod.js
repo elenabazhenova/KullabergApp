@@ -77,6 +77,9 @@ module.exports = function e(env) {
           events: false
         },
         autoUpdate: true,
+        caches: 'all',
+        responseStrategy: 'cache-first',
+        updateStrategy: 'changed'
       }),
     ],
   };
