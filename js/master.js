@@ -1,7 +1,7 @@
 // let notifyAttempts = 0;
 // const tagNotify = 'vibrateTest';
 // const locate = [];
-let hiddenContact = false;
+var hiddenContact = false;
 
 
 /*
@@ -11,16 +11,16 @@ let hiddenContact = false;
 ██    ██ ██  ██ ██ ██      ██ ██  ██ ██ ██
  ██████  ██   ████ ███████ ██ ██   ████ ███████
 */
-window.applicationCache.ondownloading = function onDownloading() {
-  Materialize.toast('New version available. Downloading...', 120000, 'rounded');
-};
-window.applicationCache.onupdateready = function onUpdateReady() {
-  Materialize.toast('New version ready. Reload site...', 300000, 'rounded');
-  window.applicationCache.swapCache();
-};
-window.applicationCache.oncached = function onCached() {
-  Materialize.toast('Update Completed! Reload site...', 300000, 'rounded');
-};
+// window.applicationCache.ondownloading = function onDownloading() {
+//   Materialize.toast('New version available. Downloading...', 120000, 'rounded');
+// };
+// window.applicationCache.onupdateready = function onUpdateReady() {
+//   Materialize.toast('New version ready. Reload site...', 300000, 'rounded');
+//   window.applicationCache.swapCache();
+// };
+// window.applicationCache.oncached = function onCached() {
+//   Materialize.toast('Update Completed! Reload site...', 300000, 'rounded');
+// };
 // window.applicationCache.onchecking = function onChecking() {
 //   Materialize.toast('Checking for new version...', 1000, 'rounded');
 // };
