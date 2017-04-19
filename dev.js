@@ -10,6 +10,12 @@ module.exports = function d(env) {
         test: /indexB.html$/,
         loaders: ['file-loader?name=index.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {
+        test: /embedEnB.html$/,
+        loaders: ['file-loader?name=embedEn.[ext]', 'extract-loader', 'html-loader'],
+      }, {
+        test: /embedSvB.html$/,
+        loaders: ['file-loader?name=embedSv.[ext]', 'extract-loader', 'html-loader'],
+      }, {
         test: /mapsB.html$/,
         loaders: ['file-loader?name=maps.[ext]?[hash]!', 'extract-loader', 'html-loader'],
       }, {

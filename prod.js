@@ -1,4 +1,5 @@
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const ImageminPlugin = require('imagemin-webpack-plugin')
+  .default;
 const HtmlMinifierPlugin = require('html-minifier-webpack-plugin');
 const ClosureCompilerPlugin = require('webpack-closure-compiler');
 const OfflinePlugin = require('offline-plugin');
@@ -14,6 +15,12 @@ module.exports = function e(env) {
       rules: [{
         test: /indexB.html$/,
         loaders: ['file-loader?name=index.[ext]', 'extract-loader', 'html-loader'],
+      }, {
+        test: /embedEnB.html$/,
+        loaders: ['file-loader?name=embedEn.[ext]', 'extract-loader', 'html-loader'],
+      }, {
+        test: /embedSvB.html$/,
+        loaders: ['file-loader?name=embedSv.[ext]', 'extract-loader', 'html-loader'],
       }, {
         test: /mapsB.html$/,
         loaders: ['file-loader?name=maps.[ext]', 'extract-loader', 'html-loader'],
