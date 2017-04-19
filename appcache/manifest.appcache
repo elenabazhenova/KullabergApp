@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:4/14/2017, 12:42:37 PM
+#ver:4/19/2017, 6:29:58 PM
 #plugin:4.7.0
 
 CACHE:
@@ -9,6 +9,8 @@ CACHE:
 ../img/regionSkane.svg
 ../img/t1/4.jpg
 ../img/t1/trail1sign.png
+../embedEn.html
+../embedSv.html
 ../
 ../maps.html
 ../mapsSv.html

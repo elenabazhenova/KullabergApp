@@ -5,6 +5,8 @@ require('./poiB.html');
 require('./mapsBSv.html');
 require('./newsBSv.html');
 require('./poiBSv.html');
+require('./embedEnB.html');
+require('./embedSvB.html');
 // require('./js/jquery.min.js');
 // require('./js/materialize.min.js');
 // require('./js/master.js');
