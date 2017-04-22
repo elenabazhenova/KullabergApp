@@ -57,6 +57,10 @@
     $('.onlineOnly')
       .hide();
     hiddenContact = true;
+  } else if (window.navigator.onLine) {
+    $('.offlineOnly')
+      .hide();
+    hiddenContact = false;
   }
   // end of document ready
 }(jQuery));
