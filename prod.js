@@ -47,7 +47,7 @@ module.exports = function e(env) {
         use: ['file-loader?name=[path][name].[ext]'],
       }, {
         test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=[path][name].[ext]!',
+        loader: 'file-loader?name=[path][name].[ext]',
       }, {
         test: /\.svg$/,
         use: [{
