@@ -47,10 +47,16 @@ footer.page-footer .footer-copyright {
     overflow: hidden;
 }
 
+.footerAbsolute {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .embeded {
     width: 100%;
-    height: 84vh;
-    margin-top: -71px;
+    height: 86vh;
+    margin-top: -68px;
     margin-bottom: -80px;
 }
 
@@ -58,7 +64,8 @@ footer.page-footer .footer-copyright {
     position: relative;
 }
 
-.i4ewOd-pzNkMb-haAclf, .neVct-IlgHgd .qqvbed-T3iPGc-LgbsSe-haAclf {
+.i4ewOd-pzNkMb-haAclf,
+.neVct-IlgHgd .qqvbed-T3iPGc-LgbsSe-haAclf {
     display: none !important;
 }
 
@@ -81,8 +88,6 @@ footer.page-footer .footer-copyright {
     flex-grow: 1;
     line-height: 1rem;
 }
-
-ul.tabs {}
 
 .tabs .tab a:hover {
     color: hsla(358, 0%, 88%, 1);
