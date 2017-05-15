@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:5/15/2017, 2:14:52 PM
+#ver:5/15/2017, 3:16:20 PM
 #plugin:4.7.0
 
 CACHE:
@@ -97,7 +97,7 @@ CACHE:
 ../js/init.min.js
 ../js/init2.min.js
 ../js/materialize.min.js
-../js/jquery.min.js
+../js/jquery-3.2.1.min.js
 ../manifest.json
 
 NETWORK:
