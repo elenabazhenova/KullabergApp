@@ -7,7 +7,7 @@ require('./newsBSv.html');
 require('./poiBSv.html');
 require('./embedEnB.html');
 require('./embedSvB.html');
-// require('./js/jquery.min.js');
+// require('./js/jquery-3.2.1.min.js');
 // require('./js/materialize.min.js');
 // require('./js/master.js');
 // require('offline-plugin/runtime').install();
