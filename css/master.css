@@ -22,9 +22,9 @@ body {
 }
 
 .zoomFrame {
-    transform: scale(2.1);
-    -webkit-transform-origin-x: 4px;
-    -webkit-transform-origin-y: 90px;
+    transform: scale(1.5);
+    -webkit-transform-origin-x: 10px;
+    -webkit-transform-origin-y: 150px;
     z-index: 1;
 }
 
@@ -89,7 +89,7 @@ footer.page-footer .footer-copyright {
 }
 
 .embeded {
-    width: 47.9%;
+    width: 68%;
     height: 50%;
 }
 
