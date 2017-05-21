@@ -55,7 +55,7 @@
 ██████   ██████  ██████     ██
 -->
 
-<body class="grey lighten-3 noScroll zoomed">
+<body class="grey lighten-3 noScroll">
     <!--
 ███    ██  █████  ██    ██
 ████   ██ ██   ██ ██    ██
@@ -92,7 +92,7 @@
 ██      ██ ██   ██ ██ ██   ████
 -->
     <main class="grey lighten-3">
-        <iframe sandbox="allow-scripts" class="embeded zoomFrame" src="https://www.google.com/maps/d/u/1/embed?mid=1mRJxLa5HYcKXzxWqTZAPLmuSOL0"></iframe>
+        <iframe sandbox="allow-scripts" class="embeded" src="https://www.google.com/maps/d/u/1/embed?mid=1mRJxLa5HYcKXzxWqTZAPLmuSOL0"></iframe>
     </main>
     <!--
 ███████  ██████   ██████  ████████ ███████ ██████
@@ -171,11 +171,11 @@
                     .delay(120)
                     .removeClass('scale-out');
                 var bodyHeight = $(window).height() - $("footer").height()
-                $(".embeded").height((bodyHeight - 324) / 1.5);
+                $(".embeded").height((bodyHeight - 20));
             });
         $(window).resize(function() {
             var bodyHeight = $(window).height() - $("footer").height()
-            $(".embeded").height((bodyHeight - 324) / 1.5);
+            $(".embeded").height((bodyHeight - 20));
         });
 
     </script>

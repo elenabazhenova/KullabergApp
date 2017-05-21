@@ -54,7 +54,7 @@
 ██████   ██████  ██████     ██
 -->
 
-    <body class="grey lighten-3 noScroll zoomed">
+    <body class="grey lighten-3 noScroll">
         <!--
 ███    ██  █████  ██    ██
 ████   ██ ██   ██ ██    ██
@@ -91,7 +91,7 @@
 ██      ██ ██   ██ ██ ██   ████
 -->
         <main class="grey lighten-3">
-            <iframe sandbox="allow-scripts" class="embeded zoomFrame" src="https://www.google.com/maps/d/u/1/embed?mid=10IJQKK7eBWFNJkw5mK7-oyR5KX4"></iframe>
+            <iframe sandbox="allow-scripts" class="embeded" src="https://www.google.com/maps/d/u/1/embed?mid=10IJQKK7eBWFNJkw5mK7-oyR5KX4"></iframe>
         </main>
         <!--
 ███████  ██████   ██████  ████████ ███████ ██████
@@ -159,23 +159,22 @@
                 // end of document ready
             }(jQuery));
             // end of jQuery name space
-            $(document)
-                .ready(function start3() {
-                    // Animate loader to fade out
-                    $('.logoImg')
-                        .delay(100)
-                        .removeClass('turn');
-                    $('.btn-floating')
-                        .delay(120)
-                        .removeClass('scale-out');
-                    var bodyHeight = $(window).height() - $("footer").height()
-                    $(".embeded").height((bodyHeight - 324) / 1.5);
-                });
-            $(window).resize(function() {
+        $(document)
+            .ready(function start3() {
+                // Animate loader to fade out
+                $('.logoImg')
+                    .delay(100)
+                    .removeClass('turn');
+                $('.btn-floating')
+                    .delay(120)
+                    .removeClass('scale-out');
                 var bodyHeight = $(window).height() - $("footer").height()
-                $(".embeded").height((bodyHeight - 324) / 1.5);
+                $(".embeded").height((bodyHeight - 20));
             });
-
+        $(window).resize(function() {
+            var bodyHeight = $(window).height() - $("footer").height()
+            $(".embeded").height((bodyHeight - 20));
+        });
         </script>
     </body>
 

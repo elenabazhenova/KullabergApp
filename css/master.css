@@ -89,15 +89,15 @@ footer.page-footer .footer-copyright {
 }
 
 .embeded {
-    width: 68%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
+    margin-top: -70px;
 }
 
 .embedHead {
     position: relative;
     z-index: 2;
 }
-
 
 .orangeBack {
     background: #df622b;
