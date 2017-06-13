@@ -1,8 +1,23 @@
 CACHE MANIFEST
-#ver:5/31/2017, 11:15:57 AM
+#ver:6/13/2017, 2:48:36 PM
 #plugin:4.8.1
 
 CACHE:
+../fonts/materialdesignicons-webfont.eot
+../fonts/materialdesignicons-webfont.svg
+../fonts/materialdesignicons-webfont.ttf
+../fonts/materialdesignicons-webfont.woff2
+../fonts/materialdesignicons-webfont.woff
+../fonts/roboto/Roboto-Bold.woff
+../fonts/roboto/Roboto-Bold.woff2
+../fonts/roboto/Roboto-Light.woff
+../fonts/roboto/Roboto-Light.woff2
+../fonts/roboto/Roboto-Medium.woff
+../fonts/roboto/Roboto-Medium.woff2
+../fonts/roboto/Roboto-Regular.woff
+../fonts/roboto/Roboto-Regular.woff2
+../fonts/roboto/Roboto-Thin.woff
+../fonts/roboto/Roboto-Thin.woff2
 ../img/asterisk.svg
 ../img/lansstyrelsen.svg
 ../img/regionSkane.svg
@@ -66,7 +81,15 @@ CACHE:
 ../img/t3/8.jpg
 ../img/t3/9.jpg
 ../bundle.js
-../fonts/roboto/Roboto-Light.woff2
+../main.css
+../android-chrome-192x192.png
+../android-chrome-512x512.png
+../favicon-32x32.png
+../favicon-16x16.png
+../js/init.min.js
+../js/init2.min.js
+../js/materialize.min.js
+../js/jquery-3.2.1.min.js
 
 NETWORK:
 *
