@@ -1,9 +1,7 @@
 // let notifyAttempts = 0;
 // const tagNotify = 'vibrateTest';
 // const locate = [];
-var hiddenContact = false;
-
-
+let hiddenContact = false;
 /*
  ██████  ███    ██ ██      ██ ███    ██ ███████
 ██    ██ ████   ██ ██      ██ ████   ██ ██
@@ -24,7 +22,6 @@ var hiddenContact = false;
 // window.applicationCache.onchecking = function onChecking() {
 //   Materialize.toast('Checking for new version...', 1000, 'rounded');
 // };
-
 // window.applicationCache.onnoupdate = function onNoUpdate() {
 //   Materialize.toast('No updates.', 3000, 'rounded');
 // };
@@ -50,8 +47,7 @@ function scrollEnd() {
         .height(),
     }, 80, 'easeInOutCubic');
 }
-
-function flashContact() {
+window.flashContact = function flashContact() {
   scrollEnd();
   $('.contactIcon')
     .finish()
@@ -63,7 +59,7 @@ function flashContact() {
     .fadeOut(250)
     .fadeIn(250);
   onlineCheck();
-}
+};
 
 function scrollTop() {
   $('html, body')
@@ -71,16 +67,14 @@ function scrollTop() {
       scrollTop: 0,
     }, 80, 'easeInOutCubic');
 }
-
-function turnOff() {
+window.turnOff = function turnOff() {
   $('.logoImg')
     .removeClass('turn');
-}
-
-function turnOn() {
+};
+window.turnOn = function turnOn() {
   $('.logoImg')
     .addClass('turn');
-}
+};
 /*
 ████████  █████  ██████  ███████
    ██    ██   ██ ██   ██ ██
@@ -88,7 +82,7 @@ function turnOn() {
    ██    ██   ██ ██   ██      ██
    ██    ██   ██ ██████  ███████
 */
-function tabOperation() {
+window.tabOperation = function tabOperation() {
   $('.collapsible-header')
     .removeClass('active');
   $('.collapsible')
@@ -99,9 +93,8 @@ function tabOperation() {
       accordion: false,
     });
   scrollTop();
-}
-
-function tabOperationNews() {
+};
+window.tabOperationNews = function tabOperationNews() {
   scrollTop();
   $('.collapsible')
     .collapsible({
@@ -110,13 +103,10 @@ function tabOperationNews() {
     .collapsible({
       accordion: false,
     });
-}
-
-function mapTabOperation() {
+};
+window.mapTabOperation = function mapTabOperation() {
   scrollTop();
-}
-
-
+};
 /*
 ██       ██████   ██████  █████  ████████ ██  ██████  ███    ██
 ██      ██    ██ ██      ██   ██    ██    ██ ██    ██ ████   ██
@@ -131,7 +121,6 @@ function mapTabOperation() {
 //     timeout: 60000,
 //     maximumAge: 10000,
 //   };
-
 //   function success(pos) {
 //     const coordinates = pos.coords;
 //     locate[0] = coordinates.latitude;
@@ -140,18 +129,15 @@ function mapTabOperation() {
 //     Materialize.toast(`${'Your current position: <br>Latitude : '}
 //      ${locate[0]}<br>Longitude: ${locate[1]}<br>Accurate to: ${locate[2]} meters.`, 6000);
 //   }
-
 //   function error(err) {
 //     Materialize.toast(`ERROR(${err.code}): ${err.message}`, 1000, 'rounded');
 //   }
 //   navigator.geolocation.getCurrentPosition(success, error, options);
 // }
-
 // function detectLanguage() {
 //   const lang = window.navigator.language;
 //   Materialize.toast(`Your preferred language is ${lang}`, 1000);
 // }
-
 // function mapMsg() {
 //   // Materialize.toast('Opening Map...', 200);
 // }

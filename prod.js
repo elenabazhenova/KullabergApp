@@ -125,6 +125,7 @@ module.exports = function e(env) {
       new ExtractTextPlugin('[name].css'),
       new PurifyCSSPlugin({
         minimize: true,
+        verbose: true,
         // Give paths to parse for rules. These should be absolute!
         paths: glob.sync([
           path.join(__dirname, '*.html'),
