@@ -7,11 +7,11 @@ require('./newsBSv.html');
 require('./poiBSv.html');
 require('./embedEnB.html');
 require('./embedSvB.html');
-// require('./js/jquery.min.js');
-// require('./js/materialize.min.js');
-// require('./js/master.js');
-// require('offline-plugin/runtime').install();
-
+require('./css/materialize.min.css');
+require('./css/materialdesignicons.min.css');
+require('./css/master.css');
+require('./js/master.js');
+// require('./js/jquery-3.2.1.min.js');
 // 888     888               888          888                     
 // 888     888               888          888                     
 // 888     888               888          888                     
@@ -23,11 +23,7 @@ require('./embedSvB.html');
 //             888                                                
 //             888                                                
 //             888                                                
-
-
-
 const runtime = require('offline-plugin/runtime');
-
 runtime.install({
   onUpdating: () => {
     console.log('SW Event:', 'onUpdating');
@@ -42,7 +38,6 @@ runtime.install({
     // Reload the webpage to load into the new version
     window.location.reload();
   },
-
   onUpdateFailed: () => {
     console.log('SW Event:', 'onUpdateFailed');
   }

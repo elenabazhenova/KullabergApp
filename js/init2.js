@@ -24,8 +24,8 @@
   // end of document ready
 }(jQuery));
 // end of jQuery name space
-$(window)
-  .load(function start3() {
+$(document)
+  .ready(function start3() {
     // Animate loader to fade out
     $('.logoImg')
       .delay(100)
@@ -33,7 +33,6 @@ $(window)
     $('.btn-floating')
       .delay(120)
       .removeClass('scale-out');
-
 
     // $('.loader')
     //   .finish()

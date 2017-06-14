@@ -6,6 +6,41 @@
 	position: relative;
 }*/
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.footerEmbed {
+    line-height: 1.4em;
+    height: 5em;
+    padding-left: 30px;
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+.zoomFrame {
+    transform: scale(1.5);
+    -webkit-transform-origin-x: 10px;
+    -webkit-transform-origin-y: 150px;
+    z-index: 1;
+}
+
+.zoomed {
+    zoom: 1.4;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .collapsible-body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -47,19 +82,21 @@ footer.page-footer .footer-copyright {
     overflow: hidden;
 }
 
+.footerAbsolute {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .embeded {
     width: 100%;
-    height: 84vh;
-    margin-top: -71px;
-    margin-bottom: -80px;
+    height: 100%;
+    margin-top: -70px;
 }
 
 .embedHead {
     position: relative;
-}
-
-.i4ewOd-pzNkMb-haAclf, .neVct-IlgHgd .qqvbed-T3iPGc-LgbsSe-haAclf {
-    display: none !important;
+    z-index: 2;
 }
 
 .orangeBack {
@@ -81,8 +118,6 @@ footer.page-footer .footer-copyright {
     flex-grow: 1;
     line-height: 1rem;
 }
-
-ul.tabs {}
 
 .tabs .tab a:hover {
     color: hsla(358, 0%, 88%, 1);

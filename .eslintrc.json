@@ -1,8 +1,6 @@
 {
   "extends": "airbnb-base",
-  "plugins": [
-    "import"
-  ],
+  "plugins": ["import"],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -11,21 +9,24 @@
   "rules": {
     "no-const-assign": "warn",
     "no-this-before-super": "warn",
-    "no-undef": "off",
+    "no-undef": "warn",
     "no-unreachable": "warn",
-    "no-unused-vars": "off",
+    "no-unused-vars": "warn",
     "constructor-super": "warn",
     "valid-typeof": "warn",
-    "comma-dangle": "off",
-    "prefer-arrow-callback": "off",
-    "linebreak-style": "off"
+    "comma-dangle": "warn",
+    "prefer-arrow-callback": "warn",
+    "func-names": "warn",
+    "prefer-template": "warn",
+    "no-plusplus": "warn",
+    "max-len": "warn",
+    "linebreak-style": "off",
+    "no-console": "off"
   },
   "globals": {
     "Materialize": true,
-    "intervalID": true,
-    "jQuery": true,
     "$": true,
-    "window": true,
-    "navigator": true
+    "lemonade": true,
+    "env": true
   }
 }
