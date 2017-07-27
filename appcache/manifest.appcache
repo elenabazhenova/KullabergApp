@@ -1,8 +1,13 @@
 CACHE MANIFEST
-#ver:2017-7-25 17:04:52
+#ver:2017-7-27 14:26:12
 #plugin:4.8.3
 
 CACHE:
+../fonts/materialdesignicons-webfont.eot
+../fonts/materialdesignicons-webfont.woff2
+../fonts/materialdesignicons-webfont.woff
+../fonts/materialdesignicons-webfont.ttf
+../fonts/materialdesignicons-webfont.svg
 ../fonts/roboto/Roboto-Thin.woff2
 ../fonts/roboto/Roboto-Thin.woff
 ../fonts/roboto/Roboto-Light.woff2
@@ -13,17 +18,12 @@ CACHE:
 ../fonts/roboto/Roboto-Medium.woff
 ../fonts/roboto/Roboto-Bold.woff2
 ../fonts/roboto/Roboto-Bold.woff
-../fonts/materialdesignicons-webfont.eot
-../fonts/materialdesignicons-webfont.woff2
-../fonts/materialdesignicons-webfont.woff
-../fonts/materialdesignicons-webfont.ttf
-../fonts/materialdesignicons-webfont.svg
 ../img/asterisk.svg
 ../img/regionSkane.svg
 ../img/lansstyrelsen.svg
 ../img/t1/trail1sign.png
 ../img/t1/4.jpg
-../img/t3/4.jpg
+../img/t3/6.jpg
 ../img/t3/13.jpg
 ../img/t3/12.jpg
 ../img/t3/11.jpg
@@ -31,9 +31,7 @@ CACHE:
 ../img/t3/9.jpg
 ../img/t3/8.jpg
 ../img/t3/7.jpg
-../img/t3/6.jpg
-../img/t3/5.jpg
-../img/t1/8.jpg
+../img/t1/7.jpg
 ../img/t3/17.jpg
 ../img/t3/16.jpg
 ../img/t2/1.jpg
@@ -48,8 +46,8 @@ CACHE:
 ../img/t2/10.jpg
 ../img/t2/11.jpg
 ../img/t2/12.jpg
-../img/t2/14.jpg
 ../img/t2/13.jpg
+../img/t2/14.jpg
 ../img/t2/15.jpg
 ../img/t2/16.jpg
 ../img/t2/17.jpg
@@ -60,7 +58,7 @@ CACHE:
 ../img/t3/14.jpg
 ../img/t1/9.jpg
 ../img/t1/10.jpg
-../img/t1/7.jpg
+../img/t1/8.jpg
 ../img/t1/6.jpg
 ../img/t1/5.jpg
 ../img/t1/3.jpg
@@ -69,6 +67,8 @@ CACHE:
 ../img/t3/1.jpg
 ../img/t3/2.jpg
 ../img/t3/3.jpg
+../img/t3/4.jpg
+../img/t3/5.jpg
 ../
 ../poi.html
 ../poiSv.html
