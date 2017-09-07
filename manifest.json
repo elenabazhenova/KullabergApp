@@ -1,6 +1,5 @@
 {
   "name": "Hiking Kullaberg",
-<<<<<<< HEAD
   "short_name": "Kullaberg",
   "start_url": "./",
   "icons": [
@@ -17,17 +16,6 @@
       "type": "image/png"
     }
   ],
-=======
-  "icons": [{
-    "src": "https://xtreemze.github.io/KullabergApp/android-chrome-192x192.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  }, {
-    "src": "https://xtreemze.github.io/KullabergApp/android-chrome-512x512.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }],
->>>>>>> 2bd4ac85a048e519b334cbec8d3e04df183c76d0
   "theme_color": "#0d47a1",
   "background_color": "#0d47a1",
   "display": "fullscreen"
