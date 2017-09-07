@@ -1,13 +1,11 @@
-# KullabergApp
+#Hiking Kullaberg
 
-KullabergApp (Velasco)
-
-How to open​:
-Click on link https://xtreemze.github.io/KullabergApp/ saves offline automatically
+####How to open​:
+Click on link https://hikingkullaberg.com saves offline automatically
 Can save to homescreen on mobile or desktop with icon
 ​Facebook App button
 
-Current Features:
+####Current Features:
 
 Design adheres to nature reserve graphic standards
 Three trails

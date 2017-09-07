@@ -3,11 +3,10 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <title>Kullaberg</title>
+  <title>Hiking Kullaberg</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="canonical" href="https://xtreemze.github.io/KullabergApp/poi.html"
   />
-  <link rel="stylesheet" href="main.css">
   <!--
 ███████  █████  ██    ██ ██  ██████  ██████  ███    ██
 ██      ██   ██ ██    ██ ██ ██      ██    ██ ████   ██
@@ -16,17 +15,17 @@
 ██      ██   ██   ████   ██  ██████  ██████  ██   ████
 -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="https://cdn.rawgit.com/xtreemze/KullabergApp/gh-pages/favicon-32x32.png"
+  <link rel="icon" type="image/png" href="https://xtreemze.github.io/KullabergApp/favicon-32x32.png"
     sizes="32x32">
-  <link rel="icon" type="image/png" href="https://cdn.rawgit.com/xtreemze/KullabergApp/gh-pages/favicon-16x16.png"
+  <link rel="icon" type="image/png" href="https://xtreemze.github.io/KullabergApp/favicon-16x16.png"
     sizes="16x16">
   <link rel="manifest" href="manifest.json">
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#0d47a1">
   <meta name="apple-mobile-web-app-title" content="Kullaberg">
   <meta name="application-name" content="Kullaberg">
   <meta name="msapplication-TileColor" content="#603cba">
-  <meta name="msapplication-TileImage" content="https://cdn.rawgit.com/xtreemze/KullabergApp/gh-pages/mstile-310x310.png">
-  <meta name="msapplication-config" content="https://cdn.rawgit.com/xtreemze/KullabergApp/gh-pages/browserconfig.xml">
+  <meta name="msapplication-TileImage" content="https://xtreemze.github.io/KullabergApp/mstile-310x310.png">
+  <meta name="msapplication-config" content="https://xtreemze.github.io/KullabergApp/browserconfig.xml">
   <meta name="theme-color" content="#0d47a1">
   <!--
 		███████  ██████ ██████  ██ ██████  ████████
@@ -35,11 +34,9 @@
 		     ██ ██      ██   ██ ██ ██         ██
 		███████  ██████ ██   ██ ██ ██         ██
 		-->
-  <script src="https://cdn.rawgit.com/xtreemze/KullabergApp/gh-pages/js/jquery-3.2.1.min.js"
-    charset="utf-8"></script>
-  <script src="https://cdn.rawgit.com/xtreemze/KullabergApp/gh-pages/js/materialize.min.js"
-    charset="utf-8"></script>
-</head>
+  <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="js/materialize.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="main.css"> </head>
 
 <body class="grey lighten-4">
   <!--
@@ -51,11 +48,11 @@
 -->
   <header class="navbar trails z-depth-2">
     <nav class="blue darken-4" role="navigation">
-      <div class="nav-wrapper"> <a class="brand-logo" id="logo-container"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Kullaberg</span></a>
+      <div class="nav-wrapper"> <a class="brand-logo" id="logo-container"><span class="kullaberg"><img class="left logoImg responsive-img turn" src="img/asterisk.svg" alt="Kullaberg" />Hiking Kullaberg</span></a>
         <ul class="right hide-on-med-and-down">
           <!-- <li><a onclick="showNotification();">Notify</a></li> -->
-          <li> <a href="news.html">News</a> </li>
-          <li> <a href="maps.html">Trail Map</a> </li>
+          <!-- <li> <a href="news.html">News</a> </li> -->
+          <li> <a href="https://www.google.com/maps/d/viewer?mid=1mRJxLa5HYcKXzxWqTZAPLmuSOL0">Open in Google Maps</a>            </li>
           <li> <a onclick="flashContact();">Contact Us</a> </li>
         </ul>
       </div>
@@ -77,13 +74,15 @@
 										data-delay="50"
 										data-tooltip="Notify"
 										onclick="showNotification();"><i class="mdi mdi-vibrate"></i></a></li> -->
-        <li> <a class="btn-floating green darken-2 tooltipped" data-position="left"
-            data-delay="50" data-tooltip="News" href="news.html"><i class="mdi mdi-newspaper"></i></a>          </li>
-        <li> <a class="btn-floating blue darken-2 tooltipped" data-position="left"
-            data-delay="50" data-tooltip="Trail Map" href="maps.html"><i class="mdi mdi-map"></i></a>          </li>
+        <!-- <li> <a class="btn-floating green darken-2 tooltipped" data-position="left"
+            data-delay="50" data-tooltip="News" href="news.html"><i class="mdi mdi-newspaper"></i></a>          </li> -->
         <li>
-          <a class="btn-floating yellow darken-2 tooltipped" data-position="left"
-            data-delay="50" data-tooltip="Contact Us" onclick="flashContact();"><i class="mdi mdi-phone"></i></a>
+          <a class="btn-floating green darken-2 tooltipped" data-position="left" data-delay="50"
+            data-tooltip="Open in Google Maps" href="https://www.google.com/maps/d/viewer?mid=1mRJxLa5HYcKXzxWqTZAPLmuSOL0"><i class="mdi mdi-map"></i></a>
+        </li>
+        <li>
+          <a class="btn-floating yellow darken-2 tooltipped" data-position="left" data-delay="50"
+            data-tooltip="Contact Us" onclick="flashContact();"><i class="mdi mdi-phone"></i></a>
         </li>
       </ul>
     </div>
@@ -123,7 +122,7 @@
                                                                                    "Y88P"  
 -->
     <section id="trail2">
-      <section class="col s12 m12 l8">
+      <section class="col s12">
         <div class="card horizontal">
           <div class="blue darken-4 card-image sl5"><img class="wKulla" src="img/asterisk.svg" alt="Kullaleden"></div>
           <div class="card-stacked">
@@ -135,14 +134,14 @@
           </div>
         </div>
       </section>
-      <section class="col s12 l4 onlineOnly hide-on-med-and-up">
+      <!-- <section class="col s12 l4 onlineOnly hide-on-med-and-up">
         <div class="btn-large blue darken-4 center-align col s12 card"> <a href="https://www.google.com/maps/d/viewer?mid=1mRJxLa5HYcKXzxWqTZAPLmuSOL0
                " class="poi white-text"><i class="mdi mdi-map-marker-multiple medium"></i>All Sights</a>          </div>
       </section>
       <section class="col s12 l4 onlineOnly hide-on-small-only">
         <div class="btn-large blue darken-4 center-align col s12 card"> <a href="embedEn.html
                " class="poi white-text"><i class="mdi mdi-map-marker-multiple medium"></i>All Sights</a>          </div>
-      </section>
+      </section> -->
       <!--
 8888888b.   .d88888b. 8888888 
 888   Y88b d88P" "Y88b  888   
@@ -199,12 +198,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/Svarttallar/@56.300222,12.450683,17z/data=!3m1!4b1!4m5!3m4!1s0x46518a7bfce9ce65:0x758856af4db6afaa!8m2!3d56.300222!4d12.4528717">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.300222,12.452861/@56.3010742,12.4502761,17z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.300222,12.452861/@56.3010742,12.4502761,17z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.3002391,12.4528529,3a,75y,235.83h,76.34t/data=!3m7!1e1!3m5!1sZD-SZ_XoBzdmQWGxiGv2oA!2e0!3e2!7i13312!8i6656">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.3002391,12.4528529,3a,75y,235.83h,76.34t/data=!3m7!1e1!3m5!1sZD-SZ_XoBzdmQWGxiGv2oA!2e0!3e2!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -270,12 +267,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'57.0%22N+12%C2%B027'09.7%22E/@56.2991723,12.4521454,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2991723!4d12.4526926">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.299139,12.45275/@56.299963,12.450483,17z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.299139,12.45275/@56.299963,12.450483,17z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.299139,12.45275/@56.2991723,12.4526926,3a,75y,181.47h,83.25t/data=!3m8!1e1!3m6!1skjvvVTExzFukAUlI3e9Lpw!2e0!3e2!6s%2F%2Fgeo3.ggpht.com%2Fcbk%3Fpanoid%3DkjvvVTExzFukAUlI3e9Lpw%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D92.58982%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m4!4m3!1m1!4e1!1m0
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.299139,12.45275/@56.2991723,12.4526926,3a,75y,181.47h,83.25t/data=!3m8!1e1!3m6!1skjvvVTExzFukAUlI3e9Lpw!2e0!3e2!6s%2F%2Fgeo3.ggpht.com%2Fcbk%3Fpanoid%3DkjvvVTExzFukAUlI3e9Lpw%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D92.58982%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m4!4m3!1m1!4e1!1m0
                       "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -307,12 +302,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'51.2%22N+12%C2%B027'24.3%22E/@56.297556,12.4545613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.297556!4d12.45675">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.297556,12.45675/@56.2998257,12.4545566,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.297556,12.45675/@56.2998257,12.4545566,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B01'51.2%22N+12%C2%B027'24.3%22E/@56.298288,12.4547804,3a,75y,33.88h,83.64t/data=!3m8!1e1!3m6!1s-s6CVgddTveU%2FVFY1-OJ32sI%2FAAAAAAAAFeI%2F3MLbH_s5wcQ2vBe3u5bXgsJsW9wrGBYpgCJkC!2e4!3e11!6s%2F%2Flh5.googleusercontent.com%2F-s6CVgddTveU%2FVFY1-OJ32sI%2FAAAAAAAAFeI%2F3MLbH_s5wcQ2vBe3u5bXgsJsW9wrGBYpgCJkC%2Fw203-h100-k-no-pi-0-ya138.0897-ro-0-fo100%2F!7i2508!8i1254!4m16!1m10!4m9!1m4!2m2!1d12.4519955!2d56.3013525!4e1!1m3!2m2!1d12.45675!2d56.297556!3m4!1s0x0:0x0!8m2!3d56.297556!4d12.45675
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B01'51.2%22N+12%C2%B027'24.3%22E/@56.298288,12.4547804,3a,75y,33.88h,83.64t/data=!3m8!1e1!3m6!1s-s6CVgddTveU%2FVFY1-OJ32sI%2FAAAAAAAAFeI%2F3MLbH_s5wcQ2vBe3u5bXgsJsW9wrGBYpgCJkC!2e4!3e11!6s%2F%2Flh5.googleusercontent.com%2F-s6CVgddTveU%2FVFY1-OJ32sI%2FAAAAAAAAFeI%2F3MLbH_s5wcQ2vBe3u5bXgsJsW9wrGBYpgCJkC%2Fw203-h100-k-no-pi-0-ya138.0897-ro-0-fo100%2F!7i2508!8i1254!4m16!1m10!4m9!1m4!2m2!1d12.4519955!2d56.3013525!4e1!1m3!2m2!1d12.45675!2d56.297556!3m4!1s0x0:0x0!8m2!3d56.297556!4d12.45675
                       "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -337,7 +330,7 @@
                 of severe storms in the 1980s. The windthrow was cleared and
                 sheep were introduced. Later, the addition of Highland cattle
                 proved more effective as regards promoting low-growing vegetation.
-                </p>
+              </p>
               <p> Today, the heath has been restored, and during your hike across
                 the open spaces you can look out over the entire outer peninsula.
                 The plant species of the former moorland are spreading in the
@@ -359,12 +352,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'50.2%22N+12%C2%B027'36.4%22E/@56.297278,12.4579223,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.297278!4d12.460111">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.297278,12.460111/@56.297278,12.4579223,17z/data=!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.297278,12.460111/@56.297278,12.4579223,17z/data=!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B01'50.2%22N+12%C2%B027'36.4%22E/@56.2972717,12.4601883,3a,75y,15.81h,84.97t/data=!3m8!1e1!3m6!1sJJzl7PYBqFDmv_tAJOV8Wg!2e0!3e2!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3DJJzl7PYBqFDmv_tAJOV8Wg%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D23.15313%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m16!1m10!4m9!1m4!2m2!1d12.4519955!2d56.3013525!4e1!1m3!2m2!1d12.460111!2d56.297278!3m4!1s0x0:0x0!8m2!3d56.297278!4d12.460111
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B01'50.2%22N+12%C2%B027'36.4%22E/@56.2972717,12.4601883,3a,75y,15.81h,84.97t/data=!3m8!1e1!3m6!1sJJzl7PYBqFDmv_tAJOV8Wg!2e0!3e2!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3DJJzl7PYBqFDmv_tAJOV8Wg%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D23.15313%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m16!1m10!4m9!1m4!2m2!1d12.4519955!2d56.3013525!4e1!1m3!2m2!1d12.460111!2d56.297278!3m4!1s0x0:0x0!8m2!3d56.297278!4d12.460111
                       "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -389,12 +380,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'49.3%22N+12%C2%B027'49.8%22E/@56.297028,12.4616443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.297028!4d12.463833">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.297028,12.463833/@56.2994356,12.4559583,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.297028,12.463833/@56.2994356,12.4559583,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2970879,12.4640733,3a,75y,151.35h,79.69t/data=!3m7!1e1!3m5!1saHdLo8vHWTClfG4YKmSmjQ!2e0!3e2!7i13312!8i6656">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.2970879,12.4640733,3a,75y,151.35h,79.69t/data=!3m7!1e1!3m5!1saHdLo8vHWTClfG4YKmSmjQ!2e0!3e2!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -443,12 +432,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'51.0%22N+12%C2%B027'52.6%22E/@56.2975,12.4624223,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2975!4d12.464611">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2975,12.464611/@56.2994356,12.4559583,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2975,12.464611/@56.2994356,12.4559583,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2974848,12.4646342,3a,75y,259.25h,79.55t/data=!3m6!1e1!3m4!1sczzKNb3FlXu6uOMsSQSjeg!2e0!7i13312!8i6656">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.2974848,12.4646342,3a,75y,259.25h,79.55t/data=!3m6!1e1!3m4!1sczzKNb3FlXu6uOMsSQSjeg!2e0!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi mdi-map-marker-radius
                         medium"></i></a>
               </p>
@@ -474,7 +461,7 @@
                 dies off underneath juniper bushes. A mat of brown needles
                 is usually all one sees, but one can find patches of low-growing
                 moss, and sometimes the long striped leaves of wavy hair-grass.
-                </p>
+              </p>
               <p> Small migratory birds used these extremely dense thickets for
                 shelter. The more permanent inhabitants which stay to breed
                 in the juniper thickets include red-backed shrike, common whitethroat,
@@ -494,12 +481,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'50.9%22N+12%C2%B027'58.4%22E/@56.297472,12.466222,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.297472!4d12.466222">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2975,12.464611/@56.2994356,12.4559583,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2975,12.464611/@56.2994356,12.4559583,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2974848,12.4646342,3a,75y,259.25h,79.55t/data=!3m6!1e1!3m4!1sczzKNb3FlXu6uOMsSQSjeg!2e0!7i13312!8i6656">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.2974848,12.4646342,3a,75y,259.25h,79.55t/data=!3m6!1e1!3m4!1sczzKNb3FlXu6uOMsSQSjeg!2e0!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi mdi-map-marker-radius
                         medium"></i></a>
               </p>
@@ -578,12 +563,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'48.4%22N+12%C2%B028'07.6%22E/@56.296778,12.4665893,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.296778!4d12.468778">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.296778,12.468778/@56.299266,12.4561626,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.296778,12.468778/@56.299266,12.4561626,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2967729,12.4685499,3a,75y,69.33h,78.34t/data=!3m6!1e1!3m4!1sAJ_1R7cQTLIkQDcq_HmUuw!2e0!7i13312!8i6656">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.2967729,12.4685499,3a,75y,69.33h,78.34t/data=!3m6!1e1!3m4!1sAJ_1R7cQTLIkQDcq_HmUuw!2e0!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi mdi-map-marker-radius
                         medium"></i></a>
               </p>
@@ -624,7 +607,7 @@
                 farther south and are rare in the rest of Sweden. Among the
                 spiders here we find the purseweb spider (Atypus affinis),
                 which ambushes its prey rather than trapping it in its web.
-                </p>
+              </p>
               <p> The most interesting fact about this oak scrub is that it has
                 probably existed on these slopes ever since they were first
                 colonised by trees. One can assume that neither humans nor
@@ -639,11 +622,9 @@
               <p class="row">
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'32.4%22N+12%C2%B028'20.2%22E/@56.292333,12.4700893,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.292333!4d12.472278
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013696,12.4523431/56.2923333,12.4722778/@56.2967841,12.4474954,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013696,12.4523431/56.2923333,12.4722778/@56.2967841,12.4474954,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2923212,12.4722482,3a,75y,142.74h,65.18t/data=!3m7!1e1!3m5!1seXXxP4mgVqFwsBdtBj_HNw!2e0!3e2!7i13312!8i6656
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.2923212,12.4722482,3a,75y,142.74h,65.18t/data=!3m7!1e1!3m5!1seXXxP4mgVqFwsBdtBj_HNw!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -672,11 +653,9 @@
               <p class="row">
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'34.6%22N+12%C2%B028'29.5%22E/@56.292944,12.4726723,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.292944!4d12.474861
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.292944,12.474861/@56.2967841,12.4474955,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.292944,12.474861/@56.2967841,12.4474955,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2929608,12.4749046,3a,90y,210.32h,76.71t/data=!3m6!1e1!3m4!1sxAzh7v5Xg9AsQy8K18EUVg!2e0!7i13312!8i6656
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.2929608,12.4749046,3a,90y,210.32h,76.71t/data=!3m6!1e1!3m4!1sxAzh7v5Xg9AsQy8K18EUVg!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -714,7 +693,7 @@
                 woodland, probably used for foraging and hay-making. Certain
                 open areas were even used as fields. There are low stone walls
                 in hollows which may have been built as shelter for the pigs.
-                </p>
+              </p>
               <p> Something else which indicates that the beech was specially favoured
                 is the fact that when today’s beech trees die and fall, they
                 are seldom spontaneously replaced by beech, it is other tree
@@ -728,15 +707,14 @@
                 stones which were given this name during the tourist era around
                 1900 and which became an attraction for the hikers of that
                 period in the same way as'Kung Döse (King Dolmen)' (see Section
-                4).</p>
+                4).
+              </p>
               <p class="row">
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'35.4%22N+12%C2%B028'38.9%22E/@56.293167,12.4752833,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.293167!4d12.477472
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.293167,12.477472/@56.2967841,12.4474955,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.293167,12.477472/@56.2967841,12.4474955,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2928927,12.4767227,3a,75y,53.04h,91.6t/data=!3m6!1e1!3m4!1swrh6FfS-y_dytXx7s_k78Q!2e0!7i13312!8i6656
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.2928927,12.4767227,3a,75y,53.04h,91.6t/data=!3m6!1e1!3m4!1swrh6FfS-y_dytXx7s_k78Q!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -780,11 +758,9 @@
               <p class="row">
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'42.6%22N+12%C2%B028'56.7%22E/@56.295167,12.4802283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.295167!4d12.482417
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.295167,12.482417/@56.2982668,12.4504307,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.295167,12.482417/@56.2982668,12.4504307,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.295161,12.4826359,3a,75y,232.95h,77.73t/data=!3m6!1e1!3m4!1sjW5wLrjZaEfzh_W3vUdy7A!2e0!7i13312!8i6656
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.295161,12.4826359,3a,75y,232.95h,77.73t/data=!3m6!1e1!3m4!1sjW5wLrjZaEfzh_W3vUdy7A!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -797,7 +773,8 @@
                 is easily accessible through a ravine which gently slopes down
                 towards the sea. Along a small stream at the bottom of the
                 ravine there is a path with steps constructed in the mid-19th
-                century.</p>
+                century.
+              </p>
               <p>At the top there is extremely sparse herbaceous vegetation in
                 the oak scrub to the east and the beech woods to the west.
                 In the valley by the stream we find tall vegetation with many
@@ -812,28 +789,25 @@
                 diabase. Down on the shore line, one can find a brown diabase
                 called'kullaite', which only occurs on Kullaberg. </p>
               <p>
-              The eastern cliff features an easily accessible and much visited
-                cave,'Josefinelustgrottan', which has formed in a rock crevice
-                and is about 5 m deep. At the top of the steps behind the cliff
-                we find a smaller cave,'Lilla Josefinelustgrottan', formed
-                in a seam of kullaite and whose entrance is only 1 m high.
-                Both in this cave and in a third cave slightly west of Josefinelust,
-                King Fredrik VII’s cave, traces have been found of hearths,
-                soot and charcoal, as well as of bone implements and worked
-                flint. This shows that the caves were used as early as the
-                Stone Age, although not as dwelling places. Bone remains show
-                that the inhabitants fished for cod, haddock, spiny dogfish,
-                plaice and eel. They also collected sea mussels and whelks.
-                The remains found also included the bones of whales, porpoises
-                and seagulls.</p>
+                The eastern cliff features an easily accessible and much visited cave,'Josefinelustgrottan',
+                which has formed in a rock crevice and is about 5 m deep. At
+                the top of the steps behind the cliff we find a smaller cave,'Lilla
+                Josefinelustgrottan', formed in a seam of kullaite and whose
+                entrance is only 1 m high. Both in this cave and in a third
+                cave slightly west of Josefinelust, King Fredrik VII’s cave,
+                traces have been found of hearths, soot and charcoal, as well
+                as of bone implements and worked flint. This shows that the
+                caves were used as early as the Stone Age, although not as
+                dwelling places. Bone remains show that the inhabitants fished
+                for cod, haddock, spiny dogfish, plaice and eel. They also
+                collected sea mussels and whelks. The remains found also included
+                the bones of whales, porpoises and seagulls.</p>
               <p class="row">
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'57.4%22N+12%C2%B028'56.7%22E/@56.299278,12.4802283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.299278!4d12.482417
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.299278,12.482417/@56.2983389,12.4515259,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.299278,12.482417/@56.2983389,12.4515259,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.299235,12.4824373,3a,75y,52.88h,63.49t/data=!3m7!1e1!3m5!1sA3v9Tg9xF-qIQgFe2kOnFg!2e0!3e2!7i13312!8i6656
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.299235,12.4824373,3a,75y,52.88h,63.49t/data=!3m7!1e1!3m5!1sA3v9Tg9xF-qIQgFe2kOnFg!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -873,11 +847,9 @@
               <p class="row">
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'58.1%22N+12%C2%B028'37.4%22E/@56.299472,12.4748673,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.299472!4d12.477056
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.299472,12.477056/@56.2997175,12.4470133,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.299472,12.477056/@56.2997175,12.4470133,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2997516,12.4769351,3a,75y,3.19h,59.37t/data=!3m6!1e1!3m4!1s3DWGTNXRSVcgVA7a9vdmBw!2e0!7i13312!8i6656
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.2997516,12.4769351,3a,75y,3.19h,59.37t/data=!3m6!1e1!3m4!1s3DWGTNXRSVcgVA7a9vdmBw!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -923,12 +895,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B018'00.2%22N+12%C2%B028'11.1%22E/@56.300056,12.4675613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.300056!4d12.46975">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.300056,12.46975/@56.2989478,12.4581484,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.300056,12.46975/@56.2989478,12.4581484,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.3011436,12.4691629,3a,90y,23.91h,82.44t/data=!3m8!1e1!3m6!1s-E4jscT70eKU%2FV--gdPey-LI%2FAAAAAAACyg4%2FiKN4xVmX1iYmcOwf1Ht2hKn_CMtLsIkOACLIB!2e4!3e11!6s%2F%2Flh4.googleusercontent.com%2F-E4jscT70eKU%2FV--gdPey-LI%2FAAAAAAACyg4%2FiKN4xVmX1iYmcOwf1Ht2hKn_CMtLsIkOACLIB%2Fw203-h100-k-no-pi0-ya339.88464-ro-0-fo100%2F!7i7168!8i3584
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.3011436,12.4691629,3a,90y,23.91h,82.44t/data=!3m8!1e1!3m6!1s-E4jscT70eKU%2FV--gdPey-LI%2FAAAAAAACyg4%2FiKN4xVmX1iYmcOwf1Ht2hKn_CMtLsIkOACLIB!2e4!3e11!6s%2F%2Flh4.googleusercontent.com%2F-E4jscT70eKU%2FV--gdPey-LI%2FAAAAAAACyg4%2FiKN4xVmX1iYmcOwf1Ht2hKn_CMtLsIkOACLIB%2Fw203-h100-k-no-pi0-ya339.88464-ro-0-fo100%2F!7i7168!8i3584
                       "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -982,12 +952,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B018'04.1%22N+12%C2%B027'55.2%22E/@56.301139,12.4631443,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.301139!4d12.465333">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.301139,12.465333/@56.3008598,12.4562837,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.301139,12.465333/@56.3008598,12.4562837,16z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B018'04.1%22N+12%C2%B027'55.2%22E/@56.3023201,12.4643755,3a,75y,77.53h,90.55t/data=!3m8!1e1!3m6!1s-eRi7U8XmaDg%2FV3VnMcmYdeI%2FAAAAAAAAMzI%2FH8XatugLxLspL-zGedw_Kac_rmcRG8P6ACJkC!2e4!3e11!6s%2F%2Flh6.googleusercontent.com%2F-eRi7U8XmaDg%2FV3VnMcmYdeI%2FAAAAAAAAMzI%2FH8XatugLxLspL-zGedw_Kac_rmcRG8P6ACJkC%2Fw203-h100-k-no-pi-0-ya6.514986-ro-0-fo100%2F!7i8704!8i4352!4m16!1m10!4m9!1m4!2m2!1d12.4519955!2d56.3013525!4e1!1m3!2m2!1d12.465333!2d56.301139!3m4!1s0x0:0x0!8m2!3d56.301139!4d12.465333
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B018'04.1%22N+12%C2%B027'55.2%22E/@56.3023201,12.4643755,3a,75y,77.53h,90.55t/data=!3m8!1e1!3m6!1s-eRi7U8XmaDg%2FV3VnMcmYdeI%2FAAAAAAAAMzI%2FH8XatugLxLspL-zGedw_Kac_rmcRG8P6ACJkC!2e4!3e11!6s%2F%2Flh6.googleusercontent.com%2F-eRi7U8XmaDg%2FV3VnMcmYdeI%2FAAAAAAAAMzI%2FH8XatugLxLspL-zGedw_Kac_rmcRG8P6ACJkC%2Fw203-h100-k-no-pi-0-ya6.514986-ro-0-fo100%2F!7i8704!8i4352!4m16!1m10!4m9!1m4!2m2!1d12.4519955!2d56.3013525!4e1!1m3!2m2!1d12.465333!2d56.301139!3m4!1s0x0:0x0!8m2!3d56.301139!4d12.465333
                       "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1018,12 +986,10 @@
                 <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B018'11.2%22N+12%C2%B027'11.1%22E/@56.303123,12.4508913,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.30312!4d12.45308">
                 <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013575,12.4525539/56.3031111,12.4530833/@56.3018659,12.4503559,17z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013575,12.4525539/56.3031111,12.4530833/@56.3018659,12.4503559,17z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="blue-text text-darken-4 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.3024702,12.4524665,3a,75y,47.84h,50.96t/data=!3m6!1e1!3m4!1senHxEpMJPulmcjkDbfHPyQ!2e0!7i13312!8i6656
+                <a class="blue-text text-darken-4 poi col s4 center-align" href="https://www.google.com/maps/@56.3024702,12.4524665,3a,75y,47.84h,50.96t/data=!3m6!1e1!3m4!1senHxEpMJPulmcjkDbfHPyQ!2e0!7i13312!8i6656
                       "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1045,7 +1011,7 @@
                                                                               
 -->
     <section id="trail1">
-      <section class="col s12 m12 l8">
+      <section class="col s12">
         <div class="card horizontal">
           <div class="orangeBack card-image sl5"><img src="img/t1/trail1sign.png" alt="Kullaleden"></div>
           <div class="card-stacked">
@@ -1058,14 +1024,14 @@
           </div>
         </div>
       </section>
-      <section class="col s12 l4 onlineOnly hide-on-med-and-up">
+      <!-- <section class="col s12 l4 onlineOnly hide-on-med-and-up">
         <div class="btn-large orange darken-2 center-align col s12 card"> <a href="https://www.google.com/maps/d/viewer?mid=1mRJxLa5HYcKXzxWqTZAPLmuSOL0
                " class="poi white-text"><i class="mdi mdi-map-marker-multiple medium"></i>All Sights</a>          </div>
       </section>
       <section class="col s12 l4 onlineOnly hide-on-small-only">
         <div class="btn-large orange darken-2 center-align col s12 card"> <a href="embedEn.html
                " class="poi white-text"><i class="mdi mdi-map-marker-multiple medium"></i>All Sights</a>          </div>
-      </section>
+      </section> -->
       <!--
 888    d8P           888 888          888               888                   
 888   d8P            888 888          888               888                   
@@ -1110,7 +1076,7 @@
                 the trail. </p>
               <section class="collection onlineOnly"> <a href="http://kullaleden.se/en" class=collection-item><i class="mdi mdi-link"></i> Kullaleden.se</a>                <a href="http://en.skaneleden.se/the-trail/sl-5-oresundsleden/"
                   class=collection-item><i class="mdi mdi-link"></i> Skaneleden.se</a>
-                <a href="http://www.era-ewv-ferp.com/frontpage/" class=collection-item><i class="mdi mdi-link"></i> EURORANDO</a> <a href="http://www.era-ewv-ferp.com/programs/lqt/kullaleden/"
+                <a href="http://www.era-ewv-ferp.com/frontpage/" class=collection-item><i class="mdi mdi-link"></i> EURORANDO</a>                <a href="http://www.era-ewv-ferp.com/programs/lqt/kullaleden/"
                   class=collection-item><i class="mdi mdi-link"></i> Kullaleden: Certified Leading Quality Trail</a>
                 <a href="https://www.google.com/maps/streetview/#skane" class=collection-item><i class="mdi mdi-link"></i> Skåneleden SL5 Street View</a>
               </section>
@@ -1123,7 +1089,7 @@
                 We have over-utilised the sea for a long time. Now we understand
                 that we need to do more to keep the sea healthy. Trends are
                 changing and we are now well on the way, each doing their part.
-                </p>
+              </p>
               <p>The burden of nutrients entering the sea is decreasing; shipping
                 is becoming cleaner; an increasing number of wetlands are being
                 created and awareness is increasing among people in general.</p>
@@ -1134,8 +1100,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3014649,12.4520671/56.29861,12.48305/@56.2983114,12.4341232,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                                     medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2986966,12.4831505,3a,75y,218.78h,87.37t/data=!3m6!1e1!3m4!1sJ_KVCOrjCCgKbXKgfq37Ig!2e0!7i13312!8i6656">
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2986966,12.4831505,3a,75y,218.78h,87.37t/data=!3m6!1e1!3m4!1sJ_KVCOrjCCgKbXKgfq37Ig!2e0!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi mdi-map-marker-radius
                                     medium"></i></a>
               </p>
@@ -1152,19 +1117,17 @@
               <p>Kullaberg is the southernmost outpost of the purely marine species
                 – further south the water is too brackish. At Kullaberg we
                 find coral species – corals are animals not plants.</p>
-              <p
-                class="row">
+              <p class="row">
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'06.5%22N+12%C2%B032'21.1%22E/@56.2851285,12.5369964,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2851285!4d12.5391851">
                 <span class="poi
                                    "></span> <i class="mdi mdi-map-marker medium"></i></a>
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.28514,12.53918/@56.286875,12.4222054,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                                     medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2851285,12.5391851,3a,75y,315.39h,72.09t/data=!3m7!1e1!3m5!1sGhPPbBcIHXuexD_sMW8sWw!2e0!3e2!7i13312!8i6656">
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2851285,12.5391851,3a,75y,315.39h,72.09t/data=!3m7!1e1!3m5!1sGhPPbBcIHXuexD_sMW8sWw!2e0!3e2!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi
                                     mdi-map-marker-radius medium"></i></a>
-                </p>
+              </p>
             </div>
           </li>
           <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>C: Arild / Sea Plants</span>
@@ -1185,8 +1148,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.27583,12.57222/@56.281255,12.3765293,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                                     medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2754283,12.5728331,3a,75y,328.23h,71.8t/data=!3m7!1e1!3m5!1s5b1Ta22z55D1oFjO2vVIGw!2e0!3e2!7i13312!8i6656">
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2754283,12.5728331,3a,75y,328.23h,71.8t/data=!3m7!1e1!3m5!1s5b1Ta22z55D1oFjO2vVIGw!2e0!3e2!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi
                                     mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1202,7 +1164,8 @@
                 water. On a fine April day, while it is still 5-6 °C out at
                 sea, it can be 10 to 15 °C near the shores. At a depth of 1m,
                 biological production can be 10 times greater than at 10 m
-                deep.</p>
+                deep.
+              </p>
               <p><span class="strong">April</span> - Brown shrimp and Littoral
                 crab come in from deeper water.</p>
               <p><span class="strong">May</span> - Hundreds of small juvenile
@@ -1223,8 +1186,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56%C2%B015'41.0%22N+12%C2%B037 '15.0%22E/@56.2798127,12.3958547,11z/data=!3m1!4b1!4m7!4m6!1m1!4e1!1m3!2m2!1d12.6208333!2d56.2613889
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2613965,12.6209382,3a,75y,335.01h,71.8t/data=!3m6!1e1!3m4!1sP9qnl1BWNVHVxAc4x9qD_w!2e0!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2613965,12.6209382,3a,75y,335.01h,71.8t/data=!3m6!1e1!3m4!1sP9qnl1BWNVHVxAc4x9qD_w!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1249,8 +1211,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2613889,12.6208333/@56.2798127,12.3958547,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2511079,12.6619409,3a,75y,107h,76.9t/data=!3m7!1e1!3m5!1s_GmEiGI8R2UMqBgA6WEKXA!2e0!3e2!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2511079,12.6619409,3a,75y,107h,76.9t/data=!3m7!1e1!3m5!1s_GmEiGI8R2UMqBgA6WEKXA!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1273,8 +1234,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2308333,12.6877778/@56.252561,12.4295217,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2308689,12.6879372,3a,75y,168.13h,75.88t/data=!3m6!1e1!3m4!1s0kDTumFtJ_BNtQ7R2XbmXw!2e0!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2308689,12.6879372,3a,75y,168.13h,75.88t/data=!3m6!1e1!3m4!1s0kDTumFtJ_BNtQ7R2XbmXw!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1298,8 +1258,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2218992,12.760173/@56.2525132,12.3252078,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2219232,12.7601451,3a,75y,106.09h,72.54t/data=!3m7!1e1!3m5!1s9WztDTVqDDuGZrrVpIFbWQ!2e0!3e2!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2219232,12.7601451,3a,75y,106.09h,72.54t/data=!3m7!1e1!3m5!1s9WztDTVqDDuGZrrVpIFbWQ!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1322,8 +1281,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2176835,12.780297/@56.2525132,12.3376325,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2176835,12.780297,3a,75y,322.22h,76.75t/data=!3m7!1e1!3m5!1sq8DlfBYC6Nx7-RgcYIZmKg!2e0!3e2!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2176835,12.780297,3a,75y,322.22h,76.75t/data=!3m7!1e1!3m5!1sq8DlfBYC6Nx7-RgcYIZmKg!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1348,8 +1306,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2827975,12.4943602/@56.2920907,12.4419316,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2827975,12.4943602,3a,75y,265.03h,69.56t/data=!3m7!1e1!3m5!1sT_NhvhCQVEk4rfNfSundVQ!2e0!3e2!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2827975,12.4943602,3a,75y,265.03h,69.56t/data=!3m7!1e1!3m5!1sT_NhvhCQVEk4rfNfSundVQ!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1375,8 +1332,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2449602,12.5320131/@56.2723881,12.4426738,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2449602,12.5320131,3a,75y,181.97h,78.93t/data=!3m7!1e1!3m5!1snQfqzbce5CwecyMkB70YjA!2e0!3e2!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2449602,12.5320131,3a,75y,181.97h,78.93t/data=!3m7!1e1!3m5!1snQfqzbce5CwecyMkB70YjA!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1391,19 +1347,17 @@
               <p> On a fine April day, while it is still 5-6 °C out at sea, it
                 can be 10 to 15 °C near the shores. At a depth of 1 m, biological
                 production can be 10 times greater than at 10 m deep.</p>
-              <p
-                class="row">
+              <p class="row">
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B014'05.9%22N+12%C2%B032'12.6%22E/@56.2349807,12.5362719,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2349807!4d12.5368191
                                "> <span class="poi
                       "></span> <i class="mdi mdi-map-marker medium"></i></a>
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.2449602,12.5320131/@56.2723881,12.4426738,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2349807,12.5368191,3a,21.3y,260.61h,88.69t/data=!3m7!1e1!3m5!1sOyxQ85Tu300w_8XJkSuWBQ!2e0!3e2!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.2349807,12.5368191,3a,21.3y,260.61h,88.69t/data=!3m7!1e1!3m5!1sOyxQ85Tu300w_8XJkSuWBQ!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
-                </p>
+              </p>
             </div>
           </li>
           <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius trail1"></i>L: Höganäs / Sea Plants</span>
@@ -1422,8 +1376,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.1998143,12.54947/@56.250725,12.3635702,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.1998143,12.54947,3a,75y,241.66h,86.97t/data=!3m7!1e1!3m5!1saBWRK70JPOrxSLo2c1a6gg!2e0!3e2!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.1998143,12.54947,3a,75y,241.66h,86.97t/data=!3m7!1e1!3m5!1saBWRK70JPOrxSLo2c1a6gg!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1436,11 +1389,12 @@
                 as in two small colonies in the Baltic Sea, at Måkläppen and
                 in the Kalmarsund Strait. The seals we see in Skälderviken
                 belong to the colony on the skerries at Väderö in Halland.
-                </p>
+              </p>
               <p>The male grows to about 170 centimetres and weighs about 100
                 kg, while the female, which is slightly smaller, grows to 160
                 centimetres, weighing around 80 kg. The colour is speckled
-                grey.</p>
+                grey.
+              </p>
               <p class="row">
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B010'40.4%22N+12%C2%B033'22.4%22E/@56.1778926,12.5556819,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.1778926!4d12.5562291
                                "> <span class="poi
@@ -1448,8 +1402,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.1778926,12.5562291/@56.240112,12.4201308,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.1778926,12.5562291,3a,75y,221.62h,71t/data=!3m7!1e1!3m5!1s7MK2i2nqa5JH07w-N-gNkA!2e0!3e2!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.1778926,12.5562291,3a,75y,221.62h,71t/data=!3m7!1e1!3m5!1s7MK2i2nqa5JH07w-N-gNkA!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1472,8 +1425,7 @@
                 <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013525,12.4519955/56.1188896,12.6039567/@56.2107812,12.4250901,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                                "> <span class="poi"></span> <i class="mdi mdi-directions
                         medium"></i></a>
-                <a class="trail1 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.1188896,12.6039567,3a,75y,98.42h,77.32t/data=!3m7!1e1!3m5!1sv9fSapBZUVQAdxXzLxfI9Q!2e0!3e2!7i13312!8i6656
+                <a class="trail1 poi col s4 center-align" href="https://www.google.com/maps/@56.1188896,12.6039567,3a,75y,98.42h,77.32t/data=!3m7!1e1!3m5!1sv9fSapBZUVQAdxXzLxfI9Q!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi
                         mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1508,7 +1460,7 @@
                                                  "Y88P"           
 -->
     <section id="trail3">
-      <section class="col s12 m12 l8">
+      <section class="col s12">
         <div class="card horizontal">
           <div class="orangeBack card-image sl5"><img src="img/t1/trail1sign.png" alt="Kullaleden"></div>
           <div class="card-stacked">
@@ -1521,14 +1473,14 @@
           </div>
         </div>
       </section>
-      <section class="col s12 l4 onlineOnly hide-on-med-and-up">
+      <!-- <section class="col s12 l4 onlineOnly hide-on-med-and-up">
         <div class="btn-large yellow darken-2 center-align col s12 card"> <a href="https://www.google.com/maps/d/viewer?mid=1mRJxLa5HYcKXzxWqTZAPLmuSOL0
                        " class="poi white-text"><i class="mdi mdi-map-marker-multiple medium"></i>All Sights</a>          </div>
       </section>
       <section class="col s12 l4 onlineOnly hide-on-small-only">
         <div class="btn-large yellow darken-2 center-align col s12 card"> <a href="embedEn.html
                        " class="poi white-text"><i class="mdi mdi-map-marker-multiple medium"></i>All Sights</a>          </div>
-      </section>
+      </section> -->
       <!--
 ██████   ██████  ██
 ██   ██ ██    ██ ██
@@ -1566,18 +1518,16 @@
                 visited the National Museum in Amsterdam and managed to get
                 a piece of a looted Swedish flag. Different manufacturers reproduced
                 the colors differently and that´s how the bright colors were
-                established.</p>
+                established.
+              </p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B002'56.8%22N+12%C2%B041'51.2%22E/@56.049113,12.695366,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.04911!4d12.69756">
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B002'56.8%22N+12%C2%B041'51.2%22E/@56.049113,12.695366,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.04911!4d12.69756">
                 <span class="poi
                           "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.04911,12.69756/@56.1757028,12.3732634,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.04911,12.69756/@56.1757028,12.3732634,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">
                 <span class="poi"></span> <i class="mdi mdi-directions
                             medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.0479393,12.6971674,3a,75y,32.01h,118.99t/data=!3m8!1e1!3m6!1s-HGxiCXJ71nI%2FVa9PGTSwztI%2FAAAAAAAAbKU%2FohfK3sr6WRgXtfe_5e1FbWaFnBHWkVV6wCJkC!2e4!3e11!6s%2F%2Flh5.googleusercontent.com%2F-HGxiCXJ71nI%2FVa9PGTSwztI%2FAAAAAAAAbKU%2FohfK3sr6WRgXtfe_5e1FbWaFnBHWkVV6wCJkC%2Fw203-h100-k-no-pi-0-ya174.40637-ro0-fo100%2F!7i7168!8i3584
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.0479393,12.6971674,3a,75y,32.01h,118.99t/data=!3m8!1e1!3m6!1s-HGxiCXJ71nI%2FVa9PGTSwztI%2FAAAAAAAAbKU%2FohfK3sr6WRgXtfe_5e1FbWaFnBHWkVV6wCJkC!2e4!3e11!6s%2F%2Flh5.googleusercontent.com%2F-HGxiCXJ71nI%2FVa9PGTSwztI%2FAAAAAAAAbKU%2FohfK3sr6WRgXtfe_5e1FbWaFnBHWkVV6wCJkC%2Fw203-h100-k-no-pi-0-ya174.40637-ro0-fo100%2F!7i7168!8i3584
                           "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1607,21 +1557,19 @@
                 the latest information on flowering. There are also descriptions
                 of the hikes illustrating the royal summer life, gentry and
                 servants, Sofieros flowers and the sculptures found in the
-                park.</p>
+                park.
+              </p>
               <p>King Gustav VI Adolf bequeathed the entire plant to the city
                 of Helsingborg which took over in 1974. The park, which in
                 2010 was named Europe's best park, is also used for outdoor
                 concerts and other events.</p>
               <p class="center-align">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B004'47.6%22N+12%C2%B039'50.5%22E/@56.0794875,12.6599511,16z/data=!4m5!3m4!1s0x0:0x0!8m2!3d56.079883!4d12.664033">
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B004'47.6%22N+12%C2%B039'50.5%22E/@56.0794875,12.6599511,16z/data=!4m5!3m4!1s0x0:0x0!8m2!3d56.079883!4d12.664033">
                 <span class="poi
                           "></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.079883,12.664033/@56.1899439,12.3732644,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013694,12.4523629/56.079883,12.664033/@56.1899439,12.3732644,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.0841258,12.6598517,3a,75y,210.62h,98.78t/data=!3m6!1e1!3m4!1svB3lwLuIOvZGe34UW1KAIA!2e0!7i13312!8i6656">
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.0841258,12.6598517,3a,75y,210.62h,98.78t/data=!3m6!1e1!3m4!1svB3lwLuIOvZGe34UW1KAIA!2e0!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi mdi-map-marker-radius
                             medium"></i></a>
               </p>
@@ -1640,14 +1588,11 @@
                 (Image taken in Molle) At Serpentinvägen subterranean radar
                 station shown at times. Its antenna sticking up among the treetops.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B005'37.7%22N+12%C2%B038'26.3%22E/@56.09382,12.638456,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.093817!4d12.64065">
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B005'37.7%22N+12%C2%B038'26.3%22E/@56.09382,12.638456,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.093817!4d12.64065">
                 <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.093817,12.64065/@56.1980702,12.4329329,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.093817,12.64065/@56.1980702,12.4329329,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.0938591,12.6406051,3a,75y,161.07h,78.91t/data=!3m7!1e1!3m5!1s_mnrW8-0grEs4EEgWM_abg!2e0!3e2!7i13312!8i6656">
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.0938591,12.6406051,3a,75y,161.07h,78.91t/data=!3m7!1e1!3m5!1s_mnrW8-0grEs4EEgWM_abg!2e0!3e2!7i13312!8i6656">
                 <span class="poi"></span> <i class="mdi
                             mdi-map-marker-radius medium"></i></a>
               </p>
@@ -1664,14 +1609,11 @@
                 wood, gullies and Bronze Age mounds and has been inhabited
                 since prehistoric times.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B006'24.9%22N+12%C2%B037'31.5%22E/@56.106933,12.623216,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.10693!4d12.62541
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B006'24.9%22N+12%C2%B037'31.5%22E/@56.106933,12.623216,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.10693!4d12.62541
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.10693,12.62541/@56.2045539,12.4329329,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.10693,12.62541/@56.2045539,12.4329329,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.106948,12.6254062,3a,75y,271.09h,73.33t/data=!3m7!1e1!3m5!1sROM6Y125CpnH1kOE5Znh2A!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.106948,12.6254062,3a,75y,271.09h,73.33t/data=!3m7!1e1!3m5!1sROM6Y125CpnH1kOE5Znh2A!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1694,14 +1636,11 @@
                 concerns mist and steam. Which “rock” (sten) the name refers
                 to is unclear.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B006'37.6%22N+12%C2%B037'02.0%22E/@56.110436,12.615023,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.110433!4d12.617217
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B006'37.6%22N+12%C2%B037'02.0%22E/@56.110436,12.615023,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.110433!4d12.617217
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.1104444,12.6172222/@56.2064047,12.4251489,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.1104444,12.6172222/@56.2064047,12.4251489,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.1104493,12.6172352,3a,75y,288.35h,72.29t/data=!3m7!1e1!3m5!1sngQ3VB_r-zCz6I3sO7lezg!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.1104493,12.6172352,3a,75y,288.35h,72.29t/data=!3m7!1e1!3m5!1sngQ3VB_r-zCz6I3sO7lezg!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1720,14 +1659,11 @@
                 appropriately laid by the shore. A strait separated the Kulla
                 peninsula from Jonstorp to Viken.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B007'29.8%22N+12%C2%B035'54.3%22E/@56.124933,12.596216,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.12493!4d12.59841
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B007'29.8%22N+12%C2%B035'54.3%22E/@56.124933,12.596216,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.12493!4d12.59841
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.1249444,12.5984167/@56.2128842,12.4251489,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.1249444,12.5984167/@56.2128842,12.4251489,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.124913,12.5984244,3a,75y,316.16h,70.29t/data=!3m6!1e1!3m4!1ssYMzVjiELzbJHL75ExB1_Q!2e0!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.124913,12.5984244,3a,75y,316.16h,70.29t/data=!3m6!1e1!3m4!1ssYMzVjiELzbJHL75ExB1_Q!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1755,14 +1691,11 @@
                 cognac, rum, grain brandy, chicory were sold and the wreck
                 of Louise on its way from the East Indies to Copenhagen.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B009'03.8%22N+12%C2%B034'08.9%22E/@56.151053,12.566956,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.15105!4d12.56915
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B009'03.8%22N+12%C2%B034'08.9%22E/@56.151053,12.566956,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.15105!4d12.56915
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.1510556,12.5691389/@56.2266599,12.4201896,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.1510556,12.5691389/@56.2266599,12.4201896,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.1510774,12.56901,3a,75y,181.29h,75.2t/data=!3m7!1e1!3m5!1sCOShzL2lN6t0GFeRCFkS1Q!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.1510774,12.56901,3a,75y,181.29h,75.2t/data=!3m7!1e1!3m5!1sCOShzL2lN6t0GFeRCFkS1Q!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1779,14 +1712,11 @@
                 customs house. The building was moved here, probably from Helsingborg
                 around 1800, and served as a"traveler’s inn".</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B012'00.8%22N+12%C2%B032'54.7%22E/@56.200213,12.546336,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.20021!4d12.54853
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B012'00.8%22N+12%C2%B032'54.7%22E/@56.200213,12.546336,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.20021!4d12.54853
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2002222,12.5485278/@56.2513104,12.3829356,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2002222,12.5485278/@56.2513104,12.3829356,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2002279,12.5486194,3a,75y,231.76h,71.99t/data=!3m7!1e1!3m5!1srR2Xvq0npd1D65MGH0YpkQ!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2002279,12.5486194,3a,75y,231.76h,71.99t/data=!3m7!1e1!3m5!1srR2Xvq0npd1D65MGH0YpkQ!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1818,14 +1748,11 @@
                 as a part of the discussions in the 1700s about “the sea’s
                 rising and falling”.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B016'41.2%22N+12%C2%B030'07.8%22E/@56.278103,12.499973,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2781!4d12.502167
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B016'41.2%22N+12%C2%B030'07.8%22E/@56.278103,12.499973,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2781!4d12.502167
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2781111,12.5021667/@56.2901483,12.4435184,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2781111,12.5021667/@56.2901483,12.4435184,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2781183,12.5021442,3a,75y,196.41h,77.97t/data=!3m7!1e1!3m5!1sHicmvTqz-m-BZObSkjgw2w!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2781183,12.5021442,3a,75y,196.41h,77.97t/data=!3m7!1e1!3m5!1sHicmvTqz-m-BZObSkjgw2w!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1855,16 +1782,14 @@
                 We are now up on Kullaberg and many hikers prefer using hiking
                 poles, especially when walking downhill. In the side of the
                 rock at the so-called Diamond Cliffs is a 15 metre wide amphibolite
-                path.</p>
+                path.
+              </p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B017'22.2%22N+12%C2%B029'08.0%22E/@56.289503,12.483373,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2895!4d12.485567
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'22.2%22N+12%C2%B029'08.0%22E/@56.289503,12.483373,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2895!4d12.485567
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2895,12.4855556/@56.2949002,12.4385907,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2895,12.4855556/@56.2949002,12.4385907,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2894911,12.4856113,3a,75y,268.62h,78.23t/data=!3m7!1e1!3m5!1sH_trdO-qt7nF5AnNhpUfYQ!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2894911,12.4856113,3a,75y,268.62h,78.23t/data=!3m7!1e1!3m5!1sH_trdO-qt7nF5AnNhpUfYQ!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1883,7 +1808,8 @@
               <p>Our trail continues from the car park between the steps and Mölle
                 golf course, but before that, we make a small detour to Janne's
                 meadow and a hilly shortcut for those who want to return to
-                Mölle.</p>
+                Mölle.
+              </p>
               <p> The red-listed Purseweb spider, atypus affinis, belongs to the
                 group tarantulas. It lives in a sock-like, silken retreat,
                 which only protrudes a few centimetres above the ground. According
@@ -1892,11 +1818,11 @@
                 Ransvik. In 2013 the Purseweb spider was named “Best European
                 spider”! </p>
               <p> Fact - Krattskog is low growing, windswept deciduous forest.
-                </p>
+              </p>
               <p> Buskkratt is frequently a windswept tangle of bushes and trees.
                 Between Solviken and Ransvik you can see how the sea winds
                 have pushed the bushes and trees against the side of the cliff.
-                </p>
+              </p>
               <p> Höganäs museum has a copy of PP Lundh’s studio and owns his glass
                 plates that have been digitized and are shown in a slideshow.</p>
               <p> We are now on our way through the beech wood towards Janne's
@@ -1912,18 +1838,14 @@
                 was also dried as hay. </p>
               <p> Fact - A meadow is a small field in a forest clearing, often
                 fenced with a stone wall to keep out grazing animals.</p>
-              <p
-                class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B017'30.2%22N+12%C2%B028'34.2%22E/@56.291733,12.473986,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.29173!4d12.47618
+              <p class="row">
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B017'30.2%22N+12%C2%B028'34.2%22E/@56.291733,12.473986,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.29173!4d12.47618
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2917222,12.4761667/@56.2967841,12.4474945,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2917222,12.4761667/@56.2967841,12.4474945,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2917266,12.4762616,3a,75y,206.32h,69.18t/data=!3m6!1e1!3m4!1sQ-WsYSpmL4qmD7JS5LjtWA!2e0!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2917266,12.4762616,3a,75y,206.32h,69.18t/data=!3m6!1e1!3m4!1sQ-WsYSpmL4qmD7JS5LjtWA!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
-                </p>
+              </p>
             </div>
           </li>
           <li> <span class="title collapsible-header"><i class="mdi mdi-map-marker-radius yellow-text text-darken-2"></i>12: Arild</span>
@@ -1938,7 +1860,8 @@
                 who attended “Operation Kullen”, containing 47 different ships.
                 There are photographs of the minesweeping, artillery firing
                 and anti-submarine warfare in Höganäs municipality's photo
-                archive.</p>
+                archive.
+              </p>
               <p> The spectators arrived in 25,000 cars, which were parked in the
                 fields to the south. The road from Ängelholm was one-way here
                 - everyone was going in the same direction - so you could drive
@@ -1947,16 +1870,14 @@
               <p> Svensmalen is along Klötesvägen, east of Arild’s harbor, where
                 the young Arild's body was said to have left an imprint. To
                 get to Arild’s bus stop you can climb up the steps at Purras
-                hill.</p>
+                hill.
+              </p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B016'34.2%22N+12%C2%B034'18.4%22E/@56.276167,12.5695783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.276167!4d12.571767
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B016'34.2%22N+12%C2%B034'18.4%22E/@56.276167,12.5695783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.276167!4d12.571767
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.276167,12.571767/@56.2812189,12.4464598,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.276167,12.571767/@56.2812189,12.4464598,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2754283,12.5728331,3a,75y,323.05h,78.1t/data=!3m7!1e1!3m5!1s5b1Ta22z55D1oFjO2vVIGw!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2754283,12.5728331,3a,75y,323.05h,78.1t/data=!3m7!1e1!3m5!1s5b1Ta22z55D1oFjO2vVIGw!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -1974,14 +1895,11 @@
                 It was also here that Ingmar Bergman found a suitable environment
                 in 1953 for scenes in the film Sawdust and Tinsel.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B016'22.0%22N+12%C2%B034'55.6%22E/@56.272767,12.5799113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.272767!4d12.5821
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B016'22.0%22N+12%C2%B034'55.6%22E/@56.272767,12.5799113,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.272767!4d12.5821
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.272767,12.5821/@56.2812189,12.446571,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.272767,12.5821/@56.2812189,12.446571,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2728047,12.5821458,3a,75y,268.97h,68.75t/data=!3m7!1e1!3m5!1suQfMkHr2ghuvTenAcPusIQ!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2728047,12.5821458,3a,75y,268.97h,68.75t/data=!3m7!1e1!3m5!1suQfMkHr2ghuvTenAcPusIQ!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -2022,14 +1940,11 @@
                 Her residence next to the chapel is now gone and the objects
                 have become scattered, but her diaries have been preserved.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B016'14.9%22N+12%C2%B035'33.1%22E/@56.2708,12.5903283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2708!4d12.592517
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B016'14.9%22N+12%C2%B035'33.1%22E/@56.2708,12.5903283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.2708!4d12.592517
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2708,12.592517/@56.2812189,12.4517496,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.2708,12.592517/@56.2812189,12.4517496,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2708366,12.5924962,3a,75y,127.79h,78.32t/data=!3m7!1e1!3m5!1skvG4qfOSgWqgshsvS1npVg!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2708366,12.5924962,3a,75y,127.79h,78.32t/data=!3m7!1e1!3m5!1skvG4qfOSgWqgshsvS1npVg!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -2069,14 +1984,11 @@
               <p>At Tvättehallsvägens end you can find Svanshalls other bathing
                 areas whose stone outcrops exhibit fossils of sea urchins.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B015'50.5%22N+12%C2%B036'44.5%22E/@56.264017,12.6101783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.264017!4d12.612367
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B015'50.5%22N+12%C2%B036'44.5%22E/@56.264017,12.6101783,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.264017!4d12.612367
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.264017,12.612367/@56.2798127,12.3938106,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.264017,12.612367/@56.2798127,12.3938106,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2638216,12.6121721,3a,75y,24.58h,84.92t/data=!3m7!1e1!3m5!1suMQwOhrbRTwWMAdT2L1-lA!2e0!3e2!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2638216,12.6121721,3a,75y,24.58h,84.92t/data=!3m7!1e1!3m5!1suMQwOhrbRTwWMAdT2L1-lA!2e0!3e2!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -2095,14 +2007,11 @@
                 herring season, and eventually the “sailor fisherman” settled
                 on the farmers' common property, the beach gravel.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B014'29.2%22N+12%C2%B040'18.7%22E/@56.24145,12.6696613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.24145!4d12.67185
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B014'29.2%22N+12%C2%B040'18.7%22E/@56.24145,12.6696613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.24145!4d12.67185
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.24145,12.67185/@56.2622763,12.4215106,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.24145,12.67185/@56.2622763,12.4215106,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2415382,12.672106,3a,75y,102.63h,83.08t/data=!3m6!1e1!3m4!1shFNRashcmH-i64bkVWH-yQ!2e0!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2415382,12.672106,3a,75y,102.63h,83.08t/data=!3m6!1e1!3m4!1shFNRashcmH-i64bkVWH-yQ!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -2126,14 +2035,14 @@
                 and his finds, for example, Lidéns väg and Fornminnesvägen,
                 where the sea wall was covered with Neolithic finds. </p>
               <p>
-              The sandy beach is shallow and therefore ideal for families with
-                small children, perhaps one reason why the summer cottage settlement
-                was established here in the 1930-1940s beneath the old farms.
-                The sand dunes are two-three metres high and are bound by grass
-                and sand sedge. On the narrow coastal heath endangered plant
-                species such as adder's-tongue, cross-leaved heath, common
-                moonwort and lesser butterfly-orchid intermingle with much
-                more common plants. </p>
+                The sandy beach is shallow and therefore ideal for families with small children,
+                perhaps one reason why the summer cottage settlement was established
+                here in the 1930-1940s beneath the old farms. The sand dunes
+                are two-three metres high and are bound by grass and sand sedge.
+                On the narrow coastal heath endangered plant species such as
+                adder's-tongue, cross-leaved heath, common moonwort and lesser
+                butterfly-orchid intermingle with much more common plants.
+                </p>
               <p> In mid-June, we found a number of species adjacent to the beach:
                 tufted grass, early marsh orchid, silverweed, mouse-ear hawkweed,
                 white clover, thrift, blue bonnets, bird's-foot trefoil, meadow
@@ -2142,14 +2051,11 @@
                 and creeping thistle as well as the lesser butterfly-orchid
                 in an area of just a few square metres.</p>
               <p class="row">
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/place/56%C2%B013'59.2%22N+12%C2%B041'01.4%22E/@56.233117,12.6815283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.233117!4d12.683717
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/place/56%C2%B013'59.2%22N+12%C2%B041'01.4%22E/@56.233117,12.6815283,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d56.233117!4d12.683717
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.233117,12.683717/@56.252561,12.426991,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/dir/56.3013691,12.4522371/56.233117,12.683717/@56.252561,12.426991,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0
                           "> <span class="poi"></span> <i class="mdi mdi-directions medium"></i></a>
-                <a class="yellow-text text-darken-2 poi col s4 center-align"
-                  href="https://www.google.com/maps/@56.2329983,12.6837717,3a,75y,94.25h,83.9t/data=!3m6!1e1!3m4!1sDHBLLzSO0MPYjWuWsTjTkw!2e0!7i13312!8i6656
+                <a class="yellow-text text-darken-2 poi col s4 center-align" href="https://www.google.com/maps/@56.2329983,12.6837717,3a,75y,94.25h,83.9t/data=!3m6!1e1!3m4!1sDHBLLzSO0MPYjWuWsTjTkw!2e0!7i13312!8i6656
                                "> <span class="poi"></span> <i class="mdi mdi-map-marker-radius medium"></i></a>
               </p>
             </div>
@@ -2168,15 +2074,13 @@
   <footer class="page-footer blue darken-4 white-text trails">
     <section id="contact" class="row">
       <div class="col s12">
-        <div class="col s10 m6 l12 pad"> <img src="img/kullabergsNaturum.svg" alt="Naturum Kullaberg" class="responsive-img"
-          /></div>
-        <div class="col s10 m12 l6 margin-spacerTop pad contactButtons">
+        <div class="col s12 m12 l6 contactButtons">
           <a href="mailto:naturum.kullaberg@lansstyrelsen.se?cc=carlos.velasco@lansstyrelsen.se"
             class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email: naturum.kullaberg@lansstyrelsen.se"><i class="mdi mdi-email medium grey-text text-lighten-4 contactIcon"></i></a>
-          <a href="tel:46042347056" class="tooltipped" data-position="bottom"
-            data-delay="50" data-tooltip="Tel: +46 (0)42 347 056"> <i class="mdi mdi-phone-classic medium grey-text text-lighten-4 contactIcon"></i></a>
-          <a href="http://www.kullabergsnatur.se/" class="tooltipped onlineOnly"
-            data-position="bottom" data-delay="50" data-tooltip="Website: KullabergsNatur.se"><i class="mdi mdi-web medium grey-text text-lighten-4 contactIcon"></i></a>
+          <a href="tel:46042347056" class="tooltipped" data-position="bottom" data-delay="50"
+            data-tooltip="Tel: +46 (0)42 347 056"> <i class="mdi mdi-phone-classic medium grey-text text-lighten-4 contactIcon"></i></a>
+          <a href="http://www.kullabergsnatur.se/" class="tooltipped onlineOnly" data-position="bottom"
+            data-delay="50" data-tooltip="Website: KullabergsNatur.se"><i class="mdi mdi-web medium grey-text text-lighten-4 contactIcon"></i></a>
           <a href="https://www.facebook.com/kullabergsnaturreservat/" class="tooltipped onlineOnly"
             data-position="bottom" data-delay="50" data-tooltip="Facebook: Kullabergs Naturreservat"><i class="mdi mdi-facebook-box medium grey-text text-lighten-4 contactIcon"></i></a>
           <a href="https://www.instagram.com/kullabergsnaturreservat/" class="tooltipped onlineOnly"
@@ -2184,7 +2088,7 @@
         </div>
       </div>
     </section>
-    <div class="footer-copyright row">
+    <div class="row">
       <div class="col s12">
         <div class="col s6 m4 l2">Design <br> <a class="orange-text text-lighten-3 modal-trigger" href="#modal1">Carlos Velasco</a>          </div>
         <div class="col s6 m4 l2">Sponsors <br> <a class="orange-text text-lighten-3 modal-trigger" href="#skane">Region Skåne</a>          <br> <a class="orange-text text-lighten-3 modal-trigger" href="#lansstyrelsen">Lansstyrelsen Skåne</a>          </div>
@@ -2206,13 +2110,11 @@
         <h4 class="flow-text">Front-End JavaScript Application Developer</h4>
       </div>
       <div class="col s12"> <a href="mailto:Carlos@2ActiveDesign.com" class="tooltipped" data-position="bottom"
-          data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>
-        <a href="tel:460737298257" class="tooltipped" data-position="bottom"
-          data-delay="50" data-tooltip="Tel: 073-729 82 57"> <i class="mdi mdi-phone-classic medium"></i></a> <a href="https://www.linkedin.com/in/carlosevelasco
+          data-delay="50" data-tooltip="Email: Carlos@2ActiveDesign.com"><i class="mdi mdi-email medium"></i></a>        <a href="https://www.linkedin.com/in/carlosevelasco
                            " class="tooltipped onlineOnly" data-position="bottom"
           data-delay="50" data-tooltip="LinkedIn Profile"><i class="mdi mdi-linkedin medium"></i></a>
-        <a href="https://www.behance.net/2Active" class="tooltipped onlineOnly"
-          data-position="bottom" data-delay="50" data-tooltip="Behance Portfolio">
+        <a href="https://www.behance.net/2Active" class="tooltipped onlineOnly" data-position="bottom"
+          data-delay="50" data-tooltip="Behance Portfolio">
         <i class="mdi mdi-behance medium"></i> </a> <a href="https://github.com/xtreemze?tab=repositories
                            " class="tooltipped onlineOnly" data-position="bottom"
           data-delay="50" data-tooltip="Github Repositories"><i class="mdi mdi-github-box medium"></i></a>        </div>
@@ -2233,8 +2135,19 @@
      ██ ██      ██   ██ ██ ██         ██
 ███████  ██████ ██   ██ ██ ██         ██
 -->
-  <script src="https://cdn.rawgit.com/xtreemze/KullabergApp/gh-pages/js/init.min.js"></script>
+  <script src="js/init.min.js"></script>
   <script src="bundle.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-105235927-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 
 </html>
