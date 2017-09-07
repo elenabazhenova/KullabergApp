@@ -175,10 +175,10 @@ module.exports = function e(env) {
       }),
       new OfflinePlugin({
         externals: [
-          "./js/init.min.js",
-          "./js/init2.min.js",
-          "./js/materialize.min.js",
-          "./js/jquery-3.2.1.min.js"
+          // "./js/init.min.js",
+          // "./js/init2.min.js",
+          // "./js/materialize.min.js",
+          // "./js/jquery-3.2.1.min.js"
         ],
         caches: "all",
         responseStrategy: "network-first",

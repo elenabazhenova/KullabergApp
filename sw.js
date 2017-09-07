@@ -73,21 +73,12 @@ var __wpo = {
       "./img/t3/8.jpg",
       "./img/t3/9.jpg",
       "./bundle.js",
-      "./main.css",
-      "./js/init.min.js",
-      "./js/init2.min.js",
-      "./js/materialize.min.js",
-      "./js/jquery-3.2.1.min.js"
+      "./main.css"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [
-    "./js/init.min.js",
-    "./js/init2.min.js",
-    "./js/materialize.min.js",
-    "./js/jquery-3.2.1.min.js"
-  ],
+  "externals": [],
   "hashesMap": {
     "02acf9a6077c6fd0ba37b5f16499365bf05eb7c9": "./fonts/materialdesignicons-webfont.eot",
     "f70e244175be4f96a237a748577f28f39dd3c7cb": "./fonts/materialdesignicons-webfont.svg",
@@ -164,7 +155,7 @@ var __wpo = {
   },
   "strategy": "all",
   "responseStrategy": "network-first",
-  "version": "2017-9-7 20:05:47",
+  "version": "2017-9-7 20:09:10",
   "name": "webpack-offline",
   "pluginVersion": "4.8.3",
   "relativePaths": true

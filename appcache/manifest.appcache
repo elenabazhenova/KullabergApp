@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:2017-9-7 20:05:47
+#ver:2017-9-7 20:09:10
 #plugin:4.8.3
 
 CACHE:
@@ -76,10 +76,6 @@ CACHE:
 ../img/t3/9.jpg
 ../bundle.js
 ../main.css
-../js/init.min.js
-../js/init2.min.js
-../js/materialize.min.js
-../js/jquery-3.2.1.min.js
 
 NETWORK:
 *
