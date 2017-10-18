@@ -50,10 +50,10 @@ var __wpo = {
       "./img/t2/16.jpg",
       "./img/t2/17.jpg",
       "./img/t3/15.jpg",
+      "./img/t1/1A.jpg",
       "./img/t1/11.jpg",
       "./img/t1/12.jpg",
       "./img/t3/14.jpg",
-      "./img/t1/1A.jpg",
       "./img/t1/9.jpg",
       "./img/t1/10.jpg",
       "./img/t1/8.jpg",
@@ -73,12 +73,21 @@ var __wpo = {
       "./embedEn.html",
       "./embedSv.html",
       "./bundle.js",
-      "./main.css"
+      "./main.css",
+      "./js/init.min.js",
+      "./js/init2.min.js",
+      "./js/materialize.min.js",
+      "./js/jquery-3.2.1.min.js"
     ],
     "additional": [],
     "optional": []
   },
-  "externals": [],
+  "externals": [
+    "./js/init.min.js",
+    "./js/init2.min.js",
+    "./js/materialize.min.js",
+    "./js/jquery-3.2.1.min.js"
+  ],
   "hashesMap": {
     "02acf9a6077c6fd0ba37b5f16499365bf05eb7c9": "./fonts/materialdesignicons-webfont.eot",
     "ae356d6811285df99e5efa432a27a1ae2efb19b5": "./fonts/materialdesignicons-webfont.woff2",
@@ -128,10 +137,10 @@ var __wpo = {
     "3aa9b141146330ebb4e4e7411dbe8e958f1573f1": "./img/t2/16.jpg",
     "52128eb1335fc9210017d9b50e47e74d8dc1b57a": "./img/t2/17.jpg",
     "388b09ecbcbf5489769de874b3ae37f3258a40f9": "./img/t3/15.jpg",
+    "3f602adc57309cb7aadcc27fd85783b00a60c75e": "./img/t1/1A.jpg",
     "7062a82941e9809dde0ce1fabcd2925ec82f7d9b": "./img/t1/11.jpg",
     "6346e8f896e8f01befd2285f910a8cc191fe3468": "./img/t1/12.jpg",
     "9dec7cc49750031130aecfafde8ae23a5cde0dc5": "./img/t3/14.jpg",
-    "3f602adc57309cb7aadcc27fd85783b00a60c75e": "./img/t1/1A.jpg",
     "226fe4bff9e59b4878bc55664a9c43def5aea040": "./img/t1/9.jpg",
     "df3c0226fdb8fda82f43f276fd71cfc0b045f9e5": "./img/t1/10.jpg",
     "1869a325beaf33051db8b524012dd95d9a34d005": "./img/t1/8.jpg",
@@ -150,14 +159,14 @@ var __wpo = {
     "331bf971cac1b305fb72a0924c8a5a9eed962648": "./poiSv.html",
     "b328a4136c4eab17cef9739d2c0611254a77c483": "./embedEn.html",
     "c34556f19d3c3928d14c1d1a33b9f4e5a45db3a5": "./embedSv.html",
-    "b3bc41d96f63decceb8065131eb244b5e9493689": "./bundle.js",
+    "512768a6c9bd59a91cef9290421eb1f9c79756ef": "./bundle.js",
     "f80f2383d57baf6b179665e098c632c0e1456cbd": "./main.css"
   },
   "strategy": "all",
   "responseStrategy": "network-first",
-  "version": "2017-9-21 10:57:19",
+  "version": "2017-10-18 11:05:15",
   "name": "webpack-offline",
-  "pluginVersion": "4.8.3",
+  "pluginVersion": "4.8.4",
   "relativePaths": true
 };
 

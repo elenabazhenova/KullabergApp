@@ -1,6 +1,6 @@
 CACHE MANIFEST
-#ver:2017-9-21 10:57:19
-#plugin:4.8.3
+#ver:2017-10-18 11:05:15
+#plugin:4.8.4
 
 CACHE:
 ../fonts/materialdesignicons-webfont.eot
@@ -52,10 +52,10 @@ CACHE:
 ../img/t2/16.jpg
 ../img/t2/17.jpg
 ../img/t3/15.jpg
+../img/t1/1A.jpg
 ../img/t1/11.jpg
 ../img/t1/12.jpg
 ../img/t3/14.jpg
-../img/t1/1A.jpg
 ../img/t1/9.jpg
 ../img/t1/10.jpg
 ../img/t1/8.jpg
@@ -76,6 +76,10 @@ CACHE:
 ../embedSv.html
 ../bundle.js
 ../main.css
+../js/init.min.js
+../js/init2.min.js
+../js/materialize.min.js
+../js/jquery-3.2.1.min.js
 
 NETWORK:
 *

@@ -39,16 +39,17 @@
     "purify-css": "^1.2.6",
     "style-loader": "^0.13.2",
     "url-loader": "^0.5.8",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2"
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.2"
   },
   "dependencies": {
+    "babel-preset-env": "^1.6.1",
     "extract-text-webpack-plugin": "^2.1.2",
     "glob-all": "^3.1.0",
     "google-closure-compiler-js": "^20170521.0.0",
     "html-minifier-webpack-plugin": "^1.0.1",
     "imagemin-webpack-plugin": "^1.5.2",
-    "offline-plugin": "^4.8.3",
+    "offline-plugin": "^4.8.4",
     "optimize-js-plugin": "0.0.4",
     "purifycss-webpack": "^0.7.0"
   }
