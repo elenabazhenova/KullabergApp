@@ -81,34 +81,33 @@ module.exports = function d(env) {
         },
         {
           test: /\.css$/,
-          use: ["style-loader", "css-loader"]
+          use: ["style-loader", "css-loader", "postcss-loader"]
         },
         {
-          test: /\.(png|gif|jpg)$/,
-          use: ["file-loader?name=[path][name].[ext]"]
-        },
-        {
-          test: /\.(eot|ttf|woff|woff2)$/,
-          loader: "file-loader?name=[path][name].[ext]"
-        },
-        {
-          test: /\.svg$/,
-          use: [
+          test: /\.(gif|png|jpe?g|svg)$/i,
+          loaders: [
+            "file-loader?name=build/[name].[ext]",
             {
-              loader: "file-loader?name=[path][name].[ext]"
+              loader: "image-webpack-loader",
+              options: {}
             }
           ]
         },
         {
+          test: /\.(eot|ttf|woff|woff2)$/,
+          loader: "url-loader?limit=1000000"
+        },
+
+        {
           test: /\.js$/,
           exclude: [/node_modules/],
           use: [
-            {
-              loader: "babel-loader",
-              options: {
-                presets: [["env", { modules: false }]]
-              }
-            }
+            // {
+            //   loader: "babel-loader",
+            //   options: {
+            //     presets: [["env", { modules: false }]]
+            //   }
+            // }
           ]
         }
       ]

@@ -1,3 +1,20 @@
+import * as OfflinePluginRuntime from "offline-plugin/runtime";
+
+OfflinePluginRuntime.install({
+  onInstalled: function() {},
+
+  onUpdating: function() {},
+
+  onUpdateReady: function() {
+    OfflinePlugin.applyUpdate();
+  },
+  onUpdated: function() {
+    setTimeout(function() {
+      window.location.reload();
+    }, 10000);
+  }
+});
+
 // let notifyAttempts = 0;
 // const tagNotify = 'vibrateTest';
 // const locate = [];
@@ -27,11 +44,10 @@ let hiddenContact = false;
 // };
 function onlineCheck() {
   if (!window.navigator.onLine && !hiddenContact) {
-    $('.onlineOnly')
-      .slideUp();
+    $(".onlineOnly").slideUp();
     hiddenContact = true;
   } else if (hiddenContact && window.navigator.onLine) {
-    $('.onlineOnly')
+    $(".onlineOnly")
       .show()
       .slideUp(0)
       .slideDown();
@@ -40,16 +56,17 @@ function onlineCheck() {
 }
 
 function scrollEnd() {
-  $('html, body')
-    .animate({
-      scrollTop: $(document)
-        .height() - $(window)
-        .height(),
-    }, 80, 'easeInOutCubic');
+  $("html, body").animate(
+    {
+      scrollTop: $(document).height() - $(window).height()
+    },
+    80,
+    "easeInOutCubic"
+  );
 }
 window.flashContact = function flashContact() {
   scrollEnd();
-  $('.contactIcon')
+  $(".contactIcon")
     .finish()
     .delay(200)
     .fadeOut(250)
@@ -62,18 +79,19 @@ window.flashContact = function flashContact() {
 };
 
 function scrollTop() {
-  $('html, body')
-    .animate({
-      scrollTop: 0,
-    }, 80, 'easeInOutCubic');
+  $("html, body").animate(
+    {
+      scrollTop: 0
+    },
+    80,
+    "easeInOutCubic"
+  );
 }
 window.turnOff = function turnOff() {
-  $('.logoImg')
-    .removeClass('turn');
+  $(".logoImg").removeClass("turn");
 };
 window.turnOn = function turnOn() {
-  $('.logoImg')
-    .addClass('turn');
+  $(".logoImg").addClass("turn");
 };
 /*
 ████████  █████  ██████  ███████
@@ -83,25 +101,24 @@ window.turnOn = function turnOn() {
    ██    ██   ██ ██████  ███████
 */
 window.tabOperation = function tabOperation() {
-  $('.collapsible-header')
-    .removeClass('active');
-  $('.collapsible')
+  $(".collapsible-header").removeClass("active");
+  $(".collapsible")
     .collapsible({
-      accordion: true,
+      accordion: true
     })
     .collapsible({
-      accordion: false,
+      accordion: false
     });
   scrollTop();
 };
 window.tabOperationNews = function tabOperationNews() {
   scrollTop();
-  $('.collapsible')
+  $(".collapsible")
     .collapsible({
-      accordion: true,
+      accordion: true
     })
     .collapsible({
-      accordion: false,
+      accordion: false
     });
 };
 window.mapTabOperation = function mapTabOperation() {

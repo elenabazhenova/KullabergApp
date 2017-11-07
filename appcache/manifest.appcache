@@ -1,31 +1,14 @@
 CACHE MANIFEST
-#ver:2017-10-18 11:05:15
+#ver:2017-11-7 11:45:25
 #plugin:4.8.4
 
 CACHE:
-../fonts/materialdesignicons-webfont.eot
-../fonts/materialdesignicons-webfont.woff2
-../fonts/materialdesignicons-webfont.woff
-../fonts/materialdesignicons-webfont.ttf
-../fonts/materialdesignicons-webfont.svg
-../fonts/roboto/Roboto-Thin.woff2
-../fonts/roboto/Roboto-Thin.woff
-../fonts/roboto/Roboto-Light.woff2
-../fonts/roboto/Roboto-Light.woff
-../fonts/roboto/Roboto-Regular.woff2
-../fonts/roboto/Roboto-Regular.woff
-../fonts/roboto/Roboto-Medium.woff2
-../fonts/roboto/Roboto-Medium.woff
-../fonts/roboto/Roboto-Bold.woff2
-../fonts/roboto/Roboto-Bold.woff
 ../img/asterisk.svg
 ../img/regionSkane.svg
 ../img/lansstyrelsen.svg
 ../img/t1/trail1sign.png
 ../img/t1/4.jpg
 ../img/t3/6.jpg
-../img/t3/13.jpg
-../img/t3/12.jpg
 ../img/t3/11.jpg
 ../img/t3/10.jpg
 ../img/t3/9.jpg
@@ -69,13 +52,15 @@ CACHE:
 ../img/t3/3.jpg
 ../img/t3/4.jpg
 ../img/t3/5.jpg
+../img/t3/13.jpg
+../img/t3/12.jpg
 ../
 ../poi.html
 ../poiSv.html
 ../embedEn.html
 ../embedSv.html
+../fonts/materialdesignicons-webfont.svg
 ../bundle.js
-../main.css
 ../js/init.min.js
 ../js/init2.min.js
 ../js/materialize.min.js
